@@ -1,0 +1,190 @@
+---
+title: Fun & stress-free, 2022-2023
+---
+
+# Summary
+### Overall sentiment: Positive experiences regarding fun & stress-free dominate, with 63.4% positive to 6.6% negative feedback. Positive reviews: 231; Negative reviews: 109; Neutral reviews: 109
+
+ 
+
+#### Positive:
+
+1. Location Convenience: Guests praised the hotel's proximity to tram and monorail stations, making
+travel around Dubai easy.
+2. Transport Access: The hotel's location was appreciated for its easy access to public transportation,
+including the metro.
+3. Amenities Enjoyment: Some guests enjoyed the hotel's amenities, like the pool and gym, and found
+them to be great for children.
+4. Room Features: A few reviews mentioned well-equipped kitchens and the convenience of having TVs
+in every room.
+5. Efficient Services: Positive remarks were made about the smooth check-in and check-out process, and
+the helpfulness of the travel desk.
+ 
+
+#### Negative:
+
+1. Limited Entertainment: Guests felt the area lacked nightlife and socializing options, with no bars or
+nearby hangout spots.
+2. Accessibility Issues: Some found the hotel's location inconvenient, with nothing within walking
+distance and difficulties in reaching the hotel by car.
+3. Amenities Shortcomings: Complaints about the pool size, lack of sun loungers, and limited TV channel
+selections were noted.
+4. Service Delays: There were mentions of delays in service and slow responses to requests, impacting
+guest satisfaction.
+5. Connectivity Concerns: Issues with Wi-Fi speed and connectivity were a point of frustration for some
+guests.
+
+#### Most Positive Examples:
+
+1. "great transport links"
+2. "easy access to metro and tram"
+3. "hotel is well connected to the public transport tram metro"
+4. "location being a very short walk to the tram station"
+5. "tram station right in front of the hotel"
+
+ 
+
+#### Most Negative Examples:
+
+1. "hotel has no-where to hang out"
+2. "location wasn't great"
+3. "swimming pool was affected by the problem"
+4. "tv selections in the room is very limited"
+5. "very few staff members available during breakfast"
+
+
+```sql polarity_proportions
+WITH CategoryCounts AS (
+    SELECT
+        TRIM(polarity) AS CleanCategory,
+        COUNT(DISTINCT review_id) AS category_count
+    FROM
+        hotels.titles
+    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    AND TRIM(Category) = 'fun & stress-free'
+    GROUP BY
+        TRIM(polarity)
+),
+TotalReviews AS (
+    SELECT
+        SUM(category_count) AS total
+    FROM
+        CategoryCounts
+)
+SELECT
+    a.CleanCategory AS Category,
+    a.category_count,
+    ROUND((a.category_count * 100.0) / b.total, 2) AS percentage
+FROM
+    CategoryCounts a, TotalReviews b
+ORDER BY percentage DESC
+```
+
+```sql sum_by_polarity
+SELECT
+    TRIM(LOWER(polarity)) AS Polarity,
+    COUNT(CAST(value AS INTEGER)) AS Polarity_sum,
+    polarity
+FROM
+    hotels.titles
+WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+AND TRIM(Category) = 'fun & stress-free'
+GROUP BY
+    TRIM(LOWER(Category)),
+    polarity
+ORDER BY
+    Polarity_sum DESC
+```
+
+<BarChart 
+    data={sum_by_polarity} 
+    swapXY=false
+    x=Polarity
+    y=Polarity_sum 
+    series=Polarity
+    sort=false
+    colorPalette={
+        [
+        '#3D9970',  // A shade of dark green
+        '#2ECC40',      // A shade of bright green
+        '#AAAAAA',       // A shade of grey
+        '#FF4136',      // A shade of red
+        '#85144B'  // A shade of dark red
+        ]
+    }
+/>
+
+
+
+
+
+# Snippets from reviews
+
+## Positive Snippets
+```sql positive_snippets
+SELECT Headline, Snippet
+FROM hotels.titles
+WHERE TRIM(LOWER(Category)) = 'fun & stress-free'
+AND (polarity = 'positive' OR polarity = 'very positive')
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+ORDER BY Headline ASC
+```
+
+<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+
+## Neutral Snippets
+
+```sql neutral_snippets
+SELECT Headline, Snippet
+FROM hotels.titles
+WHERE TRIM(LOWER(Category)) = 'fun & stress-free'
+AND (polarity = 'neutral')
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+ORDER BY Headline ASC
+```
+
+<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+
+## Negative Snippets
+
+```sql negative_snippets
+SELECT Headline, Snippet
+FROM hotels.titles
+WHERE TRIM(LOWER(Category)) = 'fun & stress-free'
+AND (polarity = 'negative' OR polarity = 'very negative')
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+ORDER BY Headline ASC
+```
+
+<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+
+
+## Customer sentiment distribution (2022-2023)
+
+```sql sentiment_distribution
+SELECT
+  TRIM(LOWER(polarity)) AS Polarity,
+  Year,
+  COUNT(DISTINCT review_id) AS ReviewCount
+FROM
+  hotels.titles
+WHERE
+  travel_date BETWEEN '2022-01-01' AND '2023-12-31'
+  AND TRIM(LOWER(Category)) = 'fun & stress-free'
+GROUP BY
+  Polarity,
+  Year
+
+```
+
+<BarChart 
+    data={sentiment_distribution} 
+    x="Polarity" 
+    y="ReviewCount"
+    series="Year" 
+    groupBy="Year" 
+    type="grouped"
+/>
