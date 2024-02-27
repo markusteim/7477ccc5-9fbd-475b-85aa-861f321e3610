@@ -1,10 +1,10 @@
-# Summary
+**Summary**
 
 Overall Sentiment: The majority of reviews reflect a positive sentiment regarding physical and mental well-being, with approximately 89.38% positive experiences. Positive: 101, Negative: 18, Neutral 1.
 
 
 
-#### Positive:
+**Positive:**
 
 1. Gym Facilities: Guests praised the 24/7 gym, highlighting the variety of cardio equipment and weights,
 and the inclusion of a sauna.
@@ -18,7 +18,7 @@ likening it to a home away from home.
 enhancing guests' overall well-being.
  
 
-#### Negative:
+**Negative:**
 
 1. Limited Relaxation: Some guests found no comfortable common area to relax in, affecting their ability
 to unwind.
@@ -31,7 +31,7 @@ workouts
 
 <br>
 
-#### Most Positive Examples:
+**Most Positive Examples:**
 
 1. "best-class gym facility with studio"
 2. "healthy food section is offered at the breakfast"
@@ -41,7 +41,7 @@ workouts
 
  
 
-#### Most Negative Examples:
+**Most Negative Examples:**
 
 1. "no comfortable common area to relax in"
 2. "sleep disturbed by all the traffic"
@@ -112,9 +112,9 @@ GROUP BY
 
 
 
-# Headlines and corresponding snippets from reviews
+**Headlines and corresponding snippets from reviews**
 
-### Positive Headlines
+**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -127,7 +127,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-### Positive Snippets
+**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -140,7 +140,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-### Neutral Headlines
+**Neutral Headlines**
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -153,7 +153,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-### Neutral Snippets
+**Neutral Snippets**
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -166,7 +166,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-### Negative Headlines
+**Negative Headlines**
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -179,7 +179,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-### Negative Snippets
+**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -193,7 +193,7 @@ ORDER BY Snippet ASC
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 
 
-# Customer sentiment distribution (2022-2023)
+**Customer sentiment distribution (2022-2023)**
 
 ```sql sentiment_distribution
 SELECT

@@ -2,14 +2,14 @@
 
 
 
-# Summary 
+**Summary**
 
 Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. 
 Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
 
  
 
-#### Positive:
+**Positive:**
 
 1. Stunning Views: Guests were captivated by the breathtaking vistas, from the panoramic balcony views
 to the spectacular sights of the sea, Dubai Marina, and iconic landmarks like Burj Al Arab.
@@ -22,7 +22,7 @@ highlighted as exceptional, enhancing the overall guest experience.
 5. Strategic Location: The hotel's location was lauded for its convenience and strategic proximity to
 attractions, with many rooms offering stunning views of the surrounding scenery.
 
-#### Negative:
+**Negative:**
 
 1. Construction Issues: Some guests were disappointed by the presence of construction sites, which
 obstructed views and impacted the hotel's tranquility.
@@ -37,7 +37,7 @@ properties was noted, with some guests feeling it lacked the same level of luxur
 
 <br>
 
-#### Most Positive Examples:
+**Most Positive Examples:**
 
 1. "balcony's panoramic view was simply stunning"
 2. "room has a spectacular view on Dubai Marina and Palm Jumeirah"
@@ -47,7 +47,7 @@ properties was noted, with some guests feeling it lacked the same level of luxur
 
  
 
-#### Most Negative Examples:
+**Most Negative Examples:**
 
 1. "view from this place was just so-so"
 2. "huge building site and motorways"
@@ -122,11 +122,11 @@ ORDER BY
 
 <br>
 
-# Headlines and corresponding snippets from reviews
+**Headlines and corresponding snippets from reviews**
 
 <br>
 
-### Positive Headlines
+**Positive Headlines**
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
@@ -140,7 +140,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-### Positive Snippets
+**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -153,7 +153,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-### Neutral Headlines
+**Neutral Headlines**
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -166,7 +166,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-### Neutral Snippets
+**Neutral Snippets**
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -180,7 +180,7 @@ ORDER BY Snippet ASC
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
 
-### Negative Headlines
+**Negative Headlines**
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -194,7 +194,7 @@ ORDER BY Count DESC
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
 
-### Negative Snippets
+**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -210,7 +210,7 @@ ORDER BY Snippet ASC
 
 <br>
 
-# Customer sentiment distribution (2022-2023)
+**Customer sentiment distribution (2022-2023)**
 
 ```sql sentiment_distribution
 SELECT

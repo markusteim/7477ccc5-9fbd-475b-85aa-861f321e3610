@@ -1,6 +1,6 @@
----
-title: Overview 2022-2023
----
+
+**Overview 2022-2023**
+
 
 
  ```sql titles
@@ -9,7 +9,7 @@ title: Overview 2022-2023
  ```
 <!--  -->
 
-## Summary
+**Summary**
 
 Across the 12 categories, hotel guests generally shared more positive experiences than negative ones. The overall sentiment was heavily skewed towards satisfaction, with an estimated 76.8% positive feedback compared to 8.1% negative and 15.2% neutral. Out of the total comments, 1,797 were positive, 189 were negative and 355 were neutral. The distribution of comments across categories was as follows: 
 
@@ -87,7 +87,7 @@ ORDER BY
     }
 />
 
-# Customer sentiment distribution (2022-2023) 
+**Customer sentiment distribution (2022-2023)**
 ```sql sum_by_polarity
 SELECT
   Category,
@@ -110,7 +110,7 @@ GROUP BY
     <Column id="Positive" title="Positive" contentType=colorscale scaleColor=green/>
 </DataTable>
 
-## Number of customers with NEGATIVE experiences (2022-2023)
+**Number of customers with NEGATIVE experiences (2022-2023)**
 ```sql negative_reviews_2022
 -- For the year 2022
 SELECT
@@ -182,7 +182,7 @@ GROUP BY
   </div>
 </div>
 
-## Number of customers with POSITIVE experiences (2022-2023)
+**Number of customers with POSITIVE experiences (2022-2023)**
 ```sql positive_reviews_2022
 -- For the year 2022
 SELECT

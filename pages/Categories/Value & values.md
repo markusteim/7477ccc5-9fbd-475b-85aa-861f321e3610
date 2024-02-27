@@ -1,10 +1,10 @@
-# Summary
+**Summary**
 
 Overall sentiment leans heavily towards the positive, with approximately 78% of guests expressing satisfaction with the non-material values and value for money of the hotel. Positive reviews: 78; Negative reviews: 22; Neutral reviews: 0;
 
 
 
-### Positive:
+**Positive:**
 
 1. Ethical Upgrades: Guests appreciated complimentary services like free shuttle, water, and room upgrades without extra costs.
 2. Value for Money: Many found the hotel to offer exceptional value, with reasonable pricing and deals that exceeded expectations.
@@ -12,21 +12,21 @@ Overall sentiment leans heavily towards the positive, with approximately 78% of 
 4. Language Proficiency: The multilingual communication skills of the staff were noted as a positive aspect, enhancing guest experiences.
 5. Staff Dedication: The hardworking nature of the staff was recognized, contributing to the overall positive atmosphere of the hotel.
 
-### Negative:
+**Negative:**
 1. Financial Transparency: Some guests experienced issues with overcharging and billing disputes, feeling the pricing was not transparent.
 2. Restrictive Policies: There were complaints about hotel policies, such as restrictions on food delivery services and photography.
 3. Service Inconsistencies: A few guests mentioned staffing challenges and unmet expectations regarding hotel services and taxi arrangements.
 4. Construction Annoyances: Ongoing construction and lack of upfront information about it caused inconvenience for some guests.
 5. Room Problems: Instances of room allocation issues, including being moved to an unsatisfactory room, were a source of frustration.
 
-### Most positive examples:
+**Most positive examples:**
 1. "amazing facility great location and value for money"
 2. "best located hotel for its price"
 3. "brilliant value for money trip"
 4. "definitely worth it"
 5. "true value for money what you pay"
 
-### Most negative examples:
+**Most negative examples:**
 1. "feeling fooled by the system algorithm"
 2. "if i wanted to have it cleaned i wouldn't put dnd"
 3. "they want you to use their taxis that charge double the rate"
@@ -96,9 +96,9 @@ ORDER BY
 <br>
 
 
-# Headlines and corresponding snippets from reviews
+**Headlines and corresponding snippets from reviews**
 
-### Positive Headlines
+**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
