@@ -1,129 +1,252 @@
+---
+title: Overview 2022-2023
+---
 
 
-<!-- 
---  
--- <LineChart
---   data={orders_by_month}
---   y=sales
---   yFmt=usd0k
---   title = "Sales by Month, USD"
--- />
+ ```sql titles
+ select * from hotels.titles 
+ WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+ ```
+<!--  -->
 
--- ## Write in Markdown
+# Summary
 
--- Evidence renders markdown files into web pages. This page is:
--- `[project]/pages/index.md`.
-
--- ## Run SQL using Code Fences
-
--- ```sql orders_by_month
--- select
---   date_trunc('month', order_datetime) as order_month,
---   count(*) as number_of_orders,
---   sum(sales) as sales,
---   sum(sales)/count(*) as average_order_value
--- from orders
--- where order_datetime >= '2020-01-01'
--- group by 1 order by 1 desc
--- ```
-
--- In your markdown file, you can include SQL queries in code fences. Evidence will run these queries through your database and return the results to the page.
-
--- <Alert status=info>  
--- To see the queries on a page, click the 3-dot menu at the top right of the page and Show Queries. You can see both the SQL and the query results by interacting with the query above.
--- </Alert>
-
--- ## Visualize Data with Components
-
--- ### Value in Text
-
--- Last month customers placed **<Value data={orders_by_month} column=number_of_orders/>** orders. The AOV was **<Value data={orders_by_month} column=average_order_value fmt=usd2/>**.
-
--- ### Big Value 
--- <BigValue data={orders_by_month} value=sales fmt=usd0/>
--- <BigValue data={orders_by_month} value=number_of_orders />
+#### Across the 13 categories, hotel guests generally shared more positive experiences than negative ones. The overall sentiment was heavily skewed towards satisfaction, with an estimated 76.8% positive feedback compared to 8.1% negative and 15.2% neutral. Out of the total comments, 1,797 were positive, 189 were negative and 355 were neutral. The distribution of comments across categories was as follows: 
+1. Welcome & Valued (23.73%), 
+2. Impression (21.17%)
+3. Comfort & clean (14.81%)
+4. Taste (12.65%) 
+5. Fun & stress-free (9.54%)
+6. Aesthetic appreciation (8.89%)
+7. Well-being (3.69%)
+8. Value & values (2.56%)
+9. Sound (1.09)
+10. Safety (0.93%)
+11. Smell (0.23%)
+12. Visual (0.21%)
 
 
--- ### Bar Chart
+```
+WITH CategoryCounts AS (
+    SELECT
+        TRIM(Category) AS CleanCategory,
+        COUNT(DISTINCT review_id) AS category_count
+    FROM
+        titles
+    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    GROUP BY
+        TRIM(Category)
+),
+TotalReviews AS (
+    SELECT
+        SUM(category_count) AS total
+    FROM
+        CategoryCounts
+)
+SELECT
+    a.CleanCategory AS Category,
+    a.category_count,
+    ROUND((a.category_count * 100.0) / b.total, 2) AS percentage
+FROM
+    CategoryCounts a, TotalReviews b
+ORDER BY percentage DESC
+```
 
--- <BarChart 
---   data={orders_by_month} 
---   x=order_month
---   y=number_of_orders 
---   fillColor="#488f96"
--- >
---   <ReferenceArea xMin="2020-03-15" xMax="2021-05-15" label="COVID Impacted" color=red/>
--- </BarChart>
+```sql sum_by_category
+SELECT
+    TRIM(LOWER(Category)) AS category_name,
+    SUM(CAST(value AS INTEGER)) AS category_value_sum,
+    polarity
+FROM
+    hotels.titles
+WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+GROUP BY
+    TRIM(LOWER(Category)),
+    polarity
+ORDER BY
+    category_value_sum DESC
+```
 
--- > **Try:** Change the chart to a `<LineChart>`.
+<BarChart 
+    data={sum_by_category} 
+    swapXY=true 
+    x=category_name 
+    y=category_value_sum 
+    series=polarity
+    sort=false
+    colorPalette={
+        [
+        '#3D9970',  // A shade of dark green
+        '#2ECC40',      // A shade of bright green
+        '#AAAAAA',       // A shade of grey
+        '#FF4136',      // A shade of red
+        '#85144B'  // A shade of dark red
+        ]
+    }
+/>
 
--- ### Data Table
+# Customer sentiment distribution (2022-2023) 
+```sql sum_by_polarity
+SELECT
+  Category,
+  COUNT(DISTINCT CASE WHEN polarity IN ('negative', 'very negative') THEN review_id ELSE NULL END) AS Negative,
+  COUNT(DISTINCT CASE WHEN polarity = 'neutral' THEN review_id ELSE NULL END) AS Neutral,
+  COUNT(DISTINCT CASE WHEN polarity IN ('positive', 'very positive') THEN review_id ELSE NULL END) AS Positive
+FROM
+  titles
+WHERE
+  travel_date BETWEEN '2022-01-01' AND '2023-12-31'
+GROUP BY
+  Category
 
--- <DataTable data={orders_by_month} rows=6/>
+```
 
--- > **More:** See [all components](https://docs.evidence.dev/components/all-components)
+<DataTable data={sum_by_polarity} rows={12}>
+    <Column id="Category" title="Category" />
+    <Column id="Negative" title="Negative" contentType=colorscale scaleColor=red/>
+    <Column id="Neutral" title="Neutral" contentType=colorscale scaleColor=grey/>
+    <Column id="Positive" title="Positive" contentType=colorscale scaleColor=green/>
+</DataTable>
 
--- ## Add Interactive Features
+## Number of customers with NEGATIVE experiences (2022-2023)
+```sql negative_reviews_2022
+-- For the year 2022
+SELECT
+  Category,
+  COUNT(DISTINCT CASE WHEN polarity IN ('negative', 'very negative') THEN review_id ELSE NULL END) AS negative_count,
+  polarity
+FROM
+  titles
+WHERE
+  travel_date BETWEEN '2022-01-01' AND '2022-12-31'AND
+  polarity in ('negative', 'very negative')
+GROUP BY
+  Category,
+  polarity
+```
 
--- The latest version of Evidence includes features that allow you to easily create interactive data visualizations.
+```sql negative_reviews_2023
+SELECT
+  Category,
+  COUNT(DISTINCT CASE WHEN polarity IN ('negative', 'very negative') THEN review_id ELSE NULL END) AS negative_count,
+  polarity
+FROM
+  titles
+WHERE
+  travel_date BETWEEN '2023-01-01' AND '2023-12-31'AND
+  polarity in ('negative', 'very negative')
+GROUP BY
+  Category,
+  polarity
+```
 
--- ### Chart with Filter 
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 50%;">
+    <!-- Table for 2022 -->
+    <BarChart 
+        data={negative_reviews_2022} 
+        swapXY=true 
+        x=Category
+        y=negative_count 
+        series=polarity
+        sort=false
+        title=2022
+        colorPalette={
+        [
+        '#FF4136',      // A shade of red
+        '#85144B'  // A shade of dark red
+        ]
+    }
+    />
+  </div>
+  <div style="width: 50%;">
+    <!-- Table for 2023 -->
+    <BarChart 
+        data={negative_reviews_2023} 
+        swapXY=true 
+        x=Category
+        y=negative_count 
+        series=polarity
+        sort=false
+        title=2023
+        colorPalette={
+        [
+        '#FF4136',      // A shade of red
+        '#85144B'  // A shade of dark red
+        ]
+    }
+        
+    />
+  </div>
+</div>
 
--- ```sql categories
--- select
---     category
--- from orders
--- group by category
--- ```
+## Number of customers with POSITIVE experiences (2022-2023)
+```sql positive_reviews_2022
+-- For the year 2022
+SELECT
+  Category,
+  COUNT(DISTINCT CASE WHEN polarity IN ('positive', 'very positive') THEN review_id ELSE NULL END) AS positive_count,
+  polarity
+FROM
+  titles
+WHERE
+  travel_date BETWEEN '2022-01-01' AND '2022-12-31'AND
+  polarity in ('positive', 'very positive')
+GROUP BY
+  Category,
+  polarity
+```
 
--- <Dropdown data={categories} name=category value=category>
---     <DropdownOption value="%" valueLabel="All Categories"/>
--- </Dropdown>
+```sql positive_reviews_2023
+SELECT
+  Category,
+  COUNT(DISTINCT CASE WHEN polarity IN ('positive', 'very positive') THEN review_id ELSE NULL END) AS positive_count,
+  polarity
+FROM
+  titles
+WHERE
+  travel_date BETWEEN '2023-01-01' AND '2023-12-31'AND
+  polarity in ('positive', 'very positive')
+GROUP BY
+  Category,
+  polarity
+```
 
--- <Dropdown name=year>
---     <DropdownOption value=% valueLabel="All Years"/>
---     <DropdownOption value=2019/>
---     <DropdownOption value=2020/>
---     <DropdownOption value=2021/>
--- </Dropdown>
-
--- ```sql orders_by_category
--- select 
---     date_trunc('month', order_datetime) as month,
---     sum(sales) as sales_usd,
---     category
--- from orders
--- where category like '${inputs.category}'
--- and date_part('year', order_datetime) like '${inputs.year}'
--- group by all
--- order by sales_usd desc
--- ```
-
--- <BarChart
---     data={orders_by_category}
---     title="Sales by Month, {inputs.category}"
---     x=month
---     y=sales_usd
---     series=category
--- />
-
-
-
-
--- # Share with Evidence Cloud
-
--- Evidence Cloud is the easiest way to securely share your project. 
-
--- - Get your project online
--- - Authenticate users
--- - Schedule data refreshes
-
--- <BigLink href='https://du3tapwtcbi.typeform.com/waitlist?utm_source=template&typeform-source=template'>Deploy to Evidence Cloud &rarr;</BigLink>
-
--- You can use Netlify, Vercel or another static hosting provider to [self-host Evidence](https://docs.evidence.dev/deployment/overview).
-
--- # Get Support
-
--- - Message us on [Slack](https://slack.evidence.dev/)
--- - Read the [Docs](https://docs.evidence.dev/)
--- - Open an issue on [Github](https://github.com/evidence-dev/evidence) --> -->
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 50%;">
+    <!-- Table for 2022 -->
+    <BarChart 
+        data={positive_reviews_2022} 
+        swapXY=true 
+        x=Category
+        y=positive_count 
+        series=polarity
+        sort=false
+        title=2022
+        colorPalette={
+        [
+        '#3D9970',  // A shade of dark green
+        '#2ECC40',      // A shade of bright green
+        ]
+    }
+    />
+  </div>
+  <div style="width: 50%;">
+    <!-- Table for 2023 -->
+    <BarChart 
+        data={positive_reviews_2023} 
+        swapXY=true 
+        x=Category
+        y=positive_count 
+        series=polarity
+        sort=false
+        title=2023
+        colorPalette={
+        [
+        '#3D9970',  // A shade of dark green
+        '#2ECC40',      // A shade of bright green
+        ]
+    }
+    />
+  </div>
+</div>

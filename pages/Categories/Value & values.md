@@ -32,7 +32,6 @@ title: Value & values, 2022-2023
 2. "if i wanted to have it cleaned i wouldn't put dnd"
 3. "they want you to use their taxis that charge double the rate"
 4. "refused to honor their original pricing"
-5. "the other room was infested with ants"
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (

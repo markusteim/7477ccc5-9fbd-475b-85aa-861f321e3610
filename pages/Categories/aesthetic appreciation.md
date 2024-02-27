@@ -3,7 +3,8 @@ title: Aesthetic appreciation, 2022-2023
 ---
 
 # Summary
-### Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
+### Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. 
+### Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
 
  
 
