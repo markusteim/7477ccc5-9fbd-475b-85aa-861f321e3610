@@ -1,11 +1,7 @@
----
-title: Welcome & valued, 2022-2023
----
-
 # Summary
-### Overall sentiment regarding care, respect, and being valued in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.
 
-<br>
+Overall sentiment regarding care, respect, and being valued in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.
+
 
 #### Positive:
 
@@ -30,6 +26,8 @@ transactions not being processed promptly.
 3. Inattentive Service: Some guests noted a lack of attentiveness in the restaurant, with slow service and
 orders being overlooked
 
+<br>
+
 #### Most Positive Examples:
 
 1. "Anjali is a superstar."
@@ -39,8 +37,6 @@ orders being overlooked
 5. "If you’re looking for somewhere affordable yet luxurious with excellent service, this is definitely the
 place for you."
 
- 
-
 #### Most Negative Examples:
 
 1. "Concierge was hesitant to assist us during several visits."
@@ -49,6 +45,7 @@ place for you."
 4. "Never actually doing anything to rectify the issues."
 5. "Changed the availability of early check-in to no longer available.
 
+<br>
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (
@@ -112,11 +109,11 @@ ORDER BY
 />
 
 
-
+<br>
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+### Positive Headlines
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -129,7 +126,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -142,7 +139,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Headlines
+### Neutral Headlines
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -155,7 +152,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -168,7 +165,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -181,7 +178,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -194,8 +191,9 @@ ORDER BY Snippet ASC
 
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 
+<br>
 
-## Customer sentiment distribution (2022-2023)
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 SELECT

@@ -1,6 +1,4 @@
----
-title: Sleep, 2022-2023
----
+# Summary
 
 ```sql sum_by_category
 SELECT
@@ -44,10 +42,11 @@ ORDER BY
     }
 />
 
+<br>
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+### Positive Headlines
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -69,7 +68,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -89,9 +88,11 @@ AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Snippet ASC
 ```
 
+<br>
+
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Headlines
+### Neutral Headlines
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -113,7 +114,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -135,7 +136,9 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+<br>
+
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -157,7 +160,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -178,11 +181,8 @@ ORDER BY Snippet ASC
 ```
 
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
-```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
-
-## Customer sentiment distribution (2022-2023)
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 SELECT

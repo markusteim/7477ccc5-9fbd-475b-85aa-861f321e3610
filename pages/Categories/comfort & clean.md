@@ -1,9 +1,7 @@
----
-title: Comfort & clean, 2022-2023
----
 
 # Summary
-### Comfort and cleanliness in hotels are pivotal for guest satisfaction. The reviews suggest a predominantly positive sentiment, with approximately 93.42% of guests expressing contentment with their experiences. Positive reviews: 497; Negative reviews: 24; Neutral reviews: 11.
+
+Comfort and cleanliness in hotels are pivotal for guest satisfaction. The reviews suggest a predominantly positive sentiment, with approximately 93.42% of guests expressing contentment with their experiences. Positive reviews: 497; Negative reviews: 24; Neutral reviews: 11.
 
  
 
@@ -33,6 +31,8 @@ lack of towel dryers.
 5. Safety Hazards: One guest mentioned slipping on a hard marble floor, indicating a potential safety
 concern.
 
+<br>
+
 #### Most Positive Examples:
 
 1. "bed and bedding were of the highest quality"
@@ -51,6 +51,7 @@ concern.
 4. "water leaking through the shower door"
 5. "i flipped once on a hard marble floor"
 
+<br>
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (
@@ -113,11 +114,13 @@ ORDER BY
     }
 />
 
-
+<br>
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+<br>
+
+### Positive Headlines
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -130,7 +133,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -143,7 +146,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Headlines
+### Neutral Headlines
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -156,7 +159,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -169,7 +172,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -182,7 +185,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -195,7 +198,9 @@ ORDER BY Snippet ASC
 
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 
-## Customer sentiment distribution (2022-2023)
+<br>
+
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 SELECT

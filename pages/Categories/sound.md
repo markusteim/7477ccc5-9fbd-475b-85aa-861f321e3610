@@ -1,9 +1,7 @@
----
-title: Sound, 2022-2023
----
 
 # Summary
-### Sound experiences in hotels often make or break a guest's stay. In this case, the sentiment leans positively, with  45.95% of guests enjoying sound-related aspects, while 45.94% faced disturbances. Positive reviews numbered 17, while negative feedback came from 17 individuals and neutral feedback came from 3 individuals.
+
+Sound experiences in hotels often make or break a guest's stay. In this case, the sentiment leans positively, with  45.95% of guests enjoying sound-related aspects, while 45.94% faced disturbances. Positive reviews numbered 17, while negative feedback came from 17 individuals and neutral feedback came from 3 individuals.
 
  
 
@@ -32,6 +30,8 @@ adjacent rooms.
 4. Unwanted Wake-ups: Early morning construction and inadequate curtains led to guests being woken
 up too early.
 
+<br>
+
 #### Most Positive Examples:
 
 1. "windows faced the road but they were soundproof"
@@ -41,7 +41,6 @@ up too early.
 5. "noiseless no disturbances"
 
  
-
 #### Most Negative Examples:
 
 1. "construction noise from the building next door"
@@ -50,6 +49,7 @@ up too early.
 4. "outside noise"
 5. "rooms are not as quiet"
 
+<br>
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (
@@ -112,12 +112,12 @@ ORDER BY
     }
 />
 
-
+<br>
 
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+### Positive Headlines
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -130,7 +130,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -143,7 +143,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Headlines
+### Neutral Headlines
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -156,7 +156,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -169,7 +169,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -182,7 +182,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -196,7 +196,7 @@ ORDER BY Snippet ASC
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 
 
-## Customer sentiment distribution (2022-2023)
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 SELECT

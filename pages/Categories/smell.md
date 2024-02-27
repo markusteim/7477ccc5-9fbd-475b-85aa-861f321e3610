@@ -1,11 +1,7 @@
----
-title: Smell, 2022-2023
----
-
 # Summary
-### Overall, the sentiment regarding smells in the hotel leans more towards the positive, with 66.7% of comments reflecting good experiences with scents. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 0.
 
- 
+Overall, the sentiment regarding smells in the hotel leans more towards the positive, with 66.7% of comments reflecting good experiences with scents. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 0.
+
 
 #### Positive:
 
@@ -21,6 +17,8 @@ though the context is unclear.
 1. Kitchen Odors: One guest warned about the room connected to the kitchen, implying a less than
 pleasant olfactory experience.
 
+<br>
+
 #### Most Positive Examples:
 
 1. "even the lovely mint shampoo"
@@ -33,6 +31,9 @@ pleasant olfactory experience.
 
 1. "if u consider staying in the room that is connected with the kitchen, be aware of this"
 2. "it was not pleasant at all"
+
+
+<br>
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (
@@ -95,12 +96,12 @@ ORDER BY
     }
 />
 
-
+<br>
 
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+### Positive Headlines
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -113,7 +114,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -139,7 +140,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -152,7 +153,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -165,7 +166,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles

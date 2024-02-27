@@ -1,10 +1,11 @@
----
-title: Aesthetic appreciation, 2022-2023
----
 
-# Summary
-### Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. 
-### Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
+
+
+
+# Summary 
+
+Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. 
+Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
 
  
 
@@ -34,6 +35,8 @@ promised views of landmarks or the sea.
 5. Comparative Disadvantages: A sense of the hotel not living up to the standards of neighboring
 properties was noted, with some guests feeling it lacked the same level of luxury or view quality.
 
+<br>
+
 #### Most Positive Examples:
 
 1. "balcony's panoramic view was simply stunning"
@@ -52,6 +55,7 @@ properties was noted, with some guests feeling it lacked the same level of luxur
 4. "pool looks out into what looks like a war zone"
 5. "you cannot see the palm all the what you see is just a street"
 
+<br>
 
 ```sql polarity_proportions
 WITH CategoryCounts AS (
@@ -116,11 +120,14 @@ ORDER BY
 
 
 
-
+<br>
 
 # Headlines and corresponding snippets from reviews
 
-## Positive Headlines
+<br>
+
+### Positive Headlines
+
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -133,7 +140,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-## Positive Snippets
+### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -146,7 +153,7 @@ ORDER BY Snippet ASC
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Headlines
+### Neutral Headlines
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -159,7 +166,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-## Neutral Snippets
+### Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -172,7 +179,8 @@ ORDER BY Snippet ASC
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Headlines
+
+### Negative Headlines
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -185,7 +193,8 @@ ORDER BY Count DESC
 ```
 <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-## Negative Snippets
+
+### Negative Snippets
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -199,8 +208,9 @@ ORDER BY Snippet ASC
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 
 
+<br>
 
-## Customer sentiment distribution (2022-2023)
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 SELECT

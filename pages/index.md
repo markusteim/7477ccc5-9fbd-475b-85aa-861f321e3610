@@ -9,9 +9,11 @@ title: Overview 2022-2023
  ```
 <!--  -->
 
-# Summary
+## Summary
 
-#### Across the 13 categories, hotel guests generally shared more positive experiences than negative ones. The overall sentiment was heavily skewed towards satisfaction, with an estimated 76.8% positive feedback compared to 8.1% negative and 15.2% neutral. Out of the total comments, 1,797 were positive, 189 were negative and 355 were neutral. The distribution of comments across categories was as follows: 
+Across the 12 categories, hotel guests generally shared more positive experiences than negative ones. The overall sentiment was heavily skewed towards satisfaction, with an estimated 76.8% positive feedback compared to 8.1% negative and 15.2% neutral. Out of the total comments, 1,797 were positive, 189 were negative and 355 were neutral. The distribution of comments across categories was as follows: 
+
+
 1. Welcome & Valued (23.73%), 
 2. Impression (21.17%)
 3. Comfort & clean (14.81%)
@@ -26,7 +28,7 @@ title: Overview 2022-2023
 12. Visual (0.21%)
 
 
-```
+```sql category_propositions
 WITH CategoryCounts AS (
     SELECT
         TRIM(Category) AS CleanCategory,
