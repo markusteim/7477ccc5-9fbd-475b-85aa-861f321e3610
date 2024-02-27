@@ -1,4 +1,8 @@
 
+<script>
+  import noindex from '/Users/markusteimann/Desktop/report 2/components/noindex.svelte';
+</script>
+
 **Overview 2022-2023**
 
  ```sql titles

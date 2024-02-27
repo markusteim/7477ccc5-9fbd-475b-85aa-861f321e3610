@@ -1,4 +1,6 @@
-
+<script>
+  import noindex from '/Users/markusteimann/Desktop/report 2/components/noindex.svelte';
+</script>
 
 **Customer Journey Profile for Avani Palm View Dubai Hotel & Suites**
 
