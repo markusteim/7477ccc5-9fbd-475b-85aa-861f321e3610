@@ -44,13 +44,14 @@ ORDER BY
     }
 />
 
-# Snippets from reviews
 
-## Positive Snippets
-```sql positive_snippets
-SELECT Headline, Snippet, polarity
+# Headlines and corresponding snippets from reviews
+
+## Positive Headlines
+```sql positive_headlines
+SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE (polarity = 'positive' OR polarity = 'very positive')
+WHERE polarity = 'positive' OR polarity = 'very positive'
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
@@ -63,18 +64,38 @@ AND (
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
-ORDER BY Headline ASC
+GROUP BY Headline
+ORDER BY Count DESC
+```
+<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
+## Positive Snippets
+```sql positive_snippets
+SELECT Snippet
+FROM hotels.titles
+WHERE polarity = 'positive' OR polarity = 'very positive'
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
+AND Snippet NOT LIKE '%bedroom%'
+AND Snippet NOT LIKE '%bed apartment%'
+ORDER BY Snippet ASC
 ```
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-## Neutral Snippets
-
-```sql neutral_snippets
-SELECT Headline, Snippet, polarity
+## Neutral Headlines
+```sql neutral_headlines
+SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE (polarity = 'neutral')
+WHERE polarity = 'neutral'
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
@@ -87,18 +108,38 @@ AND (
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
-ORDER BY Headline ASC
+GROUP BY Headline
+ORDER BY Count DESC
+```
+<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
+## Neutral Snippets
+```sql neutral_snippets
+SELECT Snippet
+FROM hotels.titles
+WHERE polarity = 'neutral'
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
+AND Snippet NOT LIKE '%bedroom%'
+AND Snippet NOT LIKE '%bed apartment%'
+ORDER BY Snippet ASC
 ```
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
 
-## Negative Snippets
-
-```sql negative_snippets
-SELECT Headline, Snippet, polarity
+## Negative Headlines
+```sql negative_headlines
+SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE (polarity = 'negative' OR polarity = 'very negative')
+WHERE polarity = 'negative' or polarity = 'very negative'
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
@@ -111,8 +152,32 @@ AND (
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
-ORDER BY Headline ASC
+GROUP BY Headline
+ORDER BY Count DESC
+```
+<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
+## Negative Snippets
+```sql negative_snippets
+SELECT Snippet
+FROM hotels.titles
+WHERE polarity = 'negative' or polarity = 'very negative'
+AND travel_date >= '2022-01-01' 
+AND travel_date <= '2023-12-31'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
+AND Snippet NOT LIKE '%bedroom%'
+AND Snippet NOT LIKE '%bed apartment%'
+ORDER BY Snippet ASC
+```
+
+<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
 ```
 
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
