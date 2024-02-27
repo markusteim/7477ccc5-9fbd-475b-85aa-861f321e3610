@@ -26,7 +26,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - Guests appreciate the efficient and smooth check-in process.
 
@@ -36,7 +36,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - Some guests mention delays or confusion during check-in.
 
@@ -48,7 +48,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - Rooms are described as spacious, clean, and well-equipped.
 
@@ -58,7 +58,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - A few guests report issues with room amenities, such as weak air conditioning or lighting.
 
@@ -70,7 +70,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - The hotel's gym and pool facilities receive high marks for maintenance and availability.
 
@@ -78,7 +78,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - Limited entertainment options within walking distance are occasionally mentioned.
 
@@ -90,7 +90,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - Guests enjoy the ambiance and dining experiences at the hotel's restaurants.
 
@@ -98,7 +98,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - A few guests express a desire for more on-site evening activities.
 
@@ -108,7 +108,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - The variety and quality of food at the breakfast buffet are frequently praised.
 
@@ -116,7 +116,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - Some guests feel that the food could be improved in terms of variety, especially for vegetarians or those with dietary restrictions.
 
@@ -126,7 +126,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Positive Snippets:**
+**Positive:**
 
 - The check-out process is generally described as quick and hassle-free.
 
@@ -134,7 +134,7 @@ The general sentiment across all phases of the customer journey at Avani Palm Vi
 
  
 
-**Negative Snippets:**
+**Negative:**
 
 - Rare comments about billing discrepancies or delays during check-out.
 
