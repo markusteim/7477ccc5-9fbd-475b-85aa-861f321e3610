@@ -1,5 +1,5 @@
 ---
-title: Well-being, 2022-2023
+title: Well-Being, 2022-2023
 ---
 
 # Summary
@@ -90,27 +90,24 @@ AND TRIM(Category) = 'well-being'
 GROUP BY
     TRIM(LOWER(Category)),
     polarity
-ORDER BY
-    Polarity_sum DESC
-```
 
+```
 <BarChart 
     data={sum_by_polarity} 
-    swapXY=false
-    x=Polarity
-    y=Polarity_sum 
-    series=Polarity
-    sort=false
-    colorPalette={
-        [
+    swapXY={false}
+    x="Polarity"
+    y="Polarity_sum" 
+    series="Polarity"
+    colorPalette={[
         '#3D9970',  // A shade of dark green
-        '#2ECC40',      // A shade of bright green
-        '#AAAAAA',       // A shade of grey
-        '#FF4136',      // A shade of red
-        '#85144B'  // A shade of dark red
-        ]
-    }
+        '#2ECC40',  // A shade of bright green
+        '#AAAAAA',  // A shade of grey
+        '#FF4136',  // A shade of red
+        '#8b0000'   // A shade of dark red
+    ]}
 />
+
+
 
 
 

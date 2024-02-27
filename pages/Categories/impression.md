@@ -33,11 +33,11 @@ meeting all expectations.
 
 #### Most Positive Examples:
 
-1. "Avani hotel one of my best accommodations in Dubai."
-2. "Maheender and Meena did a great job, thanks a lot for these beautiful days."
+1. "Everything was flawlessly organized"
+2. "Deeply moved"
 3. "Perfect place to spend holidays."
-4. "Spent 3 remarkable days."
-5. "They were just amazing."
+4. "Farewelling us at our taxi"
+5. "Only regret was that didn’t stay longer"
 
  
 

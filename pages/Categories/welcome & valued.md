@@ -3,9 +3,9 @@ title: Welcome & valued, 2022-2023
 ---
 
 # Summary
-### Overall sentiment regarding care, respect, and value in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.
+### Overall sentiment regarding care, respect, and being valued in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.
 
- 
+<br>
 
 #### Positive:
 

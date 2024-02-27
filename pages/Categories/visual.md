@@ -3,9 +3,10 @@ title: Visual, 2022-2023
 ---
 
 # Summary
-### Overall, the sentiment regarding lighting and visibility in the hotel is split between positive and negative, with 40% of the feedback being positive and 40% being negative. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 1.
+### Overall, the sentiment regarding lighting and visibility in the hotel is split between positive and negative, with 40% of the feedback being positive and 40% being negative. 
+### Positive reviews: 2; Negative reviews: 2; Neutral reviews: 1.
 
- 
+ <br>
 
 #### Positive:
 
@@ -21,6 +22,8 @@ uncovered, allowing light to seep in during the morning.
 2. Room Brightness: There was a suggestion to improve and increase the brightness in the rooms,
 indicating some dissatisfaction with the current lighting situation.
 
+<br>
+
 #### Most Positive Examples:
 
 1. "left it shining"
@@ -35,11 +38,6 @@ indicating some dissatisfaction with the current lighting situation.
 2. "significant light still coming in the morning"
 3. "it will be better if you improve and increase brightness of rooms"
 
- 
-
-#### Most Negative Examples:
-
-1.  "relatively isolated location"
 
 
 ```sql polarity_proportions

@@ -48,21 +48,23 @@ ORDER BY
 
 ## Positive Snippets
 ```sql positive_snippets
-SELECT Headline, Snippet
+SELECT Headline, Snippet, polarity
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'well-being'
-AND (polarity = 'positive' OR polarity = 'very positive')
+WHERE (polarity = 'positive' OR polarity = 'very positive')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
-AND Snippet LIKE '%bed%'
-OR Snippet LIKE '%sleep%'
-OR Snippet LIKE '%pillow%'
-OR Snippet LIKE '%blanket%'
-OR Snippet LIKE '%mattress%'
-OR Snippet LIKE '%sheets%'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Headline ASC
+
 ```
 
 <DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
@@ -70,21 +72,23 @@ ORDER BY Headline ASC
 ## Neutral Snippets
 
 ```sql neutral_snippets
-SELECT Headline, Snippet
+SELECT Headline, Snippet, polarity
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'well-being'
-AND (polarity = 'neutral')
+WHERE (polarity = 'neutral')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
-AND Snippet LIKE '%bed%'
-OR Snippet LIKE '%sleep%'
-OR Snippet LIKE '%pillow%'
-OR Snippet LIKE '%blanket%'
-OR Snippet LIKE '%mattress%'
-OR Snippet LIKE '%sheets%'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Headline ASC
+
 ```
 
 <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
@@ -92,21 +96,23 @@ ORDER BY Headline ASC
 ## Negative Snippets
 
 ```sql negative_snippets
-SELECT Headline, Snippet
+SELECT Headline, Snippet, polarity
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'well-being'
-AND (polarity = 'negative' OR polarity = 'very negative')
+WHERE (polarity = 'negative' OR polarity = 'very negative')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
-AND Snippet LIKE '%bed%'
-OR Snippet LIKE '%sleep%'
-OR Snippet LIKE '%pillow%'
-OR Snippet LIKE '%blanket%'
-OR Snippet LIKE '%mattress%'
-OR Snippet LIKE '%sheets%'
+AND (
+    Snippet LIKE '%bed%'
+    OR Snippet LIKE '%sleep%'
+    OR Snippet LIKE '%pillow%'
+    OR Snippet LIKE '%blanket%'
+    OR Snippet LIKE '%mattress%'
+    OR Snippet LIKE '%sheets%'
+)
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Headline ASC
+
 ```
 
 <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
