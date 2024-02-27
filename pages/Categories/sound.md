@@ -1,5 +1,5 @@
 <script>
-  import noindex from '/Users/markusteimann/Desktop/report 2/components/noindex.svelte';
+  import noindex from '../../components/noindex.svelte';
 </script>
 
 
