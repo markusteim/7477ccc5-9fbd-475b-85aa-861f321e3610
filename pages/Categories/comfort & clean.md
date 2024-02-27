@@ -1,4 +1,8 @@
 
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Comfort and cleanliness in hotels are pivotal for guest satisfaction. The reviews suggest a predominantly positive sentiment, with approximately 93.42% of guests expressing contentment with their experiences. Positive reviews: 497; Negative reviews: 24; Neutral reviews: 11.

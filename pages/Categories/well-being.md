@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall Sentiment: The majority of reviews reflect a positive sentiment regarding physical and mental well-being, with approximately 89.38% positive experiences. Positive: 101, Negative: 18, Neutral 1.

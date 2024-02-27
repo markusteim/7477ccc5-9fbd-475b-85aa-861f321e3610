@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall sentiment leans heavily towards the positive, with approximately 78% of guests expressing satisfaction with the non-material values and value for money of the hotel. Positive reviews: 78; Negative reviews: 22; Neutral reviews: 0;

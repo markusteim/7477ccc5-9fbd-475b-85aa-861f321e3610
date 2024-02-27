@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall, the general impressions from hotel reviews reveal a predominantly positive sentiment, with guests expressing high levels of satisfaction, excitement, and intent to return. Approximately 80.9% of the feedback is positive, with 4.6% expressing some negative experiences and 17.6% expressed neutral expereiences. Positive reviews: 672; Negative reviews: 34; Neutral reviews: 152

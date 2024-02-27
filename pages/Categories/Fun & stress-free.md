@@ -1,3 +1,8 @@
+
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall sentiment: Positive experiences regarding fun & stress-free dominate, with 63.4% positive to 6.6% negative feedback. Positive reviews: 231; Negative reviews: 109; Neutral reviews: 109

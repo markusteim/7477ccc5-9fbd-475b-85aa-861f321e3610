@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall, the sentiment regarding safety in the hotel is overwhelmingly positive, with approximately 72.4% of the comments reflecting satisfaction. A total of 21 people gave positive reviews, while only 8 people expressing a negative concern.

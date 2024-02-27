@@ -1,3 +1,8 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
+
 **Summary**
 
 Overall sentiment regarding care, respect, and being valued in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.

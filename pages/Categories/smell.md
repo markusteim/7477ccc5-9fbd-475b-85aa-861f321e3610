@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall, the sentiment regarding smells in the hotel leans more towards the positive, with 66.7% of comments reflecting good experiences with scents. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 0.

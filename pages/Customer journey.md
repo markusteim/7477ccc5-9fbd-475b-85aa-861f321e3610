@@ -1,3 +1,8 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
+
 **Customer Journey Profile for Avani Palm View Dubai Hotel & Suites**
 
  

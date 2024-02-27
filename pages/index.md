@@ -1,7 +1,13 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 
 **Overview 2022-2023**
 
-
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
 
  ```sql titles
  select * from hotels.titles 

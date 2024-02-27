@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
+
 **Summary**
 
 Overall, the sentiment regarding lighting and visibility in the hotel is split between positive and negative, with 40% of the feedback being positive and 40% being negative. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 1.
