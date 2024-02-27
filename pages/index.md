@@ -1,6 +1,3 @@
-<script>
-  import noindex from '../../components/noindex.svelte';
-</script>
 
 **Overview 2022-2023**
 
