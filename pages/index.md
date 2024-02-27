@@ -1,5 +1,7 @@
 
-
+<svelte:head>
+  <meta name="robots" content="noindex">
+</svelte:head>
 
 **Overview 2022-2023**
 
