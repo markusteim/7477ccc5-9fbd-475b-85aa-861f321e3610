@@ -5,10 +5,6 @@
 
 **Overview 2022-2023**
 
-<svelte:head>
-  <meta name="robots" content="noindex">
-</svelte:head>
-
  ```sql titles
  select * from hotels.titles 
  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
