@@ -52,16 +52,16 @@ ORDER BY
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE polarity = 'positive' OR polarity = 'very positive'
+WHERE (polarity = 'positive' OR polarity = 'very positive')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
@@ -74,16 +74,16 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE polarity = 'positive' OR polarity = 'very positive'
+WHERE (polarity = 'positive' OR polarity = 'very positive')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
@@ -98,16 +98,16 @@ ORDER BY Snippet ASC
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE polarity = 'neutral'
+WHERE (polarity = 'neutral')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
@@ -124,12 +124,12 @@ WHERE polarity = 'neutral'
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
@@ -144,16 +144,16 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE polarity = 'negative' or polarity = 'very negative'
+WHERE (polarity = 'negative' or polarity = 'very negative')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'
@@ -166,16 +166,16 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE polarity = 'negative' or polarity = 'very negative'
+WHERE (polarity = 'negative' or polarity = 'very negative')
 AND travel_date >= '2022-01-01' 
 AND travel_date <= '2023-12-31'
 AND (
-    Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
 )
 AND Snippet NOT LIKE '%bedroom%'
 AND Snippet NOT LIKE '%bed apartment%'

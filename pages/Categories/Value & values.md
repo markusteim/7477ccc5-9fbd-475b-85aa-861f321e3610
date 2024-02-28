@@ -101,7 +101,6 @@ ORDER BY OrderIndex
         [
         "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
         ]
