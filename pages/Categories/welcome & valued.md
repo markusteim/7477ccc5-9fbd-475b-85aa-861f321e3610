@@ -210,19 +210,37 @@ ORDER BY Snippet ASC
 **Customer sentiment distribution (2022-2023)**
 
 ```sql sentiment_distribution
-SELECT
-  TRIM(LOWER(polarity)) AS Polarity,
-  Year,
-  COUNT(DISTINCT review_id) AS ReviewCount
-FROM
-  hotels.titles
-WHERE
-  travel_date BETWEEN '2022-01-01' AND '2023-12-31'
-  AND TRIM(LOWER(Category)) = 'welcome & valued'
-GROUP BY
-  Polarity,
-  Year
+WITH Polarity_Ordered AS (
+  SELECT
+    TRIM(LOWER(polarity)) AS Polarity,
+    Year, -- Extract the year from the travel_date
+    COUNT(DISTINCT review_id) AS ReviewCount, -- Count unique review IDs
+    CASE
+      WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
+      WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
+      WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 3
+      WHEN TRIM(LOWER(polarity)) = 'positive' THEN 4
+      WHEN TRIM(LOWER(polarity)) = 'very positive' THEN 5
+      ELSE 6 -- For any other case, if needed
+    END AS OrderIndex
+  FROM
+    hotels.titles
+  WHERE
+    travel_date BETWEEN '2022-01-01' AND '2023-12-31'
+    AND TRIM(LOWER(Category)) = 'welcome & valued' -- Change category as needed
+  GROUP BY
+    TRIM(LOWER(polarity)), 
+    Year
+)
 
+SELECT
+  Polarity,
+  Year,
+  ReviewCount
+FROM Polarity_Ordered
+ORDER BY
+  Year,
+  OrderIndex
 ```
 
 <BarChart 
@@ -232,4 +250,5 @@ GROUP BY
     series="Year" 
     groupBy="Year" 
     type="grouped"
+    sort=false
 />
