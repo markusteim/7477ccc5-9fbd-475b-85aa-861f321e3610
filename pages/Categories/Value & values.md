@@ -73,8 +73,7 @@ AND TRIM(Category) = 'value & values'
 GROUP BY
     TRIM(LOWER(Category)),
     polarity
-ORDER BY
-    Polarity_sum DESC
+
 ```
 
 <BarChart 
@@ -86,11 +85,12 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        '#3D9970',  // A shade of dark green
         '#2ECC40',      // A shade of bright green
-        '#AAAAAA',       // A shade of grey
         '#FF4136',      // A shade of red
-        '#85144B'  // A shade of dark red
+        '#85144B',  // A shade of dark red
+        '#3D9970',  // A shade of dark green
+        
+        
         ]
     }
 />
