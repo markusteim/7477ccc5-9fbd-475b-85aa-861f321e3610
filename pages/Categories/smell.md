@@ -126,7 +126,7 @@ ORDER BY Count DESC
 ```
 <DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**ositive Snippets**
+**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
