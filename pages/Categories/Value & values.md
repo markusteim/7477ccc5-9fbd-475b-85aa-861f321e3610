@@ -62,17 +62,31 @@ ORDER BY percentage DESC
 ```
 
 ```sql sum_by_polarity
-SELECT
+WITH Polarity_Ordered AS (
+  SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     COUNT(CAST(value AS INTEGER)) AS Polarity_sum,
-    polarity
-FROM
+    CASE
+      WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
+      WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
+      WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 3
+      WHEN TRIM(LOWER(polarity)) = 'positive' THEN 4
+      WHEN TRIM(LOWER(polarity)) = 'very positive' THEN 5
+      ELSE 6
+    END AS OrderIndex
+  FROM
     hotels.titles
-WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
-AND TRIM(Category) = 'value & values'
-GROUP BY
-    TRIM(LOWER(Category)),
-    polarity
+  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    AND TRIM(Category) = 'value & values'
+  GROUP BY
+    TRIM(LOWER(polarity))
+)
+
+SELECT
+  Polarity,
+  Polarity_sum
+FROM Polarity_Ordered
+ORDER BY OrderIndex
 
 ```
 
@@ -85,12 +99,11 @@ GROUP BY
     sort=false
     colorPalette={
         [
-        '#2ECC40',      // A shade of bright green
-        '#FF4136',      // A shade of red
-        '#85144B',  // A shade of dark red
-        '#3D9970',  // A shade of dark green
-        
-        
+        "#85144B", // A shade of dark red
+        "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
+        "#2ECC40", // A shade of bright green
+        "#3D9970"  // A shade of dark green
         ]
     }
 />
