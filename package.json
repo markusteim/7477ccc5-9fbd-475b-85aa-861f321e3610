@@ -27,7 +27,8 @@
     "@evidence-dev/snowflake": "^1.0.3",
     "@evidence-dev/sqlite": "^2.0.3",
     "@evidence-dev/trino": "^1.0.4",
-    "foundation-sites": "^6.8.1"
+    "foundation-sites": "^6.8.1",
+    "tailwindcss": "^3.4.1"
   },
   "overrides": {
     "jsonwebtoken": "9.0.0",
