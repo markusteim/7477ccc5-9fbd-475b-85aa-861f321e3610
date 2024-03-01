@@ -1,3 +1,4 @@
+
 # Introduction
 
 The Avani Palm View Dubai Hotel &amp; Suites offers a unique blend of comfort, style, and convenience, catering to
@@ -35,7 +36,10 @@ outweigh the negatives, setting a tone of high guest approval for the hotel prop
 
 <br>
 
-# Negative Factors
+
+
+<Tabs>
+    <Tab label="Negative Factors">
 
 <Accordion>
   <AccordionItem title="1. Accessibility & distance">
@@ -417,11 +421,9 @@ maintain a positive last impression.</li>
 
   </AccordionItem>
 </Accordion>
-
-<br>
-
-# Positive Factors:
-
+    </Tab>
+    <Tab label="Positive Factors">
+        
 <Accordion>
   <AccordionItem title="1. Arrival">
     <p>
@@ -861,3 +863,6 @@ future stay to leave a lasting positive impression.</li>
 </Accordion>
 
 
+
+    </Tab>
+</Tabs>
