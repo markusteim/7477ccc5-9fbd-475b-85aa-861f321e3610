@@ -11,10 +11,23 @@ Wellness and fitness experiences have also contributed positively to the guests'
 While there have been a few negative comments regarding noise from nearby construction and the bar, as well as some service issues, these do not seem to overshadow the overall positive sentiment. The hotel's staff has been commended for their friendliness and professionalism, enhancing the guests' experience.
 
 In summary, the overwhelming sense of sentiment from guests at W Dubai Mina Seyahi is positive, with the hotel's luxury, service, and amenities providing a memorable and enjoyable stay for most visitors.
+<Tabs id="my-colored-tabs" color="RGB(155, 155, 0)">
+    <Tab label="Tab 1">
+        This is the content of Tab 1.
+    </Tab>
+</Tabs>
 
+<Tabs id="my-colored-tabs" color="RGB(255, 155, 0)">
+    <Tab label="Tab 1">
+        This is the content of Tab 1.
+    </Tab>
+</Tabs>
 
 <Tabs>
-    <Tab label="Negative Factors">
+    <Tab 
+    label="Negative Factors"
+    style="--bgColor: rgba(255, 0, 0, 0.1);"
+    >
         
 <Accordion>
   <AccordionItem title="1. Accessibility & distance">

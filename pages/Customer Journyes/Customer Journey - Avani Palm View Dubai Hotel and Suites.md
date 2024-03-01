@@ -38,8 +38,8 @@ outweigh the negatives, setting a tone of high guest approval for the hotel prop
 
 
 
-<Tabs>
-    <Tab label="Negative Factors">
+<Tabs >
+    <Tab label="Negative Factors" color='#F08080'>
 
 <Accordion>
   <AccordionItem title="1. Accessibility & distance">
