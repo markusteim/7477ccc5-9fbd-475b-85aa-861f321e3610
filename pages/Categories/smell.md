@@ -1,11 +1,9 @@
-
-
-**Summary**
+# Summary
 
 Overall, the sentiment regarding smells in the hotel leans more towards the positive, with 66.7% of comments reflecting good experiences with scents. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 0.
 
 
-**Positive:**
+## Positive:
 
 1. Pleasant Aromas: Guests appreciated the "great smell in the premises" and found the environment
 "smelling very nice."
@@ -14,14 +12,14 @@ experience.
 3. Undefined Positive: A mention of a "mixture of essential oils" suggests a positive aromatic experience,
 though the context is unclear.
 
-**Negative:**
+## Negative:
 
 1. Kitchen Odors: One guest warned about the room connected to the kitchen, implying a less than
 pleasant olfactory experience.
 
 <br>
 
-**Most Positive Examples:**
+## Most Positive Examples:
 
 1. "even the lovely mint shampoo"
 2. "great smell in the premises"
@@ -29,7 +27,7 @@ pleasant olfactory experience.
 
  
 
-**Most Negative Examples:**
+## Most Negative Examples:
 
 1. "if u consider staying in the room that is connected with the kitchen, be aware of this"
 2. "it was not pleasant at all"
@@ -111,9 +109,8 @@ ORDER BY OrderIndex
 <br>
 
 
-**Headlines and corresponding snippets from reviews**
+# Headlines and corresponding snippets from reviews
 
-**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -124,9 +121,8 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
+Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -137,9 +133,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Neutral Headlines**
+<br>
+
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -150,9 +154,8 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
+Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -163,9 +166,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Negative Headlines**
+<br>
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -176,9 +187,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -189,10 +198,18 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
+<br>
 
-**Customer sentiment distribution (2022-2023)**
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (

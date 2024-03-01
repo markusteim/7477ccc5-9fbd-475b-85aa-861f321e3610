@@ -1,6 +1,6 @@
 
 
-**Summary**
+# Summary
 
 ```sql sum_by_category
 SELECT
@@ -46,9 +46,8 @@ ORDER BY
 
 <br>
 
-**Headlines and corresponding snippets from reviews**
+# Headlines and corresponding snippets from reviews
 
-**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -68,9 +67,7 @@ AND Snippet NOT LIKE '%bed apartment%'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -90,11 +87,18 @@ AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Snippet ASC
 ```
 
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
+
 <br>
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
 
-**Neutral Headlines**
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -114,9 +118,7 @@ AND Snippet NOT LIKE '%bed apartment%'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -136,11 +138,17 @@ AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
 <br>
 
-**Negative Headlines**
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -160,9 +168,7 @@ AND Snippet NOT LIKE '%bed apartment%'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -182,9 +188,18 @@ AND Snippet NOT LIKE '%bed apartment%'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Customer sentiment distribution (2022-2023)**
+<br>
+
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (

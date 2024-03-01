@@ -1,12 +1,13 @@
 
 
-**Summary**
+# Summary
 
 Positive sentiment dominates the taste experiences at the hotel, with approximately 88.5% of the reviews being positive. Total positive reviews: 391; Total negative reviews: 13. Total neutral reviews : 38
 
 
 
-**Positive:**
+
+## Positive:
 
 1. Breakfast Delights: Guests rave about the "best breakfast ever," with a "superb choice" and "dreamy"
 inclusive options.
@@ -19,7 +20,7 @@ inclusive options.
 enhancing the personalized dining experience.
  
 
-**Negative:**
+## Negative:
 
 1. Vegetarian Concerns: Some guests note a lack of vegetarian options at dinner and a desire for more
 variety.
@@ -34,7 +35,7 @@ buffet setup.
 
 <br>
 
-**Most Positive Examples:**
+## Most Positive Examples:
 
 1. "best breakfast i have ever had"
 2. "if you want a specific type of eggs, the chef will cook it for you"
@@ -44,7 +45,7 @@ buffet setup.
 
  
 
-**Most Negative Examples:**
+## Most Negative Examples:
 
 1. "dinner sometimes lacked vegetarian options"
 2. "bread was low in quality"
@@ -129,9 +130,8 @@ ORDER BY OrderIndex
 
 <br>
 
-**Headlines and corresponding snippets from reviews**
+## Headlines and corresponding snippets from reviews
 
-**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -142,9 +142,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -154,10 +152,17 @@ AND travel_date >= '2022-01-01'
 AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+<br>
 
-**Neutral Headlines**
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -168,9 +173,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -181,9 +184,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Negative Headlines**
+<br>
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -194,9 +205,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -207,10 +216,18 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
+<br>
 
-**Customer sentiment distribution (2022-2023)**
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (

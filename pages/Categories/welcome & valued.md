@@ -1,10 +1,10 @@
 
-**Summary**
+# Summary
 
 Overall sentiment regarding care, respect, and being valued in the hotel leans heavily towards the positive, with approximately 98.12% of guests expressing satisfaction. A total of 994 guests left positive reviews, while only 10 guests reported negative experiences.
 
 
-**Positive:**
+## Positive:
 
 1. Exceptional Service: Guests praised the attentive and personalized service, with staff like Anjali and
 Masud receiving special mentions for their dedication.
@@ -18,7 +18,7 @@ performance, was celebrated for creating memorable experiences.
 with staff like Qasim Butt providing excellent recommendations.
  
 
-**Negative:**
+## Negative:
 
 1. Service Availability: There were isolated reports of early check-in no longer being available, causing
 minor inconvenience.
@@ -29,7 +29,7 @@ orders being overlooked
 
 <br>
 
-**Most Positive Examples:**
+## Most Positive Examples:
 
 1. "Anjali is a superstar."
 2. "Manager Dawod met us and looked after the stay."
@@ -38,7 +38,7 @@ orders being overlooked
 5. "If you’re looking for somewhere affordable yet luxurious with excellent service, this is definitely the
 place for you."
 
-**Most Negative Examples:**
+## Most Negative Examples:
 
 1. "Concierge was hesitant to assist us during several visits."
 2. "Lazy and ignored us when we didn't tip."
@@ -125,9 +125,9 @@ ORDER BY OrderIndex
 
 <br>
 
-**Headlines and corresponding snippets from reviews**
+# Headlines and corresponding snippets from reviews
 
-**Positive Headlines**
+
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -138,9 +138,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -151,9 +149,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Neutral Headlines**
+<br>
+
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -164,9 +170,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -177,9 +181,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Negative Headlines**
+<br>
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -190,9 +202,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -203,11 +213,18 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
 <br>
 
-**Customer sentiment distribution (2022-2023)**
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (

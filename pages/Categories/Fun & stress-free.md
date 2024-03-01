@@ -1,10 +1,10 @@
 
-**Summary**
+# Summary
 
 Overall sentiment: Positive experiences regarding fun & stress-free dominate, with 63.4% positive to 6.6% negative feedback. Positive reviews: 231; Negative reviews: 109; Neutral reviews: 109
 
 
-**Positive:**
+## Positive:
 
 1. Location Convenience: Guests praised the hotel's proximity to tram and monorail stations, making
 travel around Dubai easy.
@@ -18,7 +18,7 @@ in every room.
 the helpfulness of the travel desk.
  
 
-**Negative:**
+## Negative:
 
 1. Limited Entertainment: Guests felt the area lacked nightlife and socializing options, with no bars or
 nearby hangout spots.
@@ -33,7 +33,7 @@ guests.
 
 <br>
 
-**Most Positive Examples:**
+## Most Positive Examples:
 
 1. "great transport links"
 2. "easy access to metro and tram"
@@ -42,7 +42,7 @@ guests.
 5. "tram station right in front of the hotel"
 
 
-**Most Negative Examples:**
+## Most Negative Examples:
 
 1. "hotel has no-where to hang out"
 2. "location wasn't great"
@@ -127,11 +127,10 @@ ORDER BY OrderIndex
 
 <br>
 
-**Headlines and corresponding snippets from reviews**
+# Headlines and corresponding snippets from reviews
 
 <br>
 
-**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -142,9 +141,8 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
+
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -155,9 +153,19 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Neutral Headlines**
+<br>
+
+
+
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -168,9 +176,9 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
+
+Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -181,9 +189,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Negative Headlines**
+<br>
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -194,9 +210,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -207,10 +221,18 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
+<br>
 
-**Customer sentiment distribution (2022-2023)**
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (

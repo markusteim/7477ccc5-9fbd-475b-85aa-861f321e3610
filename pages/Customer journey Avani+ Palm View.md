@@ -1,6 +1,6 @@
-### Customer Journey Profile for Avani Palm View Dubai Hotel &amp; Suites
+# Customer Journey Profile for Avani Palm View Dubai Hotel &amp; Suites
 
-### Introduction
+## Introduction
 
 The Avani Palm View Dubai Hotel &amp; Suites offers a unique blend of comfort, style, and convenience, catering to
 a diverse clientele with varying needs and preferences. The hotel&#39;s strategic location, coupled with its array of
@@ -8,7 +8,7 @@ amenities, ensures that guests, whether on business or leisure, experience a mem
 journey profile aims to encapsulate the general sentiment and specific experiences of guests, highlighting the
 hotel&#39;s strengths and areas for improvement.
 
-### Overall Satisfaction Profile
+## Overall Satisfaction Profile
 
 Based on the dataset provided, the general customer satisfaction with their journey through Hotel Avani +
 Palm View Dubai is predominantly positive. Guests have expressed high levels of contentment with the hotel&#39;s
@@ -35,8 +35,10 @@ construction and enhancing certain facilities, the overall sentiment from guests
 enjoyment, with many expressing a desire to return to the hotel for future stays. The positive experiences far
 outweigh the negatives, setting a tone of high guest approval for the hotel property manager to consider.
 
-### Negative Factors
-### 1. Arrival:
+<br>
+
+# Negative Factors
+## 1. Arrival
 
 Description: Guests arriving at Avani + Palm View Dubai have expressed concerns about the surrounding
 construction, which impacts the views and accessibility. The construction sites around the hotel seem to be a
@@ -57,7 +59,7 @@ Examples:
 Suggestions: Improve signage and guidance for arrival amidst construction, enhance valet and drop-off
 services, and provide updates on construction to prepare guests.
 
-### 2. Check-in:
+## 2. Check-in
 Description: The check-in experience at Avani + Palm View Dubai has not been frequently mentioned in the
 dataset, suggesting it may not be a primary concern for guests. However, the overall sentiment during this
 phase seems neutral, with no specific negative themes emerging.
@@ -66,7 +68,7 @@ Examples: N/A
 
 Suggestions: N/A
 
-### 3. Room/accommodation:
+## 3. Room/accommodation
 Description: Guests have noted issues with room views being obstructed by construction, as well as some
 dissatisfaction with room amenities and cleanliness. The pool size and views from the pool area have also been
 criticized, along with the noise from nearby construction.
@@ -86,7 +88,7 @@ Examples:
 Suggestions: Offer alternative accommodations with better views, improve room cleanliness, and enhance
 soundproofing to mitigate construction noise.
 
-### 4. Daytime activities/recreational activities:
+## 4. Daytime activities/recreational activities
 Description: Guests have expressed dissatisfaction with the views from the hotel, particularly due to ongoing
 construction, which impacts the enjoyment of the pool and other recreational facilities.
 
@@ -106,7 +108,7 @@ Suggestions: Improve the aesthetic appeal of the pool area by adding greenery or
 construction views, consider heating the pool to extend usable hours, and explore options to maximize sun
 exposure for guests.
 
-### 5. Availability of transport:
+## 5. Availability of transport
 Description: Guests have found the hotel&#39;s location and transport options to be inconvenient, affecting their
 ability to explore the city and access nearby attractions.
 
@@ -125,7 +127,7 @@ Examples:
 Suggestions: Provide a shuttle service to key attractions and transport hubs, partner with reliable taxi services
 to ensure fair pricing, and improve signage and guidance for accessing the hotel by car.
 
-### 6. Evening activities:
+## 6. Evening activities:
 Description: The feedback indicates a lack of evening entertainment and activities within the hotel, leading to a
 less enjoyable experience for guests looking to relax and socialize on-site.
 
@@ -144,7 +146,7 @@ Examples:
 Suggestions: Introduce evening events or entertainment options, extend pool and facility hours, and consider
 opening a bar or lounge area for guests to socialize.
 
-### 7. Breakfast experiences:
+## 7. Breakfast experiences:
 Description: Guests have expressed dissatisfaction with the breakfast offerings, particularly for those with
 dietary restrictions such as vegans. The quality of certain food items like bread and pastries was criticized, and
 there were complaints about the temperature of freshly made dishes.
@@ -160,7 +162,7 @@ Examples:
 Suggestions: Improve the variety and labeling of vegan options, ensure the freshness and proper temperature
 of breakfast items, and consider offering a wider range of cooked-to-order eggs.
 
-### 8. Dinner experiences:
+## 8. Dinner experiences:
 Description: Dinner experiences have been marred by a lack of vegetarian options, repetitive dishes, and
 overall quality of food. Guests have also noted the disappointing nature of specific meals and the desire for
 more diverse offerings.
@@ -175,7 +177,7 @@ Examples:
 Suggestions: Increase vegetarian options, vary the dinner menu to prevent repetition, and focus on enhancing
 the overall quality and variety of the food.
 
-### 9. Specific dining experiences in hotel restaurants or bars:
+## 9. Specific dining experiences in hotel restaurants or bars:
 Description: There is no specific feedback provided in the dataset regarding named establishments within the
 hotel for dining experiences. Therefore, this section is not applicable.
 
@@ -183,7 +185,7 @@ Examples: N/A
 
 Suggestions: N/A
 
-### 10. Wellness experiences:
+## 10. Wellness experiences:
 Description: The wellness experiences at Avani + Palm View Dubai seem to be underrepresented in the
 dataset, with no specific positive mentions of spa, massage, sauna, health club, beauty salon, or similar
 wellness facilities. This could indicate that these services are either not a highlight for guests or not adequately
@@ -194,7 +196,7 @@ Examples: N/A
 Suggestions: Consider enhancing and promoting wellness services to create memorable experiences for
 guests.
 
-### 11. Fitness experiences:
+## 11. Fitness experiences:
 Description: Fitness experiences at the property are mentioned in a neutral to negative light, with comments
 on the gym&#39;s size and equipment. Guests have expressed that the gym space is not sufficient for their exercise
 needs, indicating room for improvement in this area.
@@ -214,7 +216,7 @@ Examples:
 Suggestions: Expand and upgrade the gym facilities, and consider redesigning the pool area to enhance the
 fitness experience for guests.
 
-### 12. Check-out/Departure:
+## 12. Check-out/Departure:
 Description: The check-out and departure phase does not have specific positive or negative feedback in the
 dataset. This could imply that the process is generally smooth or not a significant aspect of the customer
 journey that guests feel compelled to comment on.
@@ -224,9 +226,11 @@ Examples: N/A
 Suggestions: Ensure that the check-out process remains efficient and that any issues are quickly addressed to
 maintain a positive last impression.
 
-### Positive Factors:
+<br>
 
-### 1. Arrival:
+# Positive Factors:
+
+## 1. Arrival:
 Description: Guests arriving at Avani + Palm View Dubai are greeted with a seamless experience, starting from
 the valet service to the warm reception at the front desk. The hotel’s location offers easy access, with many
 guests appreciating the proximity to local attractions and public transportation. The valet service is noted for
@@ -248,7 +252,7 @@ a hassle-free experience.
 Suggestions: Continue maintaining the high level of service at arrival, perhaps offering a welcome drink or
 refreshing towel to enhance the initial guest experience.
 
-### 2. Check-in:
+## 2. Check-in:
 Description: The check-in process at Avani + Palm View Dubai is characterized by its efficiency and the
 friendliness of the staff. Guests have reported feeling valued and well-cared for, with receptionists going out of
 their way to accommodate early check-ins, room upgrades, and special requests. The lobby atmosphere is
@@ -269,7 +273,7 @@ Examples:
 Suggestions: Perhaps implement a more personalized check-in experience by addressing guests by name and
 acknowledging any special occasions they might be celebrating during their stay.
 
-### 3. Room/accommodation:
+## 3. Room/accommodation:
 Description: The rooms at Avani + Palm View Dubai are praised for their cleanliness, spaciousness, and modern
 amenities. Guests have enjoyed the beautiful views from their rooms, the comfortable beds, and the well-
 equipped kitchenettes. Housekeeping services are noted for their thoroughness and the staff&#39;s willingness to
@@ -290,7 +294,7 @@ Examples:
 Suggestions: Ensure that all electronic devices in the room, such as TVs and kitchen appliances, are in working
 order before guest arrival to avoid any inconveniences.
 
-### 4. Daytime activities/recreational activities:
+## 4. Daytime activities/recreational activities:
 Description: Guests have expressed high satisfaction with the daytime activities and recreational facilities
 available at Avani + Palm View Dubai. The property offers a range of amenities that cater to relaxation and
 fitness needs.
@@ -310,7 +314,7 @@ Examples:
 Suggestions: Consider expanding the range of daytime activities, perhaps by adding more fitness classes or
 wellness workshops to enhance the guest experience further.
 
-### 5. Availability of transport:
+## 5. Availability of transport:
 Description: The property&#39;s location and the availability of transport have been well-received by guests, who
 found it convenient for exploring Dubai.
 
@@ -330,7 +334,7 @@ within the property.
 Suggestions: To enhance guest convenience, consider providing more information about public transport
 options and perhaps introducing a shuttle service to more key destinations in Dubai.
 
-### 6. Evening activities:
+## 6. Evening activities:
 Description: Guests enjoyed the evening atmosphere at Avani + Palm View Dubai, with several dining options
 and a relaxing ambiance.
 
@@ -349,7 +353,7 @@ Examples:
 Suggestions: To further improve the evening experience, consider introducing themed dinner nights or live
 entertainment to add variety to the guests’ options.
 
-### 7. Breakfast experiences:
+## 7. Breakfast experiences:
 Description: Guests at Avani + Palm View Dubai start their day with a breakfast experience that is both diverse
 and delightful. The breakfast buffet offers a wide range of dishes catering to various tastes and preferences,
 ensuring a satisfying morning meal for every guest.
@@ -370,7 +374,7 @@ stay.&quot;
 Suggestions: Continue to maintain the high standards of the breakfast buffet and consider rotating menu items
 to provide returning guests with new options.
 
-### 8. Dinner experiences
+## 8. Dinner experiences
 Description: Dinner at Avani + Palm View Dubai is an affair to remember, with guests praising the variety and
 quality of the food served. The ambiance of the dining area complements the culinary delights, making dinner
 a highlight of the stay.
@@ -390,7 +394,7 @@ Examples:
 Suggestions: Explore themed dinner nights or special culinary events to further enhance the dining experience
 for guests.
 
-### 9. Specific dining experiences in hotel restaurants or bars:
+## 9. Specific dining experiences in hotel restaurants or bars:
 Description: The hotel&#39;s specific dining establishments, such as Seven Seeds and La Sirène, offer guests a
 chance to indulge in specialized cuisines and enjoy a more intimate dining experience. The attention to detail
 and personalized service in these restaurants add richness to the dining journey.
@@ -410,7 +414,7 @@ Examples:
 Suggestions: Continue to highlight the unique offerings of each restaurant and consider guest feedback for
 menu updates or special promotions.
 
-### 10. Wellness experiences:
+## 10. Wellness experiences:
 Description: Guests have shared their delightful experiences with the wellness amenities at Avani + Palm View
 Dubai, praising the spa, massage, sauna, and overall atmosphere conducive to relaxation and rejuvenation.
 
@@ -430,7 +434,7 @@ Suggestions: While the feedback is overwhelmingly positive, ensuring that the we
 provide personalized care and maintaining the tranquility of the wellness areas will further enhance guest
 satisfaction.
 
-### 11. Fitness experiences:
+## 11. Fitness experiences:
 Description: The fitness facilities at Avani + Palm View Dubai have been commended for their state-of-the-art
 equipment and 24/7 availability, allowing guests to maintain their fitness routines with ease.
 
@@ -449,7 +453,7 @@ Examples:
 Suggestions: To improve, consider offering fitness classes or personal training sessions to cater to guests
 looking for guided workouts.
 
-### 12. Check-out/Departure:
+## 12. Check-out/Departure:
 Description: The check-out and departure phase has been highlighted as smooth and efficient, with guests
 feeling valued right up to the last moment of their stay.
 

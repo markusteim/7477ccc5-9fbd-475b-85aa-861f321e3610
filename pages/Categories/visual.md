@@ -1,18 +1,16 @@
-
-
-**Summary**
+# Summary
 
 Overall, the sentiment regarding lighting and visibility in the hotel is split between positive and negative, with 40% of the feedback being positive and 40% being negative. Positive reviews: 2; Negative reviews: 2; Neutral reviews: 1.
 
 
-**Positive:**
+## Positive:
 
 1. Clean Ambiance: Guests appreciated the cleanliness that left the hotel shining, enhancing the bright
 atmosphere.
 2. Ample Lighting: The rooms were well-lit, providing guests with everything needed for a comfortable
 stay, contributing to the overall spacious feel.
 
-**Negative:**
+## Negative:
 
 1. Curtain Issues: One guest reported that the black-out curtains were not entirely effective, with corners
 uncovered, allowing light to seep in during the morning.
@@ -21,7 +19,7 @@ indicating some dissatisfaction with the current lighting situation.
 
 <br>
 
-**Most Positive Examples:**
+## Most Positive Examples:
 
 1. "left it shining"
 2. "light with everything what we need for comfortable staying"
@@ -29,7 +27,7 @@ indicating some dissatisfaction with the current lighting situation.
 
  
 
-**Most Negative Examples:**
+## Most Negative Examples:
 
 1. "black-out curtains in my room arn't 100 percent effective"
 2. "significant light still coming in the morning"
@@ -112,9 +110,8 @@ ORDER BY OrderIndex
 
 <br>
 
-**Headlines and corresponding snippets from reviews**
+# Headlines and corresponding snippets from reviews
 
-**Positive Headlines**
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -125,9 +122,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{positive_headlines}" search="true" rows=40 rowShading=true/>
 
-**Positive Snippets**
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -138,9 +133,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{positive_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Positive Headlines">
+        <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
+    </Tab>
+    <Tab label="Positive Snippets">
+        <DataTable data="{positive_snippets}" search="true" rows=18 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Neutral Headlines**
+<br>
+
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -151,9 +154,8 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
 
-**Neutral Snippets**
+
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -164,9 +166,17 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Neutral Headlines">
+        <DataTable data="{neutral_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Neutral Snippets">
+        <DataTable data="{neutral_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
-**Negative Headlines**
+<br>
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
@@ -177,9 +187,7 @@ AND travel_date <= '2023-12-31'
 GROUP BY Headline
 ORDER BY Count DESC
 ```
-<DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
 
-**Negative Snippets**
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -190,10 +198,18 @@ AND travel_date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
 
-<DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+<Tabs>
+    <Tab label="Negative Headlines">
+        <DataTable data="{negative_headlines}" search="true" rows=40 rowShading=true/>
+    </Tab>
+    <Tab label="Negative Snippets">
+        <DataTable data="{negative_snippets}" search="true" rows=15 rowShading=true/>
+    </Tab>
+</Tabs>
 
+<br>
 
-**Customer sentiment distribution (2022-2023)**
+# Customer sentiment distribution (2022-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
