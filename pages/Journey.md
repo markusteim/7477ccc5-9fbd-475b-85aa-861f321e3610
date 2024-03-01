@@ -13,7 +13,6 @@ While there have been a few negative comments regarding noise from nearby constr
 In summary, the overwhelming sense of sentiment from guests at W Dubai Mina Seyahi is positive, with the hotel's luxury, service, and amenities providing a memorable and enjoyable stay for most visitors.
 
 
-
 <Tabs>
     <Tab label="Negative Factors">
         
