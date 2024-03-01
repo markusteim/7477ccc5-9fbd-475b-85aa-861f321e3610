@@ -1,6 +1,4 @@
-# Customer Journey Profile for Avani Palm View Dubai Hotel &amp; Suites
-
-## Introduction
+# Introduction
 
 The Avani Palm View Dubai Hotel &amp; Suites offers a unique blend of comfort, style, and convenience, catering to
 a diverse clientele with varying needs and preferences. The hotel&#39;s strategic location, coupled with its array of
@@ -8,7 +6,7 @@ amenities, ensures that guests, whether on business or leisure, experience a mem
 journey profile aims to encapsulate the general sentiment and specific experiences of guests, highlighting the
 hotel&#39;s strengths and areas for improvement.
 
-## Overall Satisfaction Profile
+# Overall Satisfaction Profile
 
 Based on the dataset provided, the general customer satisfaction with their journey through Hotel Avani +
 Palm View Dubai is predominantly positive. Guests have expressed high levels of contentment with the hotel&#39;s
