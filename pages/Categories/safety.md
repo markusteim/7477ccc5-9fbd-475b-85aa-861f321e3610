@@ -284,3 +284,112 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback from guests indicates concerns regarding the hotel's location and the
+presence of building work. The term "relatively isolated location" suggests that
+guests may feel the hotel is situated in an area that is not well-populated or close to
+other establishments, which can lead to a sense of unease, especially during odd
+hours or for those unfamiliar with the area. The mention of "undertaken any building
+work" implies there is construction activity on-site or nearby, which can be perceived
+as a security concern due to the presence of construction workers and potential
+hazards associated with construction sites. The phrase "very careful" could be
+interpreted as guests feeling the need to be extra vigilant during their stay, which
+may detract from their overall comfort and experience at the hotel. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Isolated location leading to safety concerns (relatively isolated location).</li>
+<li>Presence of building work causing unease (undertaken any building work).</li>
+<li>Guests feeling the need to be extra vigilant (very careful)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these concerns, the hotel management could enhance security
+measures, such as increasing surveillance and patrolling, especially during
+the evening and night.</li>
+<li>Clear communication with guests about the nature and expected duration of
+building work can help manage expectations and alleviate concerns.</li>
+<li>If possible, the hotel could also provide information about the area, including
+safety tips and available amenities, to help guests feel more at ease.</li>
+<li>Additionally, ensuring that construction areas are well-lit and securely fenced
+off can minimize perceived risks associated with the building work.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        Based on the provided snippets, guests at the hotel have expressed satisfaction with
+the safety and security measures in place. The presence of a diligent security team,
+both during the day and at night, has been highlighted as a positive aspect.
+Lifeguards are commended for their vigilance, contributing to a safe pool
+environment. The hotel's infrastructure, including elevators and parking, is noted for
+functioning efficiently and contributing to the overall sense of security. Guests have
+also mentioned the comfort they feel in leaving their belongings unattended,
+indicating trust in the hotel staff. The hotel's efforts to ensure a secure environment
+for families and the reliable valet service have also been well-received. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Attentive security team (e.g., &quot;great team on security at night&quot;, &quot;security team
+did an amazing job&quot;)</li>
+<li>Trustworthy staff (e.g., &quot;they are so trustworthy and extremely reliable&quot;)</li>
+<li>Safe environment for families (e.g., &quot;ensuring a secure environment for young
+children and families&quot;)</li>
+<li>Efficient infrastructure (e.g., &quot;elevators worked perfectly&quot;, &quot;four elevators work
+quickly and efficiently&quot;)</li>
+<li>Reliable valet service (e.g., &quot;valet service of this is very good&quot;)</li>
+<li>Vigilant lifeguards (e.g., &quot;amazing lifeguards&quot;, &quot;lifeguards&quot;)</li>
+<li>Secure parking (e.g., &quot;parking of the hotel was also comfy&quot;)</li>
+<li>Safe pool area (e.g., &quot;pool was safety and nice&quot;, &quot;pool depth was a constant
+1.2m&quot;)</li>
+<li>Guest belongings safety (e.g., &quot;i felt comfortable to leave my belongings out in
+the open with them&quot;)
+10.Safe transportation arrangements (e.g., &quot;staff at the hotel ensure you get in a
+safe taxi&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance the guest experience, the hotel could consider
+implementing regular safety briefings for guests upon check-in, providing
+information on security protocols and emergency procedures. Additionally, the
+hotel might explore the possibility of introducing a guest feedback system
+specifically for safety and security, allowing for real-time improvements and
+adjustments.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

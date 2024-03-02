@@ -276,3 +276,102 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback from guests indicates that there are specific concerns regarding the
+lighting and visibility within the hotel rooms. The issues seem to revolve around the
+effectiveness of the black-out curtains and the overall brightness of the rooms.
+Guests have noted that the black-out curtains do not completely block out light,
+particularly at the corners, allowing light to enter the room in the morning.
+Additionally, there is a suggestion that the brightness of the rooms could be
+improved. These points suggest that attention to the window coverings and interior
+lighting could enhance guest satisfaction. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Ineffective black-out curtains (black-out curtains in my room aren&#39;t 100
+percent effective, corners aren&#39;t covered meaning there&#39;s significant light still
+coming in the morning).</li>
+<li>Insufficient room brightness (just I think it will be better if you improve and
+increase brightness of rooms).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address the concerns raised by guests, the hotel could consider the
+following improvements:</li>
+<li>Assess and replace the existing black-out curtains with ones that provide
+better coverage and are more effective at blocking out light, ensuring that they
+fit the windows properly and cover any gaps, especially at the corners.</li>
+<li>Evaluate the lighting fixtures and bulbs in the rooms to determine if they
+provide adequate light. Consider adding more lighting options or using
+higher-lumen bulbs to increase the brightness of the rooms to a comfortable
+level for guests</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        Based on the guest reviews, the hotel seems to be doing well in terms of lighting and
+visibility. Guests have described the clarity of visibility as "crystal clear," indicating
+that the hotel provides an environment where guests can easily see and navigate.
+The term "very positive" suggests that guests are generally satisfied with the lighting
+conditions. The phrase "left it shining" could imply that the lighting left a lasting
+positive impression on guests or that the maintenance of lighting fixtures is
+commendable. Additionally, the mention of "light with everything we need for
+comfortable staying" indicates that the hotel has successfully met the lighting needs
+of its guests, contributing to a comfortable experience 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Clarity of visibility (&quot;crystal clear&quot;)</li>
+<li>General satisfaction with lighting conditions (&quot;very positive&quot;)</li>
+<li>Lasting positive impression of lighting (&quot;left it shining&quot;)</li>
+<li>Adequate lighting for comfort (&quot;light with everything we need for comfortable
+staying&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Conducting a detailed survey to gather specific feedback on lighting
+preferences, such as brightness levels in different areas or the use of
+energy-efficient lighting. Additionally, exploring mood lighting options in certain
+areas like the lounge or dining spaces could add to the ambiance and overall
+guest experience.</li>
+<li>Regular maintenance checks to ensure all lighting fixtures are in optimal
+condition would also be advisable.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

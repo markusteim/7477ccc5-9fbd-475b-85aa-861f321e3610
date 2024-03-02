@@ -304,3 +304,139 @@ ORDER BY
 
 
 
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The guest reviews indicate that the hotel's location and amenities present challenges
+for guests seeking a fun, vibrant, and stress-free experience. The primary concerns
+revolve around the hotel's accessibility, both in terms of its physical location and the
+ease of reaching nearby attractions. Guests have expressed difficulties with
+transportation, including the complexity of driving to the hotel and the distance from
+public transit options. Additionally, the hotel's on-site facilities, such as the pool and
+social spaces, seem to be limited or not meeting guest expectations. Technical
+issues with devices and Wi-Fi connectivity also contribute to a less than optimal stay
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Repetitive device activation process (&quot;all devices had to be activated with the
+same information over and over again&quot;).</li>
+<li>Slow area around the hotel (&quot;area is a bit slow&quot;).</li>
+<li>Complicated access by car (&quot;driving to the hotel and out is like a maze&quot;).</li>
+<li>Lack of hangout spaces (&quot;hotel has no-where to hang out&quot;).</li>
+<li>Distance from public transportation (&quot;it takes approximately 20 minutes by
+walking to the nearest metro station&quot;).</li>
+<li>Travel time to downtown (&quot;it will take more than 45 minutes to reach down
+town&quot;).</li>
+<li>Isolated location (&quot;location is near nothing, you have to take a cab to
+anywhere&quot;).</li>
+<li>Limited nearby attractions (&quot;not much to do or see in the area of the hotel&quot;).</li>
+<li>Lack of nearby alternative relaxation spots (&quot;nowhere in walking distance
+where one can go and chill&quot;).</li>
+<li>Limited sun exposure at the pool (&quot;only criticism is due to its layout the sun
+leaves the pool at 2!&quot;).</li>
+<li>Lack of local activities and dining options (&quot;only problem i had was there is not
+much within the local area to do or eat&quot;).</li>
+<li>Absence of a bar for socializing (&quot;only reason is the lack of a bar to socialise
+in&quot;).</li>
+<li>Need for nighttime activities (&quot;only suggestion is that there should be activities
+at night&quot;).</li>
+<li>Service delays (&quot;only thing i might complain about is delays in services and
+responses to our requests&quot;).</li>
+<li>Small and busy pool (&quot;pool is quite small and very busy&quot;).</li>
+<li>Limited pool hours (&quot;pool therefore only really can be enjoyed after 5pm&quot;).</li>
+<li>Insufficient power outlets (&quot;power plugs&quot;).</li>
+<li>Slow room preparation (&quot;preparing our twin beds and else... took longer than
+usual&quot;).</li>
+<li>Early closure of facilities (&quot;should be open longer than 10pm&quot;).</li>
+<li>Limited TV channel selection (&quot;tv selections in the room is very limited &#39;sport channels are poor&#39;&quot;).</li>
+<li>Understaffing during breakfast (&quot;very few staff members available during
+breakfast&quot;).</li>
+<li>Confusing lobby location (&quot;we&#39;re quite confused though upon arriving as the main lobby was situated in the first floor&quot;).</li>
+<li>Slow Wi-Fi (&quot;wifi was not the fastest&quot;).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To improve the guest experience, the hotel could streamline the device
+activation process and enhance Wi-Fi connectivity.</li>
+<li>Addressing transportation issues by providing clear directions, shuttle
+services, or partnerships with local transit could alleviate concerns about the
+hotel&#39;s location.</li>
+<li>Expanding on-site amenities, such as increasing the number of sun loungers,
+extending facility hours, and adding a bar or social area, would offer guests
+more options for relaxation and socializing.</li>
+<li>Organizing activities, especially in the evening, could also enhance the
+vibrancy of the hotel. Improving the speed of services and ensuring adequate
+staffing during peak times would further contribute to a stress-free
+environment for guests.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel's strategic location appears to be a significant asset, as evidenced by the
+numerous mentions of its proximity to public transportation options such as the tram,
+monorail, and metro. Guests appreciate the ease of access to various parts of the
+city, including tourist attractions, business districts, and recreational areas. The
+check-in and check-out processes are consistently described as smooth and
+efficient, contributing to a stress-free experience. The availability of well-equipped
+kitchens in the rooms is also highlighted, offering guests the convenience of home
+comforts. The hotel's connection to local activities and the presence of family-friendly
+amenities like pools and entertainment options seem to enhance the overall guest
+experience. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Proximity to public transportation (e.g., &quot;tram station right in front of the hotel&quot;,
+&quot;very close to metro&quot;, &quot;hotel is connected to public transpo such as the tram
+and monorail&quot;)</li>
+<li>Efficient check-in/check-out process (e.g., &quot;check in was quick and easy&quot;,
+&quot;super fast check out&quot;, &quot;early check-in was free of charge&quot;)</li>
+<li>Well-equipped kitchens (e.g., &quot;kitchen in the room was well equipped with all
+you need&quot;, &quot;you have a washing machine and a fully equipped kitchen&quot;)</li>
+<li>Family-friendly amenities (e.g., &quot;family pool was great for children&quot;, &quot;kids love
+the pool and breakfast buffet&quot;, &quot;there is also a kid’s pool and a hot tub&quot;)</li>
+<li>Location conducive to tourism and business (e.g., &quot;good location not
+expensive to get to from DXB&quot;, &quot;convenient if you need to be close to internet
+/ media city&quot;, &quot;hotel is not far from most attractions&quot;</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Additionally, ensuring that guests are well-informed about the local
+transportation options and any ongoing construction that might affect
+accessibility could improve convenience.</li>
+<li>The hotel might also explore partnerships with local attractions to offer
+exclusive deals or packages, adding value to the guests&#39; stay.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

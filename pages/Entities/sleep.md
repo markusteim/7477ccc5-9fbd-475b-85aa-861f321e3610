@@ -11,12 +11,14 @@ FROM
     hotels.titles
 WHERE travel_date >= '2022-01-01' 
     AND travel_date <= '2023-12-31' 
-    AND Snippet LIKE '%bed%'
-    OR Snippet LIKE '%sleep%'
-    OR Snippet LIKE '%pillow%'
-    OR Snippet LIKE '%blanket%'
-    OR Snippet LIKE '%mattress%'
-    OR Snippet LIKE '%sheets%'
+AND (
+    Snippet LIKE '%bed%' OR  
+    Snippet LIKE '%sleep%' OR
+    Snippet LIKE '%pillow%' OR
+    Snippet LIKE '%blanket%' OR
+    Snippet LIKE '%mattress%' OR
+    Snippet LIKE '%sheets%'
+)
     AND Snippet NOT LIKE '%bedroom%'
     AND Snippet NOT LIKE '%bed apartment%'
 GROUP BY

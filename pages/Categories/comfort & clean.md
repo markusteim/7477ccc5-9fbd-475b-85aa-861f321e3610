@@ -304,3 +304,161 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The guest reviews indicate a series of specific concerns related to comfort and
+cleanliness at the hotel. Issues range from the functionality and adequacy of the air
+conditioning system to the size and amenities of the pool area. Guests have also
+noted the size constraints of the rooms and bathrooms, as well as the limited
+availability of beds for the number of guests. Cleanliness concerns were raised
+regarding the state of the windows, under the bed, and the maintenance of the
+bathroom fixtures. Additionally, there are mentions of inconveniences such as the
+lack of a clothes dryer, the need for more towel replacements, and the impracticality
+of certain room features like the makeup mirror. While some guests found the pool
+nice, others felt it was too small or lacked depth variation. These snippets provide a
+focused insight into specific areas that could be improved to enhance guest
+satisfaction.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Inadequate air-conditioning (air-conditioning in the room was quite weak).</li>
+<li>Uncomfortable makeup mirror design (stupid makeup mirror next to the tv,
+which was curved).</li>
+<li>Limited sun exposure in the pool area (area goes into shade around 1430; by
+the afternoon the pool and loungers were all shaded).</li>
+<li>Small bathroom size (bathroom a little small).</li>
+<li>Insufficient bedding for guests (beds limited for the number of guests).</li>
+<li>Mediocre pool facilities (didn&#39;t go to the pool, it was mediocre).</li>
+<li>Frequent need for showers due to hot weather (had to take a shower after
+every single schedule).</li>
+<li>Requirement for daily fresh towels (have to use new towel each day).</li>
+<li>Suggestions for pool improvements (i also feel like pool should be bigger or
+maybe there should be a certain part of the pool that is deep).</li>
+<li>Under-bed cleanliness (in a lot of four and five star hotels when i bent down to
+check under the bed it was dirty).</li>
+<li>Lack of amenities for hair appliances (including one by a mirror for our hair
+dryers / straighteners ladies).
+<li>Absence of a clothes dryer (missing thing no towels or clothes dryer).</li>
+<li>Cramped rooms and bathrooms (only let down is rooms are bit cramped and
+so are the bathrooms).</li>
+<li>Malfunctioning bedroom door (one of the bedroom doors were impossible to
+be closed).</li>
+<li>Small pool size (pool is nice, but a bit small; pool is small).</li>
+<li>Bathroom maintenance issues (some covers were off in the bathrooms).</li>
+<li>Restaurant temperature discomfort (temperature a bit too chilly in the
+restaurant).</li>
+<li>Ineffective air conditioning temperature control (temperature of the ac was
+bad).</li>
+<li>Inadequate pillow options (two kinds of pillows provided, both of them were
+soft).</li>
+<li>Shower leakage (water leaking through the shower door).</li>
+<li>Frequent laundry due to weather (we had to wash his clothes 1-2 times/day).</li>
+<li>Dirty windows (windows in the rooms were really dirty).</li>
+<li>Unaddressed spills (i saw spots on the table that were not cleaned up).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+<li>To address these issues, the hotel management could consider the following
+improvements:</li>
+<li>Assess and upgrade the air conditioning system to ensure it provides
+adequate cooling.</li>
+<li>Replace or reposition the makeup mirror for better functionality.</li>
+<li>Investigate ways to extend sun exposure in the pool area, possibly with
+retractable shades.</li>
+<li>Review room and bathroom sizes and consider renovations to optimize
+space.</li>
+<li>Ensure an adequate supply of beds and bedding to accommodate the number
+of guests.</li>
+<li>Enhance the pool area with size expansion or depth variation to meet guest
+expectations.</li>
+<li>Implement a more flexible towel replacement policy to accommodate guest
+needs.</li>
+<li>Conduct thorough cleaning checks under beds and in other overlooked areas.</li>
+<li>Install additional outlets or amenities for hair appliances.</li>
+<li>Provide a clothes drying solution for guests.</li>
+<li>Repair or replace malfunctioning doors and bathroom fixtures.</li>
+<li>Adjust the restaurant temperature to a more comfortable level.</li>
+<li>Review and improve the air conditioning temperature control system.</li>
+<li>Offer a variety of pillow types to cater to different guest preferences.</li>
+<li>Fix any issues causing water leakage in showers.</li>
+<li>Increase the frequency of window cleaning to maintain clear views.</li>
+<li>Ensure that all spills and spots are promptly cleaned from tables and other
+surfaces.</li>
+</ol>
+
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        Based on the provided snippets, guests have expressed satisfaction with the hotel's
+cleanliness and comfort. The reviews highlight the hotel's well-equipped rooms,
+which include kitchen appliances, washing machines, and spacious layouts. The
+cleanliness is consistently praised, with specific mentions of daily housekeeping,
+spotless rooms, and attention to detail. The hotel's amenities, such as the pool and
+gym, though sometimes noted as small, are appreciated for their maintenance and
+accessibility. The comfort of the beds and the quality of the linen also receive
+positive feedback, contributing to a comfortable stay for guests. Overall, the hotel
+seems to be doing well in providing a clean and comfortable environment for its
+guests 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+<li>Spacious and well-equipped rooms (e.g., &quot;big space,&quot; &quot;room is well equipped
+with almost everything you need,&quot; &quot;rooms have high ceilings and are
+spacious&quot;)</li>
+<li>Cleanliness maintained throughout the hotel (e.g., &quot;absolutely clean,&quot; &quot;all
+areas are very clean,&quot; &quot;cleaning service is perfect&quot;)</li>
+<li>Quality and comfort of beds and linen (e.g., &quot;bed is very large,&quot; &quot;bed sheets
+are changed daily,&quot; &quot;beds were clean&quot;)</li>
+<li>Well-maintained amenities (e.g., &quot;amenities and hotel facilities are well-kept,&quot;
+&quot;excellent swimming pool,&quot; &quot;gym was small but also as expected&quot;)</li>
+<li>Efficient housekeeping service (e.g., &quot;cleaning was exception every day,&quot;
+&quot;cleaned our room daily,&quot; &quot;housekeeping was very good and clean&quot;)</li>
+<li>Additional conveniences (e.g., &quot;washer/dryer was an added bonus,&quot; &quot;well
+equipped kitchen,&quot; &quot;access to private swimming pool was appreciated&quot;)</li>
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+<li>Addressing any feedback regarding the size of the gym and pool to see if
+expansions or improvements are feasible.</li>
+<li>Continuing to ensure that all amenities are accessible and well-maintained at
+all times.</li>
+<li>Maintaining the high standards of cleanliness and comfort that guests have
+come to expect, as these are clearly areas where the hotel excels.</li>
+
+    </ol> 
+    </Tab>
+</Tabs>

@@ -277,3 +277,97 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback provided indicates that there is a specific issue with at least one of the
+rooms that is connected to the kitchen. The guest has expressed dissatisfaction with
+their experience, suggesting that the proximity to the kitchen may be causing
+unpleasant smells to permeate into the room. This is an isolated comment and does
+not necessarily reflect a widespread problem, but it does highlight a potential area for
+improvement in guest experience related to odors in rooms adjacent to the kitchen.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Unpleasant odors in room connected to the kitchen ("if u consider staying in
+the room that is connected with kitchen, be aware of this", "it was not pleasant
+at all")</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address the issue, the hotel management could consider improving
+ventilation and exhaust systems in the kitchen to prevent odors from
+spreading to adjacent rooms. Additionally, ensuring that doors between the
+kitchen and connected rooms are properly sealed could help mitigate the
+issue.</li>
+<li>Regular checks and maintenance of these areas could prevent similar
+complaints in the future. If the room&#39;s design allows, reassigning its purpose to
+one that is not affected by kitchen smells, such as storage or staff space,
+could also be a solution.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback regarding scents within the hotel indicates that guests have had
+pleasant experiences with the olfactory aspects of their stay. Specific mentions of a
+"great smell in the premises" and the "mixture of essential oils" suggest that the hotel
+has made deliberate choices in scenting common areas or using fragranced
+products that contribute positively to the ambiance. Additionally, the mention of
+"lovely mint shampoo" implies that the hotel provides quality scented toiletries that
+enhance the guest experience. These details reflect a thoughtful approach to the
+sensory experience of guests 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Quality scented toiletries (e.g., &quot;even the lovely mint shampoo&quot;)</li>
+<li>Pleasant ambient scent in common areas (e.g., &quot;great smell in the premises&quot;)</li>
+<li>Use of fragranced products like essential oils (e.g., &quot;mixture of essential oils&quot;)</li>
+<li>Overall cleanliness and freshness (e.g., &quot;smelling very nice&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance the guest experience, the hotel could consider expanding
+the range of scented products available in guest rooms or exploring seasonal
+scent variations to keep the sensory experience fresh and engaging.</li>
+<li>Additionally, gathering more targeted feedback on the scents used could help
+in tailoring the olfactory ambiance to guest preferences.</li>
+<li>Regular maintenance of scent diffusers and ensuring consistent quality of
+toiletries will help maintain the positive impressions.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

@@ -297,3 +297,127 @@ ORDER BY
     sort = false
     
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel's aesthetic appeal seems to be compromised primarily by external factors,
+particularly ongoing construction activities surrounding the property. Guests have
+expressed disappointment with the views from their rooms and the hotel's common
+areas, such as the pool, which are often obstructed by building sites. Additionally,
+there are mentions of the property itself showing signs of wear, particularly in the
+bathrooms where tile wear and stains have been noted. The location of the hotel
+also appears to be a point of contention, with guests finding it less than ideal due to
+the proximity to construction and traffic. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Obstructed views due to construction (e.g., &quot;but city view not that good,&quot;
+&quot;construction around the hotel,&quot; &quot;construction site in front of the hotel,&quot;
+&quot;current view from my room and the pool was a building site&quot;).</li>
+<li>Disappointment with room allocation (e.g., &quot;could have given a better view
+room on 1st two days,&quot; &quot;expected better view&quot;).</li>
+<li>Wear and tear in bathrooms (e.g., &quot;for a newer property, bathrooms needs
+some updating with wear of tiles/stains&quot;).</li>
+<li>Misleading online representation (e.g., &quot;it says 5 star hotel online but I don&#39;t
+feel the same&quot;).</li>
+<li>Unfavorable location of the pool and outdoor areas (e.g., &quot;infinity pool near the
+reception, although it overlooked a construction site,&quot; &quot;swimming pool and
+outdoor area very strangely located overlooking a traffic machine&quot;).</li>
+<li>General dissatisfaction with the property&#39;s location and views (e.g., &quot;huge
+building site and motorways,&quot; &quot;just a shame about the view from the pool,&quot;
+&quot;location may seem strange,&quot; &quot;views from the pool is depressing&quot;).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+<li>Enhance the aesthetic appeal of rooms with obstructed views by adding
+interior design elements that divert attention from the exterior.</li>
+<li>Offer guests alternative amenities or compensatory perks if the views are a
+primary selling point of the hotel.</li>
+<li>Schedule maintenance for areas showing signs of wear, particularly in the
+bathrooms, to ensure they meet the expectations of a high-standard property.</li>
+<li>Update the hotel&#39;s online profile to accurately reflect the current state of the
+hotel and its surroundings.</li>
+<li>Reevaluate the layout and positioning of the pool and outdoor areas to
+maximize the available views and minimize the impact of nearby construction.</li>
+<li>Communicate transparently with guests about the temporary inconveniences
+due to construction and provide information on the expected timelines for
+completion.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel has received commendable feedback regarding its aesthetics and the
+quality of its facilities. Guests have praised the modern and stylish decor, the
+cleanliness, and the high specification of the accommodations. The views from the
+hotel are frequently highlighted as a significant positive feature, with many guests
+mentioning the beautiful vistas of the city, sea, and landmarks. The hotel's location is
+also well-regarded, with its proximity to attractions and the convenience it offers. The
+amenities, including the infinity pools, gym, and restaurants, have been described as
+amazing, brilliant, and great, indicating a high level of guest satisfaction in these
+areas.
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+<li>Decor and Style (all incredibly decorated and to a very high spec, avani was
+very sleek &amp; stylish, modern, contemporary interiors)</li>
+<li>Views (amazing view, beautiful view of palma, balcony views of the city, great
+view of the palmtree, spectacular views of the palm jumeirah)</li>
+<li>Location (excellent location, ideally located, hotel is perfectly located, very
+good location near jbr and marina)</li>
+<li>Cleanliness (beautiful and clean, clean, new, beautiful, it’s modern and chic
+and very clean)</li>
+<li>Amenities (amenities were amazing, facilities are brilliant, great facilities with
+gym, pool, restaurant)</li>
+<li>Room Features (each room has 65 inch tv’s, rooms are very spacious with
+nice furniture, studio apartment was amazing)</li>
+<li>Hotel Facilities (hotel facilities was amazing, hotel has excellent facilities,
+hotel has nice restaurants)</li>
+<li>Accommodation Quality (beautiful accommodations, beautiful and big suites,
+lovely modern decor, rooms were an exceptional standard)</li>
+<li>Pool Areas (beautiful infinity pool, pool area was small but really pretty,
+stunning infinity pool)</li>
+<li>Unique Touches (creative cleaning with the beautiful birds from the towels and
+some fruits, with a hint of arabesque decor that completes the ramadan feel)</li>
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>No suggestions for this satisfaction category.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>
+
+
+ 

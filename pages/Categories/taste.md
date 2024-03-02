@@ -296,3 +296,129 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback from guests indicates that the hotel's culinary offerings have room for
+improvement in several areas. Specific concerns have been raised about the quality
+of bread, the freshness of pastries, and the temperature of poached eggs.
+Additionally, guests have noted a lack of variety and options for those with dietary
+restrictions, such as vegetarians and vegans. The repetition of dishes and the
+presentation of food items, such as Nutella and jams in jars, have also been
+mentioned. The comments suggest that guests are seeking more hygienic serving
+methods and a more refreshing beverage selection from the bar. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Low-quality bread (bread was low in quality)</li>
+<li>Insufficient vegetarian options and repetitive dinner menus (dinner sometimes
+lacked vegetarian options and dishes were repeated some nights)</li>
+<li>Overall food quality not meeting expectations (food could have been better)</li>
+<li>Limited options for specific dietary needs (for us, the breakfast was
+disappointing for vegan options and labelling)</li>
+<li>Poached eggs served cold (freshly made poached eggs are cold inside)</li>
+<li>Stale pastries (good breakfast but the pastries could be fresher than stale)</li>
+<li>Preference for single-serve portions (i still think having single portions is more
+hygienic)</li>
+<li>Beverages not refreshing (juices from the bar were not much refreshing)</li>
+<li>Disappointing dinner experience (our second night’s dinner, it was really
+disappointing)
+10.Frequent occurrence of stale pastries (pastries are often stale)
+11.Lack of food choices (tip: maybe add more choices to the food)
+12.Questioning the appeal of certain buffet items (what&#39;s the deal with that and
+who eats that</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these concerns, the hotel could consider the following
+improvements:</li>
+<li>Source higher-quality bread and ensure pastries are fresh daily.</li>
+<li>Expand the menu to include a wider variety of vegetarian and vegan options,
+and ensure these are clearly labeled.</li>
+<li>Introduce a more diverse dinner menu to avoid repetition.</li>
+<li>Serve poached eggs and other hot items at the correct temperature.</li>
+<li>Consider offering single-serve portions for spreads like Nutella and jams to
+enhance hygiene.</li>
+<li>Review the beverage selection at the bar to ensure drinks are appealing and
+refreshing.</li>
+<li>Collect guest feedback on specific buffet items to understand preferences and
+adjust offerings accordingly.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel's culinary offerings seem to be a strong point, with numerous guests
+expressing satisfaction with the variety and quality of food available, particularly at
+breakfast. The breakfast buffet is frequently highlighted for its extensive selection,
+catering to a wide range of dietary preferences and tastes. Guests appreciate the
+freshness and quality of the food, as well as the availability of different cuisines. The
+restaurant, Seven Seeds, is mentioned positively for its value and variety. The
+availability of half-board options, the convenience of in-room dining, and the
+presence of a supermarket nearby for essentials are also noted. Overall, the hotel's
+food services appear to be well-received by guests, with specific commendations for
+certain dishes and the chefs who prepare them 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Extensive breakfast buffet with a variety of options (e.g., &quot;breakfast buffet
+spread,&quot; &quot;huge variety,&quot; &quot;breakfast buffet beautiful&quot;).</li>
+<li>Quality and freshness of food (e.g., &quot;all food was super fresh, super
+delicious,&quot; &quot;always fresh&quot;).</li>
+<li>Variety of cuisines and dishes available (e.g., &quot;authentic Lebanese food,&quot;
+&quot;dishes from around the world&quot;).</li>
+<li>Special mentions of chefs and specific dishes (e.g., &quot;best chefs Rajesh, Lovin,
+Danaska, Bryan,&quot; &quot;amazing culinary experience&quot;).</li>
+<li>Availability of half-board options (e.g., &quot;half board which is worth it&quot;).</li>
+<li>In-room dining and convenience of nearby supermarket (e.g., &quot;in-room dining
+was very nice,&quot; &quot;small supermarket/convenience store opposite&quot;).</li>
+<li>Special dietary needs catered for (e.g., &quot;with options for different dietary
+preferences,&quot; &quot;many vegetarian food options in breakfast&quot;).</li>
+<li>Positive experiences with specific meals beyond breakfast (e.g., &quot;dinner was
+always a buffet,&quot; &quot;afternoon tea was the best value&quot;).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance the guest experience, the hotel could consider gathering
+specific feedback on favorite dishes or any areas for improvement in the
+culinary offerings. Additionally, promoting the variety and quality of the food in
+marketing materials could attract guests who prioritize dining experiences.</li>
+<li>Ensuring consistent quality across all meals and continuing to cater to diverse
+dietary needs will help maintain the high level of guest satisfaction.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

@@ -6,49 +6,52 @@
  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
  ```
 
-# Summary
-
-Across the 12 categories, hotel guests generally shared more positive experiences than negative ones. The overall sentiment was heavily skewed towards satisfaction, with an estimated 76.8% positive feedback compared to 8.1% negative and 15.2% neutral. Out of the total comments, 1,797 were positive, 189 were negative and 355 were neutral. The distribution of comments across categories was as follows: 
-
-
-1. Welcome & Valued (23.73%), 
-2. Impression (21.17%)
-3. Comfort & clean (14.81%)
-4. Taste (12.65%) 
-5. Fun & stress-free (9.54%)
-6. Aesthetic appreciation (8.89%)
-7. Well-being (3.69%)
-8. Value & values (2.56%)
-9. Sound (1.09)
-10. Safety (0.93%)
-11. Smell (0.23%)
-12. Visual (0.21%)
+1. Aesthetic appreciation (<Value data={category_propositions} column=percentage row=0/>%)
+2. Comfort & clean (<Value data={category_propositions} column=percentage row=1/>%)
+3. Fun & stress-free (<Value data={category_propositions} column=percentage row=2/>%)
+4. Impression (<Value data={category_propositions} column=percentage row=3/>%)
+5. Safety (<Value data={category_propositions} column=percentage row=4/>%)
+6. Smell (<Value data={category_propositions} column=percentage row=5/>%)
+7. Sound (<Value data={category_propositions} column=percentage row=6/>%)
+8. Taste (<Value data={category_propositions} column=percentage row=7/>%)
+9. Value & values (<Value data={category_propositions} column=percentage row=8/>%)
+10. Visual (<Value data={category_propositions} column=percentage row=9/>%)
+11. Welcome & valued (<Value data={category_propositions} column=percentage row=10/>%)
+12. Well-being (<Value data={category_propositions} column=percentage row=11/>%)
 
 
 ```sql category_propositions
 WITH CategoryCounts AS (
     SELECT
-        TRIM(Category) AS CleanCategory,
+        TRIM(LOWER(Category)) AS Category,
         COUNT(DISTINCT review_id) AS category_count
     FROM
-        titles
+        hotels.titles
     WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    AND TRIM(LOWER(Category)) IN ('welcome & valued', 'fun & stress-free','impression', 'comfort & clean', 'taste', 'aesthetic appreciation', 'well-being', 'value & values', 'sound', 'safety', 'smell', 'visual', 'fun & stress-free')
     GROUP BY
-        TRIM(Category)
+        TRIM(LOWER(Category))
 ),
-TotalReviews AS (
+TotalReviewCount AS (
     SELECT
         SUM(category_count) AS total
     FROM
         CategoryCounts
 )
 SELECT
-    a.CleanCategory AS Category,
-    a.category_count,
-    ROUND((a.category_count * 100.0) / b.total, 2) AS percentage
+    cc.Category,
+    cc.category_count,
+    CASE WHEN trc.total > 0 THEN 
+        ROUND((cc.category_count * 100.0) / trc.total, 2) 
+    ELSE 
+        0 
+    END AS percentage
 FROM
-    CategoryCounts a, TotalReviews b
-ORDER BY percentage DESC
+    CategoryCounts cc
+CROSS JOIN TotalReviewCount trc
+ORDER BY
+    cc.Category
+
 ```
 
 ```sql sum_by_category

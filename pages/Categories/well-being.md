@@ -303,3 +303,137 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The guest reviews suggest that the hotel has several areas of concern related to the
+physical and mental well-being and wellness of its patrons. Issues range from
+inadequate sun protection advice, noise disturbances, and insufficient gym facilities
+to concerns about the availability of medical assistance and dietary
+accommodations. While the reviews do not indicate systemic failures, they do
+highlight specific aspects that could be improved to enhance the overall guest
+experience in terms of comfort, relaxation, and health support. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Inadequate sun protection advice (&quot;be careful though as you need to plaster
+on the sun lotion or you’ll get roasted!&quot;)</li>
+<li>Noise disturbances by the pool and from traffic (&quot;could not lay and relax by
+pool and could hear from room&quot;, &quot;sleep disturbed by all the traffic&quot;)</li>
+<li>Distance from downtown Dubai (&quot;downtown dubai is a bit of a trek&quot;)</li>
+<li>Guests falling ill (&quot;fell ill during my stay&quot;, &quot;half of us were sick when we
+arrived&quot;, &quot;required medical assistance&quot;)</li>
+<li>Insufficient gym facilities (&quot;gym equipment and space is not enough for the
+normal exercise or training of a person&quot;, &quot;gym is a bit small&quot;)</li>
+<li>Sauna facilities need improvement (&quot;just need to improve sauna facilities a
+bit&quot;)</li>
+<li>Lack of immediate dietary accommodation for a diabetic guest (&quot;my wife is
+diabetic was already experiencing hypoglycemia, that she eventually
+approached another staff just to have some bread to eat since the staff didn’t
+get back to us&quot;)</li>
+<li>No comfortable common area to relax in (&quot;no comfortable common area to
+relax in&quot;)</li>
+<li>General lack of a relaxing environment (&quot;not very relaxing&quot;)</li>
+<li>Sleep disturbances (&quot;we couldn&#39;t even sleep&quot;</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these issues, the hotel could implement the following
+improvements:</li>
+<li>Provide guests with clear information on sun safety and complimentary
+sunscreen at poolside areas.</li>
+<li>Enhance soundproofing in rooms and around the pool area to minimize noise
+disturbances.</li>
+<li>Consider offering a shuttle service to downtown Dubai to make the location
+more convenient for guests.</li>
+<li>Review and improve protocols for handling guest illnesses, including prompt
+medical assistance.</li>
+<li>Expand and upgrade the gym facilities to accommodate more guests and a
+wider range of exercises.</li>
+<li>Upgrade the sauna facilities to meet guest expectations.</li>
+<li>Train staff to respond more quickly to dietary needs, especially for guests with
+medical conditions like diabetes.</li>
+<li>Create a designated quiet common area with comfortable seating for guests
+to relax in.
+<li>Investigate and address the causes of sleep disturbances, such as traffic
+noise, to ensure a more restful environment for guests</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        Based on the guest reviews, the hotel seems to excel in providing facilities and
+services that contribute to the physical and mental well-being of its guests. The gym
+is frequently mentioned as a standout feature, with its extensive equipment and 24/7
+availability. Guests appreciate the comfortable accommodations, including the quality
+of sleep provided by the bed mattress and duvet. The hotel's location is also noted
+for its convenience and the ability to relax, with easy access to the marina, harbour
+areas, and beach. The pool area is praised for its comfort and availability of
+sunbeds, while the sauna and spa services add to the relaxation experience. The
+hotel's environment, including the restaurant setting, is described as calm and
+relaxing, which seems to enhance the overall guest experience. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Gym facilities (e.g., &quot;amazing gym,&quot; &quot;gym works 24/7,&quot; &quot;best-class gym facility
+with studio&quot;)</li>
+<li>Comfortable accommodations (e.g., &quot;bed mattress and duvet guides good
+sleep,&quot; &quot;felt so comfortable and satisfied staying at this hotel&quot;)</li>
+<li>Relaxation opportunities (e.g., &quot;infinity pool and sun deck provides a haven for
+relaxation,&quot; &quot;spa was amazing&quot;)</li>
+<li>Location and accessibility (e.g., &quot;comfortable 20-25 minute walk to the marina
+and harbour areas,&quot; &quot;easy to get beds by the poolside&quot;)</li>
+<li>Calm and relaxing environment (e.g., &quot;environment set of the restaurant is
+very very calm &amp; relaxing,&quot; &quot;place was so calm and comfortable&quot;)</li>
+<li>Additional wellness amenities (e.g., &quot;healthy food section is offered at the
+breakfast,&quot; &quot;sauna is small yet subtle and effective&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance the guest experience, the hotel could consider expanding
+the relaxation and wellness options.</li>
+<li>This could include offering wellness workshops, yoga classes, or guided
+meditation sessions. Additionally, ensuring that the spa and sauna facilities
+are well-maintained and promoting their availability could attract guests
+looking for a comprehensive wellness experience.</li>
+<li>It may also be beneficial to provide more information about local walking
+routes or outdoor activities that promote well-being.</li>
+<li>Lastly, considering guest feedback for continuous improvement of the gym
+equipment and facilities would ensure the hotel remains a top choice for
+health-conscious travelers.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

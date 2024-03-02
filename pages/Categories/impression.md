@@ -304,3 +304,132 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback from guests indicates a range of issues that affect their overall
+impression of the hotel. Some guests have encountered problems with their rooms,
+while others have expressed dissatisfaction with specific services or amenities.
+Comparisons with other hotels suggest that guests have higher expectations based
+on the price point and perceived value. There are also mentions of personal losses
+on the property and during transportation, which may reflect on the security
+measures or assistance provided by the hotel. The presence of both positive and
+negative comments about staff and services suggests inconsistency in the guest
+experience. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Room issues (01st room had a few issues, issue in our room, minor flaws that
+appear as quite unnecessary).</li>
+<li>Comparatively lower value (atlantis the royal and park hyatt which are both 5
+stars as well. but it&#39;s totally not comparable, both price are the same, around
+$2000 but now i regretted).</li>
+<li>Small drop-off area (drop off area is small, often crowded with cars).</li>
+<li>Lack of 24-hour laundry service (only wish they have 24 hours laundry
+service).</li>
+<li>Inconvenient location for some guests (it&#39;s a long drive from al ain).</li>
+<li>Negative experiences leading to loss of personal items (i dropped some
+valuable items in a cab, one time i lost my precious pendant after breakfast,
+we lost our wallet).</li>
+<li>Inconsistency in service quality (unlike the other valets, these two guys
+mastered this also, very good hotels provide also shadow housekeeping
+service).</li>
+<li>Language barrier in accessing reviews (trip advisor system is doubtful for
+japanese customers because they cannot see japanese reviews unless they
+change the language to japanese).</li>
+<li>Negative overall experiences (i do not recommend this place, make the stay
+there terrible, very bad, worst experiences).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these issues, the hotel could conduct a thorough review of room
+quality and address any recurring problems.</li>
+<li>Improving the drop-off area to accommodate more vehicles could alleviate
+congestion. Implementing a 24-hour laundry service would cater to guests&#39;
+needs around the clock.</li>
+<li>The hotel could also consider offering transportation services for guests who
+find the location inconvenient.</li>
+<li>Enhancing security measures and providing better support for lost items
+would improve guest confidence.</li>
+<li>Training staff to ensure consistent service quality across all roles is essential.</li>
+<li>Finally, ensuring that the hotel&#39;s reviews are accessible in multiple languages
+would help international guests make informed decisions.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        Based on the guest reviews, the hotel appears to be performing well in several
+areas. Guests have expressed satisfaction with the room amenities, particularly the
+kitchen facilities which allow for simple meal preparation. The presence of new
+utensils and appliances such as dishwashers and washing machines adds to the
+convenience for guests, especially those on extended stays. The hotel's location,
+with a convenience store right in front, is appreciated for its accessibility. The
+availability of different room types, including apartment rooms and suites with
+multiple bedrooms, caters to a variety of guests, from families to business travelers.
+The hotel's breakfast offerings and the quality of food at the restaurant have received
+positive remarks. The staff, including specific mentions of individuals, has been
+acknowledged for their service, suggesting a personalized touch to guest
+interactions. The hotel's facilities, such as the pool and gym, although not used by
+all, are noted as decent. Overall, the hotel seems to be meeting guests' needs
+effectively, with many expressing a desire to return or recommend the hotel to
+others 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+<li>Room amenities and convenience for extended stays (e.g., &quot;able to make a
+simple dinner in the kitchen in the room,&quot; &quot;all utensils were new,&quot; &quot;diswasher
+and washing machine&quot;).</li>
+<li>Location and accessibility (e.g., &quot;convenience store right in front of the hotel&quot;).</li>
+<li>Variety of room types suitable for different guests (e.g., &quot;big appartement with
+two sleeping rooms,&quot; &quot;apartment room on the 16th floor&quot;).</li>
+<li>Quality of food and breakfast offerings (e.g., &quot;breakfast was as you would
+expect from a 5-star hotel,&quot; &quot;food was to a high standard&quot;).</li>
+<li>Staff service and recognition (e.g., &quot;asim s. &amp; dana o,&quot; &quot;david,&quot; &quot;simran&quot;).</li>
+<li>Hotel facilities (e.g., &quot;at the pool,&quot; &quot;gym n/a. didn’t use, but looked decent&quot;).</li>
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance the guest experience, the hotel could consider expanding
+the use of its facilities by encouraging guests to try them out, perhaps through
+promotional activities or guided tours. Additionally, ensuring that all staff
+members are equally recognized and known by guests could further
+personalize the service.</li>
+<li>While the hotel is performing well, continuous monitoring of guest feedback
+for any emerging issues or areas for improvement will help maintain high
+standards of service.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

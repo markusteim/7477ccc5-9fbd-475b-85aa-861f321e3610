@@ -292,3 +292,129 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The feedback from guests indicates that there are several areas where the hotel's
+service could be improved to make guests feel more welcome and valued. Issues
+range from staff responsiveness to the efficiency of service delivery in the restaurant.
+Some guests have experienced delays and a lack of attention, which has impacted
+their perception of the hotel's commitment to guest satisfaction. Additionally, there
+are concerns about billing accuracy and the handling of special requests, such as
+early check-in. The presence of staff who appear disengaged and the inconsistent
+offering of compensatory upgrades also contribute to guests' mixed feelings. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Staff responsiveness and attentiveness (e.g., &quot;concierge was hesitant to
+assist us,&quot; &quot;restaurant staff who need to be more attentive and helpful&quot;).</li>
+<li>Service delays (e.g., &quot;it took us almost an hour to receive our starter&quot;).</li>
+<li>Perceived unfair treatment (e.g., &quot;family came and they were served ahead of
+us&quot;).</li>
+<li>Inattentive and disengaged staff (e.g., &quot;person wearing a green jacket who
+often seemed lost and distracted,&quot; &quot;lazy and ignored us when we didn&#39;t tip&quot;).</li>
+<li>Inconsistency in service offerings (e.g., &quot;offering upgrades for next visits,&quot;
+&quot;stop offering upgrades for next visits&quot;).</li>
+<li>Communication issues (e.g., &quot;listens to respond and doesn’t listen to
+understand&quot;).</li>
+<li>Failure to address problems (e.g., &quot;never actually doing anything to rectify the
+issues&quot;).</li>
+<li>Billing errors (e.g., &quot;double charged for our room,&quot; &quot;amount is still not in the
+account&quot;).</li>
+<li>Handling of special requests (e.g., &quot;changed the availability of early check in
+to no longer available&quot;).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To improve the guest experience, the hotel should focus on staff training to
+ensure that all team members are proactive, attentive, and responsive to
+guest needs.</li>
+<li>Implementing a more rigorous service standard, particularly in the restaurant,
+could help reduce wait times and ensure all guests are served promptly and
+fairly.</li>
+<li>Regular staff meetings to reinforce the importance of guest satisfaction and to
+discuss feedback could also be beneficial. Additionally, the hotel should
+review its billing processes to prevent errors and establish a clear policy on
+upgrades and special requests to avoid confusion and inconsistency.</li>
+<li>Finally, the hotel might consider a system to track and follow up on guest
+issues to ensure they are resolved satisfactorily</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel appears to be performing well in several areas related to guest
+satisfaction, particularly in the domains of customer service, housekeeping, and
+personalized attention. The staff's friendliness and professionalism are frequently
+mentioned, with specific employees being highlighted for their exceptional service.
+The concierge, valet, and travel desk services are noted for their convenience and
+helpfulness, contributing to a positive guest experience. Housekeeping receives
+praise for their attention to detail and responsiveness to guest needs. The reception
+team is recognized for their warm welcomes and efficient handling of guest requests,
+including room upgrades and early check-ins. Overall, the hotel seems to be creating
+a hospitable environment where guests feel cared for and valued. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Staff friendliness and professionalism (e.g., &quot;very friendly staff,&quot; &quot;professional
+service was excellent&quot;)</li>
+<li>Personalized attention and recognition of guest needs (e.g., &quot;always checking
+on me to make sure I have everything I need,&quot; &quot;remembered my preference
+as well as my family&#39;s&quot;)</li>
+<li>Efficient and helpful concierge service (e.g., &quot;concierge was great,&quot; &quot;concierge
+team daiwood, emad, zahra, kim, april&quot;)</li>
+<li>Responsive and thorough housekeeping (e.g., &quot;professional cleaning team,&quot;
+&quot;housekeeping was amazing&quot;)</li>
+<li>Reception team&#39;s warm welcomes and efficiency (e.g., &quot;reception staff
+extremely friendly and helpful,&quot; &quot;reception upgraded my booking&quot;)</li>
+<li>Valet and travel desk services adding convenience (e.g., &quot;valet service was
+efficient,&quot; &quot;agent quasim butt from travel desk gave us&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance guest satisfaction, the hotel could consider implementing a
+guest recognition program to acknowledge returning guests and those who
+provide positive feedback. Additionally, ensuring that all staff members are
+equally recognized and trained to maintain the high standards of service could
+help sustain the positive guest experiences.</li>
+<li>Regular staff training sessions focused on customer service excellence and
+problem-solving could also be beneficial.</li>
+<li>Lastly, gathering and acting on guest feedback continuously can help identify
+areas for improvement and reinforce the hotel&#39;s commitment to guest
+satisfaction.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

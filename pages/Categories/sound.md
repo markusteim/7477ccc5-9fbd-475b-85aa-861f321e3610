@@ -298,3 +298,132 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel is currently experiencing a range of sound-related issues that are affecting
+guest comfort. These issues stem from both external and internal sources.
+Externally, guests are disturbed by construction noise from nearby sites, including
+concrete breaking and drilling, which is particularly disruptive by the pool area and
+for those facing the road. Internally, guests have noted that the rooms are not
+sufficiently soundproofed, leading to disturbances from housekeeping activities in the
+corridors, loud refrigerators, and noise from neighboring rooms, especially during
+parties. Additionally, some guests have reported that the TV volume is too low and
+that the music played within the hotel premises is not to their liking. There are also
+comments about the curtains not closing properly, allowing sunlight to enter the
+rooms early in the morning. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Construction noise from nearby sites (construction going on right opposite the
+hotel pool, construction noise from the building next door, noise caused by the
+demolition of a building around the hotel, shame about the concrete breaking
+on the building site opposite).</li>
+<li>Maintenance and construction within the hotel (currently there are some
+maintenance and constructions happening as of September 19th, 2022).</li>
+<li>Inadequate soundproofing in rooms (rooms are not as quiet, there can
+sometimes be parties in the adjacent hotel rooms on the weekends which are
+pretty noisy).</li>
+<li>Noise from hotel operations (housekeeping was quite noisy in the corridor).</li>
+<li>Disturbances starting early in the morning (it started at 6am until late
+afternoon).</li>
+<li>Loud refrigerator in rooms (fridge is very loud).</li>
+<li>Inadequate curtain functionality (hotel management to ensure that the curtains
+close all the way, don&#39;t let the sun wake me at a too early hour).</li>
+<li>Displeasure with music played in the hotel (dodgy music).</li>
+<li>Low TV volume (tv volume was low).
+10.General external noise issues (outside noise, road is noisy, only downside is
+the current works going on over the road which makes poolside less relaxing,
+it was quite a riot time to time out there, so not great with constant concrete
+breakers going).</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these issues, the hotel could consider the following improvements:</li>
+<li>Install better soundproofing materials in the rooms and corridors to minimize
+internal noise.</li>
+<li>Coordinate with construction companies to limit the hours of operation to less
+disruptive times.</li>
+<li>Provide guests with advance notice of any planned maintenance or
+construction work within the hotel.</li>
+<li>Review and adjust the music playlist to better suit the guest demographic.</li>
+<li>Ensure that all curtains in guest rooms are fully functional and block out light
+effectively.</li>
+<li>Check and repair or replace noisy refrigerators in guest rooms.</li>
+<li>Adjust the TV systems to allow for higher volume settings.</li>
+<li>Implement a policy to manage noise levels from parties in hotel rooms,
+possibly including designated quiet hours or areas.
+10.Consider additional measures to mitigate road noise for rooms facing the
+street, such as secondary glazing.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel seems to be managing sound-related issues effectively, as evidenced by
+the guest reviews. Despite the presence of construction work nearby, guests have
+reported that it did not affect their stay, indicating that the hotel has taken measures
+to mitigate external noise. The reviews frequently mention the soundproofing of
+rooms, which suggests that the hotel has invested in infrastructure to ensure a quiet
+environment. Additionally, the availability of Bluetooth speakers and smart TVs with
+music capabilities enhances the guests' personal experience. The hotel's location in
+a quiet area and the soundproof windows further contribute to a peaceful
+atmosphere. The air conditioning system is also noted for its silent operation, adding
+to the overall comfort of the guests. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Effective soundproofing (&quot;all rooms are soundproof&quot;, &quot;rooms have excellent
+sound insulation&quot;, &quot;windows faced the road but they were soundproof&quot;)</li>
+<li>Quiet location (&quot;hotel located in nice quiet area&quot;, &quot;it is quiet&quot;, &quot;quietness&quot;)</li>
+<li>Minimal disturbance from external construction (&quot;even with some construction
+work going on across the road, this did not impact our time at all&quot;, &quot;yes there
+are some building works nearby but this did not intrude on our stay
+whatsoever&quot;)</li>
+<li>In-room entertainment options (&quot;Bluetooth speaker&quot;, &quot;i was able to be
+comfortable and listen to my music on the smart tv&quot;, &quot;great music&quot;)</li>
+<li>Silent air conditioning (&quot;air conditioning was working perfectly and silently&quot;)</li>
+<li>General quiet atmosphere in the hotel (&quot;quiet&quot;, &quot;room quiet&quot;, &quot;rooms are also
+very quiet&quot;, &quot;rooms are silent and clean&quot;, &quot;restaurant was comparatively
+quiet&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>No suggestions for this satisfaction category.</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>

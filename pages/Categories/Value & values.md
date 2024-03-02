@@ -285,3 +285,136 @@ ORDER BY
     type="grouped"
     sort=false
 />
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+        The guest reviews indicate a range of concerns primarily centered around pricing
+transparency, communication issues, and service conduct. Guests have expressed
+dissatisfaction with the perceived value for money, citing instances of being
+overcharged or feeling misled by pricing strategies. There are also reports of
+inadequate information regarding ongoing construction and its impact on the guest
+experience. Additionally, guests have encountered problems with room service
+protocols and taxi services provided by the hotel, which are seen as overpriced
+compared to metered taxis. 
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Pricing concerns (e.g., &quot;a little pricy,&quot; &quot;for what I paid, wouldn&#39;t stay again,&quot;
+&quot;hotel taxi was around 40 percent more expensive&quot;).</li>
+<li>Overcharging incidents (e.g., &quot;chap behind the desk noticed we&#39;d been
+overcharged,&quot; &quot;promised us a certain price documented in an email, but yet
+charged us a lot more&quot;).</li>
+<li>Communication breakdowns (e.g., &quot;clueless about relaying information,&quot; &quot;no
+one informed upfront about the construction&quot;).</li>
+<li>Room service issues (e.g., &quot;if i set do not disturb sign, there is no need to call
+me and ask if i want my room cleaned&quot;).</li>
+<li>Misleading sales tactics (e.g., &quot;they will try to convince you to book directly
+from their website and will give you a better pricing&quot;).</li>
+<li>Construction disturbances (e.g., &quot;they are demolishing buildings behind from
+sunrise to midnight&quot;).</li>
+<li>Taxi service dissatisfaction (e.g., &quot;guys that gets you taxis they keep saying
+there is no meter taxis,&quot; &quot;they want you to use their taxis that charge double
+the rate&quot;).</li>
+<li>Ethical concerns and staff conduct (e.g., &quot;front of house managers should be
+fired and/or replaced,&quot; &quot;two points deducted from the hotel rating, because of
+the lebanese restaurant employee&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To address these issues, the hotel management should consider the following
+actions:</li>
+<li>Review and adjust pricing to ensure it aligns with the value perceived by
+guests.</li>
+<li>Implement strict protocols to prevent overcharging and honor original pricing
+agreements.</li>
+<li>Improve communication with guests about any ongoing construction and its
+potential impact on their stay.</li>
+<li>Respect the &quot;Do Not Disturb&quot; signs and establish clear guidelines for room
+service interactions.</li>
+<li>Ensure transparency in sales tactics and avoid pressuring guests to book
+through specific channels.</li>
+<li>Reevaluate the taxi service partnership to offer more competitive rates and
+options for guests.</li>
+<li>Address staff conduct and ethical concerns by providing additional training or
+taking disciplinary actions where necessary.</li>
+
+
+    </ol> 
+    </Tab>
+
+
+    <Tab label="What does work">
+                       <b>Summary:</b>
+        <br>
+        
+        The hotel has received commendations for its value for money, with guests feeling
+that they received what they paid for and often more. The availability of
+complimentary services such as Wi-Fi, bottled water, and shuttle services to local
+attractions has been well-received. The hotel's atmosphere is described as chill and
+cool, which suggests a relaxed environment that guests enjoy. The presence of
+amenities like laundry and room service adds to the convenience factor. The hotel's
+location and the ease of using public transport have also been highlighted positively.
+The staff's language skills and punctuality have been noted, indicating good
+communication and reliability. Overall, guests seem satisfied with the balance
+between cost and the quality of services provided. 
+
+        <br>
+        <br>
+
+    <b>List of positive aspects from customer reviews:</b>
+    <ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>Value for money (e.g., &quot;good value for money option in Dubai&quot;, &quot;full value for
+the price and even beyond that&quot;)</li>
+<li>Complimentary services (e.g., &quot;complimentary bottled drinking water was in
+plenty&quot;, &quot;free shuttle to beach and it’s amazing&quot;)</li>
+<li>Good location (e.g., &quot;great location&quot;, &quot;best located hotel for its price&quot;)</li>
+<li>Convenient amenities (e.g., &quot;access to laundry, room service etc was very
+handy&quot;, &quot;your own kitchen in the room&quot;)</li>
+<li>Positive atmosphere (e.g., &quot;atmosphere is chill and cool&quot;, &quot;amazing
+atmosphere&quot;)</li>
+<li>Reliable and efficient staff (e.g., &quot;always on time&quot;, &quot;they are very
+hardworking&quot;)</li>
+<li>Language skills of staff (e.g., &quot;she talks in a few languages
+(Arab/English/French)&quot;, &quot;they speak very good English to understand them&quot;)</li>
+<li>Internet connectivity (e.g., &quot;excellent Wi-Fi&quot;, &quot;wifi is super fast&quot;)</li>
+<li>Transportation options (e.g., &quot;easy and cheap with their public transport&quot;,
+&quot;there is free bus to everywhere u want to go in Dubai&quot;)</li>
+
+
+    </ol>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ol style="list-style-type: decimal; margin-left: 20px;">
+
+    <li>To further enhance guest satisfaction, the hotel could consider expanding its
+range of complimentary services or amenities, based on guest feedback.
+Additionally, maintaining and possibly improving the current level of service
+and amenities will help to ensure that the hotel continues to be seen as
+providing excellent value for money.</li>
+<li>It may also be beneficial to highlight the hotel&#39;s ethical and sustainable
+practices, as this is an area of increasing importance for many travelers</li>
+
+
+    </ol> 
+    </Tab>
+</Tabs>
