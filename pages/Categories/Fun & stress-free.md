@@ -203,7 +203,6 @@ ORDER BY Count DESC
 ```
 
 
-Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles

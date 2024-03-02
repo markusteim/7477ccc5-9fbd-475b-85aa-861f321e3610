@@ -154,7 +154,6 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
-### Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles

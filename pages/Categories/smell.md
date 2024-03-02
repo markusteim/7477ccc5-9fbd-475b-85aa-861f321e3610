@@ -147,7 +147,6 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
-Positive Snippets
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
@@ -180,7 +179,6 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
-Neutral Snippets
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
