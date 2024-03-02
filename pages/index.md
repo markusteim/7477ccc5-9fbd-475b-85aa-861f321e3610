@@ -250,39 +250,3 @@ GROUP BY
   </div>
 </div>
 
-
-<!-- 
-```python
-
-from sklearn.cluster import KMeans 
-
--- Prepare the data for clustering 
-
-user_preferences = max_one_score[ ["Review_id", "Category", "SubCategory", "Score"] ].drop_duplicates() 
-
--- Pivot the table to get one vector per review_id 
-
-user_preferences_pivot = user_preferences.pivot_table( index="Review_id", columns=[ "Category"], values="Score", fill_value=0 ) 
-
--- Flatten the multi-level column index 
-
-user_preferences_pivot.columns = [ 
-  "_".join(map(str, col)).strip() for col in user_preferences_pivot.columns.values 
-  ] 
--- # # Initialize the KMeans clustering model with 10 clusters 
-kmeans = KMeans(n_clusters=12, random_state=0) 
--- # # Fit the model to the data 
-
-user_preferences_pivot["cluster_10"] = kmeans.fit_predict(user_preferences_pivot) 
-
--- # # Reset the index to get Review_id back as a column 
-user_preferences_pivot.reset_index(inplace=True)
-
--- # # Create the clusters dataframe 
-clusters = user_preferences_pivot[["Review_id", "cluster_10"]] 
--- # # Merge the clusters back to the original max_one_score dataframe 
-
-max_one_score = max_one_score.merge(clusters, on="Review_id", how="left")
-print(max_one_score)
-``` 
- -->

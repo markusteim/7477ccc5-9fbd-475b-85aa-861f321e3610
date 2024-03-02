@@ -258,7 +258,7 @@ ORDER BY Snippet ASC
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
   SELECT
-    LOWER(TRIM(polarity)) AS Polarity,
+    TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the travel_date
     COUNT(DISTINCT review_id) AS ReviewCount, -- Count unique review IDs
     CASE
