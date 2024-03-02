@@ -1,7 +1,103 @@
 
 # Summary
 
-Overall sentiment: Positive experiences regarding fun & stress-free dominate, with 63.4% positive to 6.6% negative feedback. Positive reviews: 231; Negative reviews: 109; Neutral reviews: 109
+Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of customers had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of customers who had a **negative experience**.
+
+
+**Negative** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=0/> 
+
+**Neutral** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=1/>
+
+**Positive** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
+
+
+```sql polarity_proportions
+WITH MergedCategoryCounts AS (
+    SELECT
+        CASE
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
+            ELSE 'other'
+        END AS CleanCategory,
+        COUNT(DISTINCT review_id) AS category_count
+    FROM
+        hotels.titles
+    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    AND TRIM(Category) = 'fun & stress-free'
+    GROUP BY
+        CASE
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
+            ELSE 'other'
+        END
+),
+TotalReviews AS (
+    SELECT
+        SUM(category_count) AS total
+    FROM
+        MergedCategoryCounts
+),
+CategoryTemplate AS (
+    SELECT 'positive' AS Category
+    UNION ALL SELECT 'negative'
+    UNION ALL SELECT 'neutral'
+)
+SELECT
+    ct.Category,
+    COALESCE(mcc.category_count, 0) AS category_count,
+    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0) AS percentage
+FROM
+    CategoryTemplate ct
+LEFT JOIN MergedCategoryCounts mcc ON ct.Category = mcc.CleanCategory
+CROSS JOIN TotalReviews tr
+ORDER BY
+    ct.Category
+```
+
+```sql sum_by_polarity
+WITH PolarityCounts AS (
+    SELECT
+        LOWER(TRIM(polarity)) AS Polarity,
+        COUNT(DISTINCT review_id) AS Polarity_sum
+    FROM
+        hotels.titles
+    WHERE travel_date BETWEEN '2022-01-01' AND '2023-12-31'
+    AND LOWER(TRIM(Category)) = 'fun & stress-free'
+    GROUP BY
+        LOWER(TRIM(polarity))
+)
+SELECT
+    Polarity,
+    Polarity_sum
+FROM PolarityCounts
+ORDER BY
+    CASE Polarity
+        WHEN 'very negative' THEN 1
+        WHEN 'negative' THEN 2
+        WHEN 'neutral' THEN 3
+        WHEN 'positive' THEN 4
+        WHEN 'very positive' THEN 5
+    END
+```
+
+<BarChart 
+    data={sum_by_polarity} 
+    swapXY=false
+    x=Polarity
+    y=Polarity_sum 
+    series=Polarity
+    sort=false
+    colorPalette={
+        [
+        "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
+        "#2ECC40", // A shade of bright green
+        "#3D9970"  // A shade of dark green
+        ]
+    }
+/>
 
 
 ## Positive:
@@ -52,78 +148,7 @@ guests.
 
 <br>
 
-```sql polarity_proportions
-WITH CategoryCounts AS (
-    SELECT
-        TRIM(polarity) AS CleanCategory,
-        COUNT(DISTINCT review_id) AS category_count
-    FROM
-        hotels.titles
-    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
-    AND TRIM(Category) = 'fun & stress-free'
-    GROUP BY
-        TRIM(polarity)
-),
-TotalReviews AS (
-    SELECT
-        SUM(category_count) AS total
-    FROM
-        CategoryCounts
-)
-SELECT
-    a.CleanCategory AS Category,
-    a.category_count,
-    ROUND((a.category_count * 100.0) / b.total, 2) AS percentage
-FROM
-    CategoryCounts a, TotalReviews b
-ORDER BY percentage DESC
-```
 
-```sql sum_by_polarity
-WITH Polarity_Ordered AS (
-  SELECT
-    TRIM(LOWER(polarity)) AS Polarity,
-    COUNT(CAST(value AS INTEGER)) AS Polarity_sum,
-    CASE
-      WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
-      WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
-      WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 3
-      WHEN TRIM(LOWER(polarity)) = 'positive' THEN 4
-      WHEN TRIM(LOWER(polarity)) = 'very positive' THEN 5
-      ELSE 6
-    END AS OrderIndex
-  FROM
-    hotels.titles
-  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
-    AND TRIM(Category) = 'fun & stress-free'
-  GROUP BY
-    TRIM(LOWER(polarity))
-)
-
-SELECT
-  Polarity,
-  Polarity_sum
-FROM Polarity_Ordered
-ORDER BY OrderIndex
-
-```
-
-<BarChart 
-    data={sum_by_polarity} 
-    swapXY=false
-    x=Polarity
-    y=Polarity_sum 
-    series=Polarity
-    sort=false
-    colorPalette={
-        [
-        "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
-        "#2ECC40", // A shade of bright green
-        "#3D9970"  // A shade of dark green
-        ]
-    }
-/>
 
 <br>
 
@@ -237,7 +262,7 @@ ORDER BY Snippet ASC
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
   SELECT
-    TRIM(LOWER(polarity)) AS Polarity,
+    LOWER(TRIM(polarity)) AS Polarity,
     Year, -- Extract the year from the travel_date
     COUNT(DISTINCT review_id) AS ReviewCount, -- Count unique review IDs
     CASE

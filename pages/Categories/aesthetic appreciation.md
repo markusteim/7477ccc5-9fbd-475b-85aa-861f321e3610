@@ -1,11 +1,99 @@
 
 
 # Summary
+Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of customers had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of customers who had a **negative experience**.
 
-Overall, the aesthetic appreciation of the hotel's material aspects leans heavily towards the positive, with roughly 91% of guests expressing admiration for the hotel's design, views, architecture, and beauty. 
-Positive reviews: 263; Negative reviews: 24; Neutral reviews: 2.
 
- 
+**Negative** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=0/> 
+
+**Neutral** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=1/>
+
+**Positive** Customer Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
+
+
+```sql polarity_proportions
+WITH MergedCategoryCounts AS (
+    SELECT
+        CASE
+            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            ELSE 'other'
+        END AS CleanCategory,
+        COUNT(DISTINCT review_id) AS category_count
+    FROM
+        hotels.titles
+    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+    AND LOWER(TRIM(Category)) = 'aesthetic appreciation'
+    GROUP BY
+        CASE
+            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            ELSE 'other'
+        END
+),
+TotalReviews AS (
+    SELECT
+        SUM(category_count) AS total
+    FROM
+        MergedCategoryCounts
+)
+SELECT
+    COALESCE(mcc.CleanCategory, 'other') AS Category,
+    COALESCE(mcc.category_count, 0) AS category_count,
+    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0.00) AS percentage
+FROM
+    (SELECT 'positive' AS Category UNION ALL SELECT 'negative' UNION ALL SELECT 'neutral') ct
+LEFT JOIN MergedCategoryCounts mcc ON ct.Category = mcc.CleanCategory
+CROSS JOIN TotalReviews tr
+ORDER BY
+    Category
+```
+
+```sql sum_by_polarity
+WITH PolarityCounts AS (
+    SELECT
+        LOWER(TRIM(polarity)) AS Polarity,
+        COUNT(DISTINCT review_id) AS Polarity_sum
+    FROM
+        hotels.titles
+    WHERE travel_date BETWEEN '2022-01-01' AND '2023-12-31'
+    AND LOWER(TRIM(Category)) = 'aesthetic appreciation'
+    GROUP BY
+        LOWER(TRIM(polarity))
+)
+SELECT
+    Polarity,
+    Polarity_sum
+FROM PolarityCounts
+ORDER BY
+    CASE Polarity
+        WHEN 'very negative' THEN 1
+        WHEN 'negative' THEN 2
+        WHEN 'neutral' THEN 3
+        WHEN 'positive' THEN 4
+        WHEN 'very positive' THEN 5
+    END
+```
+
+<BarChart 
+    data={sum_by_polarity} 
+    swapXY=false
+    x=Polarity
+    y=Polarity_sum 
+    series=Polarity
+    sort=false
+    title="Distribution of customer sentiment"
+    colorPalette={
+        [
+        "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
+        "#2ECC40", // A shade of bright green
+        "#3D9970"  // A shade of dark green
+        ]
+    }
+/>
 
 ## Positive:
 
@@ -54,79 +142,6 @@ properties was noted, with some guests feeling it lacked the same level of luxur
 5. "you cannot see the palm all the what you see is just a street"
 
 <br>
-
-```sql polarity_proportions
-WITH CategoryCounts AS (
-    SELECT
-        TRIM(polarity) AS CleanCategory,
-        COUNT(DISTINCT review_id) AS category_count
-    FROM
-        hotels.titles
-    WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
-    AND TRIM(Category) = 'aesthetic appreciation'
-    GROUP BY
-        TRIM(polarity)
-),
-TotalReviews AS (
-    SELECT
-        SUM(category_count) AS total
-    FROM
-        CategoryCounts
-)
-SELECT
-    a.CleanCategory AS Category,
-    a.category_count,
-    ROUND((a.category_count * 100.0) / b.total, 2) AS percentage
-FROM
-    CategoryCounts a, TotalReviews b
-ORDER BY percentage DESC
-```
-
-```sql sum_by_polarity
-WITH Polarity_Ordered AS (
-  SELECT
-    TRIM(LOWER(polarity)) AS Polarity,
-    COUNT(CAST(value AS INTEGER)) AS Polarity_sum,
-    CASE
-      WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
-      WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
-      WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 3
-      WHEN TRIM(LOWER(polarity)) = 'positive' THEN 4
-      WHEN TRIM(LOWER(polarity)) = 'very positive' THEN 5
-      ELSE 6
-    END AS OrderIndex
-  FROM
-    hotels.titles
-  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
-    AND TRIM(Category) = 'aesthetic appreciation'
-  GROUP BY
-    TRIM(LOWER(polarity))
-)
-
-SELECT
-  Polarity,
-  Polarity_sum
-FROM Polarity_Ordered
-ORDER BY OrderIndex
-
-```
-
-<BarChart 
-    data={sum_by_polarity} 
-    swapXY=false
-    x=Polarity
-    y=Polarity_sum 
-    series=Polarity
-    sort=false
-    colorPalette={
-        [
-        "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
-        "#2ECC40", // A shade of bright green
-        "#3D9970"  // A shade of dark green
-        ]
-    }
-/>
 
 
 

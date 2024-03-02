@@ -1,7 +1,7 @@
 
 # Overview 2022-2023
 
- ```sql titles
+ ```sql titles.sql
  select * from hotels.titles 
  WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
  ```
