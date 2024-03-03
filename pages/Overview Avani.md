@@ -1,12 +1,11 @@
- ```sql titles
- select * from hotels.titles 
- WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
- ```
-
 
 # Overview 2022-2023 Avani+ Palm View Dubai Hotel & Suites
 
 
+ ```sql titles
+ select * from hotels.titles 
+ WHERE travel_date >= '2022-01-01' AND travel_date <= '2023-12-31'
+ ```
 
 
 1. Aesthetic appreciation (<Value data={category_propositions} column=percentage row=0/>%)
