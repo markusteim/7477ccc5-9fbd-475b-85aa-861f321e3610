@@ -54,6 +54,7 @@ ORDER BY
 
 ```
 
+
 ```sql sum_by_category
 SELECT
     TRIM(LOWER(Category)) AS category_name,
@@ -66,7 +67,14 @@ GROUP BY
     TRIM(LOWER(Category)),
     polarity
 ORDER BY
-    category_value_sum DESC
+    CASE polarity
+        WHEN 'very negative' THEN 1
+        WHEN 'negative' THEN 2
+        WHEN 'neutral' THEN 3
+        WHEN 'positive' THEN 4
+        WHEN 'very positive' THEN 5
+    END,
+    category_name ASC
 ```
 
 <BarChart 
@@ -78,11 +86,11 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        '#3D9970',  // A shade of dark green
-        '#2ECC40',      // A shade of bright green
-        '#AAAAAA',       // A shade of grey
-        '#FF4136',      // A shade of red
-        '#85144B'  // A shade of dark red
+        "#85144B", // A shade of dark red
+        "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
+        "#2ECC40", // A shade of bright green
+        "#3D9970"  // A shade of dark green
         ]
     }
 />
@@ -100,6 +108,8 @@ WHERE
   travel_date BETWEEN '2022-01-01' AND '2023-12-31'
 GROUP BY
   Category
+ORDER BY 
+  Category ASC
 
 ```
 
@@ -125,6 +135,8 @@ WHERE
 GROUP BY
   Category,
   polarity
+ORDER BY 
+  Category ASC
 ```
 
 ```sql negative_reviews_2023
@@ -140,6 +152,8 @@ WHERE
 GROUP BY
   Category,
   polarity
+ORDER BY 
+  Category ASC
 ```
 
 <div style="display: flex; justify-content: space-between;">
@@ -197,6 +211,8 @@ WHERE
 GROUP BY
   Category,
   polarity
+ORDER BY 
+  Category ASC
 ```
 
 ```sql positive_reviews_2023
@@ -212,6 +228,8 @@ WHERE
 GROUP BY
   Category,
   polarity
+ORDER BY 
+  Category ASC
 ```
 
 <div style="display: flex; justify-content: space-between;">

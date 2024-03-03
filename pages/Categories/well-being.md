@@ -100,6 +100,13 @@ ORDER BY
         "#3D9970"  // A shade of dark green
         ]
     }
+    echartsOptions={{
+    xAxis: {
+      axisLabel: {
+        rotate: 45 // Rotate labels by 45 degrees if on mobile
+      }
+    }
+  }}
 />
 
 
@@ -302,6 +309,13 @@ ORDER BY
     groupBy="Year" 
     type="grouped"
     sort=false
+    echartsOptions={{
+    xAxis: {
+      axisLabel: {
+        rotate: 45 // Rotate labels by 45 degrees if on mobile
+      }
+    }
+  }}
 />
 
 
