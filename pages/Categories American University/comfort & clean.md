@@ -2,7 +2,7 @@
  select * from hotels.summaries 
  ```
 
-# Summary
+# Summary 
 
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
@@ -14,7 +14,9 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-In the realm of olfactory experiences at the university, the sentiment skews towards the negative, with more instances of unpleasant odors being reported than those of fresh and pleasant scents. The negative comments focus on the prevalence of smoke-related smells, which seem to be a common issue around campus areas, particularly near dorms and building entrances.
+
+The reviews present a mixed bag of sentiments regarding comfort and cleanliness at the university. While there are numerous positive remarks about spacious and clean dorms, well-kept facilities, and mild weather, there are also significant complaints about cramped rooms, pest issues, and unpredictable weather patterns. The positive experiences seem to slightly outweigh the negative ones, but the concerns raised are not trivial and point to areas needing improvement.
+
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
@@ -25,11 +27,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'smells'
+    AND TRIM(Category) = 'comfort & clean'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -62,15 +64,17 @@ ORDER BY
 ```
 
 
+
+
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'smells'
+    AND LOWER(TRIM(Category)) = 'comfort & clean'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -97,8 +101,11 @@ ORDER BY
     sort=false
     colorPalette={
         [
+        "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
+        "#3D9970"  // A shade of dark green
         ]
     }
     echartsOptions={{
@@ -111,43 +118,57 @@ ORDER BY
 />
 
 
-
 ## Positive:
-- Fresh Environment: The university offers a breath of fresh air, providing a sense of cleanliness and openness.
+
+- Spacious Accommodations: Students appreciate the larger-than-average room sizes, with ample built-in storage and comfortable living spaces.
+- Clean Facilities: Many reviews highlight the cleanliness of dorms, bathrooms, and public areas, noting daily cleaning routines.
+- Climate Control: The ability to control room temperature with AC/heating units is praised, as well as the mildness of the DC weather compared to other regions.
+- Well-Maintained Gyms: The new Cassell gym and other athletic facilities receive commendations for being in great condition and well-kept.
+- Pleasant Environment: The campus is described as clean and well-maintained, contributing to a comfortable and enjoyable atmosphere for students.
 
 
 ## Negative:
-- Dorm Odors: A strong whiff of marijuana occasionally emanates from dorm rooms, causing discomfort to passersby.
-- Entrance Smoke: Students smoking right next to building entrances create an unwelcoming atmosphere.
-- Smoker Presence: The campus has a noticeable number of smokers, which can be irritating to non-smokers.
-- Intermittent Smoking: Even occasional smoking by people around the campus is a source of annoyance.
+
+- Cramped Quarters: Complaints about overcrowded rooms, especially when three people are squeezed into spaces meant for two, are common.
+- Pest Problems: Several reviews mention issues with cockroaches, mice, and rats in dorms, which significantly detract from the living experience.
+- Weather Woes: The unpredictability of DC weather, including humidity, rain, and temperature fluctuations, is a source of discomfort for some.
+- Inadequate Facilities: Students note that some facilities, like the gym, are too small for the student body, and there are reports of malfunctioning appliances.
+- Sanitation Concerns: Cleanliness is inconsistent, with some areas being well-maintained while others suffer from neglect, leading to unsanitary conditions.
 
 
 <br>
 
 ## Most Positive Examples:
-- "gives me a sense of fresh air"
+- "dorms are very clean"
+- "rooms are pretty spacious"
+- "campus is clean"
+- "dormitories are comfortable to live in"
+- "public bathrooms and lounges are cleaned everyday which is nice"
+
 
  
 
 ## Most Negative Examples:
-- "strong whiff of marijuana"
-- "smoke right next to building entrances"
-- "a lot of smokers, too, which can be obnoxious"
-- "people smoking occasionally"
+- "dorm living conditions are dismal"
+- "apartment is slightly known for its cockroach problem"
+- "rooms are crowded"
+- "it can be sunny and 80 degrees one day and rainy and 60 degrees the next"
+- "some of the dorms have mold"
 
+<br>
 
 
 
 <br>
 
-
 # Headlines and corresponding snippets from reviews
+
+<br>
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -158,7 +179,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -179,7 +200,7 @@ ORDER BY Snippet ASC
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -190,7 +211,7 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -211,7 +232,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -222,7 +243,7 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'smells'
+WHERE TRIM(LOWER(Category)) = 'comfort & clean'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -241,13 +262,14 @@ ORDER BY Snippet ASC
 <br>
 
 # Student sentiment distribution (2020-2023)
+Student sentiment distribution (2020-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -260,7 +282,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'fun & stress-free' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'comfort & clean' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -292,5 +314,3 @@ ORDER BY
     }
   }}
 />
-
-

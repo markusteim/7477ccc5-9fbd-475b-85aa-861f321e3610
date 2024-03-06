@@ -2,7 +2,7 @@
  select * from hotels.summaries 
  ```
 
-# Summary 
+# Summary
 
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
@@ -14,8 +14,7 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-
-The reviews present a mixed bag of sentiments regarding comfort and cleanliness at the university. While there are numerous positive remarks about spacious and clean dorms, well-kept facilities, and mild weather, there are also significant complaints about cramped rooms, pest issues, and unpredictable weather patterns. The positive experiences seem to slightly outweigh the negative ones, but the concerns raised are not trivial and point to areas needing improvement.
+In the realm of lighting and visibility, the university's reviews present a mixed bag of sentiments. While some students appreciate the abundance of natural light, others express dissatisfaction with poorly lit areas, particularly the bathrooms. The positive remarks highlight the university's use of natural light, whereas the negative comments focus on the need for improved artificial lighting.
 
 
 ```sql polarity_proportions
@@ -27,11 +26,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'comfort & clean'
+    AND TRIM(Category) = 'visibility'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -64,17 +63,15 @@ ORDER BY
 ```
 
 
-
-
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'comfort & clean'
+    AND LOWER(TRIM(Category)) = 'visibility'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -101,9 +98,7 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
         ]
@@ -117,58 +112,42 @@ ORDER BY
   }}
 />
 
+<br>
 
 ## Positive:
-
-- Spacious Accommodations: Students appreciate the larger-than-average room sizes, with ample built-in storage and comfortable living spaces.
-- Clean Facilities: Many reviews highlight the cleanliness of dorms, bathrooms, and public areas, noting daily cleaning routines.
-- Climate Control: The ability to control room temperature with AC/heating units is praised, as well as the mildness of the DC weather compared to other regions.
-- Well-Maintained Gyms: The new Cassell gym and other athletic facilities receive commendations for being in great condition and well-kept.
-- Pleasant Environment: The campus is described as clean and well-maintained, contributing to a comfortable and enjoyable atmosphere for students.
+- **Natural Illumination:** Students rave about the large windows and the huge plus of natural light flooding the campus, creating an inviting and vibrant atmosphere.
+- **Architectural Brightness:** The presence of huge windows not only enhances the aesthetic appeal but also contributes to a well-lit environment, promoting a positive mood and productivity.
 
 
 ## Negative:
-
-- Cramped Quarters: Complaints about overcrowded rooms, especially when three people are squeezed into spaces meant for two, are common.
-- Pest Problems: Several reviews mention issues with cockroaches, mice, and rats in dorms, which significantly detract from the living experience.
-- Weather Woes: The unpredictability of DC weather, including humidity, rain, and temperature fluctuations, is a source of discomfort for some.
-- Inadequate Facilities: Students note that some facilities, like the gym, are too small for the student body, and there are reports of malfunctioning appliances.
-- Sanitation Concerns: Cleanliness is inconsistent, with some areas being well-maintained while others suffer from neglect, leading to unsanitary conditions.
+- **Bathroom Shadows:** A common grievance among students is the inadequate lighting in the bathrooms, which are described as dark and not very bright, suggesting a need for better lighting solutions.
+- **Shower Visibility:** The dim lighting in the shower areas is a point of contention, with calls for better lighting to improve the experience.
+- **General Lighting:** Some areas of the campus are noted to be cloudy and could benefit from enhanced lighting to ensure safety and comfort.
 
 
 <br>
 
 ## Most Positive Examples:
-- "dorms are very clean"
-- "rooms are pretty spacious"
-- "campus is clean"
-- "dormitories are comfortable to live in"
-- "public bathrooms and lounges are cleaned everyday which is nice"
+- "large amount of natural light"
+- "huge windows"
+- "another huge plus is the amount of natural light"
 
-
- 
 
 ## Most Negative Examples:
-- "dorm living conditions are dismal"
-- "apartment is slightly known for its cockroach problem"
-- "rooms are crowded"
-- "it can be sunny and 80 degrees one day and rainy and 60 degrees the next"
-- "some of the dorms have mold"
-
-<br>
-
-
+- "bathrooms weren't so dark"
+- "bathrooms aren't very bright"
+- "better lighting for the showers"
+- "pretty cloudy"
+- "some areas could be better-lit"
 
 <br>
 
 # Headlines and corresponding snippets from reviews
 
-<br>
-
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -179,7 +158,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -200,7 +179,7 @@ ORDER BY Snippet ASC
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -208,10 +187,11 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
+
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -232,7 +212,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -243,7 +223,7 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'comfort & clean'
+WHERE TRIM(LOWER(Category)) = 'visibility'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -262,14 +242,13 @@ ORDER BY Snippet ASC
 <br>
 
 # Student sentiment distribution (2020-2023)
-Student sentiment distribution (2020-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -282,7 +261,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'comfort & clean' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'visibility' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year

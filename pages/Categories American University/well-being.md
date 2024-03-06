@@ -14,7 +14,7 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The general sentiment from the university reviews presents a mixed bag of experiences, with a notable number of students expressing both satisfaction and dissatisfaction. Positive comments often highlight the university's location, opportunities, and specific programs, while negative remarks tend to focus on issues with housing, dining, and a perceived lack of school spirit or community. The balance between positive and negative sentiments seems to lean slightly towards the positive, but the criticisms are significant and recurrent enough to suggest that the university experience is far from perfect for many students.
+The reviews present a mixed sentiment regarding the physical and mental well-being of students at the university. Positive comments often highlight the convenience and quality of transportation, athletic facilities, and the campus environment. In contrast, negative remarks frequently address inadequate mental health services, dietary concerns, and the challenges of maintaining a healthy lifestyle amidst academic pressures.
 
 
 ```sql polarity_proportions
@@ -26,11 +26,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'impressions'
+    AND TRIM(Category) = 'well-being'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -62,18 +62,17 @@ ORDER BY
     ct.Category
 ```
 
-<br>
 
 
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'impressions'
+    AND LOWER(TRIM(Category)) = 'well-being'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -117,41 +116,44 @@ ORDER BY
 />
 
 
+<br>
+
+
 ## Positive:
-- **Campus Location**: Students love the university's setting in Washington D.C., which provides a wealth of internship opportunities and cultural experiences.
-- **Academic Programs**: Certain programs, particularly in international relations and political science, receive high praise for their quality and the passion of both students and faculty.
-- **Diversity & Inclusion**: The university is commended for its diverse student body and the presence of a large LGBTQ community, which contributes to an inclusive environment.
-- **Study Abroad**: Many students highlight the study abroad programs as a standout feature, offering unique and enriching experiences.
-- **Campus Resources**: Resources like the library and certain academic facilities are appreciated, and some students have had positive experiences with faculty and staff.
+- **Campus Accessibility:** Students appreciate the compact campus, with easy access to buildings and facilities, including state-of-the-art sports centers and frequent shuttle services.
+- **Transportation Options:** The availability of shuttles, metro, and buses is praised for making travel convenient, reducing the need for cars, and supporting an active lifestyle.
+- **Athletic Facilities:** The presence of multiple fitness centers, pools, and sports fields is noted as beneficial for staying in shape and participating in recreational activities.
+- **Academic Support:** The university's resources, such as the library and study areas, are commended for helping students succeed and maintain a balanced workload.
+- **Healthy Living:** Some students highlight the availability of healthy food options and the encouragement of walking, which contributes to a healthier lifestyle.
 
  
 
 ## Negative:
-- **Housing & Dining**: Complaints about the housing lottery, dorm conditions, and dining services are common, with many students finding them subpar.
-- **Campus Spirit**: A lack of traditional college spirit and engagement in sports is frequently mentioned, with some students feeling disconnected from campus life.
-- **Greek Life**: The Greek system receives mixed reviews, with some students enjoying it and others finding it lacking, especially compared to other universities.
-- **Cost & Financial Aid**: The high cost of attendance and issues with financial aid are concerns for many, impacting the overall university experience.
-- **Administrative Issues**: Students express frustration with administrative processes and some faculty members, feeling that their needs and concerns are not always adequately addressed.
+- **Mental Health Concerns:** Reviews criticize the university for poor mental health resources, long wait times for counseling, and a lack of support for students with mental health issues.
+- **Dietary Challenges:** Students with dietary restrictions face difficulties finding suitable food options on campus, leading to health concerns.
+- **Fitness Barriers:** Despite good facilities, some students struggle to find time to use the gym, and there is criticism of the university's support for recreational fitness.
+- **Health Services Critique:** The health center is described as having undertrained staff, being inconvenient, and not meeting students' medical needs effectively.
+- **Substance Use:** There are mentions of prevalent drug use among students, which raises concerns about the overall well-being and safety on campus.
 
 
 <br>
 
 ## Most Positive Examples:
-- "i absolutely love it here"
-- "it's the best thing that's ever happened to me"
-- "i love going to this school!"
-- "au really has it all"
-- "i would definitely suggest looking into the school"
+- "state of the art facilities for the sports"
+- "shuttle comes often"
+- "everything is very accessible"
+- "athletic facilities are good"
+- "campus is relatively small and compact"
 
 
  
 
 ## Most Negative Examples:
-- "i regret ever thinking this was my dream school"
-- "i had a horrible time from day one"
-- "i wouldn't recommend the school to my worst enemy"
-- "i've been trying to argue my case ever since"
-- "i probably wouldn't go here if it weren't for my major"
+- "adequate mental health services"
+- "they also have very poor mental health resources"
+- "health center does not have very good doctors/physician assistants"
+- "school doesn't care about the student's mental health or wellbeing"
+- "getting sick almost everyday"
 
 <br>
 
@@ -159,16 +161,12 @@ ORDER BY
 
 
 
-<br>
-
-## Headlines and corresponding snippets from reviews
-
-<br>
+# Headlines and corresponding snippets from reviews
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -179,7 +177,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -198,11 +196,10 @@ ORDER BY Snippet ASC
 <br>
 
 
-
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -210,10 +207,11 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
+
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -235,7 +233,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -246,7 +244,7 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'impressions'
+WHERE TRIM(LOWER(Category)) = 'well-being'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -271,7 +269,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -284,7 +282,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'fun & stress-free' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'well-being' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year

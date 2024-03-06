@@ -14,10 +14,9 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the university reviews regarding tastes, food, dining, and restaurants seems to be a mix of satisfaction and dissatisfaction. While some students appreciate the variety and quality of food options available, particularly off-campus, others express disappointment with the on-campus dining experience, citing limited options, repetitive menus, and subpar quality. The positive remarks often highlight the diversity of international cuisine and the presence of popular chain restaurants, whereas the negative comments tend to focus on the lack of variety and the quality of food provided by the university's dining services.
+In the realm of olfactory experiences at the university, the sentiment skews towards the negative, with more instances of unpleasant odors being reported than those of fresh and pleasant scents. The negative comments focus on the prevalence of smoke-related smells, which seem to be a common issue around campus areas, particularly near dorms and building entrances.
 
 ```sql polarity_proportions
-
 WITH MergedCategoryCounts AS (
     SELECT
         CASE
@@ -26,11 +25,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'tastes'
+    AND TRIM(Category) = 'smells'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -62,15 +61,16 @@ ORDER BY
     ct.Category
 ```
 
+
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'tastes'
+    AND LOWER(TRIM(Category)) = 'smells'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -97,11 +97,8 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
-        "#3D9970"  // A shade of dark green
         ]
     }
     echartsOptions={{
@@ -114,55 +111,43 @@ ORDER BY
 />
 
 
-## Positive:
-- **International Flavors:** Students enjoy a range of international cuisine, from Mexican to Indian, with specific mentions of world-renowned restaurants and a wide swath of cultural cuisines available in the area.
-- **Dining Variety:** The dining hall is praised for its variety, and off-campus dining options are described as plentiful, with Tenleytown offering a great selection of restaurants.
-- **Affordable Meals:** There are mentions of being able to get a great meal for around $10-$15, indicating that students can find value for money when dining.
-- **Meal Swipes:** The tavern and salsa are appreciated for accepting meal swipes, providing alternative dining options on campus.
-- **Specialty Options:** The ice cream bar receives special mention for being phenomenal, and there's appreciation for the variety of restaurants and the availability of different food options in the area.
 
- 
+## Positive:
+- Fresh Environment: The university offers a breath of fresh air, providing a sense of cleanliness and openness.
+
 
 ## Negative:
-- **Limited On-Campus:** Students express frustration with the limited on-campus food options, with some finding it difficult to use up their meal plans and others describing the food as barely edible or repetitive.
-- **Quality Concerns:** The quality of campus food is criticized, with some students labeling it as terrible and others suggesting that it lacks dignity.
-- **Health and Variety:** There are calls for more gluten-free options and healthier choices, indicating a desire for more diverse and accommodating dining services.
-- **Repetitiveness:** Food options are described as not great, with some students feeling that the dining experience could be improved and others finding the food options to be boring and unappetizing.
-- **Dining Hall Issues:** The main dining hall, TDR, is mentioned as having its great and horrible days, and there's a sentiment that everyone gets sick of it at some point.
+- Dorm Odors: A strong whiff of marijuana occasionally emanates from dorm rooms, causing discomfort to passersby.
+- Entrance Smoke: Students smoking right next to building entrances create an unwelcoming atmosphere.
+- Smoker Presence: The campus has a noticeable number of smokers, which can be irritating to non-smokers.
+- Intermittent Smoking: Even occasional smoking by people around the campus is a source of annoyance.
 
 
 <br>
 
 ## Most Positive Examples:
-- "world-renowned restaurants"
-- "the ice cream bar is phenomenal!"
-- "variety of international food to choose from"
-- "dining hall with a lot of varieties"
-- "great food"
-
+- "gives me a sense of fresh air"
 
  
 
 ## Most Negative Examples:
-- "food isn't great"
-- "meal plan is impossible to use up"
-- "food can get repetitive"
-- "sometimes is barely edible"
-- "terrible food"
-
-<br>
+- "strong whiff of marijuana"
+- "smoke right next to building entrances"
+- "a lot of smokers, too, which can be obnoxious"
+- "people smoking occasionally"
 
 
 
 
 <br>
 
-## Headlines and corresponding snippets from reviews
+
+# Headlines and corresponding snippets from reviews
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -173,12 +158,13 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
+
 <Tabs>
     <Tab label="Positive Headlines">
         <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
@@ -193,7 +179,7 @@ ORDER BY Snippet ASC
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -204,7 +190,7 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -225,7 +211,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -236,7 +222,7 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'tastes'
+WHERE TRIM(LOWER(Category)) = 'smells'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -261,7 +247,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -274,7 +260,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'fun & stress-free' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'smells' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -306,4 +292,5 @@ ORDER BY
     }
   }}
 />
+
 

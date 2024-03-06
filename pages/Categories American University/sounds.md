@@ -2,8 +2,8 @@
  select * from hotels.summaries 
  ```
 
-# Summary
 
+# Summary
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
 
@@ -13,8 +13,7 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-
-The overall sentiment from the snippets regarding safety and security at the university is mixed, with a lean towards positive experiences. Students generally feel safe on campus, citing low crime rates and good security measures. However, there are concerns about safety off-campus and the occasional negative incident that affects the sense of security.
+The university's soundscape seems to be a mix of harmony and cacophony, with students experiencing both the vibrant local music scene and the disruptive noise from fire alarms and frat houses. The positive remarks are fewer, suggesting that while there are pockets of tranquility, particularly on the north side, the overall sentiment leans towards the challenges of dealing with unwanted noise.
 
 
 ```sql polarity_proportions
@@ -26,11 +25,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'safety'
+    AND TRIM(Category) = 'sounds'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -62,16 +61,16 @@ ORDER BY
     ct.Category
 ```
 
-
+ 
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
-    WHERE date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'safety'
+    WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
+    AND LOWER(TRIM(Category)) = 'sounds'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -100,6 +99,7 @@ ORDER BY
         [
         "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
+        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
         ]
@@ -113,55 +113,53 @@ ORDER BY
   }}
 />
 
-<br> 
+ <br>
 
 ## Positive:
-- **Campus Safety:** Students feel secure with the presence of campus police, blue light emergency phones, and public safety officers patrolling after 9pm. Examples include the quick response to emergency calls and the visibility of security vehicles.
-- **Neighborhood Security:** The university is situated in a safe and quiet neighborhood, contributing to students' comfort. The proximity to Homeland Security and low crime rates in the surrounding area are often mentioned.
-- **Safety Measures:** The university's efforts in safety training, such as self-defense classes and preventative training, are appreciated. Additionally, the security system is described as top-notch, with locked closets in dorms and emergency systems installed across campus.
-- **Night Safety:** Many students report feeling safe walking alone at night on campus, thanks to well-lit paths and constant patrols.
-- **Security Alerts:** The university's communication regarding safety concerns, including text alerts and helicopter searches during emergencies, is seen as a positive aspect of campus security.
+- **Quiet Mornings:** Mary Graydon offers a peaceful start to the day, transforming into a lively hub as the evening approaches.
+- **Music Scene:** The local music scene adds a cultural beat to the university life, providing an escape from academic pressures.
+- **Northside Calm:** The north side of campus is appreciated for its quieter reputation, offering a respite from the hustle and bustle.
+- **Suburban Silence:** Living in the suburbs provides a serene environment, away from the university's noise.
+- **Arena Excitement:** The entire arena comes alive with the sound of screaming fans, showcasing school spirit and enthusiasm.
 
  
 
 ## Negative:
-- **Off-Campus Concerns:** Students express unease once leaving campus, with some areas described as sketchy or tense, and advice against walking alone late at night.
-- **Theft Issues:** There are reports of theft, particularly of unattended laptops, and recommendations to use U-locks for bikes and to lock dorm doors.
-- **Substance Abuse:** While the drug scene is described as almost non-existent, there are warnings about obtaining drugs from trusted sources and the need to be cautious.
-- **Safety Incidents:** A few students mention incidents such as armed non-students on campus and thefts, which have impacted their sense of security.
-- **Party Safety:** Some students feel less safe at frat parties and advise against walking alone to and from such events.
+- **Incessant Alarms:** The dorms are plagued by frequent fire alarms, disrupting sleep and study routines.
+- **Thin Walls:** The dormitory walls are so thin that privacy is compromised, with every action of the neighbors audible.
+- **Loud Southside:** Southside is notorious for being louder, with more disturbances and security concerns.
+- **Frat House Ruckus:** The proximity to frat houses means dealing with loud parties and sleepless nights.
+- **Noise Violations:** The university is strict about noise violations, yet some noisy neighbors and partygoers seem to evade repercussions.
+
 
 <br>
 
 ## Most Positive Examples:
-- "campus crime is extremely low"
-- "feel safe even when i am walking alone across the campus"
-- "security is really good about notifying everyone about any security concerns"
-- "safety staff are always on call"
-- "they had helicopters within the hour to search campus"
+- "not too noisy"
+- "local music scene"
+- "north side is much quieter"
+- "i live in a suburb where it is quiet"
+- "entire arena is filled with screaming fans"
 
 
+ 
 ## Most Negative Examples:
-- "it can be very sketchy"
-- "theft has been a problem"
-- "we had a small gunner scare (it ended up being a mistake)"
-- "only thing safe about it is people obtaining drugs from 'a guy they trust'"
-- "if the environment doesn't feel right, don't come here"
+- "play terrible music"
+- "20 fire alarms in the dorm"
+- "noisy and rude neighbors"
+- "noisy neighbors and drunks got away with everything scott free"
+- "but there are quiet hours that you can get in trouble for violating"
 
 <br>
 
 
-
-<br>
 
 # Headlines and corresponding snippets from reviews
-
-<br>
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -172,7 +170,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -190,10 +188,11 @@ ORDER BY Snippet ASC
 
 <br>
 
+
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -204,7 +203,7 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -225,7 +224,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -233,10 +232,12 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
+
+
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'safety'
+WHERE TRIM(LOWER(Category)) = 'sounds'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -261,7 +262,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -274,7 +275,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'fun & stress-free' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'sounds' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -306,3 +307,4 @@ ORDER BY
     }
   }}
 />
+

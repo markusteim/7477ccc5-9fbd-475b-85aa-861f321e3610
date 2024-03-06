@@ -1,5 +1,5 @@
 
-# Overview AU
+# Overview American University
 
 
  ```sql titles
@@ -47,7 +47,7 @@ WITH AllCategories AS (
 CategoryCounts AS (
     SELECT
         TRIM(LOWER(Category)) AS Category,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     GROUP BY

@@ -2,8 +2,8 @@
  select * from hotels.summaries 
  ```
 
-
 # Summary
+
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
 
@@ -13,7 +13,9 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-The university's soundscape seems to be a mix of harmony and cacophony, with students experiencing both the vibrant local music scene and the disruptive noise from fire alarms and frat houses. The positive remarks are fewer, suggesting that while there are pockets of tranquility, particularly on the north side, the overall sentiment leans towards the challenges of dealing with unwanted noise.
+
+The reviews present a mixed sentiment regarding sexual experiences at the university. While some students find the campus social scene and the attractiveness of their peers to be positive, there are serious concerns about sexual assault and the gender ratio affecting dating prospects.
+
 
 
 ```sql polarity_proportions
@@ -25,11 +27,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'sounds'
+    AND TRIM(Category) = 'sexual'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -61,16 +63,17 @@ ORDER BY
     ct.Category
 ```
 
- 
+
+
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'sounds'
+    AND LOWER(TRIM(Category)) = 'sexual'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -113,44 +116,48 @@ ORDER BY
   }}
 />
 
- <br>
+
+<br>
+
 
 ## Positive:
-- **Quiet Mornings:** Mary Graydon offers a peaceful start to the day, transforming into a lively hub as the evening approaches.
-- **Music Scene:** The local music scene adds a cultural beat to the university life, providing an escape from academic pressures.
-- **Northside Calm:** The north side of campus is appreciated for its quieter reputation, offering a respite from the hustle and bustle.
-- **Suburban Silence:** Living in the suburbs provides a serene environment, away from the university's noise.
-- **Arena Excitement:** The entire arena comes alive with the sound of screaming fans, showcasing school spirit and enthusiasm.
+- **Campus Attractiveness:** Students find peers attractive, noting "guys on campus are usually very well put together" and "gt students are gorgeous."
+- **Diverse Options:** There's a variety of individuals ranging from "the typical frat boy to an exotic looking lad," and "lots of adorable gay men."
+- **Relationship Culture:** Some students appreciate the "dorm culture" and the fact that "a lot of people are in serious relationships."
+- **Style Points:** Positive remarks are made about attire, with students wearing "skirts and cute tops" and being "cute" or "hot."
 
  
 
 ## Negative:
-- **Incessant Alarms:** The dorms are plagued by frequent fire alarms, disrupting sleep and study routines.
-- **Thin Walls:** The dormitory walls are so thin that privacy is compromised, with every action of the neighbors audible.
-- **Loud Southside:** Southside is notorious for being louder, with more disturbances and security concerns.
-- **Frat House Ruckus:** The proximity to frat houses means dealing with loud parties and sleepless nights.
-- **Noise Violations:** The university is strict about noise violations, yet some noisy neighbors and partygoers seem to evade repercussions.
+- **Sexual Assault Concerns:** Multiple reviews mention a prevalent problem with "rape and sexual assault," with specific references to "frat parties" and "gross frat guys."
+- **Gender Imbalance:** The "effects of the gender ratio are horrible for straight girls," and there's a sentiment that "guys here are horrible."
+- **Limited Selection:** Students express disappointment in the dating pool, using terms like "au goggles" to describe settling for less attractive partners due to limited options.
+- **Unwanted Attention:** There are reports of "girls are desperate for male attention" and negative experiences such as being "stalked by a graduate student."
+- **Campus Reputation:** The university is criticized for not having an "attractive student body" and for the male to female ratio being "way off."
 
 
 <br>
 
 ## Most Positive Examples:
-- "not too noisy"
-- "local music scene"
-- "north side is much quieter"
-- "i live in a suburb where it is quiet"
-- "entire arena is filled with screaming fans"
+- "guys on campus are usually very well put together"
+- "gt students are gorgeous"
+- "dorm culture is amazing"
+- "beautiful women everywhere on campus and in the city"
+- "people in dc also tend to be attractive"
 
 
  
+
 ## Most Negative Examples:
-- "play terrible music"
-- "20 fire alarms in the dorm"
-- "noisy and rude neighbors"
-- "noisy neighbors and drunks got away with everything scott free"
-- "but there are quiet hours that you can get in trouble for violating"
+- "pretty rapey"
+- "rape and sexual assault is a prevalent problem"
+- "watch out as there have been several sexual assaults at frat parties in recent years"
+- "stalked by a graduate student who used his on-campus job to find information"
+- "lots of frats are also infamous for sexual assault and making kids sick"
 
 <br>
+
+
 
 
 
@@ -159,7 +166,7 @@ ORDER BY
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -170,7 +177,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -192,7 +199,7 @@ ORDER BY Snippet ASC
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -200,10 +207,11 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
+
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -221,10 +229,11 @@ ORDER BY Snippet ASC
 
 <br>
 
+
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -232,12 +241,10 @@ GROUP BY Headline
 ORDER BY Count DESC
 ```
 
-
-
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'sounds'
+WHERE TRIM(LOWER(Category)) = 'sexual'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -262,7 +269,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -275,7 +282,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'fun & stress-free' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'sexual' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -307,4 +314,3 @@ ORDER BY
     }
   }}
 />
-

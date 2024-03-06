@@ -3,6 +3,7 @@
  ```
 
 # Summary
+
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
 
@@ -13,27 +14,28 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the university reviews regarding the sense of belonging, care, and support is predominantly positive. Students frequently express feelings of being welcomed, supported by faculty, and finding their community within various groups and organizations. However, there are instances of negative experiences where students felt isolated, uncared for, or found the social atmosphere lacking.
+The overall sentiment from the university reviews regarding tastes, food, dining, and restaurants seems to be a mix of satisfaction and dissatisfaction. While some students appreciate the variety and quality of food options available, particularly off-campus, others express disappointment with the on-campus dining experience, citing limited options, repetitive menus, and subpar quality. The positive remarks often highlight the diversity of international cuisine and the presence of popular chain restaurants, whereas the negative comments tend to focus on the lack of variety and the quality of food provided by the university's dining services.
 
 ```sql polarity_proportions
+
 WITH MergedCategoryCounts AS (
     SELECT
         CASE
-            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
-            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
-            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'aesthetics'
+    AND TRIM(Category) = 'tastes'
     GROUP BY
         CASE
-            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
-            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
-            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END
 ),
@@ -42,28 +44,33 @@ TotalReviews AS (
         SUM(category_count) AS total
     FROM
         MergedCategoryCounts
+),
+CategoryTemplate AS (
+    SELECT 'positive' AS Category
+    UNION ALL SELECT 'negative'
+    UNION ALL SELECT 'neutral'
 )
 SELECT
-    COALESCE(mcc.CleanCategory, 'other') AS Category,
+    ct.Category,
     COALESCE(mcc.category_count, 0) AS category_count,
-    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0.00) AS percentage
+    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0) AS percentage
 FROM
-    (SELECT 'positive' AS Category UNION ALL SELECT 'negative' UNION ALL SELECT 'neutral') ct
+    CategoryTemplate ct
 LEFT JOIN MergedCategoryCounts mcc ON ct.Category = mcc.CleanCategory
 CROSS JOIN TotalReviews tr
 ORDER BY
-    Category
+    ct.Category
 ```
 
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'aesthetics'
+    AND LOWER(TRIM(Category)) = 'tastes'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -88,7 +95,6 @@ ORDER BY
     y=Polarity_sum 
     series=Polarity
     sort=false
-    title="Distribution of customer sentiment"
     colorPalette={
         [
         "#85144B", // A shade of dark red
@@ -108,56 +114,55 @@ ORDER BY
 />
 
 
-
 ## Positive:
-- **Community Building:** Students often find their place within the university through clubs, Greek life, and residence halls, creating tight-knit communities and meaningful friendships.
-- **Faculty Engagement:** Many professors are praised for being approachable, responsive, and genuinely caring about students' well-being, often going beyond academic support.
-- **Diverse Inclusion:** The university's diverse student body and faculty contribute to an environment where different backgrounds are celebrated, fostering a sense of belonging for international and minority students.
-- **Academic Support:** There is a strong emphasis on academic assistance, with numerous resources available on campus, and professors who are willing to help students understand course material.
-- **Personal Growth:** The university environment encourages personal and professional connections, internships, and a broader perspective, contributing to students' growth and future opportunities.
+- **International Flavors:** Students enjoy a range of international cuisine, from Mexican to Indian, with specific mentions of world-renowned restaurants and a wide swath of cultural cuisines available in the area.
+- **Dining Variety:** The dining hall is praised for its variety, and off-campus dining options are described as plentiful, with Tenleytown offering a great selection of restaurants.
+- **Affordable Meals:** There are mentions of being able to get a great meal for around $10-$15, indicating that students can find value for money when dining.
+- **Meal Swipes:** The tavern and salsa are appreciated for accepting meal swipes, providing alternative dining options on campus.
+- **Specialty Options:** The ice cream bar receives special mention for being phenomenal, and there's appreciation for the variety of restaurants and the availability of different food options in the area.
 
+ 
 
 ## Negative:
-- **Social Challenges:** Some students experience feelings of isolation, difficulty fitting in, or find the social scene lacking, particularly if they are not part of Greek life or specific social groups.
-- **Faculty Indifference:** A few students report encounters with faculty who seem apathetic or uninterested in student success, contrasting with the otherwise positive faculty reviews.
-- **Financial Struggles:** There are mentions of the university not being accommodating to students facing financial difficulties, affecting their sense of support.
-- **Exclusivity Issues:** Negative experiences include feeling unwelcome in certain groups, facing discrimination, or dealing with a competitive atmosphere that hinders inclusivity.
-- **Administrative Barriers:** Some students find the administration unhelpful or bureaucratic, which can detract from the sense of community and support.
+- **Limited On-Campus:** Students express frustration with the limited on-campus food options, with some finding it difficult to use up their meal plans and others describing the food as barely edible or repetitive.
+- **Quality Concerns:** The quality of campus food is criticized, with some students labeling it as terrible and others suggesting that it lacks dignity.
+- **Health and Variety:** There are calls for more gluten-free options and healthier choices, indicating a desire for more diverse and accommodating dining services.
+- **Repetitiveness:** Food options are described as not great, with some students feeling that the dining experience could be improved and others finding the food options to be boring and unappetizing.
+- **Dining Hall Issues:** The main dining hall, TDR, is mentioned as having its great and horrible days, and there's a sentiment that everyone gets sick of it at some point.
 
 
 <br>
 
 ## Most Positive Examples:
+- "world-renowned restaurants"
+- "the ice cream bar is phenomenal!"
+- "variety of international food to choose from"
+- "dining hall with a lot of varieties"
+- "great food"
 
-- "people here really care for you"
-- "you'll get friends no matter what"
-- "professors were responsive to online school changes"
-- "students and profs are kind and welcoming"
-- "i have a more worldly and humanitarian perspective"
 
+ 
 
 ## Most Negative Examples:
-
-- "faculty don't really care about its students"
-- "you will not fit in"
-- "they don't seem to care much about the students"
-- "i feel like everyone is not friendly or stingy"
-- "not student centric or accommodating to those with financial struggles"
-
-<br>
-
-
+- "food isn't great"
+- "meal plan is impossible to use up"
+- "food can get repetitive"
+- "sometimes is barely edible"
+- "terrible food"
 
 <br>
 
-# Headlines and corresponding snippets from reviews 
+
+
 
 <br>
+
+## Headlines and corresponding snippets from reviews
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -168,7 +173,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -185,12 +190,10 @@ ORDER BY Snippet ASC
 
 <br>
 
-
-
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -201,13 +204,12 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
-
 
 <Tabs>
     <Tab label="Neutral Headlines">
@@ -220,11 +222,10 @@ ORDER BY Snippet ASC
 
 <br>
 
-
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -235,13 +236,12 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'tastes'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
-
 
 <Tabs>
     <Tab label="Negative Headlines">
@@ -261,7 +261,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -274,7 +274,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'aesthetics' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'tastes' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -297,7 +297,7 @@ ORDER BY
     series="Year" 
     groupBy="Year" 
     type="grouped"
-    sort = false
+    sort=false
     echartsOptions={{
     xAxis: {
       axisLabel: {
@@ -306,3 +306,4 @@ ORDER BY
     }
   }}
 />
+

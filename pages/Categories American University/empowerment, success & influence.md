@@ -2,7 +2,7 @@
  select * from hotels.summaries 
  ```
 
-# Summary
+# Summary 
 
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
@@ -13,7 +13,8 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-In the realm of non-material values and value for money at the university, the sentiment is mixed with a tilt towards the negative. Students appreciate the diversity, inclusivity, and academic strength, particularly in political science and international relations. However, there's a strong undercurrent of dissatisfaction regarding the high cost of attendance, perceived lack of support for non-political majors, and administrative issues. The university's liberal atmosphere is both a draw and a point of contention, depending on individual political leanings.
+
+The overall sentiment from the snippets regarding empowerment and influence at the university is predominantly positive. Students feel that the university's location, networking events, and career centers provide them with a wealth of opportunities to gain experience and make important connections. However, there are some negative experiences related to strict policies and financial aid issues.
 
 
 ```sql polarity_proportions
@@ -25,11 +26,11 @@ WITH MergedCategoryCounts AS (
             WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND TRIM(Category) = 'value & values'
+    AND TRIM(Category) = 'empowerment, success & influence'
     GROUP BY
         CASE
             WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
@@ -62,15 +63,17 @@ ORDER BY
 ```
 
 
+
+
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
-    WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'value & values'
+    WHERE date BETWEEN '2020-01-01' AND '2023-12-31'
+    AND LOWER(TRIM(Category)) = 'empowerment, success & influence'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -114,53 +117,57 @@ ORDER BY
 />
 
 
-<br>
+
 
 ## Positive:
-- **Cultural Diversity:** Students celebrate the university's commitment to diversity and inclusivity, with a rich cultural environment that welcomes international students and supports LGBTQ+ individuals.
-- **Academic Excellence:** The quality of education, particularly in political science and international relations, is highly regarded, with professors bringing real-world experience into the classroom.
-- **Financial Aid:** While the cost of attendance is high, the university does offer merit-based financial aid and scholarships, which some students find generous and helpful.
-- **Campus Resources:** The availability of resources, including technology, study abroad programs, and internship opportunities in D.C., is a highlight for many students.
-- **Inclusive Policies:** The university's policies on sustainability, social justice, and diversity are praised for creating a respectful and intellectually stimulating environment.
+- Career Advancement: Students praise the career centers for their effectiveness in providing job and internship opportunities, with one student securing a full-time position as a press aide to a congressman.
+- Networking Success: The university's location in D.C. is highlighted as a key factor for networking, with students attending balls at embassies and meeting ambassadors.
+- Influential Faculty: Professors with backgrounds as ambassadors and leaders in their fields are seen as providing valuable insights and connections.
+- Internship Abundance: The proximity to government and international affairs opportunities in D.C. is appreciated, with students gaining internships at places like Capitol Hill.
+- Leadership Development: Programs like the School of Public Affairs Leadership Program are commended for developing students' leadership skills.
 
 
 ## Negative:
-- **High Costs:** The overwhelming consensus is that the university is expensive, with many students struggling with the financial burden and feeling that the cost does not match the value received.
-- **Limited Support:** Students outside of political science and international relations feel underserved, with a lack of support and resources for other majors.
-- **Administrative Issues:** There are numerous complaints about the inefficiency and unhelpfulness of the administration, particularly the financial aid office.
-- **Lack of Spirit:** Many students express a desire for more school spirit and community, feeling disconnected from the larger university experience.
-- **Political Overemphasis:** The strong focus on politics can be alienating for some, with students feeling pressured to conform to the university's liberal stance.
+- Financial Struggles: Some students face difficulties with financial aid, with reports of aid being reduced or appeals being rejected.
+- Strict Policies: There are complaints about strict enforcement of rules, particularly regarding alcohol in dorms and the creation of new clubs.
+- Unpaid Internships: The prevalence of unpaid internships in the city is a concern for some students.
+- Faculty Issues: A few students report negative experiences with professors who are described as rude or condescending.
+- Social Challenges: Some students feel excluded from social groups or face a toxic campus climate.
 
 
-## Most positive examples:
-- "very diverse university"
-- "professors in the school of international service are really good"
-- "academically, au is strong"
-- "rich cultural environment"
-- "quality professors"
+<br>
+
+## Most Positive Examples:
+- "internship opportunities are incredible"
+- "endless opportunities for internships, networking, and research"
+- "student body of American University will change the world"
+- "being here has helped me land a good job"
+- "going to school in D.C. opens up an entire world of internships and job opportunities"
 
 
-## Most negative examples:
-- "au is very liberal as well as political"
-- "tuition is way too expensive"
-- "school administration is horrible"
-- "au is expensive"
-- "administration is awful"
+ 
 
+## Most Negative Examples:
+- "au took it away from his housing and dining financial aid"
+- "cs program here is weak"
+- "at least one verbally abusive teacher received multiple years of bad reviews, still employed"
+- "there is also a lot of bureaucratic red tape when creating new clubs and organizations"
+- "essentially class i needed for my career and graduation i was not able to take"
 
+<br>
 
 
 
 <br>
 
-
 # Headlines and corresponding snippets from reviews
 
+<br>
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -171,7 +178,7 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -189,11 +196,10 @@ ORDER BY Snippet ASC
 
 <br>
 
-
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -204,7 +210,7 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -225,7 +231,7 @@ ORDER BY Snippet ASC
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -236,13 +242,12 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'value & values'
+WHERE TRIM(LOWER(Category)) = 'empowerment, success & influence'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
-
 
 <Tabs>
     <Tab label="Negative Headlines">
@@ -256,13 +261,14 @@ ORDER BY Snippet ASC
 <br>
 
 # Student sentiment distribution (2020-2023)
+Student sentiment distribution (2020-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -275,7 +281,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'value & values' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'empowerment, success & influence' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -307,4 +313,3 @@ ORDER BY
     }
   }}
 />
-

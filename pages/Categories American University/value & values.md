@@ -1,10 +1,9 @@
- ```sql summaries
+```sql summaries
  select * from hotels.summaries 
  ```
 
-
-
 # Summary
+
 Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of students had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
 
 
@@ -14,28 +13,28 @@ Overall **<Value data={polarity_proportions} column=percentage row=2/>%**  of st
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-In the collected university reviews, the aesthetics of the university's material aspects ranging from dorms and architecture to the natural environment‚ leans heavily towards the positive. Students often praise the beauty of the campus, its green spaces, and the architecture, while criticisms tend to focus on specific buildings or facilities needing renovation or the small size of the campus.
+In the realm of non-material values and value for money at the university, the sentiment is mixed with a tilt towards the negative. Students appreciate the diversity, inclusivity, and academic strength, particularly in political science and international relations. However, there's a strong undercurrent of dissatisfaction regarding the high cost of attendance, perceived lack of support for non-political majors, and administrative issues. The university's liberal atmosphere is both a draw and a point of contention, depending on individual political leanings.
 
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
     SELECT
         CASE
-            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
-            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
-            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END AS CleanCategory,
-        COUNT(DISTINCT id) AS category_count
+        COUNT(DISTINCT Snippet) AS category_count
     FROM
         hotels.titles
     WHERE date >= '2009-01-01' AND date <= '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'aesthetics'
+    AND TRIM(Category) = 'value & values'
     GROUP BY
         CASE
-            WHEN LOWER(TRIM(polarity)) IN ('positive', 'very positive') THEN 'positive'
-            WHEN LOWER(TRIM(polarity)) IN ('negative', 'very negative') THEN 'negative'
-            WHEN LOWER(TRIM(polarity)) = 'neutral' THEN 'neutral'
+            WHEN TRIM(LOWER(polarity)) IN ('positive', 'very positive') THEN 'positive'
+            WHEN TRIM(LOWER(polarity)) IN ('negative', 'very negative') THEN 'negative'
+            WHEN TRIM(LOWER(polarity)) = 'neutral' THEN 'neutral'
             ELSE 'other'
         END
 ),
@@ -44,28 +43,34 @@ TotalReviews AS (
         SUM(category_count) AS total
     FROM
         MergedCategoryCounts
+),
+CategoryTemplate AS (
+    SELECT 'positive' AS Category
+    UNION ALL SELECT 'negative'
+    UNION ALL SELECT 'neutral'
 )
 SELECT
-    COALESCE(mcc.CleanCategory, 'other') AS Category,
+    ct.Category,
     COALESCE(mcc.category_count, 0) AS category_count,
-    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0.00) AS percentage
+    COALESCE(ROUND((mcc.category_count * 100.0) / tr.total, 2), 0) AS percentage
 FROM
-    (SELECT 'positive' AS Category UNION ALL SELECT 'negative' UNION ALL SELECT 'neutral') ct
+    CategoryTemplate ct
 LEFT JOIN MergedCategoryCounts mcc ON ct.Category = mcc.CleanCategory
 CROSS JOIN TotalReviews tr
 ORDER BY
-    Category
+    ct.Category
 ```
+
 
 ```sql sum_by_polarity
 WITH PolarityCounts AS (
     SELECT
         LOWER(TRIM(polarity)) AS Polarity,
-        COUNT(DISTINCT id) AS Polarity_sum
+        COUNT(DISTINCT Snippet) AS Polarity_sum
     FROM
         hotels.titles
     WHERE date BETWEEN '2009-01-01' AND '2023-12-31'
-    AND LOWER(TRIM(Category)) = 'aesthetics'
+    AND LOWER(TRIM(Category)) = 'value & values'
     GROUP BY
         LOWER(TRIM(polarity))
 )
@@ -90,7 +95,6 @@ ORDER BY
     y=Polarity_sum 
     series=Polarity
     sort=false
-    title="Distribution of customer sentiment"
     colorPalette={
         [
         "#85144B", // A shade of dark red
@@ -109,55 +113,54 @@ ORDER BY
   }}
 />
 
-<br>
-
-
 
 <br>
-
 
 ## Positive:
-- **Campus Beauty**: Students are enamored with the campus's overall beauty, describing it as an oasis with white buildings and classic architecture, complemented by lush greenery and gardens.
-- **Dorm Quality**: Many find the dorms to be nice, especially the upperclassmen suites and newly renovated buildings, contrasting them favorably against typical freshman accommodations.
-- **Natural Environment**: The presence of parks, an arboretum, and a variety of plants, including cherry blossoms, contributes to a vibrant and refreshing atmosphere that students cherish.
-- **Architectural Appreciation**: The design and upkeep of new buildings, such as the School of International Service, receive accolades for their modernity and aesthetic appeal.
-- **Location Perks**: The university's location is frequently highlighted as superb, offering a mix of suburban tranquility and city life, with the added bonus of beautiful views and proximity to cultural attractions.
+- **Cultural Diversity:** Students celebrate the university's commitment to diversity and inclusivity, with a rich cultural environment that welcomes international students and supports LGBTQ+ individuals.
+- **Academic Excellence:** The quality of education, particularly in political science and international relations, is highly regarded, with professors bringing real-world experience into the classroom.
+- **Financial Aid:** While the cost of attendance is high, the university does offer merit-based financial aid and scholarships, which some students find generous and helpful.
+- **Campus Resources:** The availability of resources, including technology, study abroad programs, and internship opportunities in D.C., is a highlight for many students.
+- **Inclusive Policies:** The university's policies on sustainability, social justice, and diversity are praised for creating a respectful and intellectually stimulating environment.
 
 
 ## Negative:
-- **Facility Issues**: Some students express dissatisfaction with certain buildings and facilities, noting that they are outdated, under renovation, or have maintenance issues that are not promptly addressed.
-- **Inconsistent Dorms**: While some dorms are praised, others are criticized for being old, unrenovated, or not as aesthetically pleasing as their counterparts.
-- **Campus Size**: A common complaint is the small size of the campus, with some students wishing for more space or finding the compactness less than ideal.
-- **Construction Disruptions**: Ongoing construction projects are a source of frustration for some, as they can detract from the campus's beauty and cause inconvenience.
-- **Diversity Concerns**: A few reviews mention a lack of diversity in the student body's appearance, which for some detracts from the overall campus experience.
+- **High Costs:** The overwhelming consensus is that the university is expensive, with many students struggling with the financial burden and feeling that the cost does not match the value received.
+- **Limited Support:** Students outside of political science and international relations feel underserved, with a lack of support and resources for other majors.
+- **Administrative Issues:** There are numerous complaints about the inefficiency and unhelpfulness of the administration, particularly the financial aid office.
+- **Lack of Spirit:** Many students express a desire for more school spirit and community, feeling disconnected from the larger university experience.
+- **Political Overemphasis:** The strong focus on politics can be alienating for some, with students feeling pressured to conform to the university's liberal stance.
+
+
+## Most positive examples:
+- "very diverse university"
+- "professors in the school of international service are really good"
+- "academically, au is strong"
+- "rich cultural environment"
+- "quality professors"
+
+
+## Most negative examples:
+- "au is very liberal as well as political"
+- "tuition is way too expensive"
+- "school administration is horrible"
+- "au is expensive"
+- "administration is awful"
+
+
+
 
 
 <br>
 
-## Most Positive Examples:
-- "campus is an oasis"
-- "beautiful especially in the spring time"
-- "it's like walking in a garden"
-- "campus is absolutely beautiful"
-- "beautiful campus"
 
- 
+# Headlines and corresponding snippets from reviews
 
-## Most Negative Examples:
-- "dorms vary from being gorgeous to totally trashy"
-- "library is one of the most unattractive buildings you'll see"
-- "it's definitely not at a state school level"
-- "nothing state of the art that i've seen"
-- "equivalent to army barracks"
-
-# Headlines and corresponding snippets from reviews 
-
-<br>
 
 ```sql positive_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -168,12 +171,13 @@ ORDER BY Count DESC
 ```sql positive_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'positive' OR polarity = 'very positive')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
+
 <Tabs>
     <Tab label="Positive Headlines">
         <DataTable data="{positive_headlines}" search="true" rows=18 rowShading=true/>
@@ -186,11 +190,10 @@ ORDER BY Snippet ASC
 <br>
 
 
-
 ```sql neutral_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -201,13 +204,12 @@ ORDER BY Count DESC
 ```sql neutral_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'neutral')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
 ORDER BY Snippet ASC
 ```
-
 
 <Tabs>
     <Tab label="Neutral Headlines">
@@ -220,11 +222,10 @@ ORDER BY Snippet ASC
 
 <br>
 
-
 ```sql negative_headlines
 SELECT Headline, COUNT(*) AS Count
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -235,7 +236,7 @@ ORDER BY Count DESC
 ```sql negative_snippets
 SELECT Snippet
 FROM hotels.titles
-WHERE TRIM(LOWER(Category)) = 'aesthetics'
+WHERE TRIM(LOWER(Category)) = 'value & values'
 AND (polarity = 'negative' or polarity = 'very negative')
 AND date >= '2009-01-01' 
 AND date <= '2023-12-31'
@@ -261,7 +262,7 @@ WITH Polarity_Ordered AS (
   SELECT
     TRIM(LOWER(polarity)) AS Polarity,
     Year, -- Extract the year from the date
-    COUNT(DISTINCT id) AS ReviewCount, -- Count unique review IDs
+    COUNT(DISTINCT Snippet) AS ReviewCount, -- Count unique review IDs
     CASE
       WHEN TRIM(LOWER(polarity)) = 'very negative' THEN 1
       WHEN TRIM(LOWER(polarity)) = 'negative' THEN 2
@@ -274,7 +275,7 @@ WITH Polarity_Ordered AS (
     hotels.titles
   WHERE
     date BETWEEN '2020-01-01' AND '2023-12-31'
-    AND TRIM(LOWER(Category)) = 'aesthetics' -- Change category as needed
+    AND TRIM(LOWER(Category)) = 'value & values' -- Change category as needed
   GROUP BY
     TRIM(LOWER(polarity)), 
     Year
@@ -297,7 +298,7 @@ ORDER BY
     series="Year" 
     groupBy="Year" 
     type="grouped"
-    sort = false
+    sort=false
     echartsOptions={{
     xAxis: {
       axisLabel: {
@@ -306,3 +307,4 @@ ORDER BY
     }
   }}
 />
+
