@@ -36,7 +36,7 @@ WITH AllCategories AS (
     UNION ALL SELECT 'impressions'
     UNION ALL SELECT 'safety'
     UNION ALL SELECT 'self-worth, pride & self-awareness'
-    UNION ALL SELECT 'sexual'  
+    UNION ALL SELECT 'sexual'  Stdeu
     UNION ALL SELECT 'smells'
     UNION ALL SELECT 'sounds'
     UNION ALL SELECT 'tastes'
@@ -111,7 +111,7 @@ ORDER BY
     }
 />
 
-## Student sentiment distribution (2009-2023)
+## Student sentiment distribution (2019-2023)
 ```sql sum_by_polarity
 SELECT
   Category,
