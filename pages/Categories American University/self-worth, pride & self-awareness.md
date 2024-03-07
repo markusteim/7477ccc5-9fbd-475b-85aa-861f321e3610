@@ -315,3 +315,118 @@ ORDER BY
     }
   }}
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews suggest a perception of elitism and exclusivity within the university
+community. There are indications of a socio-economic divide, with references to wealth and
+privilege affecting the student experience. Concerns about the university's reputation and the
+attitudes of the student body, particularly among males, are recurrent themes. The reviews
+also hint at dissatisfaction with the communication program and a lack of support for
+graduate students. While these insights are based on individual experiences, they highlight
+areas where the university may need to foster a more inclusive and supportive environment.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Perception of elitism and exclusivity (e.g., "kind of stuck up," "people are snob," "elitism is a
+common theme").
+- Socio-economic divide affecting student experience (e.g., "especially those who are not
+wealthy white, and able-bodied," "if you are one of the few students that attend au that are
+not in the upper-class of wealth").
+- University's reputation not widely recognized (e.g., "it's not a big name outside d.c.").
+- Negative attitudes among the student body (e.g., "au attracts some snobby people,"
+"everyone seems to put on a false air of superiority").
+- Dissatisfaction with the communication program (e.g., "didn't get what i wanted out of the
+com program").
+- Lack of support for graduate students (e.g., "grad students are distinctly overlooked").
+- Gender dynamics and attitudes (e.g., "guys are very often the negging types," "straight
+guys have inflated egos").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To address these issues, the university could implement diversity and inclusion
+training programs to promote a more welcoming environment for all students.
+- Enhancing financial aid and scholarship opportunities may help alleviate the
+socio-economic divide.
+- Improving the communication program through curriculum review and student
+feedback could address specific academic concerns.
+- Offering more resources and support for graduate students could improve their
+university experience. Finally, conducting workshops on gender dynamics and
+respectful behavior could help change the negative attitudes identified in the reviews.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+The university appears to be fostering an environment where students feel confident and proud of
+their academic and professional achievements. The presence of strong programs in politics,
+international relations, communications, and law contributes to this sentiment. Students are taking
+advantage of internship opportunities, which seem to be abundant and integral to the university
+experience. The ability to succeed in a competitive yet not overly aggressive environment is noted, as
+well as the satisfaction with sports and club activities. The university's support for students through
+scholarships also contributes to a sense of gratitude and self-worth among the student body.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Strong academic programs (e.g., "american is especially great if you are interested in politics,
+international relations or communications")
+- Confidence boost and satisfaction (e.g., "boosted my confidence", "i'm very satisfied with my
+experience here")
+- Internship opportunities (e.g., "internships rule all", "i've had four internships since i transferred
+here")
+- Competitive but supportive environment (e.g., "great, competitive school to attend", "lots of
+overachieving people but i wouldn't say its super competitive")
+- Sports and club activities (e.g., "our club sports are just as good as our varsity", "our sports teams
+are pretty good")
+- Career-focused education (e.g., "my career goals are to become a tv producer", "worked for a
+lobbying firm as a paid social media intern")
+- Scholarships and financial support (e.g., "i have gotten lucky and received scholarships through
+schools and departments the past 2 years")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the student experience, the university could focus on expanding its
+internship program to ensure that all students have the opportunity to engage in practical
+work experiences.
+- Additionally, increasing awareness and access to scholarships and financial aid could help
+more students feel supported and valued.
+- The university might also consider implementing programs or workshops that encourage
+students to be more outgoing and engaged from the first semester, especially for those who
+may be shy or from low-income backgrounds.
+
+</ul> 
+    </Tab>
+</Tabs>

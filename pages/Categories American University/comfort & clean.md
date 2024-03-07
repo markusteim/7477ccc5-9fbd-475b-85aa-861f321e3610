@@ -314,3 +314,128 @@ ORDER BY
     }
   }}
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+    The student reviews indicate a range of issues related to comfort and cleanliness at the
+university. Concerns about the weather, including cold, heat, humidity, and rain, are
+frequently mentioned, affecting both the comfort of the students and the condition of the
+facilities. The dormitories are a particular point of contention, with numerous comments
+about their size, cleanliness, and general state of disrepair. Problems with pests such as
+mice, rats, and cockroaches are noted, as well as issues with mold. The common areas,
+including bathrooms and showers, are reported to be unclean and not maintained well.
+Additionally, the university's facilities, such as the gym and library, are described as too small
+and often overcrowded. The fluctuating weather also seems to exacerbate the discomfort
+experienced by students.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Inadequate spacing and overcrowding (e.g., "spacing is hard to deal with," "everyone's
+packed together").
+- Uncomfortable weather conditions (e.g., "cold in the winter," "hot and humid in the
+summer").
+- Poor dormitory conditions (e.g., "dorms are not good," "dorm living conditions are dismal").
+- Cleanliness issues (e.g., "bathrooms are usually pretty gross," "cleanliness is the biggest
+problem").
+- Pest infestations (e.g., "prominent mice/rat problem," "apartment is slightly known for its
+cockroach problem").
+- Maintenance problems (e.g., "old appliances," "showers have terrible water pressure").
+- Insufficient facilities (e.g., "gym is pretty small for university size," "library isn't that large").
+- Weather-related discomfort (e.g., "au is like a huge wind tunnel," "it rains every
+Wednesday").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To address these issues, the university could implement a more rigorous and
+    frequent cleaning schedule, especially for common areas and bathrooms.
+-    Pest control measures should be intensified to tackle the infestation problems.
+-    The dormitories may require renovations to improve living conditions, including better
+    space management and maintenance of appliances.
+-    The university could also consider expanding or optimizing the use of existing
+    facilities to alleviate overcrowding.
+-    Weatherproofing measures, such as better insulation and heating systems, could
+    improve comfort during extreme weather conditions.
+-    Additionally, providing more accurate and timely weather information could help
+    students prepare for the day&#39;s conditions.
+
+</ul>
+    
+</Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+The student reviews present a mixed picture of the comfort and cleanliness at the university. While
+there are mentions of issues such as pests and cramped conditions, there are also numerous positive
+comments about the state of the facilities. The dorms are generally described as clean, well-kept,
+and often spacious, with individual AC/heating units being a notable feature. The campus itself is
+appreciated for its cleanliness and the condition of its athletic facilities. Off-campus housing options,
+particularly the Berkshire apartments, are frequently mentioned as popular and convenient. The
+weather is noted for its variability, with all four seasons experienced, but it does not seem to
+significantly impact the students' campus experience. Overall, while there are areas for
+improvement, many aspects of the university's facilities and living conditions are meeting the
+students' needs.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Individual AC/heating units in dorm rooms (All the dorm rooms have individual AC/heating units
+though)
+- Cleanliness of campus and dorms (Campus is clean, dorms are clean and sufficient)
+- Athletic facilities are well-kept (Athletic facilities themselves are very nice and well-kept)
+- Daily cleaning of bathrooms (Bathrooms are cleaned daily so they're usually fine)
+- Spacious dorm rooms (Dorm rooms are large, rooms are pretty spacious)
+- Availability of off-campus housing options (Most popular off campus housing option is the Berkshire
+apartments)
+- Well-maintained residence halls (Residence halls are clean)
+- Ample storage space in living areas (There is ample storage space)
+- Clean public areas (Public bathrooms and lounges are cleaned everyday which is nice)
+- Variety of room options (Options to live in a single, double or triple rooms)
+- Weather is manageable and does not disrupt campus life (Overall, the weather is more than
+manageable)
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further improve the student experience, the university could address the issues raised
+about pests and maintenance problems. Implementing more rigorous pest control measures
+and regular maintenance checks could help alleviate concerns about cleanliness and
+livability.
+- Additionally, considering renovations or updates to the older dorms could improve
+perceptions of comfort.
+- Expanding on the positive aspects, such as the individual climate control in rooms and the
+cleanliness of public spaces, would also enhance the overall student satisfaction with the
+university's facilities.
+
+</ul> 
+    </Tab>
+</Tabs>

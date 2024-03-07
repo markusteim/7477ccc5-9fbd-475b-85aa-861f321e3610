@@ -308,3 +308,131 @@ ORDER BY
   }}
 />
 
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The university appears to be facing a multitude of challenges that affect student satisfaction
+across various domains. Concerns range from financial burdens, such as high tuition fees
+and expensive living costs, to dissatisfaction with administrative support and the handling of
+immaterial values like ethics and diversity. Students have expressed frustration with the
+perceived prioritization of the university's image over substantive reforms, ineffective
+communication and support from advisors, and a lack of school spirit. Additionally, there are
+reports of inadequate responses to issues such as hate crimes, drug and alcohol policy
+enforcement, and a lack of support for students with disabilities. The narrative from the
+snippets suggests a disconnect between the administration's actions and the students'
+needs and expectations.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- High tuition and living costs (e.g., "au is the second most expensive school in the nation",
+"living on campus is incredibly expensive").
+- Inadequate financial aid and scholarship support (e.g., "financial aid department is terrible",
+"administration does not care about minorities on campus").
+- Poor administrative support and responsiveness (e.g., "administration is awful", "advisors
+don't know what they are doing").
+- Lack of school spirit and community (e.g., "au has no school spirit", "barely any sense of
+community").
+- Ineffective handling of diversity and inclusion issues (e.g., "administration tries hard to give
+the appearance of maintaining a safe environment on campus", "au lacks dignity").
+- Inadequate response to hate crimes and safety concerns (e.g., "administration does not
+take hate crime seriously when it occurs on campus").
+- Insufficient support for students with disabilities (e.g., "au really needs to work harder to
+address these concerns").
+- Perceived prioritization of university image over substantive reforms (e.g., "administration
+appears to prioritize the university's public image over substance reforms").
+- Inconsistent enforcement of drug and alcohol policies (e.g., "au has very strict policies
+concerning drug use and alcohol on campus; we're also non-smoking").
+- Discontent with the handling of academic accommodations (e.g., "academic
+accommodations are a joke").
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Review and potentially increase financial aid and scholarship offerings to better support
+students in need.
+- Enhance administrative support by providing additional training for advisors and ensuring
+they are knowledgeable and responsive to student inquiries.
+- Foster a stronger sense of community and school spirit through more inclusive events and
+activities that engage the entire student body.
+- Implement a more transparent and effective approach to handling diversity and inclusion
+issues, ensuring that all students feel represented and supported.
+- Improve the response to hate crimes and safety concerns by establishing clear protocols
+and communication channels for reporting and addressing such incidents.
+- Offer more robust support for students with disabilities, including accessible facilities and
+academic accommodations.
+- Reevaluate the enforcement of drug and alcohol policies to ensure consistency and
+fairness, while also providing education and resources for substance abuse prevention.
+- Increase transparency regarding the use of tuition fees and actively involve students in
+discussions about university reforms and budget allocations.
+
+</ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+Based on the provided snippets, the university exhibits a strong commitment to academic integrity, a
+diverse range of academic programs, and a supportive environment for LGBTQ+ students. The
+enforcement of academic policies and the importance placed on academics suggest a serious
+educational atmosphere. The presence of various religious services and political activism indicates a
+campus that is engaged and respectful of different beliefs and causes. Additionally, the availability of
+technology and resources for students is noted as positive. However, there are concerns regarding
+the administration's response to incidents of racism, antisemitism, and sexual assault, as well as the
+overall diversity of the student body.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Academic integrity and importance (e.g., "academics are much more important here," "au is pretty
+stiff about academic violations such as plagiarism").
+- Support for LGBTQ+ community (e.g., "au is extremely lgbt friendly," "we have a very large glbtq
+community that comes with a very large ally community as well").
+- Diversity of academic programs (e.g., "au doesn't just cater to just those majors," "au offers a
+variety of majors").
+- Political activism and engagement (e.g., "au is very oriented towards political science and
+international relations," "students are very politically involved regardless of major").
+- Religious services and respect for beliefs (e.g., "au offers of 25 different religious services on
+campus," "there is a very strong gay and lesbian population on campus").
+- Technological resources (e.g., "computers are always available," "dorms have their own computer
+labs with printers").
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further improve the university's environment, the administration could take more
+proactive measures in addressing and preventing incidents of racism, antisemitism, and
+sexual assault.
+- Efforts to increase the diversity of the student body, particularly in terms of race and
+socioeconomic status, could also be enhanced.
+- Additionally, fostering a more inclusive atmosphere where all students feel represented and
+heard could contribute to a more positive campus culture.
+
+
+</ul> 
+    </Tab>
+</Tabs>

@@ -315,3 +315,135 @@ ORDER BY
   }}
 />
 
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews indicate a range of concerns regarding the physical and mental
+well-being services at the university. Issues with the student health clinic, including
+undertrained and rude staff, are mentioned alongside dissatisfaction with the availability and
+quality of mental health resources. There are also references to substance use, such as
+Adderall and alcohol, which suggest a potential culture of reliance on these substances for
+academic or social purposes. Additionally, students have reported problems with food
+quality, dietary restrictions, and the overall healthiness of available options. The lack of
+community spirit and the challenges faced by students with disabilities or health issues are
+also highlighted. Parking and transportation difficulties, as well as the physical layout of the
+campus, appear to contribute to the overall stress experienced by students.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Inadequate student health clinic resources ("student health clinic isn't a good resource
+apparently").
+- Unprofessional behavior and lack of training among health services staff ("student health
+services are filled with undertrained, and rude staff").
+- High popularity of Adderall, indicating potential misuse ("Adderall is fairly popular").
+- High allergy levels affecting student health ("allergy levels are high in the spring").
+- Incidents of over-drinking leading to medical emergencies ("ambulances coming to campus
+because of students over-drinking").
+- Lack of school spirit and community ("american university lacks school spirit and a sense of
+community").
+- Insufficient study spaces during finals ("at finals, it can sometimes be hard to find places to
+study").
+- Parking issues ("better parking is needed").
+- Challenges for biking due to campus topography ("biking is sort of rough, since we're in a
+hilly part of D.C.").
+- Food quality and health concerns ("food is good but sometimes gets kids sick", "food is not
+as healthy as you think").
+- Mental health struggles and inadequate support ("i have never felt so depressed in my life",
+"my friends with mental health issues really struggled too").
+- Limited healthy off-campus dining options ("not a lot of healthy off campus dining options").
+- Poor mental health resources ("they also have very poor mental health resources").
+- Lack of support for immunocompromised students ("they have no support in place for
+immunocompromised students").
+- Transportation and accessibility issues ("the metro is sometimes very inefficient", "there
+should be more buses").
+- Negative experiences with campus food services ("global fresh makes everyone sick", "i
+have lots of dietary restrictions so its nearly impossible to eat on campus without getting
+sick").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Conduct a thorough review and training program for health services staff to ensure
+professionalism and competence.
+- Expand and enhance mental health services, including increasing the number of
+counselors and reducing wait times for appointments.
+- Implement programs to address substance misuse and provide support for students
+struggling with addiction.
+- Review and improve the quality and variety of food options, with a focus on healthy and
+dietary-restriction-friendly choices.
+- Foster a sense of community and school spirit through events and initiatives that
+encourage student engagement.
+- Increase the number of study spaces available during peak times such as finals.
+- Address parking and transportation issues by improving campus infrastructure and
+increasing the frequency and coverage of shuttle services.
+- Ensure that the needs of students with disabilities or health issues are met through
+adequate support and accommodations.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+The university appears to have a robust transportation system that is highly appreciated by the
+students. The availability of shuttles, proximity to the metro, and overall walkability of the campus
+are frequently mentioned as positive aspects. Athletic facilities, including gyms and a swimming pool,
+are also well-regarded. The campus's compact nature allows for easy access to various amenities and
+academic buildings, contributing to a comfortable and convenient environment for students. While
+there are some concerns about health services, these are not the focus of this summary, which is
+centered on the positive feedback regarding comfort and cleanliness.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Transportation options (shuttles to metro, campus shuttle, parking availability, metro accessibility)
+- Athletic facilities (well-equipped gyms, swimming pool, athletic facilities for both athletes and
+non-athletes)
+- Campus layout (compact and walkable, easy access to downtown, quiet spaces away from city
+noise)
+- Living accommodations (housing within walking distance, convenient dorm locations)
+- Health and wellness options (availability of dietary-specific foods, health promotion program)
+- Study and relaxation spaces (plenty of study spots, outdoor areas for relaxation)
+- Campus safety (comfortable walking alone, safe environment)
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Addressing the concerns raised about the handling of medical issues and ensuring that
+students feel supported and taken care of in times of illness could significantly improve the
+overall student experience.
+- Additionally, expanding the variety of healthy food options to accommodate all dietary
+restrictions could be beneficial.
+
+</ul> 
+    </Tab>
+</Tabs>

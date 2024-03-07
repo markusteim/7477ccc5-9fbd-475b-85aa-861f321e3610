@@ -308,3 +308,111 @@ ORDER BY
   }}
 />
 
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The feedback from students indicates that there are several sound-related issues within the
+university's dormitories and certain areas of the campus. The most prominent concerns
+involve the frequency of fire alarms, particularly in the dorms, which are reported to go off
+multiple times per week. Additionally, the thinness of the dorm walls is a recurring theme,
+leading to a lack of privacy and an environment where students can easily hear their
+neighbors. Noise disturbances from neighbors, including loud music and conversations, are
+also mentioned, with some areas like southside being identified as noisier than others. There
+are references to noise violations and quiet hours, suggesting that while the university has
+policies in place, their enforcement may be inconsistent.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Frequent fire alarms in dormitories ("20 fire alarms in the dorm", "dorms have fire alarms
+that go off multiple times per week for no reason").
+- Thin walls in dorms leading to lack of sound privacy ("dorm walls are incredibly thin", "walls
+in the dorms are so thin though, so you can hear everything your neighbors say/do", "you
+can hear through the walls").
+- Noise disturbances from neighbors and other students ("be prepared to hear every word
+your neighbor is saying", "noisy and rude neighbors", "play terrible music", "noisy neighbors
+and drunks got away with everything scott free").
+- Inconsistent enforcement of noise policies ("they're sometimes a bit too lenient on noises",
+"there are times when they can't ignore a room full of drunk kids blasting music").
+- Variability in noise levels across different campus areas ("southside is always louder",
+"there are parts of campus, such as southside, that are noisier than others, such as
+northside").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Review and enhance the fire alarm system to reduce false alarms.
+- Investigate and potentially upgrade the soundproofing in dormitory walls.
+- Enforce noise violation policies more consistently to ensure quiet hours are respected.
+- Provide additional support and resources for students affected by noise disturbances, such
+as offering alternative study spaces or soundproofing materials.
+- Conduct a noise assessment of different areas on campus to identify and mitigate specific
+problem spots
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+
+The university environment presents a mix of sound levels across different areas, with some students
+appreciating the quieter zones and others expressing frustration with noise disturbances. The
+positive feedback indicates that there are specific locations such as the north side of the campus and
+Mary Graydon, which offer a quieter atmosphere, especially valued by those residing in the suburbs.
+Additionally, the presence of a dedicated quiet floor suggests that the university has made efforts to
+accommodate students' needs for silent spaces. However, concerns about frequent fire alarms and
+noise from social activities highlight areas for potential improvement.
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Dedicated quiet areas ("there is a floor dedicated to that sound level")
+- Suburban tranquility appreciated by residents ("i live in a suburb where it is quiet")
+- Enjoyable local music scene ("local music scene")
+- Morning quietude in Mary Graydon ("mary graydon is nicely quiet in the mornings")
+- North side recognized for less noise ("north side is much quieter", "on north side you have a quieter
+reputation")
+- Availability of a quiet floor for studying or relaxation ("there is also the option of utilizing the quiet
+floor")
+- General satisfaction with manageable noise levels ("not too noisy")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the sound environment on campus, the university could investigate the
+frequent fire alarm incidents and implement stricter policies or awareness campaigns to
+reduce noise from social activities, especially in residential areas.
+- Additionally, promoting the quiet zones and possibly expanding these areas could benefit
+students seeking a peaceful study or living environment.
+
+
+    </ul> 
+    </Tab>
+</Tabs>

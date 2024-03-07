@@ -294,3 +294,96 @@ ORDER BY
 />
 
 
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The feedback from students indicates that there are concerns regarding the presence of
+smoke around the university premises. The issues seem to be centered around the smell of
+cigarettes and marijuana, which are occasionally noticed in various locations such as dorm
+rooms and near building entrances. The frequency of these occurrences is not specified, but
+the use of the word "occasionally" suggests that it is not a constant issue. However, it is
+clear that the presence of smokers, particularly near building entrances, is a point of
+discomfort for some students.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Occasional smoking around the campus (except people smoking occasionally).
+- Instances of marijuana odor emanating from dorm rooms (occasionally you will walk past a
+dorm room and get a strong whiff of marijuana).
+- Smoking near building entrances (students smoke right next to building entrances).
+- General presence of smokers on campus (there are a lot of smokers, too, which can be
+obnoxious).
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To address the concerns raised, the university could consider implementing stricter
+smoking policies, including designated smoking areas that are situated away from
+building entrances and common areas.
+- Additionally, the university could increase awareness and enforcement of existing
+smoking regulations to ensure compliance.
+- For the issue of marijuana odors, the university might need to review and reinforce its
+policies on drug use within dormitories and take appropriate disciplinary actions when
+necessary.
+- Regular communication with students about the importance of respecting smoke-free
+zones and the impact of smoking on the community could also be beneficial.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+
+The feedback from the student reviews regarding smells within the university indicates that there is
+at least one aspect of the environment that is appreciated: the sense of fresh air. This suggests that
+the university has managed to maintain a level of cleanliness or has outdoor spaces that are
+well-kept, contributing to a pleasant olfactory experience for students. While the information is
+limited, it is clear that the fresh air is a positive feature that enhances the campus atmosphere.
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Freshness of air (Excerpt: "gives me a sense of fresh air")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further improve the olfactory experience for students, the university could consider
+regular maintenance of indoor air quality, perhaps through the use of air purifiers or
+ensuring that HVAC systems are frequently serviced.
+- Additionally, if the fresh air is a result of well-maintained outdoor spaces, continuing to
+invest in landscaping and outdoor areas would be beneficial.
+- Encouraging a smoke-free campus, if not already in place, could also contribute to
+maintaining the positive perception of air quality.
+
+</ul> 
+    </Tab>
+</Tabs>

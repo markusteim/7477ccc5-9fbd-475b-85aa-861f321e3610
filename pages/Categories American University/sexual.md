@@ -314,3 +314,111 @@ ORDER BY
     }
   }}
 />
+
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The university is facing challenges related to the social and safety aspects of student life,
+particularly concerning sexual experiences. Reviews indicate dissatisfaction among students
+regarding the limited pool of potential dating partners, with concerns about the attractiveness
+and availability of straight males. Additionally, there are serious concerns about sexual
+assault, with multiple instances reported both on and off-campus. The term 'AU goggles'
+suggests a perceived need to lower dating standards due to the limited options. The
+presence of negative experiences related to fraternity culture and sexual misconduct is also
+evident.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Limited dating pool and dissatisfaction with attractiveness of students ("as a female student
+this can be very frustrating", "au is not known for having an attractive student body").
+- Gender ratio imbalance affecting dating prospects ("effects of the gender ratio are horrible
+for straight girls", "male to female ratio is way off").
+- Concerns about the prevalence of sexual assault and safety on campus ("occasional
+sexual assault issues", "rape and sexual assault is a prevalent problem").
+- Negative perceptions of fraternity culture ("gross frat guys", "lots of frats are also infamous
+for sexual assault").
+- Instances of stalking and harassment ("stalked by a graduate student", "there was a man
+on Massachusetts Ave. (near campus) who was sexually assaulting women").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To address these issues, the university could implement comprehensive sexual
+assault prevention and response programs, including mandatory training for all
+students and staff. Increasing support services for victims of sexual misconduct, such
+as counseling and legal assistance, is crucial.
+- The university should also review and enforce strict policies against harassment and
+assault, with clear consequences for violations.
+- To improve the social climate, the university could facilitate more diverse social
+events and activities that encourage interaction among students.
+- Additionally, promoting a culture of respect and inclusivity within the student body,
+including within fraternity and sorority life, is essential.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+Based on the provided snippets, the university seems to have a mixed environment regarding sexual
+experiences. While there are positive comments about the social and dating scene, such as the dorm
+culture and the attractiveness of students, there are also serious concerns about sexual assault and
+safety. The positive remarks suggest that there is a good co-ed atmosphere and a variety of people to
+meet, which can be conducive to forming relationships. However, the negative comments indicate
+that there are significant issues with sexual misconduct that need to be addressed.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Dorm culture (e.g., "dorm culture is amazing")
+- Attractiveness and style of students (e.g., "girls are very pretty and have great style", "guys on
+campus are usually very well put together")
+- Variety of people (e.g., "from the typical frat boy to an exotic looking lad", "there's more of a variety
+of girls")
+- Co-ed atmosphere (e.g., "good co-ed atmosphere")
+- LGBTQ+ dating scene (e.g., "especially attractive straight men... so if you're gay you might actually
+have some luck!")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To improve the university's environment, it is crucial to address the issues of sexual assault
+and misconduct.
+- This could include implementing comprehensive sexual assault prevention programs,
+providing better support for victims, increasing security measures, and ensuring that there
+are clear and enforced consequences for perpetrators.
+- Additionally, fostering a culture of respect and consent on campus through education and
+awareness campaigns could contribute to a safer and more positive experience for all
+students.
+
+</ul> 
+    </Tab>
+</Tabs>

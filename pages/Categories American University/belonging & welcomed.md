@@ -306,3 +306,130 @@ ORDER BY
     }
   }}
 />
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews suggest that there is a perceived lack of inclusivity and community at
+the university. Students have reported feeling isolated, particularly if they are not part of
+specific social groups such as athletics, Greek life, or certain majors. There is a sentiment
+that the administration and faculty are indifferent to student needs and that the campus
+culture can be unwelcoming and cliquey. Additionally, there are concerns about
+discrimination and a lack of support for students with diverse political views or those who do
+not conform to the dominant social norms.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Perceived indifference from staff and faculty (e.g., "administration does not care," "faculty
+don't really care about its students").
+- Social isolation and difficulty finding a sense of belonging (e.g., "can feel socially lacking,"
+"hard to make friends," "isolated a little due to not being a party person").
+- Cliquey and exclusive social groups (e.g., "diversity but no one intermingles," "group can
+be cliquey," "people stick to their own groups").
+- Lack of support for non-traditional or minority students (e.g., "don't seem to care much
+about graduate students," "hard for a minority to find and connect").
+- Discrimination and narrow-mindedness (e.g., "administration and services are overly
+bureaucratic and unhelpful," "can be a bit unaccepting of certain minorities").
+- Unwelcoming campus environment (e.g., "campus environment is cold and unwelcoming,"
+"students are very unfriendly").
+- Issues with inclusivity and political affiliation (e.g., "inclusion is a problem when it comes to
+political affiliation," "much of the school is not very understanding and inclusive").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Implement training programs for staff and faculty to enhance their engagement with and
+support for students.
+- Create more inclusive social events and programs that encourage interaction across
+different groups.
+- Establish mentorship programs to help new students integrate into the university
+community.
+- Offer workshops and discussions on diversity and inclusivity to address issues of
+discrimination and narrow-mindedness.
+- Review and improve administrative processes to ensure they are student-centric and
+supportive.
+- Encourage student organizations to adopt more inclusive policies and practices.
+- Provide platforms for students to voice their concerns and actively work on addressing
+them.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+Based on the provided snippets, the university appears to foster a strong sense of community and
+belonging among its students. The diverse and inclusive environment is highlighted by the presence
+of international students and the acceptance of various backgrounds and identities. The faculty's
+approachability and dedication to student success are frequently mentioned, as well as the
+university's efforts to ensure student safety and well-being. The availability of clubs, organizations,
+and Greek life offers multiple avenues for students to find their niche and build lasting relationships.
+The university's commitment to diversity, both in its student body and faculty, contributes to a rich
+educational experience where students feel supported and valued.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Sense of community and belonging ("always felt part of the au community", "great sense of
+community on campus")
+- Inclusivity and diversity ("au is a very open-minded campus", "diversity of students on campus
+reflects a dignity in personalities")
+- Supportive faculty and staff ("professors are approachable and flexible", "counselors and staff have
+been so helpful & friendly")
+- Strong student-faculty relationships ("great connection between professors and students",
+"professors make every effort to get to know each of their students")
+- Opportunities for social engagement and networking ("clubs for everything", "participating in greek
+life has really allowed me to find my community")
+- Safety and well-being initiatives ("public safety is always available and helpful", "university tries to
+create a sense of community in the dorms")
+- International student representation ("au is incredibly friendly towards international students", "we
+have a very diverse student body")
+- Academic flexibility and customization ("i am a double major and was able to tailor the program",
+"help for course selection")
+- Alumni and peer support ("we have a great alumni network", "lot of feedback provided by the
+alumni or upperclassmen")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the sense of belonging and support within the university, it could be
+beneficial to continue promoting diversity and inclusivity initiatives, ensuring that all
+students feel represented and heard.
+- Expanding mentorship programs and peer support networks can provide additional guidance
+and connection for students.
+- Additionally, maintaining and improving communication channels between students and
+faculty can foster a more collaborative and engaging learning environment.
+- Encouraging student feedback and actively incorporating it into university policies and
+practices can also contribute to a more responsive and student-centered campus culture.
+
+
+    </ul> 
+    </Tab>
+</Tabs>

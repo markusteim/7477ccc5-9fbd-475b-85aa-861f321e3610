@@ -317,3 +317,137 @@ ORDER BY
   }}
 />
 
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews indicate a range of concerns about the university experience, from
+dissatisfaction with the administration and specific academic programs to issues with
+campus facilities and services. Students express frustration with housing, dining, and
+transportation, as well as the effectiveness of the university's support systems. The
+sentiment towards Greek life is mixed, with some students finding it lacking or problematic.
+There are also comments about the university's integration with the surrounding city and the
+perceived lack of school spirit. While some students have found their niche and are satisfied
+with certain aspects of their experience, others are considering transferring or regret their
+decision to attend. The reviews suggest that the university could benefit from addressing
+these concerns to improve the overall student experience.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Dissatisfaction with administration and support systems (e.g., "i do not like the
+administration", "my advisor is of little help").
+- Housing and dining services inefficiencies (e.g., "housing and dining program at au is
+inefficient and ineffective", "housing is a lottery").
+- Transportation and parking difficulties (e.g., "parking generally sucks in d.c", "dulles airport
+is impossible to get to").
+- Greek life issues and lack of housing (e.g., "have not heard many great things about greek
+life at au", "sororities can't have their own house").
+- Campus facilities under construction (e.g., "also there is construction happening on a few
+buildings").
+- Weak alumni network (e.g., "alumni network is weaker than those of neighboring schools").
+- Lack of school spirit and low campus morale (e.g., "nobody here has any school spirit",
+"morale of the campus is constantly low").
+- Discontent with the university's integration with the city (e.g., "au is in its own 'box'
+sometimes and not a part of the wonderful city of d.c").
+- Issues with academic programs and faculty (e.g., "bad teachers are often weeded out
+eventually", "certain classes and professor that you don't like").
+- Technical and resource limitations (e.g., "au doesn't give you much to work with", "if you
+don't have your own laptop").
+- Negative experiences leading to transfer considerations (e.g., "have friends who have
+literally transferred", "thinking of transferring after my freshman year").
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To address these concerns, the university could conduct a thorough review of its
+administrative processes and support systems to identify and rectify inefficiencies.
+- Improving housing and dining services, perhaps through student feedback
+mechanisms, could alleviate some dissatisfaction.
+- Addressing transportation and parking issues by exploring partnerships with local
+transit authorities or enhancing shuttle services could be beneficial.
+- The university might also consider investing in Greek life infrastructure and support to
+meet student expectations.
+- Engaging with the student body to foster a stronger sense of community and school
+spirit could improve morale.
+- Finally, the university should continue to evaluate and enhance academic programs
+and faculty development to ensure a high-quality educational experience.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+Based on the provided snippets, the university seems to have a diverse and active student body with
+a variety of interests and academic pursuits. The urban setting of the university is appreciated by
+many students, and the presence of nearby amenities such as stores and restaurants adds to the
+convenience of campus life. The university's academic offerings, particularly in international relations
+and political science, are recognized and valued. The availability of financial aid and the ability to use
+campus currency at local establishments are also noted positively. While there are mentions of a
+vibrant Greek life, it is not overwhelming, allowing students to choose their level of involvement. The
+university's efforts in providing a conducive learning environment, despite challenges such as the
+COVID-19 pandemic, are acknowledged by the students.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Urban university setting with nearby amenities (best buy, the container store, payless, etc.)
+- Diverse student body with a significant percentage of female students (60+ percent female)
+- Acceptance of campus currency at local establishments (a few take eagle bucks)
+- Academic programs that meet expectations, even if different than initially expected (a lot of people
+end up switching out of sis, not because it's a bad program but because it's different than they
+expected)
+- Inclusive environment for students who choose not to drink (a lot of people who choose not to
+drink at all)
+- Availability of financial aid (as an incoming student, they do meet fafsa requirements for those who
+have good merit)
+- Recognition of the university's reputation in the community (au has a reputation in this community)
+- Proximity to the city and its resources (american is a medium school in a big city, again, it's d.c)
+- Variety in housing options and dining (a single dining hall, additional buildings in the surrounding
+area)
+- Academic satisfaction with certain fields of study (academics are okay, as a language and area
+studies major, specializing in francophone africa)
+- Opportunities for internships and jobs in D.C. (always tons of competition for jobs in d.c)
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the student experience, the university could explore expanding
+on-campus dining options, as there is mention of only a single dining hall.
+- Additionally, ensuring that academic programs are clearly communicated to prospective
+students could help manage expectations and reduce the number of students switching
+majors.
+- The university might also consider increasing support for students during the transition to
+college life, as indicated by the need for adjustment on both students' and professors' parts.
+- Lastly, continuing to foster an inclusive environment that accommodates diverse lifestyles,
+such as those who abstain from alcohol, will contribute to a positive campus culture.
+
+</ul> 
+    </Tab>
+</Tabs>

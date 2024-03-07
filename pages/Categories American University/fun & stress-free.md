@@ -312,3 +312,131 @@ ORDER BY
   }}
 />
 
+
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews indicate a range of concerns primarily centered around the lack of a
+vibrant campus life, limited social activities, and strict policies that may be contributing to a
+less enjoyable student experience. Issues with housing, transportation, and campus
+amenities are frequently mentioned, as well as dissatisfaction with the party scene and
+athletic events. There are also comments about the academic challenges and the transition
+difficulties for new students. Additionally, financial concerns and the administrative processes
+related to financial aid and class registration appear to be causing significant stress for
+students.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Lack of vibrant campus life and school spirit (e.g., "a lack of campus culture", "school spirit
+is really weak").
+- Inadequate social activities and events (e.g., "campus events are not the best", "nothing
+much to do").
+- Strict dry campus policy leading to limited party scene (e.g., "it's a dry campus", "social
+scene is very restricted").
+- Transportation issues, including unreliable shuttles and parking difficulties (e.g., "shuttles
+are unreliable", "parking is horrible").
+- Housing concerns, such as difficulty finding on-campus housing and off-campus housing
+challenges (e.g., "housing lottery is competitive", "it's a huge hassle to find a place to live").
+- Limited campus amenities and inconvenient operating hours (e.g., "amenities are a joke",
+"limited hours").
+- Financial aid and scholarship issues (e.g., "financial aid isnt the best", "difficulty in getting
+larger scholarships").
+- Academic transition and adjustment challenges (e.g., "admit I had a difficult transition as a
+freshman", "classes after 5pm are always full").
+- Administrative inefficiencies, particularly in class registration (e.g., "registration process can
+be confusing", "scheduling is a nightmare").
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Enhance campus life by increasing the number and variety of social events and activities,
+including those that do not revolve around alcohol.
+- Reevaluate the dry campus policy to explore safe and responsible ways to incorporate
+social drinking events that could reduce off-campus risks.
+- Improve transportation services by ensuring shuttles run on a reliable schedule and
+exploring solutions for parking constraints.
+- Review housing policies and processes to make on-campus housing more accessible and
+provide better support for students seeking off-campus accommodations.
+- Expand campus amenities and adjust their operating hours to better meet student needs,
+including late-night dining options.
+- Increase transparency and support in the financial aid process, and actively seek additional
+scholarship opportunities for students.
+- Streamline the class registration process to reduce stress and ensure students can enroll in
+required courses.
+- Offer more robust orientation and transition programs for new students to help them adjust
+academically and socially
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+Based on the provided snippets, it appears that American University offers a variety of experiences
+that cater to different student interests and needs. The university's location in a suburban part of
+D.C. provides easy access to the city's resources, including internships and public transportation. The
+academic environment is described as sound and manageable, with passionate professors and a
+range of courses. The transition to online classes has been smooth for many, and the availability of
+computers and tech support is noted as good. While varsity sports are not a central aspect of student
+life, there are mentions of vibrant club and intramural sports, as well as a growing presence of Greek
+life. The campus housing process is straightforward, and there are options for off-campus living. The
+social scene is characterized by a mix of on-campus events, fraternity parties, and city nightlife, with
+an emphasis on academics over partying.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Location and Access to City Resources (American University is a mile away from the Tenleytown
+metro; easy access to internships and public transportation)
+- Academic Environment (AU is academically sound; classes are interesting; professors are
+passionate)
+- Online Class Transition (AU has made the transition to online class very easy)
+- Technology and Support (Access to computers is very good; AU's library has plenty of desktops; tech
+support only an email away)
+- Sports and Greek Life (Club and intramural sports are popular; Greek life is growing)
+- Housing and Living Options (All freshmen and sophomores are guaranteed on-campus housing;
+off-campus living can be cost-effective)
+- Social Scene (A mix of on-campus events, fraternity parties, and city nightlife; emphasis on
+academics)
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the student experience, the university could consider expanding the
+availability of on-campus housing for upperclassmen to ease the transition to off-campus
+living.
+- Additionally, increasing the visibility and support for varsity sports might foster more school
+spirit and a stronger sense of community.
+- Offering more workshops or resources on managing academic stress could also benefit
+students. Lastly, continuing to improve the technological infrastructure, especially the
+reliability of Wi-Fi, would support students' academic and social activities.
+
+</ul> 
+    </Tab>
+</Tabs>

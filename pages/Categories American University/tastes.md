@@ -307,3 +307,121 @@ ORDER BY
   }}
 />
 
+
+<Tabs>
+    <Tab label="What does NOT work">
+                       <b>Summary:</b>
+        <br>
+        
+The student reviews indicate a consistent dissatisfaction with the on-campus dining options
+at the university. The primary concerns revolve around a lack of variety, repetitive menus,
+and the quality of food, which is often described as subpar or even inedible. Students
+express frustration with the limited healthy choices and the high cost of meal plans relative to
+the value received. There are also specific mentions of undercooked food and hygiene
+issues, such as mold on bread. The dining experience appears to be a significant area of
+discontent among the student body, affecting their overall satisfaction with campus life.
+
+        <br>
+        <br>
+
+    <b>List of issues from customer reviews:</b>
+    <ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Limited variety and repetitive menus (e.g., "food options become repetitive and boring",
+"main dining hall never has a different selection").
+- Quality of food perceived as low (e.g., "awful food", "terrible quality", "food is not amazing").
+- Health and safety concerns (e.g., "chicken half cooked", "mold on bread").
+- High cost and perceived poor value of meal plans (e.g., "not worth 15 dollar meal swipes",
+"meal plan is terrible").
+- Limited healthy and dietary-specific options (e.g., "not many healthy options", "vegetarian
+options are terrible").
+- Limited dining locations and hours of operation (e.g., "most of campus dining closes", "only
+one main dining hall").
+- Hygiene and cleanliness issues (e.g., "campus food options are disgusting, dirty").
+
+
+    </ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Review and potentially increase financial aid and scholarship offerings to better support
+students in need.
+- Enhance administrative support by providing additional training for advisors and ensuring
+they are knowledgeable and responsive to student inquiries.
+- Foster a stronger sense of community and school spirit through more inclusive events and
+activities that engage the entire student body.
+- Implement a more transparent and effective approach to handling diversity and inclusion
+issues, ensuring that all students feel represented and supported.
+- Improve the response to hate crimes and safety concerns by establishing clear protocols
+and communication channels for reporting and addressing such incidents.
+- Offer more robust support for students with disabilities, including accessible facilities and
+academic accommodations.
+- Reevaluate the enforcement of drug and alcohol policies to ensure consistency and
+fairness, while also providing education and resources for substance abuse prevention.
+- Increase transparency regarding the use of tuition fees and actively involve students in
+discussions about university reforms and budget allocations.
+
+
+    </ul> 
+    </Tab>
+
+
+    <Tab label="What does work">
+        <b>Summary:</b>
+        <br>
+        
+The university's dining services appear to offer a broad range of options, both on and off-campus,
+catering to diverse tastes and dietary requirements. Students have access to popular chains, local
+eateries, and a variety of cultural cuisines. While the main dining hall, TDR, receives mixed reviews,
+there are mentions of specific places and types of food that students enjoy. The inclusion of
+Eaglebucks in the meal plan enhances the dining experience by allowing students to eat at
+off-campus locations. The narrative suggests that while there is room for improvement, particularly
+with the main dining hall, the overall dining scene provides students with sufficient choices to find
+something they like.
+
+        
+<br>
+
+<br>
+
+    <b>List of positive aspects from customer reviews:</b>
+
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- Variety of dining options (e.g., "endless places to eat", "lots of options at most places", "there are
+many places to eat")
+- Availability of popular food chains (e.g., "popular chains like chipotle and starbucks everywhere",
+"you have panera, starbucks, whole foods, chipotle, mcdonalds")
+- Cultural and international cuisine (e.g., "a student can find a wide swath of cultural cuisines", "dc is
+full of ethnic cuisine from all over the world")
+- Healthy and dietary-friendly choices (e.g., "vegan/vegetarian/gluten-free friendly", "vegetarian
+options that are always available")
+- Eaglebucks and dining dollars adding flexibility (e.g., "eaglebucks can be used at off-campus places",
+"dining dollars can be used at other on-campus eateries")
+- Positive mentions of specific restaurants and food types (e.g., "cava is great and healthy", "freshii is
+healthy and definitely tasty", "great italian")
+
+</ul>
+
+<br>
+
+<b>Suggestions:</b>
+<br>
+<ul style="list-style-type: decimal; margin-left: 20px;">
+
+- To further enhance the dining experience, the university could focus on improving the
+consistency and quality of meals offered at TDR, as it received mixed reviews.
+- Additionally, expanding the variety and frequency of menu rotations could address concerns
+about repetitiveness.
+- Engaging with students to gather feedback on their dining preferences and acting on this
+information could lead to more tailored and satisfying dining options.
+- Lastly, ensuring cleanliness and food safety should be a priority, as there were a few very
+negative comments related to these issues.
+
+</ul> 
+    </Tab>
+</Tabs>
