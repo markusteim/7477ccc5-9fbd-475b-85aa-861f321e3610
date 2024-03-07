@@ -111,7 +111,7 @@ ORDER BY
     }
 />
 
-## Student sentiment distribution (2020-2023)
+## Student sentiment distribution (2009-2023)
 ```sql sum_by_polarity
 SELECT
   Category,
@@ -129,7 +129,7 @@ ORDER BY
 
 ```
 
-<DataTable data={sum_by_polarity} rows={12}>
+<DataTable data={sum_by_polarity} rows={20}>
     <Column id="Category" title="Category" />
     <Column id="Negative" title="Negative" contentType=colorscale scaleColor=red/>
     <Column id="Neutral" title="Neutral" contentType=colorscale scaleColor=grey/>
@@ -146,7 +146,7 @@ SELECT
 FROM
   titles
 WHERE
-  date BETWEEN '2009-01-01' AND '2022-12-31'AND
+  date BETWEEN '2022-01-01' AND '2022-12-31'AND
   polarity in ('negative', 'very negative')
 GROUP BY
   Category,
@@ -222,7 +222,7 @@ SELECT
 FROM
   titles
 WHERE
-  date BETWEEN '2009-01-01' AND '2022-12-31'AND
+  date BETWEEN '2022-01-01' AND '2022-12-31'AND
   polarity in ('positive', 'very positive')
 GROUP BY
   Category,
