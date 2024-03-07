@@ -262,7 +262,6 @@ ORDER BY Snippet ASC
 <br>
 
 # Student sentiment distribution (2020-2023)
-Student sentiment distribution (2020-2023)
 
 ```sql sentiment_distribution
 WITH Polarity_Ordered AS (
