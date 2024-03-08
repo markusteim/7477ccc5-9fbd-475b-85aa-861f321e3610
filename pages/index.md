@@ -24,6 +24,46 @@
 14. Visibility (<Value data={category_propositions} column=percentage row=13/>%)
 15. Well-being (<Value data={category_propositions} column=percentage row=14/>%)
 
+# Summary
+
+## General Impressions
+&quot;The overall sentiment from the university reviews presents a mixed bag of experiences, with a
+notable lean towards positive aspects, particularly in relation to the school&#39;s academic offerings,
+diversity, and location in Washington D.C. However, there are recurring negative sentiments
+regarding social life, housing, and certain administrative services.
+
+**Impressions:**
+Positive experiences at the university are often tied to its academic strengths, especially in political
+science, international relations, and business programs. Students appreciate the variety of
+concentrations and the high level of education they receive. The location in D.C. is frequently
+mentioned as a significant draw, offering a plethora of internship opportunities and cultural
+experiences that enhance the educational journey.
+On the flip side, negative impressions are largely associated with the social aspects of university life.
+Greek life receives mixed reviews, with some students feeling it&#39;s not as prominent or satisfying as at
+other schools. Housing and dining services are often criticized for inefficiency and lack of quality. The
+transition to online learning during the pandemic was also a point of contention, with students
+expressing dissatisfaction with platforms like Blackboard.
+
+**Academics:**
+Academics are a strong suit, with students praising the variety of programs and the quality of
+education. The university&#39;s focus on political science and international relations stands out, and
+many students feel well-prepared for their future careers.
+
+**Social Life:**
+Social life at the university seems to be less favorable, with Greek life and on-campus activities not
+meeting some students&#39; expectations. The lack of a traditional college sports experience also
+contributes to a sense of dissatisfaction for some.
+
+**Housing:**
+Housing is a contentious issue, with many students finding the lottery system and the quality of
+dorms less than ideal. The push to move off-campus is common among upperclassmen seeking more
+freedom and privacy.
+
+**Administration and Services:**
+Administrative services, particularly financial aid and health services, are often described as difficult
+to work with. Students express frustration with bureaucracy and inefficiency.
+In summary, while the university excels academically and benefits from its D.C. location, it faces
+challenges in fostering a vibrant social scene and providing satisfactory student services.&quot;
 
 
 ```sql category_propositions
