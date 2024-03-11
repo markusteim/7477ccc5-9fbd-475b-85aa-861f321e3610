@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,8 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The general sentiment from the university reviews presents a mixed bag of experiences, with a notable number of students expressing both satisfaction and dissatisfaction. Positive comments often highlight the university's location, opportunities, and specific programs, while negative remarks tend to focus on issues with housing, dining, and a perceived lack of school spirit or community. The balance between positive and negative sentiments seems to lean slightly towards the positive, but the criticisms are significant and recurrent enough to suggest that the university experience is far from perfect for many students.
-
+The general sentiment from the snippets provided shows a mix of enthusiasm and criticism towards the university experience. Positive remarks often highlight the vibrant campus life and the unique opportunities available due to the university's location. In contrast, negative comments tend to focus on specific aspects that fall short of expectations, such as housing and dining experiences. The positive comments seem to outnumber the negative ones, suggesting a generally favorable view of the university among students.
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
@@ -118,40 +117,40 @@ ORDER BY
 
 
 ## Positive:
-- **Campus Location**: Students love the university's setting in Washington D.C., which provides a wealth of internship opportunities and cultural experiences.
-- **Academic Programs**: Certain programs, particularly in international relations and political science, receive high praise for their quality and the passion of both students and faculty.
-- **Diversity & Inclusion**: The university is commended for its diverse student body and the presence of a large LGBTQ community, which contributes to an inclusive environment.
-- **Study Abroad**: Many students highlight the study abroad programs as a standout feature, offering unique and enriching experiences.
-- **Campus Resources**: Resources like the library and certain academic facilities are appreciated, and some students have had positive experiences with faculty and staff.
+- **Campus Life:**  Students express a strong affection for the university, with phrases like "absolutely love gw" and "great experience this far" indicating a deep sense of satisfaction and happiness with their campus life.
+- **Academic Opportunities:**  The proximity to D.C. is frequently mentioned as a significant advantage, offering unique academic and professional opportunities, as seen in comments like "perfect match" and "not sure if there's a better school for interning."
+- **Social Environment:**  The vibrant social scene is a highlight for many, with students enjoying the diversity and the chance to engage in various activities, as captured by "hopeing to explore more of what the school has to offer."
+- **Recommendations:**  A number of students would readily recommend the university to others, suggesting a strong endorsement of the institution's overall environment and offerings.
+- **Personal Growth:**  The university is seen as a place of personal development and joy, with students stating "i have never felt happier" and "i wouldn't change my decision to come to gw."
+
 
  
 
-## Negative:
-- **Housing & Dining**: Complaints about the housing lottery, dorm conditions, and dining services are common, with many students finding them subpar.
-- **Campus Spirit**: A lack of traditional college spirit and engagement in sports is frequently mentioned, with some students feeling disconnected from campus life.
-- **Greek Life**: The Greek system receives mixed reviews, with some students enjoying it and others finding it lacking, especially compared to other universities.
-- **Cost & Financial Aid**: The high cost of attendance and issues with financial aid are concerns for many, impacting the overall university experience.
-- **Administrative Issues**: Students express frustration with administrative processes and some faculty members, feeling that their needs and concerns are not always adequately addressed.
-
+## Negative:* 
+- **Housing Concerns:**  Several students express dissatisfaction with their living arrangements, particularly those placed on the Mount Vernon campus, describing it as a "huge hassle" and advising against housing students there.
+- **Dining Discontent:**  The dining options receive criticism for being limited and not meeting expectations, with phrases like "j street sucks" and "you get sick of stuff easily" indicating a lack of satisfaction.
+- **Social Exclusion:**  Some students feel marginalized if they are not part of specific groups or majors, as seen in comments like "if you're not an international affairs major, you're screwed."
+- **Financial Burden:**  The cost of attending the university is a concern for some, with mentions of it being "pricey" and the financial aid process being described as frustrating.
+- **Technical Troubles:**  Issues with campus Wi-Fi and the complexity of connecting devices are sources of annoyance, as students mention "a million steps and downloads required just to connect for the first time."
 
 <br>
 
 ## Most Positive Examples:
-- "i absolutely love it here"
-- "it's the best thing that's ever happened to me"
-- "i love going to this school!"
-- "au really has it all"
-- "i would definitely suggest looking into the school"
+- "absolutely love gw"
+- "great experience this far"
+- "perfect match"
+- "i have never felt happier"
+- "i wouldn't change my decision to come to gw"
 
 
  
 
 ## Most Negative Examples:
-- "i regret ever thinking this was my dream school"
-- "i had a horrible time from day one"
-- "i wouldn't recommend the school to my worst enemy"
-- "i've been trying to argue my case ever since"
-- "i probably wouldn't go here if it weren't for my major"
+- "huge hassle"
+- "j street sucks"
+- "if you're not an international affairs major, you're screwed"
+- "pricey"
+- "a million steps and downloads required just to connect for the first time"
 
 <br>
 
@@ -324,16 +323,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews indicate a range of concerns about the university experience, from
-dissatisfaction with the administration and specific academic programs to issues with
-campus facilities and services. Students express frustration with housing, dining, and
-transportation, as well as the effectiveness of the university's support systems. The
-sentiment towards Greek life is mixed, with some students finding it lacking or problematic.
-There are also comments about the university's integration with the surrounding city and the
-perceived lack of school spirit. While some students have found their niche and are satisfied
-with certain aspects of their experience, others are considering transferring or regret their
-decision to attend. The reviews suggest that the university could benefit from addressing
-these concerns to improve the overall student experience.
+The student reviews indicate a range of challenges faced by attendees at the university. Concerns are expressed about the online learning experience, the adjustment to university life, and the handling of the fall semester. Students find the financial aid process, class registration, and student organization involvement difficult. Housing and dining situations are also criticized, with specific mention of the Mount Vernon campus being less desirable. The reviews suggest a competitive atmosphere, with dissatisfaction in the variety of majors and the support for non-political science or business majors. The admissions process, campus housing, and the cost of living in D.C. are additional points of contention. The sentiment towards Greek life is mixed, and there are complaints about the public transportation system and campus connectivity issues. Overall, the reviews reflect a sense of disappointment and frustration, with several students considering or having already transferred to other institutions.
 
         <br>
         <br>
@@ -341,27 +331,16 @@ these concerns to improve the overall student experience.
     <b>List of issues from customer reviews:</b>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Dissatisfaction with administration and support systems (e.g., "i do not like the
-administration", "my advisor is of little help").
-- Housing and dining services inefficiencies (e.g., "housing and dining program at au is
-inefficient and ineffective", "housing is a lottery").
-- Transportation and parking difficulties (e.g., "parking generally sucks in d.c", "dulles airport
-is impossible to get to").
-- Greek life issues and lack of housing (e.g., "have not heard many great things about greek
-life at au", "sororities can't have their own house").
-- Campus facilities under construction (e.g., "also there is construction happening on a few
-buildings").
-- Weak alumni network (e.g., "alumni network is weaker than those of neighboring schools").
-- Lack of school spirit and low campus morale (e.g., "nobody here has any school spirit",
-"morale of the campus is constantly low").
-- Discontent with the university's integration with the city (e.g., "au is in its own 'box'
-sometimes and not a part of the wonderful city of d.c").
-- Issues with academic programs and faculty (e.g., "bad teachers are often weeded out
-eventually", "certain classes and professor that you don't like").
-- Technical and resource limitations (e.g., "au doesn't give you much to work with", "if you
-don't have your own laptop").
-- Negative experiences leading to transfer considerations (e.g., "have friends who have
-literally transferred", "thinking of transferring after my freshman year").
+- Online learning experience dissatisfaction ("as a freshman, i wish i did not spend the money to attend gw online", "due to the online classes").
+- Adjustment to university life and handling of the semester ("was a difficult adjustment", "fall semester seems to be looking like a disaster").
+- Difficulty with financial aid, class registration, and student organizations ("however, i would like to point out that they are very difficult to deal with", "from financial aid to registering for classes to student organizations").
+- Limited housing and dining options ("not a lot of options", "avoid the mount vernon campus", "dining and housing situations").
+- Competitive and overwhelming environment ("competition is tight", "at times can feel overwhelming").
+- Discontent with the variety of majors and academic support ("if you're going to do anything else, i would look elsewhere", "biology is not really an important major here").
+- Negative experiences with admissions and campus housing ("terrible experience with admissions process", "campus housing completely depends on what building you live in").
+- High cost of living in D.C. and associated financial strain ("while d.c. is extremely expensive", "it is expensive though").
+- Mixed feelings about Greek life and its impact on campus life ("personally i do not think greek life is beneficial for campus /student life", "being in some sort of greek like is kind of necessary").
+- Public transportation and connectivity issues ("line has taken 45+ minutes to ride", "you also can’t connect a wii or xbox to the wifi").
 
 </ul>
 
@@ -371,18 +350,14 @@ literally transferred", "thinking of transferring after my freshman year").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these concerns, the university could conduct a thorough review of its
-administrative processes and support systems to identify and rectify inefficiencies.
-- Improving housing and dining services, perhaps through student feedback
-mechanisms, could alleviate some dissatisfaction.
-- Addressing transportation and parking issues by exploring partnerships with local
-transit authorities or enhancing shuttle services could be beneficial.
-- The university might also consider investing in Greek life infrastructure and support to
-meet student expectations.
-- Engaging with the student body to foster a stronger sense of community and school
-spirit could improve morale.
-- Finally, the university should continue to evaluate and enhance academic programs
-and faculty development to ensure a high-quality educational experience.
+- Enhance the online learning platform and provide better support for students to ensure a smoother transition to university life.
+- Streamline processes for financial aid, class registration, and involvement in student organizations to make them more user-friendly.
+- Expand housing and dining options, particularly improving the conditions at the Mount Vernon campus.
+- Foster a more collaborative rather than competitive atmosphere, and provide more support for a wider range of majors.
+- Review and improve the admissions process to make it more transparent and less stressful for prospective students.
+- Address the high cost of living by providing more affordable housing options and financial support for students.
+- Evaluate the Greek life system and its impact on campus culture, ensuring it is inclusive and beneficial to student life.
+- Improve the public transportation system and campus connectivity to facilitate easier movement and access to technology for students.
 
 
     </ul> 
@@ -393,15 +368,7 @@ and faculty development to ensure a high-quality educational experience.
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, the university seems to have a diverse and active student body with
-a variety of interests and academic pursuits. The urban setting of the university is appreciated by
-many students, and the presence of nearby amenities such as stores and restaurants adds to the
-convenience of campus life. The university's academic offerings, particularly in international relations
-and political science, are recognized and valued. The availability of financial aid and the ability to use
-campus currency at local establishments are also noted positively. While there are mentions of a
-vibrant Greek life, it is not overwhelming, allowing students to choose their level of involvement. The
-university's efforts in providing a conducive learning environment, despite challenges such as the
-COVID-19 pandemic, are acknowledged by the students.
+Based on the provided snippets, students at George Washington University (GWU) appreciate the unique opportunities and experiences the university and its location in Washington D.C. offer. The diverse academic programs, especially in international affairs and political science, are well-regarded. The urban campus environment, proximity to significant landmarks and institutions, and the availability of internships are highlighted as key benefits. The university's response to the pandemic and the shift to online classes were mentioned, indicating adaptability. The sense of community, even for those not involved in Greek life, and the satisfaction with housing options as students progress through their years are also noted. The overall sentiment suggests that students value their time at GWU and the distinct advantages it provides.
 
         
 <br>
@@ -412,23 +379,13 @@ COVID-19 pandemic, are acknowledged by the students.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Urban university setting with nearby amenities (best buy, the container store, payless, etc.)
-- Diverse student body with a significant percentage of female students (60+ percent female)
-- Acceptance of campus currency at local establishments (a few take eagle bucks)
-- Academic programs that meet expectations, even if different than initially expected (a lot of people
-end up switching out of sis, not because it's a bad program but because it's different than they
-expected)
-- Inclusive environment for students who choose not to drink (a lot of people who choose not to
-drink at all)
-- Availability of financial aid (as an incoming student, they do meet fafsa requirements for those who
-have good merit)
-- Recognition of the university's reputation in the community (au has a reputation in this community)
-- Proximity to the city and its resources (american is a medium school in a big city, again, it's d.c)
-- Variety in housing options and dining (a single dining hall, additional buildings in the surrounding
-area)
-- Academic satisfaction with certain fields of study (academics are okay, as a language and area
-studies major, specializing in francophone africa)
-- Opportunities for internships and jobs in D.C. (always tons of competition for jobs in d.c)
+- Unique opportunities in Washington D.C. ("we are in d.c", "studying international affairs at the elliot school", "gwu provides a unique undergraduate experience in the heart of washington d.c")
+- Diverse and strong academic programs ("especially for polisci majors and int'l affairs majors", "as a graduate of the elliott school at gwu, i highly value my experience")
+- Urban campus environment and proximity to landmarks ("cherry blossom festival", "white house christmas tree lighting", "smithsonian's")
+- Internship opportunities ("being a gw student afforded", "how many interns can say that")
+- Adaptability to online classes during the pandemic ("took classes online", "my first year of college online")
+- Sense of community and housing satisfaction ("so many people i know enjoyed thurston hall", "most students live off campus", "apartments everywhere")
+- Positive experiences with specific schools and programs ("elliott school is great", "law school is pretty good", "i am currently a freshman majoring in biomedical engineering")
 
 </ul>
 
@@ -438,15 +395,10 @@ studies major, specializing in francophone africa)
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the student experience, the university could explore expanding
-on-campus dining options, as there is mention of only a single dining hall.
-- Additionally, ensuring that academic programs are clearly communicated to prospective
-students could help manage expectations and reduce the number of students switching
-majors.
-- The university might also consider increasing support for students during the transition to
-college life, as indicated by the need for adjustment on both students' and professors' parts.
-- Lastly, continuing to foster an inclusive environment that accommodates diverse lifestyles,
-such as those who abstain from alcohol, will contribute to a positive campus culture.
+- To further enhance the student experience, the university could focus on improving the counseling center, as suggested by one snippet, which would contribute to better mental health support. 
+- Additionally, continuing to upgrade and maintain technological resources, such as email systems and computer labs, would benefit students. 
+- Expanding dining options and ensuring that financial aid processes are transparent and accessible could also improve satisfaction. 
+- Lastly, fostering a sense of community for remote and commuting students could enhance their connection to the university.
 
 </ul> 
     </Tab>

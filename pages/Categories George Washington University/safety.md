@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the snippets regarding safety and security at the university is mixed, with a lean towards positive experiences. Students generally feel safe on campus, citing low crime rates and good security measures. However, there are concerns about safety off-campus and the occasional negative incident that affects the sense of security.
+The overall sentiment from the snippets regarding safety and security at the university is mixed, with a notable number of positive experiences highlighting the presence of campus police, safety services, and the general feeling of safety, even at night. However, there are also several negative experiences that mention crime alerts, thefts, and the need for vigilance, especially in an urban setting.
 
 
 ```sql polarity_proportions
@@ -98,7 +98,6 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
@@ -116,37 +115,37 @@ ORDER BY
 <br> 
 
 ## Positive:
-- **Campus Safety:** Students feel secure with the presence of campus police, blue light emergency phones, and public safety officers patrolling after 9pm. Examples include the quick response to emergency calls and the visibility of security vehicles.
-- **Neighborhood Security:** The university is situated in a safe and quiet neighborhood, contributing to students' comfort. The proximity to Homeland Security and low crime rates in the surrounding area are often mentioned.
-- **Safety Measures:** The university's efforts in safety training, such as self-defense classes and preventative training, are appreciated. Additionally, the security system is described as top-notch, with locked closets in dorms and emergency systems installed across campus.
-- **Night Safety:** Many students report feeling safe walking alone at night on campus, thanks to well-lit paths and constant patrols.
-- **Security Alerts:** The university's communication regarding safety concerns, including text alerts and helicopter searches during emergencies, is seen as a positive aspect of campus security.
+- **Campus Presence:**  Students feel reassured by the visible presence of campus police and security measures, such as the GW Police Department (GWPD) and emergency poles.
+- **Night Safety:**  Services like campus taxis and the 4ride late-night escort service contribute to a sense of safety during nighttime.
+- **Urban Safety:**  Despite being in the heart of Washington D.C., students appreciate the campus's separation from city bustle and the livability of the Foggy Bottom neighborhood.
+- **Safety Resources:**  The university's efforts in providing safety information and awareness about issues like sexual assault are recognized and valued.
+- **Security Measures:**  The implementation of security in dorms, including access cards and the presence of security personnel, is seen as effective in maintaining a safe environment.
 
  
 
-## Negative:
-- **Off-Campus Concerns:** Students express unease once leaving campus, with some areas described as sketchy or tense, and advice against walking alone late at night.
-- **Theft Issues:** There are reports of theft, particularly of unattended laptops, and recommendations to use U-locks for bikes and to lock dorm doors.
-- **Substance Abuse:** While the drug scene is described as almost non-existent, there are warnings about obtaining drugs from trusted sources and the need to be cautious.
-- **Safety Incidents:** A few students mention incidents such as armed non-students on campus and thefts, which have impacted their sense of security.
-- **Party Safety:** Some students feel less safe at frat parties and advise against walking alone to and from such events.
+## Negative: 
+- **Crime Alerts:**  Receiving frequent crime alerts can create an atmosphere of concern and distrust among students.
+- **Urban Risks:**  The reality of being in a city with crime and the need for constant awareness, especially at night, is a concern for some students.
+- **Theft Incidents:**  Multiple accounts of on-campus robberies and thefts, particularly of laptops, have been reported, raising safety concerns.
+- **Security Gaps:**  Some students feel that the security on campus is not as secure as it could be, with non-students occasionally gaining access to dorms.
+- **Vigilance Required:**  The need to be observant and to travel in groups at night is emphasized, indicating that safety is not taken for granted.
 
 <br>
 
 ## Most Positive Examples:
-- "campus crime is extremely low"
-- "feel safe even when i am walking alone across the campus"
-- "security is really good about notifying everyone about any security concerns"
-- "safety staff are always on call"
-- "they had helicopters within the hour to search campus"
+- "i feel safe walking around at night"
+- "there is a lot of gwpd that takes care of the general safety"
+- "gw works really hard to provide safety"
+- "cops are everywhere in d.c"
+- "for an open campus in an urban city, i generally feel safe on campus"
 
 
 ## Most Negative Examples:
-- "it can be very sketchy"
-- "theft has been a problem"
-- "we had a small gunner scare (it ended up being a mistake)"
-- "only thing safe about it is people obtaining drugs from 'a guy they trust'"
-- "if the environment doesn't feel right, don't come here"
+- "occasionally i get crime alerts"
+- "there have been multiple accounts of on-campus robberies"
+- "gwpp came when i pressed the button on the emergency pole"
+- "however, safety has been a concern lately as there have been a number of armed robberies, petty thefts, and the like on campus"
+- "considering the fact that it is a city, you never know what's coming your way"
 
 <br>
 
@@ -313,15 +312,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The university appears to have a range of safety and security concerns expressed by
-students. Issues range from thefts, particularly of laptops, to concerns about walking alone at
-night and the presence of crime in surrounding areas. Students have also mentioned the
-need to be cautious with belongings and the importance of locking doors. There are
-references to incidents on campus and in nearby neighborhoods that contribute to a feeling
-of unease. Some students have indicated that the university tries to enforce safety policies,
-but there is a sentiment that more proactive measures could be beneficial. The presence of
-emergency blue light poles and campus security is noted, but there are still reports of feeling
-unsafe and incidents of crime.
+The student reviews indicate a range of concerns regarding safety and security at the university. Issues such as inadequate lighting, visibility of security personnel, and the ease of non-student access to buildings are mentioned. Some students express discomfort with the open campus layout, especially at night, and there are reports of thefts and other crimes. While some students feel that safety measures are somewhat strict and that the university communicates well during incidents, others feel that enforcement is not consistent and that there is a need for increased security presence. The mixed experiences suggest that while some safety protocols are in place, there are areas that require attention to enhance the overall sense of security for students.
 
         <br>
         <br>
@@ -329,27 +320,16 @@ unsafe and incidents of crime.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Difficulty in obtaining accommodations (accommodations are incredibly difficult to obtain).
-- Incidents around the school (all the incidents around the school).
-- Theft in dorms due to unlocked doors (all the laptop being stolen in the dorms because
-students decided not to deadbolt their doors).
-- Concerns about post-graduation job prospects (although finding a job post-grad looks slim
-for most graduates).
-- Perception of administration's attentiveness to student safety (although I made numerous
-friends at American University and have been given amazing opportunities I wish the
-administration were more attentive to the safety of each student).
-- Advice to always lock doors and walk with a friend (always lock your door to prevent thefts,
-always walk with a friend).
-- Sketchy areas and unsafe neighborhoods (can be sketchy at times, can be unsafe).
-- Drug and alcohol visibility (however, as far as alcohol visibility and drug use).
-- High racial tension (high racial tension).
-- Concerns about safety at frat parties (I feel less safe at frat parties).
-- Theft of unattended belongings (theft in the library when unattended laptops are left for the
-public).
-- Incidents near metro stops (there is going to be some crime near the metro stops).
-- History of violence and crime rates in D.C. (history of violence, crime rates in D.C. is worse
-than you think).
-- Presence of pests in dorms (most of my friends have had mice or rats in their dorms).
+- Inadequate lighting at shuttle stops ("there should be more light where the vex late-night stop is")
+- Non-student access to buildings ("it is easy for people who do not attend here to get into residential buildings")
+- Theft incidents ("my friend's laptop and chargers were stolen straight out of her room")
+- Perceived lack of strict enforcement ("university does not seem very strict on enforcement")
+- Insufficient security presence at night ("I do not see campus police around often at night")
+- Open campus layout contributing to safety concerns ("safety is hard at gw because we live right in the city with an open campus")
+- Crime in surrounding areas affecting campus safety ("surrounding city area can be unsafe")
+- Inconsistent security at building entrances ("some dolls both lack security officers at the front desk and have automatic open doors")
+- Reports of serious crimes and frequent alerts ("i often get texts from campus safety about muggings, stabbings, robberies")
+- Concerns about safety when traveling alone at night ("but at night i do not enjoy walking back alone")
 
 
     </ul>
@@ -360,17 +340,13 @@ than you think).
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these concerns, the university could consider enhancing security
-measures, such as increasing patrols in areas where incidents are reported and
-improving the security of dormitories with better locks or access control systems.
-- Additionally, providing more resources and support for students seeking
-accommodations could alleviate some of the stress associated with feeling unsafe.
-- The university might also benefit from offering more safety education programs,
-including how to secure belongings and awareness of surroundings.
-- Improving communication about safety incidents and the measures taken in
-response could help build trust between the administration and the student body.
-- Finally, fostering a more proactive approach to safety and security, rather than a
-reactive one, could contribute to a safer campus environment.
+- Increase lighting in poorly lit areas, especially where students wait for transportation.
+- Review and strengthen access control measures to prevent unauthorized entry into buildings.
+- Enhance the visibility and presence of security personnel, particularly during nighttime hours.
+- Ensure consistent enforcement of safety policies and communicate this clearly to students.
+- Explore the possibility of a more secure campus layout or additional measures to mitigate the risks associated with an open campus.
+- Provide additional resources and support for students to report safety concerns and receive timely assistance.
+- Offer safety education programs to help students navigate the urban environment safely.
 
 
     </ul> 
@@ -381,13 +357,7 @@ reactive one, could contribute to a safer campus environment.
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, the university appears to maintain a level of safety and security that
-is satisfactory to many students. The campus is described as being in a safe neighborhood with
-visible security measures such as campus police patrols, emergency call boxes, and a blue light
-system. Students feel comfortable walking around campus at various hours, and there is a sense of
-community safety. The university also seems to provide ample opportunities for internships and jobs,
-which contributes to a sense of security regarding future prospects. While there are mentions of
-incidents and concerns, these do not dominate the overall sentiment expressed by the students.
+The university appears to have a robust safety and security system in place, with frequent mentions of the GW police's presence and effectiveness. Students feel safe on campus, even at night, and appreciate the various safety measures, such as the blue light system and the 4-ride escort service. The campus environment is described as safe, well-lit, and well-patrolled by multiple law enforcement agencies. Additionally, the university's location in Washington D.C. provides a wealth of internship and job opportunities, which students find beneficial for their future career prospects. The campus's urban setting does not detract from the sense of security, and the university's efforts to maintain a safe environment are acknowledged by the students.
 
         
 <br>
@@ -398,17 +368,14 @@ incidents and concerns, these do not dominate the overall sentiment expressed by
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Safe neighborhood (AU is in one of the safest neighborhoods in D.C.)
-- Visible security measures (at least one security vehicle is always within sight, blue light system,
-campus police patrols)
-- Comfortable campus environment (students feel safe walking around, campus is well lit and
-patrolled)
-- Internship and job opportunities (plentiful in D.C., administration assists with city navigation)
-- Community and diversity (students of different backgrounds feel connected and respected)
-- Health and safety measures (AU has taken action to prevent incidents, free sexual-assault defense
-classes)
-- Reliable transportation (AU shuttles are pretty reliable)
-- Preparedness for emergencies (public safety is only a call away, panic buttons available)
+- GW police presence and availability (e.g., "gw police will be around 24/7", "i constantly see gw police patrolling the area")
+- Safe campus environment (e.g., "campus is safe", "felt safe", "safe and friendly environment")
+- Safety measures and services (e.g., "blue lights everywhere", "4-ride system is incredibly helpful", "emergency blue light system")
+- Internship and job opportunities (e.g., "endless options for internships and jobs", "opportunities for work/internship experience throughout d.c.")
+- Location in Washington D.C. (e.g., "location is in the heart of america and american politics", "monuments, white house, and smithsonians are all your fingertips")
+- Campus security features (e.g., "campus is well-lit", "security cameras", "security in the dorms is very good")
+- Student awareness and education on safety (e.g., "we are all given safety briefs during freshman year")
+- Positive campus atmosphere (e.g., "seeing the campus looks very chill and peaceful", "it's a very comfortable atmosphere")
 
 </ul>
 
@@ -418,13 +385,7 @@ classes)
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance safety and security, the university could consider increasing the visibility
-of security measures in areas where students have reported feeling less secure.
-- Additionally, addressing concerns about theft and unauthorized access to buildings could
-improve the sense of security.
-- Offering more workshops on personal safety and security, as well as promoting the existing
-resources more actively, could also help ensure that all students are aware of how to stay
-safe on campus.
+- No suggestions for this satisfaction category.
 
 </ul> 
     </Tab>

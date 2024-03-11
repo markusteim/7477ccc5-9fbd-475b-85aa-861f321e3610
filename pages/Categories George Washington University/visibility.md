@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,8 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-In the realm of lighting and visibility, the university's reviews present a mixed bag of sentiments. While some students appreciate the abundance of natural light, others express dissatisfaction with poorly lit areas, particularly the bathrooms. The positive remarks highlight the university's use of natural light, whereas the negative comments focus on the need for improved artificial lighting.
+In the realm of lighting and visibility, the university's environment seems to cast a shadow on the overall experience. The sentiment leans towards the negative, with concerns about inadequate lighting taking center stage.
+
 
 
 ```sql polarity_proportions
@@ -115,30 +116,23 @@ ORDER BY
 <br>
 
 ## Positive:
-- **Natural Illumination:** Students rave about the large windows and the huge plus of natural light flooding the campus, creating an inviting and vibrant atmosphere.
-- **Architectural Brightness:** The presence of huge windows not only enhances the aesthetic appeal but also contributes to a well-lit environment, promoting a positive mood and productivity.
+- There are no positive examples provided.
 
 
 ## Negative:
-- **Bathroom Shadows:** A common grievance among students is the inadequate lighting in the bathrooms, which are described as dark and not very bright, suggesting a need for better lighting solutions.
-- **Shower Visibility:** The dim lighting in the shower areas is a point of contention, with calls for better lighting to improve the experience.
-- **General Lighting:** Some areas of the campus are noted to be cloudy and could benefit from enhanced lighting to ensure safety and comfort.
+- **Campus Illumination**: The university's lighting is described as "very poorly lit," indicating a significant dissatisfaction with the level of visibility across the campus.
+
 
 
 <br>
 
 ## Most Positive Examples:
-- "large amount of natural light"
-- "huge windows"
-- "another huge plus is the amount of natural light"
+- None provided.
+
 
 
 ## Most Negative Examples:
-- "bathrooms weren't so dark"
-- "bathrooms aren't very bright"
-- "better lighting for the showers"
-- "pretty cloudy"
-- "some areas could be better-lit"
+- "very poorly lit"
 
 <br>
 
@@ -300,13 +294,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The feedback from students indicates that there are specific concerns regarding the
-adequacy of lighting within the university, particularly in the bathrooms and shower areas of
-the housing facilities. The students have expressed that these areas are not sufficiently
-bright, which impacts their satisfaction with the campus amenities. Additionally, there is a
-mention of some areas on campus that could benefit from improved lighting. While the
-comment about it being "pretty cloudy" could refer to weather conditions, it may also suggest
-that the overall ambiance or lighting in certain locations feels dim or gloomy.
+Based on the provided snippet, there appears to be a concern regarding inadequate lighting within the university. The specific feedback indicates that at least one area or aspect of the campus is considered "very poorly lit." This suggests that the lighting levels may not be sufficient for students to feel comfortable and secure, which could potentially affect their ability to navigate the campus safely or study effectively in certain locations.
 
         <br>
         <br>
@@ -314,12 +302,7 @@ that the overall ambiance or lighting in certain locations feels dim or gloomy.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Insufficient lighting in bathrooms (bathrooms aren't very bright).
-- Lack of adequate lighting in shower areas (better lighting for the showers would definitely
-benefit the campus).
-- General dissatisfaction with the darkness in housing bathrooms (housing would get a better
-grade if the bathrooms weren't so dark).
-- Some campus areas are not well-lit (some areas could be better-lit).
+- Inadequate lighting in certain areas (Snippet: "very poorly lit").
 
 
     </ul>
@@ -330,15 +313,10 @@ grade if the bathrooms weren't so dark).
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address the concerns raised by the students, the university could conduct a
-thorough assessment of the lighting in the bathrooms and shower areas within the
-housing facilities to identify the need for additional fixtures or brighter bulbs.
-- It may also be beneficial to perform a campus-wide lighting audit to determine other
-areas that require improved lighting solutions.
-- Implementing motion-sensor lights could enhance visibility while conserving energy.
-- Additionally, ensuring regular maintenance of existing lighting fixtures to prevent
-outages and dimming over time would help maintain adequate lighting levels
-throughout the campus.
+- To address the lighting concern, the university could conduct a thorough assessment of the lighting across the campus, especially in areas where students frequently study or transit during evening hours. 
+- This assessment should identify zones with insufficient lighting. 
+- Following the assessment, the university could upgrade existing lighting fixtures, install additional lights where necessary, and ensure that all lighting systems are well-maintained. 
+- It may also be beneficial to consider energy-efficient LED lighting to improve visibility while being cost-effective in the long run.
 
 
     </ul> 
@@ -349,11 +327,8 @@ throughout the campus.
         <b>Summary:</b>
         <br>
         
-The feedback from students regarding visibility within the university premises indicates a positive
-reception of the natural lighting. The comments specifically highlight the presence of large windows
-that allow for a substantial amount of natural light to permeate the learning spaces. This aspect of
-the university's design seems to contribute positively to the students' experience, suggesting that the
-current architectural features that facilitate natural lighting are appreciated and effective.
+Based on the provided information, there is nothing to comment about in this satisfaction category regarding lighting and visibility at the university, as no snippets from student reviews have been shared.
+
 
         
 <br>
@@ -364,9 +339,7 @@ current architectural features that facilitate natural lighting are appreciated 
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Presence of natural light ("another huge plus is the amount of natural light")
-- Architectural design with large windows ("huge windows")
-- Effectiveness of natural light in visibility ("large amount of natural light")
+- Nothing to list in this satisfaction category.
 
 </ul>
 
@@ -376,13 +349,7 @@ current architectural features that facilitate natural lighting are appreciated 
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the student experience, the university could consider maintaining the
-cleanliness and clarity of the windows to ensure maximum natural light penetration.
-- Additionally, if any future renovations or new constructions are planned, the university might
-continue to prioritize large window designs to sustain and improve upon this positive aspect.
-- It would also be beneficial to conduct periodic assessments of areas where natural light may
-be insufficient and consider installing appropriate artificial lighting solutions to complement
-the natural light during overcast days or in interior spaces lacking direct sunlight.
+- No suggestions for this satisfaction category.
 
 </ul> 
     </Tab>

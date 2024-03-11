@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the university reviews regarding tastes, food, dining, and restaurants seems to be a mix of satisfaction and dissatisfaction. While some students appreciate the variety and quality of food options available, particularly off-campus, others express disappointment with the on-campus dining experience, citing limited options, repetitive menus, and subpar quality. The positive remarks often highlight the diversity of international cuisine and the presence of popular chain restaurants, whereas the negative comments tend to focus on the lack of variety and the quality of food provided by the university's dining services.
+The overall sentiment from the university reviews regarding taste, food, dining, and restaurants presents a dichotomy of experiences. While there is a clear appreciation for the variety and quality of off-campus dining options, including a diverse array of cuisines and vegetarian/vegan choices, the on-campus dining program receives significant criticism for its quality, variety, and cost. The positive remarks often highlight the abundance of nearby restaurants and the convenience of the GWorld food plan, whereas the negative comments focus on the subpar offerings of the on-campus meal plans and dining halls.
 
 ```sql polarity_proportions
 
@@ -99,7 +99,6 @@ ORDER BY
         [
         "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
         ]
@@ -115,40 +114,38 @@ ORDER BY
 
 
 ## Positive:
-- **International Flavors:** Students enjoy a range of international cuisine, from Mexican to Indian, with specific mentions of world-renowned restaurants and a wide swath of cultural cuisines available in the area.
-- **Dining Variety:** The dining hall is praised for its variety, and off-campus dining options are described as plentiful, with Tenleytown offering a great selection of restaurants.
-- **Affordable Meals:** There are mentions of being able to get a great meal for around $10-$15, indicating that students can find value for money when dining.
-- **Meal Swipes:** The tavern and salsa are appreciated for accepting meal swipes, providing alternative dining options on campus.
-- **Specialty Options:** The ice cream bar receives special mention for being phenomenal, and there's appreciation for the variety of restaurants and the availability of different food options in the area.
-
+- **Diverse Cuisines:** Students relish the proximity to a multitude of restaurants serving international flavors like Thai, Indian, and Ethiopian, as well as the availability of vegetarian and vegan options.
+- **Off-Campus Variety:** The vast array of off-campus dining options, including food trucks and city-wide eateries, is frequently praised for providing a welcome escape from university food.
+- **GWorld Plan:** The GWorld food plan is commended for its flexibility, allowing students to dine at various locations throughout the city, enhancing their culinary experiences.
+- **Ethnic Options:** The rich tapestry of D.C.'s ethnic food scene is a highlight for many, with students enjoying the ability to sample global cuisines right at their doorstep.
+- **Healthy Alternatives:** The presence of Whole Foods and other health-conscious establishments is noted as a positive aspect, offering students healthier dining choices.
  
 
 ## Negative:
-- **Limited On-Campus:** Students express frustration with the limited on-campus food options, with some finding it difficult to use up their meal plans and others describing the food as barely edible or repetitive.
-- **Quality Concerns:** The quality of campus food is criticized, with some students labeling it as terrible and others suggesting that it lacks dignity.
-- **Health and Variety:** There are calls for more gluten-free options and healthier choices, indicating a desire for more diverse and accommodating dining services.
-- **Repetitiveness:** Food options are described as not great, with some students feeling that the dining experience could be improved and others finding the food options to be boring and unappetizing.
-- **Dining Hall Issues:** The main dining hall, TDR, is mentioned as having its great and horrible days, and there's a sentiment that everyone gets sick of it at some point.
-
+- **Poor Quality:** The on-campus dining, particularly the main cafeteria, is repeatedly criticized for its low quality and lack of appetizing options.
+- **Limited Variety:** Students express frustration over the limited variety of on-campus food, with some feeling stuck with repetitive and unhealthy choices.
+- **Expensive Options:** The cost of dining, especially in downtown D.C., is a concern, with students finding the food overpriced and not always worth the expense.
+- **Meal Plan Issues:** The structure and value of the on-campus meal plan are sources of dissatisfaction, with students finding it difficult to make their dining dollars last.
+- **Lack of Dining Halls:** The absence of traditional dining halls is a significant drawback for some, leading to a reliance on off-campus dining or self-cooking.
 
 <br>
 
 ## Most Positive Examples:
-- "world-renowned restaurants"
-- "the ice cream bar is phenomenal!"
-- "variety of international food to choose from"
-- "dining hall with a lot of varieties"
-- "great food"
+- "huge variety of off campus food"
+- "a lot of different types of food"
+- "there are tons of vegetarian/vegan options"
+- "there are amazing restaurants all over the place"
+- "food trucks come through campus usually around lunch time"
 
 
  
 
 ## Most Negative Examples:
-- "food isn't great"
-- "meal plan is impossible to use up"
-- "food can get repetitive"
-- "sometimes is barely edible"
-- "terrible food"
+- "terrible food/dining program"
+- "our on-campus meal plan is horrible"
+- "cafeteria is pretty awful"
+- "food sucks"
+- "food is pretty subpar"
 
 <br>
 
@@ -313,31 +310,22 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews indicate a consistent dissatisfaction with the on-campus dining options
-at the university. The primary concerns revolve around a lack of variety, repetitive menus,
-and the quality of food, which is often described as subpar or even inedible. Students
-express frustration with the limited healthy choices and the high cost of meal plans relative to
-the value received. There are also specific mentions of undercooked food and hygiene
-issues, such as mold on bread. The dining experience appears to be a significant area of
-discontent among the student body, affecting their overall satisfaction with campus life.
-
+The student reviews indicate dissatisfaction with the university's dining services. The primary concerns revolve around the lack of variety, the perceived low quality of food, the absence of a traditional dining hall, and the high cost of available food options. Students express frustration with the repetitiveness of the menu, the limited choices for those with dietary restrictions, and the overall unappetizing nature of the food. The new dining plan has been criticized, and there is a desire for more integration with local grocery stores and restaurants. The issues seem to affect student life significantly, as food is a daily necessity, and the current offerings do not meet the diverse needs and expectations of the student body.
         <br>
         <br>
 
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Limited variety and repetitive menus (e.g., "food options become repetitive and boring",
-"main dining hall never has a different selection").
-- Quality of food perceived as low (e.g., "awful food", "terrible quality", "food is not amazing").
-- Health and safety concerns (e.g., "chicken half cooked", "mold on bread").
-- High cost and perceived poor value of meal plans (e.g., "not worth 15 dollar meal swipes",
-"meal plan is terrible").
-- Limited healthy and dietary-specific options (e.g., "not many healthy options", "vegetarian
-options are terrible").
-- Limited dining locations and hours of operation (e.g., "most of campus dining closes", "only
-one main dining hall").
-- Hygiene and cleanliness issues (e.g., "campus food options are disgusting, dirty").
+- Repetitive food options ("food can get old, options are repetitive", "can be repetitive").
+- Low quality of food ("food is not good at all", "quality of campus food is garbage", "terrible food/dining program").
+- Lack of a traditional dining hall ("since there is no dining hall", "university doesn't have its own dining hall").
+- Limited variety and unhealthy options ("variety of food at gw is not great", "there are very few healthy options available").
+- High cost of food ("albeit expensive", "food could be less expensive", "most of them are pricy").
+- Dissatisfaction with the dining plan ("new dining plan change was a mistake", "no one likes the campus dining plan").
+- Limited options for dietary restrictions ("it is hard for vegetarians and vegans to find food", "what i've had is a little limited in what i can eat since i'm gluten-intolerant").
+- Desire for more integration with local businesses ("recommend the incorporate more restaurants, grocery stores", "local businesses that take gworld are way better in quality").
+- Negative perception of J Street dining ("j street is a poor excuse for a dining hall", "food at j street is not the best").
 
 
     </ul>
@@ -348,22 +336,12 @@ one main dining hall").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Review and potentially increase financial aid and scholarship offerings to better support
-students in need.
-- Enhance administrative support by providing additional training for advisors and ensuring
-they are knowledgeable and responsive to student inquiries.
-- Foster a stronger sense of community and school spirit through more inclusive events and
-activities that engage the entire student body.
-- Implement a more transparent and effective approach to handling diversity and inclusion
-issues, ensuring that all students feel represented and supported.
-- Improve the response to hate crimes and safety concerns by establishing clear protocols
-and communication channels for reporting and addressing such incidents.
-- Offer more robust support for students with disabilities, including accessible facilities and
-academic accommodations.
-- Reevaluate the enforcement of drug and alcohol policies to ensure consistency and
-fairness, while also providing education and resources for substance abuse prevention.
-- Increase transparency regarding the use of tuition fees and actively involve students in
-discussions about university reforms and budget allocations.
+- Introduce more variety in the menu to prevent repetitiveness and cater to diverse tastes.
+- Improve the quality of food by sourcing from better suppliers or by enhancing the culinary skills of the dining staff.
+- Explore the possibility of establishing a traditional dining hall that offers a wider range of food options.
+- Expand the dining plan to include more local restaurants and grocery stores, especially those offering healthy and dietary-specific choices.
+- Review and adjust the pricing strategy to make food options more affordable for students.
+- Conduct regular surveys or focus groups with students to gather feedback and make continuous improvements to the dining services.
 
 
     </ul> 
@@ -374,15 +352,7 @@ discussions about university reforms and budget allocations.
         <b>Summary:</b>
         <br>
         
-The university's dining services appear to offer a broad range of options, both on and off-campus,
-catering to diverse tastes and dietary requirements. Students have access to popular chains, local
-eateries, and a variety of cultural cuisines. While the main dining hall, TDR, receives mixed reviews,
-there are mentions of specific places and types of food that students enjoy. The inclusion of
-Eaglebucks in the meal plan enhances the dining experience by allowing students to eat at
-off-campus locations. The narrative suggests that while there is room for improvement, particularly
-with the main dining hall, the overall dining scene provides students with sufficient choices to find
-something they like.
-
+The university's dining approach appears to be well-received by students, with a focus on flexibility and variety. The meal plan, referred to as GWorld, is particularly appreciated as it can be used at a wide range of local stores and restaurants, offering students the chance to explore the city's diverse culinary scene. The presence of brand new dining halls and the availability of healthy options, including vegetarian and vegan choices, are also noted positively. The proximity to a multitude of off-campus dining options, including ethnic cuisines and popular chains, contributes to the overall satisfaction with the food experience at the university.
         
 <br>
 
@@ -392,18 +362,14 @@ something they like.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Variety of dining options (e.g., "endless places to eat", "lots of options at most places", "there are
-many places to eat")
-- Availability of popular food chains (e.g., "popular chains like chipotle and starbucks everywhere",
-"you have panera, starbucks, whole foods, chipotle, mcdonalds")
-- Cultural and international cuisine (e.g., "a student can find a wide swath of cultural cuisines", "dc is
-full of ethnic cuisine from all over the world")
-- Healthy and dietary-friendly choices (e.g., "vegan/vegetarian/gluten-free friendly", "vegetarian
-options that are always available")
-- Eaglebucks and dining dollars adding flexibility (e.g., "eaglebucks can be used at off-campus places",
-"dining dollars can be used at other on-campus eateries")
-- Positive mentions of specific restaurants and food types (e.g., "cava is great and healthy", "freshii is
-healthy and definitely tasty", "great italian")
+- Flexibility of meal plan (GWorld) allowing dining at local establishments ("meal plan is a debit card that you can use at local stores/restaurants", "you can use your meal plan at practically any restaurant, deli, and store in the area").
+- Variety of food options both on and off-campus ("lot's of variety", "there's something for everyone", "great variety").
+- Availability of healthy and dietary-specific options ("food is generally healthy and delicious", "extensive vegan/vegetarian bar", "ton of vegetarian and vegan options").
+- Proximity to a wide range of restaurants and eateries ("great restaurants and businesses nearby", "restaurants are good", "there are over 90 places to eat on gworld").
+- New dining facilities ("brand new dining halls on both sides of the campus").
+- Encouragement to explore local cuisine ("encourages you to try eating at different places", "living in such a diverse city ensures tons of delicious and different options").
+- Positive experiences with campus favorites and ethnic food ("tonic, carvings, and chipotle are campus favorites", "love the variety on ethnic food").
+- Access to food trucks and farmers markets ("gw campus is the center of the food truck craze", "variety of farmers markets seen throughout the year").
 
 </ul>
 
@@ -413,14 +379,7 @@ healthy and definitely tasty", "great italian")
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the dining experience, the university could focus on improving the
-consistency and quality of meals offered at TDR, as it received mixed reviews.
-- Additionally, expanding the variety and frequency of menu rotations could address concerns
-about repetitiveness.
-- Engaging with students to gather feedback on their dining preferences and acting on this
-information could lead to more tailored and satisfying dining options.
-- Lastly, ensuring cleanliness and food safety should be a priority, as there were a few very
-negative comments related to these issues.
+- No suggestions for this satisfaction category.
 
 </ul> 
     </Tab>

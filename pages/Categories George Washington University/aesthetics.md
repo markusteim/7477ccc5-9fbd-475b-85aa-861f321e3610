@@ -1,6 +1,6 @@
- ```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-In the collected university reviews, the aesthetics of the university's material aspects ranging from dorms and architecture to the natural environment‚ leans heavily towards the positive. Students often praise the beauty of the campus, its green spaces, and the architecture, while criticisms tend to focus on specific buildings or facilities needing renovation or the small size of the campus.
+The overall sentiment from the snippets regarding the aesthetic appreciation of material things at the university leans more towards the positive. Students frequently praise the prime location, modern facilities, and beautiful architecture. However, there are recurring complaints about older buildings, lack of green spaces, and ongoing construction.
 
 
 ```sql polarity_proportions
@@ -117,38 +117,40 @@ ORDER BY
 
 
 ## Positive:
-- **Campus Beauty**: Students are enamored with the campus's overall beauty, describing it as an oasis with white buildings and classic architecture, complemented by lush greenery and gardens.
-- **Dorm Quality**: Many find the dorms to be nice, especially the upperclassmen suites and newly renovated buildings, contrasting them favorably against typical freshman accommodations.
-- **Natural Environment**: The presence of parks, an arboretum, and a variety of plants, including cherry blossoms, contributes to a vibrant and refreshing atmosphere that students cherish.
-- **Architectural Appreciation**: The design and upkeep of new buildings, such as the School of International Service, receive accolades for their modernity and aesthetic appeal.
-- **Location Perks**: The university's location is frequently highlighted as superb, offering a mix of suburban tranquility and city life, with the added bonus of beautiful views and proximity to cultural attractions.
+- **Urban Beauty**: The university's urban and modern campus is lauded for its unbeatable location, with proximity to the White House and National Mall, and views of iconic monuments from rooftop areas.
+- **Housing Quality**: Newly built or renovated dorms like West Hall and Somers Hall receive high marks for their impressive standard of living, while the quality of nearby off-campus housing is also praised.
+- **Seasonal Charm**: Students find the city beautiful throughout the year, with spring and fall being particularly stunning due to the blossoming cherry trees and colorful leaves.
+- **Facility Upgrades**: The university is actively renovating and rebuilding dorms and academic buildings, leading to state-of-the-art facilities and well-maintained athletic and student centers.
+- **Cultural Richness**: The proximity to museums, monuments, and historical neighborhoods enriches the student experience, with many finding inspiration in the surrounding areas.
+
 
 
 ## Negative:
-- **Facility Issues**: Some students express dissatisfaction with certain buildings and facilities, noting that they are outdated, under renovation, or have maintenance issues that are not promptly addressed.
-- **Inconsistent Dorms**: While some dorms are praised, others are criticized for being old, unrenovated, or not as aesthetically pleasing as their counterparts.
-- **Campus Size**: A common complaint is the small size of the campus, with some students wishing for more space or finding the compactness less than ideal.
-- **Construction Disruptions**: Ongoing construction projects are a source of frustration for some, as they can detract from the campus's beauty and cause inconvenience.
-- **Diversity Concerns**: A few reviews mention a lack of diversity in the student body's appearance, which for some detracts from the overall campus experience.
+- **Building Conditions**: Some buildings are described as old, dirty, moldy, and in need of renovation, with issues like black mold and ceiling collapses reported.
+- **Greenery Scarcity**: A major lack of green spaces on campus is a common complaint, with the urban setting offering limited areas for relaxation and recreation.
+- **Construction Disruption**: Ongoing construction is a source of inconvenience, with some students feeling that it detracts from the campus's aesthetic appeal.
+- **Aesthetic Inconsistency**: While some facilities are extravagant, others are considered average or outdated, leading to a mixed experience of the campus environment.
+- **Dorm Disparities**: Freshmen and some upperclassmen face the challenge of being placed in older, less appealing dorms, contrasting sharply with the nicer housing options available to others.
 
 
 <br>
 
 ## Most Positive Examples:
-- "campus is an oasis"
-- "beautiful especially in the spring time"
-- "it's like walking in a garden"
-- "campus is absolutely beautiful"
+- "beautiful city with a ton of attractions"
+- "neoclassic D.C. buildings create amazing campus environment"
 - "beautiful campus"
+- "museums and monuments are breathtaking and plentiful"
+- "beautiful edwardian-era houses, embassies and consulates, diplomatic residences"
 
  
 
 ## Most Negative Examples:
-- "dorms vary from being gorgeous to totally trashy"
-- "library is one of the most unattractive buildings you'll see"
-- "it's definitely not at a state school level"
-- "nothing state of the art that i've seen"
-- "equivalent to army barracks"
+- "our building for public health is old"
+- "gelman looks hideous"
+- "library really needs work"
+- "most buildings are decrepit"
+- "dorms are old and falling apart"
+
 
 # Headlines and corresponding snippets from reviews 
 
@@ -313,15 +315,8 @@ ORDER BY
 <b>Summary:</b>
 
     <br>
-        The university&#39;s physical environment appears to be facing several challenges, as reflected
-in the student reviews. Concerns range from the aesthetics and size of the campus to the
-condition of the facilities. The campus is described as small and not particularly attractive,
-with some buildings and dorms in need of renovation. The surrounding area is characterized
-as residential and lacking in vibrancy. There is also mention of ongoing construction, which
-seems to be a source of disruption. Additionally, there are reports of maintenance issues
-within the residence halls and other facilities, with broken amenities not being promptly
-repaired. The reviews also touch on a perceived lack of diversity among the student body
-and a culture that values a certain standard of attire.
+The student reviews indicate a range of concerns regarding the physical state and aesthetics of the university's facilities. The primary issues seem to revolve around outdated and poorly maintained buildings, including dormitories and academic facilities. There is a notable dissatisfaction with the lack of green spaces and the condition of the housing options, with many students describing them as old, dirty, and in some cases, unsafe due to structural issues like ceiling collapses. The library and certain halls like Gelman, Funger, and Phillips are specifically mentioned as needing renovations. Additionally, there is a sentiment that the university's urban setting limits the availability of spacious and attractive housing and green areas.
+
 
 
         <br>
@@ -330,19 +325,26 @@ and a culture that values a certain standard of attire.
 <b>List of issues from customer reviews:</b>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Campus size and aesthetics (e.g., &quot;campus is pretty small&quot;, &quot;campus isn&#39;t as pretty as it
-usually is&quot;, &quot;it just looks like a big fenced area of dirt&quot;).
-- Condition and appearance of buildings (e.g., &quot;dorms are terrible&quot;, &quot;some buildings are old
-and look old&quot;, &quot;library is one of the most unattractive buildings you&#39;ll see&quot;).
-- Ongoing construction and maintenance issues (e.g., &quot;currently, au is under a lot of
-construction&quot;, &quot;it seems like they&#39;re always doing maintenance on something&quot;, &quot;facilities are
-always breaking down and don&#39;t get fixed for months&quot;).
-- Residential hall concerns (e.g., &quot;dorms can either be very nice or pretty ugly&quot;, &quot;letts is a
-freshman residence hall building which should be avoided until it is renovated&quot;, &quot;things in the
-lounges like ovens and heating will be left broken for months&quot;).
-- Lack of diversity and culture of appearance (e.g., &quot;for example, in my residence hall out of
-400 students maybe 10 are black&quot;, &quot;it&#39;s also not rare to see all these fellow eagles in
-designer clothing or carrying a louis vuitton bag&quot;).
+- Unorganized aesthetics (really unorganized)
+- Dining and housing situations need change (things i would like to see change are the dining and housing situations)
+- Outdated buildings (certain buildings are extremely outdated)
+- Need for renovations in classroom facilities (i am sure the university has the funds to renovate and improve certain classroom facilities such as Funger and Phillips hall)
+- Lack of inspiration from campus and surrounding area (campus and surrounding area don't really inspire)
+- Mediocre facilities (everything else at the school is mediocre)
+- Run-down and gross dormitories (others, like Thurston, are a kind of run down and gross)
+- Less than ideal facilities on Mount Vernon campus (facilities on the Mount Vernon campus are less than ideal)
+- Decrepit buildings (most buildings are decrepit)
+- Older dorms need improvements (older dorms could definitely use more improvements)
+- Lack of green spaces (major lack of green spaces)
+- Old and moldy buildings (building is dirty and moldy)
+- Issues with black mold and structural integrity (we've had ceiling collapses, bathtubs breaking, black mold issues)
+- Library in need of remodeling (library is in the process of being remodeled because it is a bit old)
+- Outdated computer lab equipment (computer lab equipment is pretty old)
+- Limited green space (there is a limited amount of green space)
+- Outdated housing options (some of these off-campus housing options were once hotels)
+- Disparity in dorm quality (half of the dorms are nice and half are old and really run-down)
+- Need for renovation in some buildings (there are some old buildings that really need to be renovated)
+- Gelman Library is outdated (gelman library is outdated)
 
 
 </ul>
@@ -353,13 +355,11 @@ designer clothing or carrying a louis vuitton bag&quot;).
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these concerns, the university could prioritize renovations of the older buildings
-and dorms to improve their appearance and functionality. 
-- The ongoing construction projects should be managed in a way that minimizes disruption to students. A maintenance schedule
-that ensures timely repairs would also be beneficial. 
-- To enhance the campus&#39;s appeal, landscaping and aesthetic improvements could be made. Additionally, the university could
-consider initiatives to foster a more inclusive and diverse community, potentially addressing
-the cultural concerns raised in the reviews.
+- To address the concerns raised in the student reviews, the university should prioritize the renovation of outdated buildings, particularly those frequently mentioned like Gelman, Funger, and Phillips halls. 
+- Efforts should be made to improve the condition of older dormitories, with a focus on eliminating mold and ensuring structural safety. 
+- The university could also explore ways to increase green spaces, even in its urban setting, to enhance the campus's aesthetic appeal. 
+- Upgrading the computer lab equipment and ensuring that all facilities are well-maintained would likely improve overall student satisfaction. 
+- Additionally, the university might consider offering a wider range of housing options to accommodate different preferences and budgets.
 
 
     </ul> 
@@ -370,14 +370,8 @@ the cultural concerns raised in the reviews.
         <b>Summary:</b>
         <br>
         
-The university's aesthetic appeal seems to be a mix of modern renovations and average, expected
-college facilities. Students appreciate the campus's greenery and the efforts to maintain a beautiful
-environment, with specific mentions of the campus being an arboretum and having a variety of
-plants. Renovations are ongoing, with some dorms already benefiting from updates, and there is a
-sense of continuous improvement. The location is frequently praised for its mix of suburban and
-urban qualities, and the proximity to cultural and historical sites adds to the appeal. While some
-facilities are noted as breaking down, the overall sentiment is that the campus is well-kept and
-aesthetically pleasing, with a range of housing options that cater to different preferences.
+The university receives commendation for its prime location, with many students appreciating the proximity to significant historical sites and the convenience it offers for various majors. The campus aesthetics are frequently praised, with mentions of modernized technology, renovated dormitories, and well-maintained buildings. The university's efforts in updating facilities, including libraries and athletic centers, have not gone unnoticed. The availability of diverse housing options, including apartment-style dorms with private bathrooms and kitchens, contributes to student satisfaction. The presence of green spaces and the university's maintenance of its physical environment also add to the overall positive experience.
+
 
         
 <br>
@@ -388,14 +382,11 @@ aesthetically pleasing, with a range of housing options that cater to different 
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Campus greenery and arboretum status (campus is a national arboretum, filled with trees, gardens)
-- Ongoing renovations and modern facilities (recent renovations, new dorms like Cassell and
-Nebraska)
-- Attractive location with suburban and urban mix (located in NW D.C., near cultural attractions)
-- Variety of housing options (suite style, apartment style, traditional dorms)
-- Well-maintained and clean campus (campus is beautiful and welcoming, very well taken care of)
-- Historical and cultural richness (located on Embassy Row, in one of the wealthiest areas of the city)
-- Efforts to be environmentally friendly (green roofs, capturing rainwater for reuse)
+- Prime location with historical significance (e.g., "proximity to the national monuments," "walking distance from the white house and world bank")
+- Campus aesthetics and maintenance (e.g., "beautiful campus," "modernized technology," "renovated dormitories")
+- Diverse and high-quality housing options (e.g., "apartment-style dorms," "private bathrooms," "full kitchen")
+- Updated facilities (e.g., "state-of-the-art libraries," "recently renovated athletic centers")
+- Green spaces and environmental upkeep (e.g., "gw landscapes really well around its campus," "green space can be found")
 
 </ul>
 
@@ -406,14 +397,10 @@ Nebraska)
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further improve the university's aesthetics, the management could prioritize timely
-repairs of facilities, ensuring that broken amenities in lounges and common areas are fixed
-promptly.
-- Additionally, as renovations continue, it would be beneficial to keep the student body
-informed of progress and timelines to manage expectations and maintain a sense of
-momentum in the university's development.
-- Expanding green spaces and maintaining the campus's arboretum status could also enhance
-the overall aesthetic appeal.
+- To further enhance the student experience, the university could continue its renovation projects to ensure all facilities remain modern and functional. 
+- Additionally, maintaining the balance between urban convenience and green spaces will be crucial for the well-being of students. 
+- Expanding on the diversity of housing options and ensuring that all students have access to high-quality accommodations could also be beneficial. 
+- Keeping the campus clean and well-maintained, especially during construction phases, will help preserve the positive aesthetic impressions.
 
 </ul> 
     </Tab>

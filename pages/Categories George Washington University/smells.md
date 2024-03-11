@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-In the realm of olfactory experiences at the university, the sentiment skews towards the negative, with more instances of unpleasant odors being reported than those of fresh and pleasant scents. The negative comments focus on the prevalence of smoke-related smells, which seem to be a common issue around campus areas, particularly near dorms and building entrances.
+No applicable snippets to generate a review
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
@@ -97,7 +97,6 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        "#FF4136", // A shade of red
         "#2ECC40", // A shade of bright green
         ]
     }
@@ -113,28 +112,21 @@ ORDER BY
 
 
 ## Positive:
-- Fresh Environment: The university offers a breath of fresh air, providing a sense of cleanliness and openness.
+- No examples
 
 
 ## Negative:
-- Dorm Odors: A strong whiff of marijuana occasionally emanates from dorm rooms, causing discomfort to passersby.
-- Entrance Smoke: Students smoking right next to building entrances create an unwelcoming atmosphere.
-- Smoker Presence: The campus has a noticeable number of smokers, which can be irritating to non-smokers.
-- Intermittent Smoking: Even occasional smoking by people around the campus is a source of annoyance.
-
+- No examples
 
 <br>
 
 ## Most Positive Examples:
-- "gives me a sense of fresh air"
+- No examples
 
  
 
 ## Most Negative Examples:
-- "strong whiff of marijuana"
-- "smoke right next to building entrances"
-- "a lot of smokers, too, which can be obnoxious"
-- "people smoking occasionally"
+- No examples
 
 
 
@@ -301,13 +293,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The feedback from students indicates that there are concerns regarding the presence of
-smoke around the university premises. The issues seem to be centered around the smell of
-cigarettes and marijuana, which are occasionally noticed in various locations such as dorm
-rooms and near building entrances. The frequency of these occurrences is not specified, but
-the use of the word "occasionally" suggests that it is not a constant issue. However, it is
-clear that the presence of smokers, particularly near building entrances, is a point of
-discomfort for some students.
+
 
         <br>
         <br>
@@ -315,12 +301,7 @@ discomfort for some students.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Occasional smoking around the campus (except people smoking occasionally).
-- Instances of marijuana odor emanating from dorm rooms (occasionally you will walk past a
-dorm room and get a strong whiff of marijuana).
-- Smoking near building entrances (students smoke right next to building entrances).
-- General presence of smokers on campus (there are a lot of smokers, too, which can be
-obnoxious).
+
 
 
     </ul>
@@ -331,16 +312,7 @@ obnoxious).
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address the concerns raised, the university could consider implementing stricter
-smoking policies, including designated smoking areas that are situated away from
-building entrances and common areas.
-- Additionally, the university could increase awareness and enforcement of existing
-smoking regulations to ensure compliance.
-- For the issue of marijuana odors, the university might need to review and reinforce its
-policies on drug use within dormitories and take appropriate disciplinary actions when
-necessary.
-- Regular communication with students about the importance of respecting smoke-free
-zones and the impact of smoking on the community could also be beneficial.
+
 
 
     </ul> 
@@ -351,12 +323,9 @@ zones and the impact of smoking on the community could also be beneficial.
         <b>Summary:</b>
         <br>
         
+        Based on the provided snippet, it appears that students find the workload at the university to be manageable, provided they allocate their time effectively. This suggests that the university has structured its courses and assignments in a way that is considered fair by the students, as long as they practice good time management. There is no mention of smells or other environmental factors in the snippet, so nothing can be commented on regarding that aspect of student satisfaction.
 
-The feedback from the student reviews regarding smells within the university indicates that there is
-at least one aspect of the environment that is appreciated: the sense of fresh air. This suggests that
-the university has managed to maintain a level of cleanliness or has outdoor spaces that are
-well-kept, contributing to a pleasant olfactory experience for students. While the information is
-limited, it is clear that the fresh air is a positive feature that enhances the campus atmosphere.
+
         
 <br>
 
@@ -366,7 +335,7 @@ limited, it is clear that the fresh air is a positive feature that enhances the 
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Freshness of air (Excerpt: "gives me a sense of fresh air")
+- Manageable workload (with the excerpt: "workload is manageable if you use your time wisely").
 
 </ul>
 
@@ -376,13 +345,9 @@ limited, it is clear that the fresh air is a positive feature that enhances the 
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further improve the olfactory experience for students, the university could consider
-regular maintenance of indoor air quality, perhaps through the use of air purifiers or
-ensuring that HVAC systems are frequently serviced.
-- Additionally, if the fresh air is a result of well-maintained outdoor spaces, continuing to
-invest in landscaping and outdoor areas would be beneficial.
-- Encouraging a smoke-free campus, if not already in place, could also contribute to
-maintaining the positive perception of air quality.
+- To further support students in managing their workload, the university could consider offering workshops or resources on time management and study skills. 
+- Additionally, ensuring that course syllabi and expectations are clearly communicated at the beginning of each term can help students plan their schedules more effectively. 
+- No suggestions can be made regarding smells as there were no snippets provided on this topic.
 
 </ul> 
     </Tab>

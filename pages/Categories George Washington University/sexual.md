@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The reviews present a mixed sentiment regarding sexual experiences at the university. While some students find the campus social scene and the attractiveness of their peers to be positive, there are serious concerns about sexual assault and the gender ratio affecting dating prospects.
+The university reviews present a mixed bag of sentiments regarding sexual experiences on campus. While some students find the dating scene vibrant and full of opportunities, others express frustration with the lack of serious relationships and the prevalence of negative behaviors. The positive remarks seem to focus on the availability and attractiveness of potential partners, whereas the negative comments highlight issues such as sexual harassment and a skewed gender ratio.
 
 
 
@@ -121,40 +121,38 @@ ORDER BY
 
 
 ## Positive:
-- **Campus Attractiveness:** Students find peers attractive, noting "guys on campus are usually very well put together" and "gt students are gorgeous."
-- **Diverse Options:** There's a variety of individuals ranging from "the typical frat boy to an exotic looking lad," and "lots of adorable gay men."
-- **Relationship Culture:** Some students appreciate the "dorm culture" and the fact that "a lot of people are in serious relationships."
-- **Style Points:** Positive remarks are made about attire, with students wearing "skirts and cute tops" and being "cute" or "hot."
+- **Campus Dating:** Relationships are common, with many students finding partners and enjoying the dating scene. Some even describe the university as a "gold mine" for straight guys, with plenty of attractive girls available.
+- **Attractiveness:** Students often praise the physical appearance of their peers, noting that there are "exceptionally hot" individuals, well-dressed students, and a general sense of fashion and attractiveness among the population.
+- **Variety & Options:** There is a diversity of students, and many find it easy to find attractive partners. The variety extends to fashion sense, with every day being likened to a "mini-fashion show."
+- **Exclusivity:** Some students have found exclusive relationships, indicating that not all interactions are casual. There are mentions of committed couples and exclusive dating.
+- **External Dating:** Students also date outside the university, with girls dating guys from nearby Georgetown, suggesting a broader dating pool beyond campus boundaries.
 
  
 
 ## Negative:
-- **Sexual Assault Concerns:** Multiple reviews mention a prevalent problem with "rape and sexual assault," with specific references to "frat parties" and "gross frat guys."
-- **Gender Imbalance:** The "effects of the gender ratio are horrible for straight girls," and there's a sentiment that "guys here are horrible."
-- **Limited Selection:** Students express disappointment in the dating pool, using terms like "au goggles" to describe settling for less attractive partners due to limited options.
-- **Unwanted Attention:** There are reports of "girls are desperate for male attention" and negative experiences such as being "stalked by a graduate student."
-- **Campus Reputation:** The university is criticized for not having an "attractive student body" and for the male to female ratio being "way off."
+- **Negative Comments:** Students have heard sexist and racist comments, indicating an undercurrent of discrimination that affects the social atmosphere.
+- **Limited Choices:** Complaints about the lack of "hot, smart, and charming guys" and the perception that girls are not as pretty suggest dissatisfaction with the dating pool's quality.
+- **Serious Relationships:** There's a sentiment that serious relationships are rare, with many students engaging in casual hook-ups or avoiding dating altogether.
+- **Sexual Misconduct:** Reports of sexual harassment, date rape, and other forms of sexual assault paint a concerning picture of campus safety and respect.
+- **Gender Imbalance:** The skewed guy-to-girl ratio is seen as a disadvantage for straight girls looking for straight guys, and the presence of "players" or those already taken further complicates the dating scene.
 
 
 <br>
 
 ## Most Positive Examples:
-- "guys on campus are usually very well put together"
-- "gt students are gorgeous"
-- "dorm culture is amazing"
-- "beautiful women everywhere on campus and in the city"
-- "people in dc also tend to be attractive"
+- "relationships are pretty common at gw"
+- "my boyfriend and i have been exclusive for a few months"
+- "if you're a guy, gw is gold mine"
+- "girls are pretty, guys are cute"
+- "students are extremely well dressed"
 
-
- 
 
 ## Most Negative Examples:
-- "pretty rapey"
-- "rape and sexual assault is a prevalent problem"
-- "watch out as there have been several sexual assaults at frat parties in recent years"
-- "stalked by a graduate student who used his on-campus job to find information"
-- "lots of frats are also infamous for sexual assault and making kids sick"
-
+- "heard a lot of sexist and racist comments"
+- "date rape happens at every college"
+- "a lot of sexual harassment on campus"
+- "rape culture is very prevalent on campus"
+- "there was an issue with a man looking into the women's restroom from outside at one of the halls"
 <br>
 
 
@@ -322,14 +320,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The university is facing challenges related to the social and safety aspects of student life,
-particularly concerning sexual experiences. Reviews indicate dissatisfaction among students
-regarding the limited pool of potential dating partners, with concerns about the attractiveness
-and availability of straight males. Additionally, there are serious concerns about sexual
-assault, with multiple instances reported both on and off-campus. The term 'AU goggles'
-suggests a perceived need to lower dating standards due to the limited options. The
-presence of negative experiences related to fraternity culture and sexual misconduct is also
-evident.
+The student reviews suggest a concerning atmosphere regarding sexual experiences on campus. Issues range from sexual harassment and assault to a perceived imbalance in the dating scene. There are reports of voyeurism, a prevalent rape culture, and negative experiences among peers. Some students have felt unsafe, being followed or subjected to sexist and racist comments. The reviews also reflect dissatisfaction with the social dynamics, including a skewed gender ratio and a culture that seems to favor casual encounters over relationships, with a sentiment that finding a desirable and serious partner is challenging.
 
         <br>
         <br>
@@ -337,16 +328,18 @@ evident.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Limited dating pool and dissatisfaction with attractiveness of students ("as a female student
-this can be very frustrating", "au is not known for having an attractive student body").
-- Gender ratio imbalance affecting dating prospects ("effects of the gender ratio are horrible
-for straight girls", "male to female ratio is way off").
-- Concerns about the prevalence of sexual assault and safety on campus ("occasional
-sexual assault issues", "rape and sexual assault is a prevalent problem").
-- Negative perceptions of fraternity culture ("gross frat guys", "lots of frats are also infamous
-for sexual assault").
-- Instances of stalking and harassment ("stalked by a graduate student", "there was a man
-on Massachusetts Ave. (near campus) who was sexually assaulting women").
+- Sexual harassment on campus ("a lot of sexual harassment on campus").
+- Voyeurism incident ("there was an issue with a man looking into the women's restroom").
+- Rape culture ("rape culture is very prevalent on campus").
+- Negative sexual experiences among students ("many of my peas have had very negative experiences").
+- Safety concerns ("i've been followed before").
+- Sexist and racist comments ("heard a lot of sexist and racist comments").
+- Lack of relationships ("relationships, those are rare").
+- Prevalence of sexual assault ("there are plenty of sexual assault").
+- Gender ratio imbalance ("guy to girl ratio is not good for girls").
+- Disparaging views on attractiveness and eligibility ("very few people are in a relationship", "guys are not overwhelmingly hot", "there are very little hot, smart and charming guys").
+- Casual relationship culture ("mostly you just have people looking for hook-ups and booty calls").
+- Challenges in finding serious relationships ("no one is interested in serious relationships").
 
 
     </ul>
@@ -357,16 +350,11 @@ on Massachusetts Ave. (near campus) who was sexually assaulting women").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these issues, the university could implement comprehensive sexual
-assault prevention and response programs, including mandatory training for all
-students and staff. Increasing support services for victims of sexual misconduct, such
-as counseling and legal assistance, is crucial.
-- The university should also review and enforce strict policies against harassment and
-assault, with clear consequences for violations.
-- To improve the social climate, the university could facilitate more diverse social
-events and activities that encourage interaction among students.
-- Additionally, promoting a culture of respect and inclusivity within the student body,
-including within fraternity and sorority life, is essential.
+- To address these issues, the university could implement a comprehensive sexual assault prevention and response program, including mandatory training for all students and staff. 
+- Enhancing security measures, such as improved lighting and increased campus patrols, could help students feel safer. 
+- The university should also establish clear reporting mechanisms for harassment and assault, and ensure that support services for victims are readily accessible and well-publicized. 
+- To foster a healthier social environment, the university could promote events and organizations that encourage meaningful connections beyond the hookup culture. 
+- Additionally, offering workshops on healthy relationships and consent could help shift campus culture towards more respectful and safe interactions.
 
 
     </ul> 
@@ -377,12 +365,7 @@ including within fraternity and sorority life, is essential.
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, the university seems to have a mixed environment regarding sexual
-experiences. While there are positive comments about the social and dating scene, such as the dorm
-culture and the attractiveness of students, there are also serious concerns about sexual assault and
-safety. The positive remarks suggest that there is a good co-ed atmosphere and a variety of people to
-meet, which can be conducive to forming relationships. However, the negative comments indicate
-that there are significant issues with sexual misconduct that need to be addressed.
+Based on the student reviews, it appears that the university has a diverse and active social scene with a focus on appearance and relationships. Students note a variety of individuals in terms of looks and personality, with an emphasis on the ease of finding dating and hookup opportunities. The reviews suggest that there is a general satisfaction with the attractiveness of the student body and the availability of potential partners. The social dynamics within sororities and fraternities are also mentioned, indicating an inclusive environment for different types of individuals. Overall, the reviews reflect a student body that is engaged in the social aspects of university life, with a particular focus on relationships and physical appearance.
 
         
 <br>
@@ -393,14 +376,11 @@ that there are significant issues with sexual misconduct that need to be address
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Dorm culture (e.g., "dorm culture is amazing")
-- Attractiveness and style of students (e.g., "girls are very pretty and have great style", "guys on
-campus are usually very well put together")
-- Variety of people (e.g., "from the typical frat boy to an exotic looking lad", "there's more of a variety
-of girls")
-- Co-ed atmosphere (e.g., "good co-ed atmosphere")
-- LGBTQ+ dating scene (e.g., "especially attractive straight men... so if you're gay you might actually
-have some luck!")
+- Diversity in student body ("there's a variety in the types of guys though", "fraternities take all types of guys", "there are a variety of girls at gw")
+- Attention to appearance ("students are extremely well dressed", "everyone looks spiffy and put together", "every day is a mini-fashion show")
+- Active dating scene ("there are plenty of good options, as far as dating and hooking up", "relationships are pretty common at gw", "it's pretty easy to find attractive guys")
+- Inclusivity in social groups ("for sororities, if you're pretty and have a cool personality it's easy to get into a top house")
+- General attractiveness of the student body ("for the most part, the girls are hot", "generally a good looking bunch", "girls are crazy hot here")
 
 </ul>
 
@@ -410,14 +390,9 @@ have some luck!")
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To improve the university's environment, it is crucial to address the issues of sexual assault
-and misconduct.
-- This could include implementing comprehensive sexual assault prevention programs,
-providing better support for victims, increasing security measures, and ensuring that there
-are clear and enforced consequences for perpetrators.
-- Additionally, fostering a culture of respect and consent on campus through education and
-awareness campaigns could contribute to a safer and more positive experience for all
-students.
+- To further enhance the student experience, the university could consider implementing workshops or seminars on healthy relationships and consent to ensure that the active dating scene is accompanied by a strong understanding of respectful and safe interactions. 
+- Additionally, promoting a more inclusive environment that values diversity beyond physical appearance could contribute to a more well-rounded social experience for all students. 
+- Encouraging student-led initiatives that focus on personality, talents, and intellectual pursuits might also provide a counterbalance to the emphasis on looks and dating.
 
 </ul> 
     </Tab>

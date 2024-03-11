@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
  
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-Overall, the sentiment regarding fun and vibrant experiences at the university is mixed, with a notable number of positive examples highlighting the dynamic social life and opportunities for leisure and exploration, particularly due to the university's location in Washington D.C. However, there are also significant negative sentiments expressed about the lack of campus activities, school spirit, and the challenges faced by students seeking a vibrant social life, especially those not involved in Greek life.
+The overall sentiment from the university reviews regarding fun and vibrant experiences leans more towards the positive, with numerous mentions of the exciting city life, proximity to landmarks, and a variety of social activities. However, there is a clear indication of some negative aspects, particularly related to the limitations in dining options and the challenges of campus parties.
 
 
 ```sql polarity_proportions
@@ -99,7 +99,6 @@ ORDER BY
         [
         "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
         "#3D9970"  // A shade of dark green
         ]
@@ -115,39 +114,38 @@ ORDER BY
 
 
 ## Positive:
-- **City Exploration:** Students relish the university's proximity to downtown D.C., enjoying the nightlife, cultural events, and the ease of getting around via public transportation.
-- **Campus Activities:** There's a wealth of clubs and organizations offering a range of activities, from sports to cultural events, providing a lively student life.
-- **Social Scene:** Fraternities and sororities contribute significantly to the social landscape, with parties and events that many find enjoyable.
-- **Learning Opportunities:** Academically, the university is praised for its engaging classes and knowledgeable professors, enhancing the overall student experience.
-- **Sports and Recreation:** While varsity sports may not draw huge crowds, there are ample opportunities for students to get involved in club sports and intramurals, adding to the fun on campus.
-
+- **City Life:** Students revel in the university's prime location in the heart of D.C., with easy access to the White House, national monuments, and a plethora of cultural events.
+- **Social Scene:** Greek life dominates the social landscape, offering numerous parties and events, while the city's nightlife provides a plethora of bars and clubs for those seeking a vibrant scene.
+- **Athletics Fun:** Varsity basketball garners significant attention, with games being a focal point for school spirit and social gatherings.
+- **Leisurely Learning:** Some programs allow for a leisurely academic pace, and the combination of live and pre-recorded lectures caters to diverse learning preferences.
+- **Campus Activities:** Despite some criticism, there are mentions of fun case studies, guest speakers, and a bustling atmosphere on campus that contribute to a lively student experience.
  
 
 ## Negative:
-- **Limited On-Campus Fun:** Some students feel there's a dearth of exciting activities on campus, leading to a less engaged community.
-- **School Spirit Lacking:** A recurring theme is the absence of school spirit, particularly due to the lack of a football team and low attendance at sports games.
-- **Greek Life Dominance:** The social life is often described as being dominated by Greek life, leaving non-members feeling excluded from the party scene.
-- **Nightlife Accessibility:** Underage students and those not interested in Greek life express difficulty in accessing a satisfying nightlife.
-- **Campus Policies:** The university's dry campus policy and strict housing lottery are criticized for stifling the social atmosphere and creating inconveniences.
+- **Dining Dilemmas:** Students face challenges with limited dining hall hours, especially during finals week, and the inconvenience of the main dining area being closed on weekends.
+- **Party Problems:** Campus parties often receive criticism for being subpar, with issues like overcrowding, strict entry policies, and a lack of vibrancy compared to state schools.
+- **Community Concerns:** A recurring theme is the lack of a strong sense of community, with students feeling the need to actively seek out social connections.
+- **Event Shortages:** There are grievances about the university not hosting enough events to foster a carefree and inclusive environment for all students.
+- **Athletic Apathy:** Aside from basketball, sports do not seem to play a significant role in campus life, with low student turnout at games and minimal fanfare.
 
 
 <br>
 
 ## Most Positive Examples:
-- "dc is amazing!"
-- "life at american university has been treating me great so far"
-- "au truly is a work hard play hard atmosphere"
-- "you can easily find a group to have fun and party with"
-- "there are always speakers and lecture to attend for free"
+- "right in the city"
+- "varsity basketball is incredible"
+- "never bored"
+- "socially fulfilled"
+- "i have fallen in love with the location"
 
 
 
 ## Most Negative Examples:
-- "there is no school spirit whatsoever"
-- "socially, this school is not worth it"
-- "easy to not be involved and not attend games"
-- "there is not exciting to do on campus"
-- "if you lose it, you lose two days of vacation"
+- "which isn't great considering students need to eat well before finals"
+- "only one dining hall was open"
+- "they didn't host events"
+- "almost nobody goes out of a friday which is really weird"
+- "extremely difficult to be a scholarship/fws student here"
 
 <br>
 
@@ -319,14 +317,8 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews indicate a range of concerns primarily centered around the lack of a
-vibrant campus life, limited social activities, and strict policies that may be contributing to a
-less enjoyable student experience. Issues with housing, transportation, and campus
-amenities are frequently mentioned, as well as dissatisfaction with the party scene and
-athletic events. There are also comments about the academic challenges and the transition
-difficulties for new students. Additionally, financial concerns and the administrative processes
-related to financial aid and class registration appear to be causing significant stress for
-students.
+Based on the student reviews, the university appears to face challenges in fostering a sense of community and school spirit, as well as managing the logistics and support for both on-campus and virtual learning environments. Students express concerns over the lack of athletic focus, limited social activities, and the need for greater academic support. The virtual learning experience has been notably difficult, with issues such as poor internet connectivity and non-interactive classes. Additionally, the high cost of attendance and living, coupled with expensive dining options, adds financial stress. The reviews also indicate a need for better event planning, more accessible student services, and improved communication from the administration.
+
 
         <br>
         <br>
@@ -334,24 +326,17 @@ students.
     <b>List of issues from customer reviews:</b>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Lack of vibrant campus life and school spirit (e.g., "a lack of campus culture", "school spirit
-is really weak").
-- Inadequate social activities and events (e.g., "campus events are not the best", "nothing
-much to do").
-- Strict dry campus policy leading to limited party scene (e.g., "it's a dry campus", "social
-scene is very restricted").
-- Transportation issues, including unreliable shuttles and parking difficulties (e.g., "shuttles
-are unreliable", "parking is horrible").
-- Housing concerns, such as difficulty finding on-campus housing and off-campus housing
-challenges (e.g., "housing lottery is competitive", "it's a huge hassle to find a place to live").
-- Limited campus amenities and inconvenient operating hours (e.g., "amenities are a joke",
-"limited hours").
-- Financial aid and scholarship issues (e.g., "financial aid isnt the best", "difficulty in getting
-larger scholarships").
-- Academic transition and adjustment challenges (e.g., "admit I had a difficult transition as a
-freshman", "classes after 5pm are always full").
-- Administrative inefficiencies, particularly in class registration (e.g., "registration process can
-be confusing", "scheduling is a nightmare").
+- Difficulty with virtual learning and lack of interactive classes (virtual learning has been difficult, zoom classes were not very interactive).
+- Lack of athletic focus and school spirit (do not come here if you care about athletics, there is no school spirit).
+- High cost of attendance and living expenses (expensive though, drinks are expensive).
+- Poor internet connectivity (many times there would be an issue with the connection).
+- Limited dining options and inconvenient hours (only one dining hall was open, dining halls during finals week).
+- Need for more academic support (more support in those challenging courses would be helpful).
+- Lack of social activities and community feeling (not really a party school, there is not much to do there/around that campus).
+- Housing issues, including limited availability and high costs (limited sophomore housing, many people prefer to live off campus).
+- Administrative challenges, such as registration difficulties and staff turnover (problema is registration, people were constantly leaving in administration).
+- Inadequate communication and event planning (they didn't host events, it tends to become a hassle to seek academic guidance).
+
 
 </ul>
 
@@ -361,22 +346,16 @@ be confusing", "scheduling is a nightmare").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Enhance campus life by increasing the number and variety of social events and activities,
-including those that do not revolve around alcohol.
-- Reevaluate the dry campus policy to explore safe and responsible ways to incorporate
-social drinking events that could reduce off-campus risks.
-- Improve transportation services by ensuring shuttles run on a reliable schedule and
-exploring solutions for parking constraints.
-- Review housing policies and processes to make on-campus housing more accessible and
-provide better support for students seeking off-campus accommodations.
-- Expand campus amenities and adjust their operating hours to better meet student needs,
-including late-night dining options.
-- Increase transparency and support in the financial aid process, and actively seek additional
-scholarship opportunities for students.
-- Streamline the class registration process to reduce stress and ensure students can enroll in
-required courses.
-- Offer more robust orientation and transition programs for new students to help them adjust
-academically and socially
+- Enhance the virtual learning platform to increase interactivity and reliability.
+- Develop programs to boost school spirit and athletic engagement.
+- Review and adjust the cost structure to alleviate financial burdens on students.
+- Upgrade internet infrastructure to ensure stable and fast connectivity.
+- Expand dining options and adjust hours to meet student needs, especially during finals.
+- Provide additional academic support services, such as tutoring and advising.
+- Increase the number and variety of social events to foster community.
+- Reevaluate housing policies to improve availability and affordability.
+- Streamline administrative processes and improve communication with students.
+- Implement a more robust event planning and management system.
 
 
     </ul> 
@@ -387,16 +366,8 @@ academically and socially
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, it appears that American University offers a variety of experiences
-that cater to different student interests and needs. The university's location in a suburban part of
-D.C. provides easy access to the city's resources, including internships and public transportation. The
-academic environment is described as sound and manageable, with passionate professors and a
-range of courses. The transition to online classes has been smooth for many, and the availability of
-computers and tech support is noted as good. While varsity sports are not a central aspect of student
-life, there are mentions of vibrant club and intramural sports, as well as a growing presence of Greek
-life. The campus housing process is straightforward, and there are options for off-campus living. The
-social scene is characterized by a mix of on-campus events, fraternity parties, and city nightlife, with
-an emphasis on academics over partying.
+The university appears to provide a comprehensive and engaging educational experience, with a strong emphasis on leveraging its location in Washington D.C. to enhance student life and learning. Students appreciate the vibrant city environment, the proximity to significant landmarks and institutions, and the wealth of opportunities for internships and cultural experiences. The campus offers a variety of extracurricular activities, sports, and social events, with an active Greek life and a sports scene centered around basketball. Academically, the university is described as rigorous, with flexible scheduling and a diverse range of courses that cater to students' interests and career aspirations. The integration of technology in learning, through platforms like Blackboard and Zoom, is also noted as a positive aspect, especially during periods of remote learning. Overall, students seem to enjoy a balance of challenging academics and a rich social life, facilitated by the university's urban setting and resources.
+
 
         
 <br>
@@ -407,18 +378,14 @@ an emphasis on academics over partying.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Location and Access to City Resources (American University is a mile away from the Tenleytown
-metro; easy access to internships and public transportation)
-- Academic Environment (AU is academically sound; classes are interesting; professors are
-passionate)
-- Online Class Transition (AU has made the transition to online class very easy)
-- Technology and Support (Access to computers is very good; AU's library has plenty of desktops; tech
-support only an email away)
-- Sports and Greek Life (Club and intramural sports are popular; Greek life is growing)
-- Housing and Living Options (All freshmen and sophomores are guaranteed on-campus housing;
-off-campus living can be cost-effective)
-- Social Scene (A mix of on-campus events, fraternity parties, and city nightlife; emphasis on
-academics)
+- Vibrant city environment and proximity to landmarks (e.g., "living in the heart of D.C.", "near the White House", "monuments a 15-minute walk away").
+- Diverse opportunities for internships and cultural experiences (e.g., "city offers many job opportunities", "internship availabilities").
+- Active student life with numerous extracurricular activities (e.g., "many extracurriculars", "tons of student organizations").
+- Engaging sports scene, particularly basketball (e.g., "basketball is the sport of this school", "people attend basketball games").
+- Rigorous and flexible academic programs (e.g., "very rigorous academics", "flexible schedule", "classes exactly what I needed for my major").
+- Effective use of technology in education (e.g., "Blackboard is easy to use", "professors find ways to challenge you through the technology platform").
+- Supportive campus resources (e.g., "resources such as career help, pre-law, tuition, essay help, and volunteering, are within reach").
+- Accessible and convenient campus location (e.g., "main campus is conveniently located near a metro stop", "foggy bottom metro near by").
 
 </ul>
 
@@ -428,14 +395,9 @@ academics)
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the student experience, the university could consider expanding the
-availability of on-campus housing for upperclassmen to ease the transition to off-campus
-living.
-- Additionally, increasing the visibility and support for varsity sports might foster more school
-spirit and a stronger sense of community.
-- Offering more workshops or resources on managing academic stress could also benefit
-students. Lastly, continuing to improve the technological infrastructure, especially the
-reliability of Wi-Fi, would support students' academic and social activities.
+- To further enhance the student experience, the university could consider providing students with a metro card similar to American University's to facilitate exploration and travel for work and internships. 
+- Additionally, expanding the variety and frequency of campus events and activities could further enrich the student community. 
+- It may also be beneficial to continue developing the integration of technology in learning, ensuring that all students have access to the necessary resources and support for their academic pursuits.
 
 </ul> 
     </Tab>

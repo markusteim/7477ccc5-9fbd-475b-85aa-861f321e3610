@@ -1,3 +1,8 @@
+ ```sql titles
+ select * from hotels.titles 
+ WHERE date >= '2009-01-01' AND date <= '2023-12-31'
+ ```
+
 # CONFIDENTIALITY NOTICE
 
 

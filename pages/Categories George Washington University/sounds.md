@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 
 # Summary
@@ -13,7 +13,8 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-The university's soundscape seems to be a mix of harmony and cacophony, with students experiencing both the vibrant local music scene and the disruptive noise from fire alarms and frat houses. The positive remarks are fewer, suggesting that while there are pockets of tranquility, particularly on the north side, the overall sentiment leans towards the challenges of dealing with unwanted noise.
+The overall sentiment regarding sound experiences at the university leans towards the negative, with a focus on disturbances such as noise complaints, disruptions from parties, and the impact on studying. The positive aspect is scarcely mentioned, indicating that quietness is not the norm but rather an exception.
+
 
 
 ```sql polarity_proportions
@@ -97,11 +98,8 @@ ORDER BY
     sort=false
     colorPalette={
         [
-        "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
-        "#3D9970"  // A shade of dark green
         ]
     }
     echartsOptions={{
@@ -116,39 +114,31 @@ ORDER BY
  <br>
 
 ## Positive:
-- **Quiet Mornings:** Mary Graydon offers a peaceful start to the day, transforming into a lively hub as the evening approaches.
-- **Music Scene:** The local music scene adds a cultural beat to the university life, providing an escape from academic pressures.
-- **Northside Calm:** The north side of campus is appreciated for its quieter reputation, offering a respite from the hustle and bustle.
-- **Suburban Silence:** Living in the suburbs provides a serene environment, away from the university's noise.
-- **Arena Excitement:** The entire arena comes alive with the sound of screaming fans, showcasing school spirit and enthusiasm.
+- **Quiet Campus:** Some students appreciate the moments when the campus is peaceful, noting that it "usually stays very quiet."
 
  
 
 ## Negative:
-- **Incessant Alarms:** The dorms are plagued by frequent fire alarms, disrupting sleep and study routines.
-- **Thin Walls:** The dormitory walls are so thin that privacy is compromised, with every action of the neighbors audible.
-- **Loud Southside:** Southside is notorious for being louder, with more disturbances and security concerns.
-- **Frat House Ruckus:** The proximity to frat houses means dealing with loud parties and sleepless nights.
-- **Noise Violations:** The university is strict about noise violations, yet some noisy neighbors and partygoers seem to evade repercussions.
+- **Disturbing Peace:** Students face "violations for disturbing the peace," indicating a struggle with noise control.
+- **Party Noise:** There are frequent mentions of "noise complaints" from parties, especially from "Thurston partiers" who disrupt the study environment.
+- **Study Interference:** The noise is a significant concern as it's "making it hard for people to study," with a desire for quiet during the week emphasized.
+- **Construction Annoyance:** The "pleasure of being awakened to one of GW's endless construction projects" sarcastically highlights the disruption caused by ongoing construction.
+- **General Disruption:** Comments like "noise levels weren't always fantastic" suggest a consistent issue with unwanted sound at the university.
 
 
 <br>
 
 ## Most Positive Examples:
-- "not too noisy"
-- "local music scene"
-- "north side is much quieter"
-- "i live in a suburb where it is quiet"
-- "entire arena is filled with screaming fans"
+- None provided.
 
 
  
 ## Most Negative Examples:
-- "play terrible music"
-- "20 fire alarms in the dorm"
-- "noisy and rude neighbors"
-- "noisy neighbors and drunks got away with everything scott free"
-- "but there are quiet hours that you can get in trouble for violating"
+- "violations for disturbing the peace"
+- "my friends' doll party (all freshmen) got a noise complaint"
+- "thurston was loud and smelt like weed all the time"
+- "pleasure of being awakened to one of GW's endless construction projects"
+- "noise levels weren't always fantastic"
 
 <br>
 

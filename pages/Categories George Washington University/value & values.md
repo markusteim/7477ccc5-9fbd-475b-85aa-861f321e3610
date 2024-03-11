@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -13,8 +13,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
-In the realm of non-material values and value for money at the university, the sentiment is mixed with a tilt towards the negative. Students appreciate the diversity, inclusivity, and academic strength, particularly in political science and international relations. However, there's a strong undercurrent of dissatisfaction regarding the high cost of attendance, perceived lack of support for non-political majors, and administrative issues. The university's liberal atmosphere is both a draw and a point of contention, depending on individual political leanings.
-
+The overall sentiment regarding non-material values and value for money at the university is mixed. Positive comments highlight the professional atmosphere, passionate professors, and the variety of academic options. However, negative remarks point to issues with administration, lack of school spirit, and the high cost of attendance not always reflecting the quality of services provided.
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
@@ -117,35 +116,35 @@ ORDER BY
 <br>
 
 ## Positive:
-- **Cultural Diversity:** Students celebrate the university's commitment to diversity and inclusivity, with a rich cultural environment that welcomes international students and supports LGBTQ+ individuals.
-- **Academic Excellence:** The quality of education, particularly in political science and international relations, is highly regarded, with professors bringing real-world experience into the classroom.
-- **Financial Aid:** While the cost of attendance is high, the university does offer merit-based financial aid and scholarships, which some students find generous and helpful.
-- **Campus Resources:** The availability of resources, including technology, study abroad programs, and internship opportunities in D.C., is a highlight for many students.
-- **Inclusive Policies:** The university's policies on sustainability, social justice, and diversity are praised for creating a respectful and intellectually stimulating environment.
-
+- **Professional Atmosphere:** Students appreciate the professional environment, which fosters a great learning opportunity.
+- **Internship Opportunities:** The use of platforms like Handshake to connect students with internships at large organizations is well-regarded.
+- **Academic Variety:** The wide range of majors and colleges to choose from is a positive aspect for students seeking diverse academic paths.
+- **Online Education:** Some students are impressed with the high-quality education delivered in a virtual setting, maintaining academic satisfaction.
+- **Passionate Professors:** The passion and engagement of professors are frequently mentioned, contributing to a positive educational experience.
 
 ## Negative:
-- **High Costs:** The overwhelming consensus is that the university is expensive, with many students struggling with the financial burden and feeling that the cost does not match the value received.
-- **Limited Support:** Students outside of political science and international relations feel underserved, with a lack of support and resources for other majors.
-- **Administrative Issues:** There are numerous complaints about the inefficiency and unhelpfulness of the administration, particularly the financial aid office.
-- **Lack of Spirit:** Many students express a desire for more school spirit and community, feeling disconnected from the larger university experience.
-- **Political Overemphasis:** The strong focus on politics can be alienating for some, with students feeling pressured to conform to the university's liberal stance.
+- **High Costs:** The expensive nature of the university is a common concern, with some feeling that the value does not match the price.
+- **Inconsistent Quality:** Variations in professor quality and poorly planned courses detract from the academic experience.
+- **Lack of School Spirit:** The absence of a traditional college experience and minimal school spirit are noted as negatives.
+- **Administration Issues:** Students express frustration with the administration, citing issues such as poor planning and lack of support.
+- **Limited Financial Aid:** Concerns about the financial aid process and the high cost of living in D.C. are prevalent among students.
 
 
 ## Most positive examples:
-- "very diverse university"
-- "professors in the school of international service are really good"
-- "academically, au is strong"
-- "rich cultural environment"
-- "quality professors"
+- "very professional atmosphere"
+- "great opportunity to learn"
+- "amazing professors"
+- "great variety of colleges to choose from"
+- "professors are well known"
+
 
 
 ## Most negative examples:
-- "au is very liberal as well as political"
-- "tuition is way too expensive"
-- "school administration is horrible"
-- "au is expensive"
-- "administration is awful"
+- "school is pricy"
+- "entire semester was online"
+- "wasn't really planned out well"
+- "materials are often 3 or more years old"
+- "administration is a big issue"
 
 
 
@@ -314,16 +313,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The university appears to be facing a multitude of challenges that affect student satisfaction
-across various domains. Concerns range from financial burdens, such as high tuition fees
-and expensive living costs, to dissatisfaction with administrative support and the handling of
-immaterial values like ethics and diversity. Students have expressed frustration with the
-perceived prioritization of the university's image over substantive reforms, ineffective
-communication and support from advisors, and a lack of school spirit. Additionally, there are
-reports of inadequate responses to issues such as hate crimes, drug and alcohol policy
-enforcement, and a lack of support for students with disabilities. The narrative from the
-snippets suggests a disconnect between the administration's actions and the students'
-needs and expectations.
+The university appears to be facing a range of challenges related to financial concerns, student support, and overall satisfaction with the educational experience. Students have expressed dissatisfaction with the cost of tuition, particularly during periods of online learning, and have noted a lack of financial aid and transparency in pricing. There are also concerns about the quality and consistency of education, with some departments being identified as weaker than others. The campus environment is described as lacking cohesion and school spirit, and there are issues with housing affordability and the dining plan. Additionally, students have reported a lack of privacy, bureaucratic hurdles, and a sense that the university prioritizes financial gain over student well-being. The snippets indicate a need for improvements in communication, support services, and a reevaluation of the value provided for the cost of attendance.
 
         <br>
         <br>
@@ -331,26 +321,14 @@ needs and expectations.
     <b>List of issues from customer reviews:</b>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- High tuition and living costs (e.g., "au is the second most expensive school in the nation",
-"living on campus is incredibly expensive").
-- Inadequate financial aid and scholarship support (e.g., "financial aid department is terrible",
-"administration does not care about minorities on campus").
-- Poor administrative support and responsiveness (e.g., "administration is awful", "advisors
-don't know what they are doing").
-- Lack of school spirit and community (e.g., "au has no school spirit", "barely any sense of
-community").
-- Ineffective handling of diversity and inclusion issues (e.g., "administration tries hard to give
-the appearance of maintaining a safe environment on campus", "au lacks dignity").
-- Inadequate response to hate crimes and safety concerns (e.g., "administration does not
-take hate crime seriously when it occurs on campus").
-- Insufficient support for students with disabilities (e.g., "au really needs to work harder to
-address these concerns").
-- Perceived prioritization of university image over substantive reforms (e.g., "administration
-appears to prioritize the university's public image over substance reforms").
-- Inconsistent enforcement of drug and alcohol policies (e.g., "au has very strict policies
-concerning drug use and alcohol on campus; we're also non-smoking").
-- Discontent with the handling of academic accommodations (e.g., "academic
-accommodations are a joke").
+- High tuition costs without perceived corresponding value ("school is very expensive", "tuition is so expensive and just went up").
+- Lack of financial aid and transparency in pricing ("extremely stingy financial aid", "they should only charge what the initial price upon entering was and keep that amount").
+- Inconsistency in educational quality ("quality varied from professor to professor", "biology department is not gw's strong suit").
+- Poor online learning experience ("entire semester was online", "online school is obviously not optimal").
+- Lack of school spirit and cohesion ("campus doesn't feel cohesive", "there is very little dignity").
+- Expensive housing and dining plans ("off-campus housing is very pricey in d.c", "dining plan in fall 2022...was much better than the current dining plan").
+- Bureaucratic and slow administrative response ("administration can be somewhat slow to address issues", "it was nearly impossible to book appointments with advising").
+- Perceived lack of support for diversity and inclusion ("however, i am a person of color, and the school's lack of dignity is felt everyday and everywhere i go").
 
 </ul>
 
@@ -360,22 +338,14 @@ accommodations are a joke").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Review and potentially increase financial aid and scholarship offerings to better support
-students in need.
-- Enhance administrative support by providing additional training for advisors and ensuring
-they are knowledgeable and responsive to student inquiries.
-- Foster a stronger sense of community and school spirit through more inclusive events and
-activities that engage the entire student body.
-- Implement a more transparent and effective approach to handling diversity and inclusion
-issues, ensuring that all students feel represented and supported.
-- Improve the response to hate crimes and safety concerns by establishing clear protocols
-and communication channels for reporting and addressing such incidents.
-- Offer more robust support for students with disabilities, including accessible facilities and
-academic accommodations.
-- Reevaluate the enforcement of drug and alcohol policies to ensure consistency and
-fairness, while also providing education and resources for substance abuse prevention.
-- Increase transparency regarding the use of tuition fees and actively involve students in
-discussions about university reforms and budget allocations.
+- Conduct a thorough review of tuition and fees to ensure they align with the quality of education and services provided.
+- Enhance financial aid offerings and improve transparency around costs and billing.
+- Implement a robust system for evaluating and improving the quality of education across all departments.
+- Reassess the online learning infrastructure and support to ensure it meets student needs and expectations.
+- Foster a more cohesive campus culture by promoting school spirit and community-building activities.
+- Reevaluate housing and dining options to make them more affordable and appealing to students.
+- Streamline administrative processes to be more responsive and efficient in addressing student concerns.
+- Develop initiatives to support diversity and inclusion, ensuring all students feel valued and respected.
 
 </ul> 
     </Tab>
@@ -385,14 +355,7 @@ discussions about university reforms and budget allocations.
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, the university exhibits a strong commitment to academic integrity, a
-diverse range of academic programs, and a supportive environment for LGBTQ+ students. The
-enforcement of academic policies and the importance placed on academics suggest a serious
-educational atmosphere. The presence of various religious services and political activism indicates a
-campus that is engaged and respectful of different beliefs and causes. Additionally, the availability of
-technology and resources for students is noted as positive. However, there are concerns regarding
-the administration's response to incidents of racism, antisemitism, and sexual assault, as well as the
-overall diversity of the student body.
+Based on the provided snippets, the George Washington University (GWU) appears to be successfully delivering a high-quality education across various disciplines, with a particular strength in international affairs, political science, and public health. The faculty is noted for their expertise and dedication to student success, with many professors being leaders in their fields. The university's location in Washington D.C. offers unique opportunities for internships and exposure to political and international institutions. Diversity and inclusivity are also highlighted, with a supportive environment for minority and LGBTQ+ students. The transition to online education during the pandemic was well-received, indicating adaptability and commitment to maintaining academic standards. Financial aid and scholarships seem to be effectively supporting students from various economic backgrounds.
 
         
 <br>
@@ -403,18 +366,12 @@ overall diversity of the student body.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Academic integrity and importance (e.g., "academics are much more important here," "au is pretty
-stiff about academic violations such as plagiarism").
-- Support for LGBTQ+ community (e.g., "au is extremely lgbt friendly," "we have a very large glbtq
-community that comes with a very large ally community as well").
-- Diversity of academic programs (e.g., "au doesn't just cater to just those majors," "au offers a
-variety of majors").
-- Political activism and engagement (e.g., "au is very oriented towards political science and
-international relations," "students are very politically involved regardless of major").
-- Religious services and respect for beliefs (e.g., "au offers of 25 different religious services on
-campus," "there is a very strong gay and lesbian population on campus").
-- Technological resources (e.g., "computers are always available," "dorms have their own computer
-labs with printers").
+- High-quality education in various disciplines (international affairs, political science, public health)
+- Expert and dedicated faculty
+- Unique opportunities due to location in Washington D.C.
+- Supportive environment for diversity and inclusivity
+- Successful transition to online education during the pandemic
+- Effective financial aid and scholarship programs
 
 </ul>
 
@@ -424,13 +381,10 @@ labs with printers").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further improve the university's environment, the administration could take more
-proactive measures in addressing and preventing incidents of racism, antisemitism, and
-sexual assault.
-- Efforts to increase the diversity of the student body, particularly in terms of race and
-socioeconomic status, could also be enhanced.
-- Additionally, fostering a more inclusive atmosphere where all students feel represented and
-heard could contribute to a more positive campus culture.
+- To further enhance the student experience, the university could focus on expanding its efforts to increase diversity within the classroom to reflect the broader D.C. community. 
+- Additionally, continuing to develop and promote STEM and engineering programs could attract a wider range of students. 
+- Strengthening community spaces and fostering community growth could also enhance the sense of belonging among students. 
+- Lastly, maintaining and expanding partnerships with local vendors for the GWorld payment system could continue to provide convenient and affordable options for students.
 
 
 </ul> 

@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-In the snippets provided, the overall sentiment regarding self-worth, pride, self-confidence, and self-awareness at the university is predominantly positive. Students express a strong sense of pride and accomplishment, often linked to the university's reputation, academic programs, and opportunities for personal growth. However, there are instances of negative experiences, particularly related to perceived elitism and social dynamics.
+In the snippets provided, the overall sentiment leans heavily towards the positive, with students expressing a strong sense of pride, self-worth, and confidence stemming from their association with the university. The positive experiences often highlight the university's prestigious reputation, successful alumni network, and the personal growth opportunities available. In contrast, the negative sentiments are fewer and tend to focus on social dynamics and personal challenges faced by the students.
 
 
 ```sql polarity_proportions
@@ -118,39 +118,35 @@ ORDER BY
 
 
 ## Positive:
-- **Academic Pride:** Students feel a sense of pride and self-worth from attending a university with a "wonderful reputation," especially in fields like international relations and communications. The presence of "top professors" and "nationally ranked" schools within the university bolsters this sentiment.
-- **Personal Growth:** The university environment has allowed students to "grow as a person both academically and socially," with many expressing gratitude for the personal development they've experienced.
-- **Career Confidence:** Opportunities like internships and networking with companies on campus have boosted students' self-confidence in their career paths, with some already securing jobs and feeling "special" about their prospects.
-- **Scholarly Satisfaction:** Students who engage with the coursework and participate actively in classes report a genuine sense of accomplishment and knowledge gain, enhancing their self-awareness and academic self-esteem.
-- **Financial Recognition:** Merit scholarships and financial aid contribute to students' sense of self-worth, making them feel valued and recognized for their academic achievements.
+- **Prestigious Reputation:** Students express immense pride in attending a university that is highly ranked (#20 in the nation) and holds a great reputation, enhancing their self-worth.
+- **Alumni Network:** The incredible alumni network boosts students' confidence, providing them with a sense of belonging to a community of successful individuals.
+- **Academic Excellence:** The university's exceptional academic programs, such as the Elliott School of International Affairs, instill a sense of achievement and self-confidence in students.
+- **Athletic Pride:** Participation in sports teams that perform well at national levels contributes to a strong sense of pride and community among students.
+- **Scholarship Recognition:** Receiving scholarships, such as the $3,000 award from the Corcoran, validates students' past achievements and boosts their self-esteem.
 
 
 ## Negative:
-- **Social Discomfort:** Some students feel alienated or looked down upon due to wealth disparities, with a sense of snobbery and moral pretentiousness from peers affecting their university experience.
-- **Elitism Perception:** A common theme among negative experiences is the perception of elitism, with students feeling that there is a "false air of superiority" among their peers.
-- **Gender Dynamics:** Negative comments about the dating scene and inflated egos suggest that social interactions can sometimes undermine self-confidence for some students.
-- **Overlooked Groups:** There is a sentiment that certain groups, such as grad students or those not fitting a particular social or economic profile, feel overlooked and undervalued.
-- **Pressure to Perform:** The competitive atmosphere and high expectations can lead to feelings of inadequacy for those who struggle to meet the university's standards or secure internships.
+- **Social Discontent:** Some students feel a negative impact on their self-worth due to peers who are perceived as "stuck up and snotty" or who "believe they are better than everyone else."
+- **Academic Pressure:** The reality of students dropping out or failing classes can undermine self-confidence and contribute to a sense of inadequacy.
 
 
 <br>
 
 ## Most Positive Examples:
-- "American University has a wonderful reputation."
-- "I've never felt more special."
-- "I am very proud."
-- "I'm so grateful."
-- "I am extremely proud to be a part of this community."
+- "gw really is an excellent school"
+- "i've never felt more lucky"
+- "i believe i am set up for future success as a gw student"
+- "i am so happy to have been accepted at george washington university"
+- "i got the presidential scholarship"
 
 
- 
 
 ## Most Negative Examples:
-- "Almost every single person at this school is so morally pretentious."
-- "Easily a 6, but because there are more girls than straight guys on campus, they suddenly think they're a 10."
-- "Everyone seems to put on a false air of superiority."
-- "People can be a little self-righteous and preachy."
-- "Everyone in the program is pretentious and self-obsessed."
+- "people here are extremely stuck up and snotty"
+- "people drop out, fail out of classes"
+- "but i need the money"
+- "believe they are better than every one else"
+- "people are generally not proud of the fact that they go to gw"
 
 <br>
 
@@ -322,13 +318,8 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews suggest a perception of elitism and exclusivity within the university
-community. There are indications of a socio-economic divide, with references to wealth and
-privilege affecting the student experience. Concerns about the university's reputation and the
-attitudes of the student body, particularly among males, are recurrent themes. The reviews
-also hint at dissatisfaction with the communication program and a lack of support for
-graduate students. While these insights are based on individual experiences, they highlight
-areas where the university may need to foster a more inclusive and supportive environment.
+The snippets provided suggest that there are some areas of concern regarding the university's environment and its impact on students' sense of self-worth and pride. The issues range from academic challenges, such as students dropping out or failing classes, to social dynamics, including perceptions of elitism and a lack of pride in the university community. These snippets indicate that some students may be experiencing a negative atmosphere that could affect their self-confidence and self-awareness.
+
 
         <br>
         <br>
@@ -336,19 +327,12 @@ areas where the university may need to foster a more inclusive and supportive en
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Perception of elitism and exclusivity (e.g., "kind of stuck up," "people are snob," "elitism is a
-common theme").
-- Socio-economic divide affecting student experience (e.g., "especially those who are not
-wealthy white, and able-bodied," "if you are one of the few students that attend au that are
-not in the upper-class of wealth").
-- University's reputation not widely recognized (e.g., "it's not a big name outside d.c.").
-- Negative attitudes among the student body (e.g., "au attracts some snobby people,"
-"everyone seems to put on a false air of superiority").
-- Dissatisfaction with the communication program (e.g., "didn't get what i wanted out of the
-com program").
-- Lack of support for graduate students (e.g., "grad students are distinctly overlooked").
-- Gender dynamics and attitudes (e.g., "guys are very often the negging types," "straight
-guys have inflated egos").
+- Academic difficulties leading to dropout or failure (people drop out, fail out of classes).
+- Financial pressures affecting students (but I need the money).
+- Social elitism and superiority complex among students (believe they are better than everyone else).
+- Lack of pride in the university affiliation (people are generally not proud of the fact that they go to gw).
+- Mediocre experiences or offerings (most of which are mediocre).
+- Unfriendly and pretentious student body (people here are extremely stuck up and snotty).
 
 
     </ul>
@@ -359,15 +343,11 @@ guys have inflated egos").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these issues, the university could implement diversity and inclusion
-training programs to promote a more welcoming environment for all students.
-- Enhancing financial aid and scholarship opportunities may help alleviate the
-socio-economic divide.
-- Improving the communication program through curriculum review and student
-feedback could address specific academic concerns.
-- Offering more resources and support for graduate students could improve their
-university experience. Finally, conducting workshops on gender dynamics and
-respectful behavior could help change the negative attitudes identified in the reviews.
+- To address these issues, the university could consider implementing a more robust academic support system to help students who are struggling with their courses. This could include tutoring services, study groups, and workshops on study skills and time management. Additionally, financial counseling and support services could be expanded to assist students who are facing economic challenges.
+
+- To combat the perception of elitism and improve the sense of community, the university could initiate programs that foster inclusivity and celebrate diversity. This might involve peer mentorship programs, community-building events, and workshops on social awareness and empathy.
+
+- To enhance pride in the university, efforts could be made to highlight the achievements and positive aspects of the institution through marketing campaigns, alumni success stories, and showcasing student accomplishments. Finally, addressing the unfriendly social atmosphere may require a review of the campus culture and the introduction of initiatives aimed at promoting kindness, respect, and collegiality among students.
 
 
     </ul> 
@@ -378,13 +358,7 @@ respectful behavior could help change the negative attitudes identified in the r
         <b>Summary:</b>
         <br>
         
-The university appears to be fostering an environment where students feel confident and proud of
-their academic and professional achievements. The presence of strong programs in politics,
-international relations, communications, and law contributes to this sentiment. Students are taking
-advantage of internship opportunities, which seem to be abundant and integral to the university
-experience. The ability to succeed in a competitive yet not overly aggressive environment is noted, as
-well as the satisfaction with sports and club activities. The university's support for students through
-scholarships also contributes to a sense of gratitude and self-worth among the student body.
+The university appears to be fostering an environment where students feel a strong sense of achievement and pride, particularly in relation to their academic and professional development. The presence of successful alumni and the university's prestige in specific fields, such as international affairs and political science, contribute to this sentiment. Students express gratitude for the opportunities provided by the university, including scholarships and the ability to grow personally and professionally. The location in Washington D.C. is also seen as a significant advantage, offering unique opportunities for networking and attending high-profile events. The sports teams' performance and the recognition of women's sports add to the sense of pride within the student body.
 
         
 <br>
@@ -395,20 +369,14 @@ scholarships also contributes to a sense of gratitude and self-worth among the s
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Strong academic programs (e.g., "american is especially great if you are interested in politics,
-international relations or communications")
-- Confidence boost and satisfaction (e.g., "boosted my confidence", "i'm very satisfied with my
-experience here")
-- Internship opportunities (e.g., "internships rule all", "i've had four internships since i transferred
-here")
-- Competitive but supportive environment (e.g., "great, competitive school to attend", "lots of
-overachieving people but i wouldn't say its super competitive")
-- Sports and club activities (e.g., "our club sports are just as good as our varsity", "our sports teams
-are pretty good")
-- Career-focused education (e.g., "my career goals are to become a tv producer", "worked for a
-lobbying firm as a paid social media intern")
-- Scholarships and financial support (e.g., "i have gotten lucky and received scholarships through
-schools and departments the past 2 years")
+- Academic and professional growth ("proving to myself that I am capable of doing great things", "i believe i am set up for future success as a gw student")
+- Prestigious reputation ("they've done a good job of enhancing our prestige", "gets a degree from a prestigious private school in Washington D.C.")
+- Strong programs and rankings ("elliot is number 7 in the nation for best international affairs school", "the best place to be for political science")
+- Successful alumni ("has some successful alumni")
+- Scholarships and financial support ("received an awesome merit scholarship", "i got a scholarship from the corcoran of 3,000.00 dollars")
+- Sports achievements and recognition ("especially for women’s sports, it’s really good", "basketball team has gotten great recognition and is doing well")
+- Networking opportunities ("networking is the key to success in d.c")
+- Location benefits ("when the imf and the world bank hold conferences in your auditorium", "international companies, major law firms, and nonprofit organizations are headquartered in d.c")
 
 </ul>
 
@@ -418,14 +386,10 @@ schools and departments the past 2 years")
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the student experience, the university could focus on expanding its
-internship program to ensure that all students have the opportunity to engage in practical
-work experiences.
-- Additionally, increasing awareness and access to scholarships and financial aid could help
-more students feel supported and valued.
-- The university might also consider implementing programs or workshops that encourage
-students to be more outgoing and engaged from the first semester, especially for those who
-may be shy or from low-income backgrounds.
+- To further enhance the student experience, the university could focus on expanding scholarship opportunities, especially for low-income students, to ensure a diverse and inclusive environment. 
+- Additionally, continuing to support and promote the achievements of sports teams and individual athletes can strengthen school spirit. 
+- The university might also consider increasing efforts to facilitate networking opportunities for students across all disciplines, not just those in high-profile fields. 
+- Lastly, maintaining and improving the quality of academic programs through regular reviews and updates will help sustain the university's reputation and student satisfaction.
 
 </ul> 
     </Tab>

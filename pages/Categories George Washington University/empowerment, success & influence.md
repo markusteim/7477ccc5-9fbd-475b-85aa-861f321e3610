@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary 
 
@@ -14,7 +14,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the snippets regarding empowerment and influence at the university is predominantly positive. Students feel that the university's location, networking events, and career centers provide them with a wealth of opportunities to gain experience and make important connections. However, there are some negative experiences related to strict policies and financial aid issues.
+In the collected university reviews, the overall sentiment regarding empowerment and access to opportunities is overwhelmingly positive. Students frequently highlight the university's proximity to powerful institutions, networking groups, and career fairs, which seem to foster a sense of empowerment and potential for leadership. The negative aspects are less about empowerment and more about social dynamics and administrative issues.
 
 
 ```sql polarity_proportions
@@ -102,9 +102,7 @@ ORDER BY
         [
         "#85144B", // A shade of dark red
         "#FF4136", // A shade of red
-        "#AAAAAA", // A shade of grey
         "#2ECC40", // A shade of bright green
-        "#3D9970"  // A shade of dark green
         ]
     }
     echartsOptions={{
@@ -120,39 +118,38 @@ ORDER BY
 
 
 ## Positive:
-- Career Advancement: Students praise the career centers for their effectiveness in providing job and internship opportunities, with one student securing a full-time position as a press aide to a congressman.
-- Networking Success: The university's location in D.C. is highlighted as a key factor for networking, with students attending balls at embassies and meeting ambassadors.
-- Influential Faculty: Professors with backgrounds as ambassadors and leaders in their fields are seen as providing valuable insights and connections.
-- Internship Abundance: The proximity to government and international affairs opportunities in D.C. is appreciated, with students gaining internships at places like Capitol Hill.
-- Leadership Development: Programs like the School of Public Affairs Leadership Program are commended for developing students' leadership skills.
+- **Networking Opportunities:** Students feel empowered by the university's connections to prestigious organizations like the IMF and World Bank, and the abundance of networking groups and career fairs.
+- **Internship Access:** The proximity to Washington D.C. is repeatedly praised for providing unparalleled internship opportunities, with many students securing positions in government, think tanks, and international affairs.
+- **Professional Growth:** The presence of notable professionals and high-quality professors in the field of international affairs is seen as a significant advantage, contributing to students' professional development and sense of importance.
+- **Career Services:** The university's career services are lauded for effectively guiding students towards success, with a focus on internships and job placements that make students feel valuable and influential.
+- **Greek Life Influence:** Greek organizations are recognized for their networking benefits and leadership roles on campus, suggesting a position of strength for members.
 
 
 ## Negative:
-- Financial Struggles: Some students face difficulties with financial aid, with reports of aid being reduced or appeals being rejected.
-- Strict Policies: There are complaints about strict enforcement of rules, particularly regarding alcohol in dorms and the creation of new clubs.
-- Unpaid Internships: The prevalence of unpaid internships in the city is a concern for some students.
-- Faculty Issues: A few students report negative experiences with professors who are described as rude or condescending.
-- Social Challenges: Some students feel excluded from social groups or face a toxic campus climate.
+- **Social Attitudes:** Some students perceive a pompous and superior attitude among peers, which can detract from the sense of community and empowerment.
+- **Administrative Barriers:** Complaints about red tape, strict parking regulations, and unaccommodating financial counselors suggest challenges in feeling supported by the university.
+- **Technology Issues:** Fluctuating internet speeds and network issues are minor but notable frustrations that can impede students' sense of control and efficiency.
+- **Academic Rigidity:** A lack of decision-making freedom and inflexible professors can make students feel disempowered in their academic journey.
+- **Social Exclusivity:** Greek life's dominance is seen as creating a divide on campus, with non-Greek students feeling marginalized.
+
 
 
 <br>
 
 ## Most Positive Examples:
-- "internship opportunities are incredible"
-- "endless opportunities for internships, networking, and research"
-- "student body of American University will change the world"
-- "being here has helped me land a good job"
-- "going to school in D.C. opens up an entire world of internships and job opportunities"
-
-
+- "increases possibilities in the labor market"
+- "guiding students along their journeys to success"
+- "professors are all high up and educated in the field"
+- "internships (at least those for credit) and research opportunities are mostly reserved for upperclassmen"
+- "transition successfully into the workforce"
  
 
 ## Most Negative Examples:
-- "au took it away from his housing and dining financial aid"
-- "cs program here is weak"
-- "at least one verbally abusive teacher received multiple years of bad reviews, still employed"
-- "there is also a lot of bureaucratic red tape when creating new clubs and organizations"
-- "essentially class i needed for my career and graduation i was not able to take"
+- "everyone is very pompous"
+- "university is more concerned about punishing students and fining them"
+- "quite a few people are rude and shallow"
+- "however, the lack of decision-making freedom is displeasing"
+- "i've genuinely never seen a group of people with less courtesy or manners to staff"
 
 <br>
 
@@ -320,13 +317,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews indicate a range of concerns related to the university's social
-environment, administrative processes, and enforcement of rules. Issues such as the
-dominance of Greek life, strict enforcement of parking and dorm regulations, and perceived
-rudeness from both staff and students contribute to a less than empowering atmosphere for
-some. Additionally, there are mentions of financial aid problems and inflexibility in academic
-matters. These snippets suggest that certain aspects of the university experience are
-detracting from students' sense of value and influence within the institution.
+The university appears to be facing challenges in fostering a positive and inclusive campus culture. Student reviews indicate dissatisfaction with the behavior and attitudes of both peers and staff, including financial counselors, professors, and administrative personnel. The academic environment is described as impersonal and sometimes hostile, with reports of arrogance and a lack of courtesy. Additionally, there are logistical issues affecting student life, such as unreliable internet connectivity, transportation services, and strict enforcement of campus policies. The social atmosphere is perceived as exclusive, with Greek life dominating the social scene and creating a divide among students. These issues suggest a need for the university to address the quality of interpersonal interactions and to improve the support systems in place for students.
 
         <br>
         <br>
@@ -334,24 +325,42 @@ detracting from students' sense of value and influence within the institution.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Dominance of Greek life creating a divisive social atmosphere ("frats and sororities rule the
-school", "greeks try to take over").
-- Strict enforcement of rules and regulations leading to a sense of surveillance and
-punishment ("au tends to be strict about alcohol in dorms", "enforcement is way too stiff").
-- Perceived rudeness and unhelpfulness from university staff and administration ("people
-that work at au that aren't professors are sometimes unpleasant", "it is best put that it feels
-like every member of the administration is paid to be as rude, unhelpful, and condescending
-as possible").
-- Financial aid issues causing stress and uncertainty ("i keep getting aid taken away from
-me", "au is not at all generous or helpful with financial aid").
-- Inflexibility in academic and residential matters ("there is also a lot of bureaucratic red tape
-when creating new clubs and organizations", "i asked to change but they didnt allow me").
-- Parking issues and strict ticketing adding to student frustrations ("parking control tickets
-any car that doesen't have a permit every day", "public safety officers give you a ticket").
-- Social skills and respect issues among students ("people at au lack social skills", "do not
-treat girls with respect").
-- Concerns about the overall campus climate ("overall climate of the campus is toxic", "social
-aspects of the school are awful").
+- Disrespectful financial counselors ("mean financial counselors").
+- Lack of courtesy and manners from staff ("i've genuinely never seen a group of people with less courtesy or manners to staff").
+- Impersonal academic advisement ("academic advisement is terrible and so impersonal").
+- Classist and rude behavior from students ("lots of students here are well off new england wasps that are often rude to staff like janitors, cashiers, etc").
+- Unreliable student network ("general- student (gwireless) network will terminate its users sessions every 1-3 hours").
+- Poor quality of teaching ("there are a lot of horrible professors").
+- Lack of accommodation from professors ("some profs were not accommodating").
+- Arrogance among faculty ("many of them are over confident, arrogant, and talk without thinking").
+- Strict TA policies ("only had one incident with a t.a. who insisted that cameras stay on").
+- Inadequate networking opportunities ("networking is okay but it is nothing remotely impressive").
+- Feeling marginalized ("it is easy to be pushed aside").
+- Pompous campus culture ("everyone is very pompous").
+- Rude departmental call services ("many other departments have rude call services").
+- Party crackdowns by university police ("upd tries to break up any on-campus party").
+- Shutdown of popular student organizations ("lots of the more popular organizations on campus are being shut down").
+- Crackdown on Greek life ("gw administration is seriously cracking down on greek life").
+- Inflexible administration ("hard to accomplish what you want with administration").
+- Bureaucratic obstacles ("lots of red tape").
+- Punitive university policies ("university is more concerned about punishing students and fining them").
+- Excessive requirements ("there are a lot of requirements").
+- Difficulty obtaining internships ("haven't been able to get an internship yet").
+- Strict parking regulations ("gw regulates parking heavily").
+- Subpar language department ("language department is not as good as it could be").
+- Peer pressure related to drinking ("there is also alot of peak pressure for drinking").
+- High levels of substance use ("there is a high level of drinking and drug use on the gwu campus").
+- Inconsistent internet speeds ("my internet speed fluctuates often").
+- Social exclusivity ("quite a few people are rude and shallow").
+- Objectification of women ("guys treat girls like objects").
+- Greek life dominance ("greek life has taken over so much that anyone who isn't in it feels outcasted").
+- Inflexible class rules ("they are also not very flexible when it comes to rules or guidelines of their class").
+- Lack of concern for student understanding ("unfortunately many are too full of themseves to care whether or not you understand the material").
+- Inadequate health services ("i highly advise setting up another doctor outside of the university").
+- Rude transportation service ("drivers can be rude").
+- Unreliable transportation service ("left standing on a dark street corner in the rain for over an hour").
+- Limited decision-making freedom ("however, the lack of decision-making freedom is displeasing").
+- Scarcity of paid internships ("paid internships are hard to come by").
 
 
     </ul>
@@ -362,25 +371,26 @@ aspects of the school are awful").
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Review and potentially reform Greek life's influence on campus to ensure a more inclusive
-environment.
-- Re-evaluate enforcement policies to strike a balance between maintaining order and
-fostering a trusting community.
-- Implement customer service training for staff and administration to improve interactions
-with students.
-- Increase transparency and consistency in financial aid processes to reduce student anxiety
-and dissatisfaction.
-- Streamline bureaucratic processes for student initiatives to encourage engagement and
-leadership.
-- Reassess parking policies and explore solutions to reduce the burden of ticketing on
-students.
-- Offer workshops on social skills and respect to cultivate a more welcoming and considerate
-campus culture.
-- Conduct a thorough review of the campus climate with student input to identify and address
-underlying issues.
+- Conduct training programs to enhance the professionalism and courtesy of staff and faculty.
+- Develop a more personalized and supportive academic advisement system.
+- Foster a culture of respect and inclusivity through campus-wide initiatives and workshops.
+- Improve the reliability and quality of the student network infrastructure.
+- Evaluate and address the quality of teaching, including providing support for professors to improve their pedagogical skills.
+- Create more robust networking opportunities for students, including career fairs and alumni events.
+- Review and potentially revise strict policies that negatively impact student life, such as TA camera requirements and party regulations.
+- Increase transparency and reduce bureaucratic hurdles in administrative processes.
+- Expand support for students seeking internships, including partnerships with local businesses and organizations.
+- Reassess parking and transportation policies to better accommodate student needs.
+- Enhance the language department and other academic programs based on student feedback.
+- Address substance use issues with targeted education and support services.
+- Promote a more inclusive social environment, particularly in relation to Greek life.
+- Ensure that health services are adequate and accessible to all students.
+- Improve the reliability and customer service of campus transportation options.
+- Encourage faculty to be more flexible and understanding of student needs.
+- Provide more opportunities for student input and decision-making in university policies.
 
+</ul> 
 
-    </ul> 
     </Tab>
 
 
@@ -388,15 +398,7 @@ underlying issues.
         <b>Summary:</b>
         <br>
         
-The university appears to be effectively leveraging its location in the nation's capital to provide
-students with a wealth of opportunities for internships, networking, and career advancement. The
-presence of a strong alumni network and the proximity to a myriad of organizations and government
-entities contribute to the students' sense of empowerment and access to influential positions. The
-Career Center is frequently mentioned as a valuable resource, offering support with resumes,
-interview preparation, and job searches. Professors are noted for their connections and active roles
-in assisting students with professional development. The university's emphasis on experiential
-learning through internships, many of which are facilitated or encouraged by the institution, is a
-recurring theme in the students' experiences.
+The university appears to be effectively leveraging its strategic location in D.C. to provide students with a wealth of professional opportunities, particularly in the fields of international relations, political science, and government. Students express appreciation for the extensive networking possibilities, career-oriented environment, and the university's connections with influential organizations and professionals. The emphasis on internships and career services seems to be a significant factor in students feeling empowered and prepared for the workforce. The presence of career-oriented student organizations and the availability of career fairs and workshops further contribute to the students' sense of being in a position of strength regarding their future careers.
 
         
 <br>
@@ -407,25 +409,16 @@ recurring theme in the students' experiences.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Internship to employment transition ("a lot of interns become employees once they graduate")
-- Networking opportunities ("allow for networking")
-- Strong alumni presence ("alumni are constantly visiting the campus")
-- Career Center effectiveness ("as a student, the career center has been impressive")
-- Proximity to real-world events ("at au, you can be constantly plugged in to what's actually
-happening in the world")
-- Job placement record ("au has a good job placement record")
-- Faculty connections ("au helps you to take advantage of that with professors who often work in
-d.c.")
-- Abundance of internship opportunities ("always plenty of internship opportunities downtown")
-- Competitive edge in job market ("american students and graduates are some of the most
-competitive job and internship seekers in the d.c. area")
-- Access to influential figures ("contact with prominent officials")
-- Support for career development ("career center is one of the best in the country")
-- Academic credit for internships ("i have had 3 internships in 3 years, and got academic credit for all
-of them")
-- Mentorship opportunities ("spent my first semester in the mentorship program")
-- Financial aid satisfaction ("i have great financial aid")
-- Alumni network benefits ("thanks to the large alumni base")
+- Strategic location in D.C. ("there is no better place for international relations than d.c", "gw's location and professional opportunities on-campus are top-notch")
+- Extensive networking opportunities ("great network with professionals in d.c. and beyond", "networking opportunities were endless")
+- Career-oriented environment ("students are very career-oriented", "great opportunities to connect you to the real world")
+- Internship and job opportunities ("internship opportunities and connections to both the public and private sector are plentiful", "internship opportunities that set me up for my future")
+- Career services and support ("effective career services", "transition successfully into the workforce")
+- Access to influential professionals and organizations ("i have met ambassadors", "connected with world bank employees")
+- Professional development programs ("best decision i made was joining the university honors program", "excellent pre-professional development opportunities")
+- Encouragement of student independence ("i actually love the independence that this school offers")
+- Quality of faculty ("we have the best professors ever", "professors are incredible, intelligent, and often trailblazers in their own fields")
+- Emphasis on real-world experience ("greatest reward of gwu will be the internship and professional opportunities in d.c", "being in the heart of d.c. has opened up so many opportunities for me")
 
 </ul>
 
@@ -435,16 +428,10 @@ of them")
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the student experience, the university could consider expanding paid
-internship opportunities, as unpaid internships can be a barrier for some students.
-- Additionally, increasing the visibility and accessibility of the Career Center's resources to
-ensure all students are aware of and can utilize the support available could be beneficial.
-- Encouraging faculty to continue to leverage their professional networks for the benefit of
-students and fostering even more connections with local and international organizations
-could also provide more diverse opportunities for students.
-- Lastly, maintaining and strengthening the alumni network to facilitate mentorship and job
-placement for current students and recent graduates would continue to add value to the
-university's offerings.
+- To further enhance the student experience, the university could consider expanding its career services to include more personalized career coaching and mentorship programs. 
+- Additionally, ensuring that internship and job opportunities are accessible to students from all academic disciplines could broaden the sense of empowerment across the student body. 
+- It may also be beneficial to increase the visibility and accessibility of the university's networking events and career workshops to ensure that all students are aware of and can take advantage of these resources. 
+- Lastly, fostering a culture of peer-to-peer networking and alumni engagement could further strengthen the university's community and support system.
 
 
     </ul> 

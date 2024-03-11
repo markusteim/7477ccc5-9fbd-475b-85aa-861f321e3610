@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary
 Overall of those who left a review in this category **<Value data={polarity_proportions} column=percentage row=2/>%** had a **positive experience**, in comparison to **<Value data={polarity_proportions} column=percentage row=0/>%** of students who had a **negative experience**.
@@ -13,7 +13,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 **Positive** Student Experience Count: <Value data={polarity_proportions} column=category_count row=2/> 
 
 
-The overall sentiment from the university reviews regarding the sense of belonging, care, and support is predominantly positive. Students frequently express feelings of being welcomed, supported by faculty, and finding their community within various groups and organizations. However, there are instances of negative experiences where students felt isolated, uncared for, or found the social atmosphere lacking.
+In the snippets provided, the overall sentiment regarding the sense of belonging and community at the university is predominantly positive. Students often feel supported, included, and cared for by both the faculty and their peers. The university's efforts to maintain connections with alumni, the presence of diverse student organizations, and the accessibility of professors contribute to this positive atmosphere. However, there are instances of negative experiences, particularly related to feelings of isolation and a lack of support from the university staff.
 
 ```sql polarity_proportions
 WITH MergedCategoryCounts AS (
@@ -110,39 +110,39 @@ ORDER BY
 
 
 ## Positive:
-- **Community Building:** Students often find their place within the university through clubs, Greek life, and residence halls, creating tight-knit communities and meaningful friendships.
-- **Faculty Engagement:** Many professors are praised for being approachable, responsive, and genuinely caring about students' well-being, often going beyond academic support.
-- **Diverse Inclusion:** The university's diverse student body and faculty contribute to an environment where different backgrounds are celebrated, fostering a sense of belonging for international and minority students.
-- **Academic Support:** There is a strong emphasis on academic assistance, with numerous resources available on campus, and professors who are willing to help students understand course material.
-- **Personal Growth:** The university environment encourages personal and professional connections, internships, and a broader perspective, contributing to students' growth and future opportunities.
+- **Alumni Engagement:**  Graduates are made to feel special through consistent communication, including emails and magazines, which keep them connected to the university's ongoing activities.
+- **Social Integration:**  New students find it easy to make friends, with many organizations and clubs available to support them, creating a welcoming environment from the start.
+- **Academic Support:**  Professors and staff are described as knowledgeable, caring, and dedicated to helping students succeed, often going beyond academic support to foster personal connections.
+- **Inclusivity and Diversity:**  The campus is noted for its diversity, with students from various backgrounds feeling accepted and supported. Greek life offers additional social opportunities without dominating the campus culture.
+- **Financial Aid:**  The university is recognized for ensuring that those in need receive adequate financial aid, demonstrating a commitment to student welfare.
 
 
 ## Negative:
-- **Social Challenges:** Some students experience feelings of isolation, difficulty fitting in, or find the social scene lacking, particularly if they are not part of Greek life or specific social groups.
-- **Faculty Indifference:** A few students report encounters with faculty who seem apathetic or uninterested in student success, contrasting with the otherwise positive faculty reviews.
-- **Financial Struggles:** There are mentions of the university not being accommodating to students facing financial difficulties, affecting their sense of support.
-- **Exclusivity Issues:** Negative experiences include feeling unwelcome in certain groups, facing discrimination, or dealing with a competitive atmosphere that hinders inclusivity.
-- **Administrative Barriers:** Some students find the administration unhelpful or bureaucratic, which can detract from the sense of community and support.
+- **Staff Attitude:**  Some students report encounters with unsupportive and unhelpful university staff, which detracts from the sense of community.
+- **Greek Life Exclusivity:**  While Greek life provides social opportunities, it can also lead to feelings of isolation and forced conformity for those who choose not to participate or who are not part of it.
+- **Indifference to Student Needs:**  There are complaints about the university not caring for its students, with some feeling unfairly treated or that their individual needs are overlooked.
+- **Social Division:**  A sense of division is noted, with reports of cliques and a lack of interaction between different student groups, such as athletes and non-athletes or Greeks and non-Greeks.
+- **Administrative Challenges:**  Students express frustration with bureaucratic processes and a perceived lack of community, feeling disconnected from the larger student body.
 
 
 <br>
 
 ## Most Positive Examples:
 
-- "people here really care for you"
-- "you'll get friends no matter what"
-- "professors were responsive to online school changes"
-- "students and profs are kind and welcoming"
-- "i have a more worldly and humanitarian perspective"
+- "once you graduate, as an alumni, they make you feel very special"
+- "it is easy to make friends in the first week"
+- "professors are very helpful"
+- "everyone looks out for each other"
+- "this is the first time i truly feel supported"
 
 
 ## Most Negative Examples:
 
-- "faculty don't really care about its students"
-- "you will not fit in"
-- "they don't seem to care much about the students"
-- "i feel like everyone is not friendly or stingy"
-- "not student centric or accommodating to those with financial struggles"
+- "staffing is not supportive or helpful"
+- "feeling extremely isolated"
+- "school does not care about its students at all"
+- "there is a long process for rushing/pledging and it's fairly competitive"
+- "greeks do have a lot of exclusive events"
 
 <br>
 
@@ -313,13 +313,8 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-The student reviews suggest that there is a perceived lack of inclusivity and community at
-the university. Students have reported feeling isolated, particularly if they are not part of
-specific social groups such as athletics, Greek life, or certain majors. There is a sentiment
-that the administration and faculty are indifferent to student needs and that the campus
-culture can be unwelcoming and cliquey. Additionally, there are concerns about
-discrimination and a lack of support for students with diverse political views or those who do
-not conform to the dominant social norms.
+The university appears to be facing challenges in fostering a sense of community and belonging among its students. Several students have expressed feelings of isolation and a perception that the university and its staff do not sufficiently care for their well-being. Issues with Greek life exclusivity, ineffective counseling services, and a lack of support from professors and administration are recurrent themes. The campus culture seems to be fragmented, with students feeling disconnected from one another and from the institution itself.
+
 
         <br>
         <br>
@@ -327,20 +322,12 @@ not conform to the dominant social norms.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Perceived indifference from staff and faculty (e.g., "administration does not care," "faculty
-don't really care about its students").
-- Social isolation and difficulty finding a sense of belonging (e.g., "can feel socially lacking,"
-"hard to make friends," "isolated a little due to not being a party person").
-- Cliquey and exclusive social groups (e.g., "diversity but no one intermingles," "group can
-be cliquey," "people stick to their own groups").
-- Lack of support for non-traditional or minority students (e.g., "don't seem to care much
-about graduate students," "hard for a minority to find and connect").
-- Discrimination and narrow-mindedness (e.g., "administration and services are overly
-bureaucratic and unhelpful," "can be a bit unaccepting of certain minorities").
-- Unwelcoming campus environment (e.g., "campus environment is cold and unwelcoming,"
-"students are very unfriendly").
-- Issues with inclusivity and political affiliation (e.g., "inclusion is a problem when it comes to
-political affiliation," "much of the school is not very understanding and inclusive").
+- Feelings of isolation and lack of community (e.g., "feeling extremely isolated," "does not feel like all students are connected," "just a very isolating place with little support").
+- Perceived indifference from staff and professors (e.g., "staffing is not supportive or helpful," "not of them really care about their students," "most profs don't care").
+- Greek life exclusivity and its impact on non-Greek students (e.g., "non-greeks feel excluded and 'lesser' than the greeks," "frats and sororities are clique-y and elitist," "if you're not in a fraternity or sorority you miss out on a lot of the social scene").
+- Inadequate counseling and support services (e.g., "walk-in counselling is incompetent," "dss at the school does not work with students in a timely manner," "universally regarded health center as having terrible staff").
+- Challenges with diversity and inclusivity (e.g., "no sense of belonging here for black kids," "being from a solidly middle-class family, i've found it difficult relating to other students," "there is a perception here that most students come from the northeast and california").
+- Administrative and bureaucratic inefficiencies (e.g., "ambigious cyber administration has to approve it," "complicated and mundane process," "charge you over $2,000 for a requirement that has no classroom instruction").
 
 
     </ul>
@@ -351,19 +338,12 @@ political affiliation," "much of the school is not very understanding and inclus
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Implement training programs for staff and faculty to enhance their engagement with and
-support for students.
-- Create more inclusive social events and programs that encourage interaction across
-different groups.
-- Establish mentorship programs to help new students integrate into the university
-community.
-- Offer workshops and discussions on diversity and inclusivity to address issues of
-discrimination and narrow-mindedness.
-- Review and improve administrative processes to ensure they are student-centric and
-supportive.
-- Encourage student organizations to adopt more inclusive policies and practices.
-- Provide platforms for students to voice their concerns and actively work on addressing
-them.
+- Develop and promote inclusive campus-wide events and programs that encourage interaction among all student groups, including non-Greek and Greek students.
+- Enhance counseling and support services by hiring competent staff and providing timely assistance to students in need.
+- Implement training programs for professors and staff to improve their approachability and supportiveness towards students.
+- Create initiatives that celebrate diversity and foster connections among students from various backgrounds.
+- Streamline administrative processes to be more student-friendly and transparent, reducing unnecessary bureaucratic hurdles.
+- Establish mentorship programs that pair new students with upperclassmen or alumni to help them navigate university life and build relationships.
 
 
     </ul> 
@@ -374,14 +354,7 @@ them.
         <b>Summary:</b>
         <br>
         
-Based on the provided snippets, the university appears to foster a strong sense of community and
-belonging among its students. The diverse and inclusive environment is highlighted by the presence
-of international students and the acceptance of various backgrounds and identities. The faculty's
-approachability and dedication to student success are frequently mentioned, as well as the
-university's efforts to ensure student safety and well-being. The availability of clubs, organizations,
-and Greek life offers multiple avenues for students to find their niche and build lasting relationships.
-The university's commitment to diversity, both in its student body and faculty, contributes to a rich
-educational experience where students feel supported and valued.
+Based on the provided snippets, the university appears to foster a supportive and inclusive environment that resonates positively with its students. The faculty, including professors and advisors, are frequently described as helpful, caring, and accessible, often going beyond their duties to ensure student success. The university's diverse student body is highlighted as enriching the learning experience, with many students forming lasting friendships and connections. Integration programs for freshmen and ongoing communication with alumni suggest a commitment to student engagement beyond graduation. Student organizations, including Greek life, are noted as avenues for social connection and community building. Overall, the university seems to provide a nurturing and dynamic setting conducive to academic and personal growth.
 
         
 <br>
@@ -392,24 +365,17 @@ educational experience where students feel supported and valued.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Sense of community and belonging ("always felt part of the au community", "great sense of
-community on campus")
-- Inclusivity and diversity ("au is a very open-minded campus", "diversity of students on campus
-reflects a dignity in personalities")
-- Supportive faculty and staff ("professors are approachable and flexible", "counselors and staff have
-been so helpful & friendly")
-- Strong student-faculty relationships ("great connection between professors and students",
-"professors make every effort to get to know each of their students")
-- Opportunities for social engagement and networking ("clubs for everything", "participating in greek
-life has really allowed me to find my community")
-- Safety and well-being initiatives ("public safety is always available and helpful", "university tries to
-create a sense of community in the dorms")
-- International student representation ("au is incredibly friendly towards international students", "we
-have a very diverse student body")
-- Academic flexibility and customization ("i am a double major and was able to tailor the program",
-"help for course selection")
-- Alumni and peer support ("we have a great alumni network", "lot of feedback provided by the
-alumni or upperclassmen")
+- Supportive faculty (professors really helpful, professors care about you, they love teaching and helping students)
+- Strong sense of community (still feel like part of a group, established meaningful friendships, surrounded by a great community)
+- Inclusivity and diversity (diverse student body enriches discussions, university is very inclusive, diverse and inclusive community)
+- Alumni engagement (alumni community willing to help, send emails and magazines to alumni)
+- Student organizations and Greek life (student organization fairs, Greek life is a big part of GW, plenty of student organizations)
+- Accessibility and responsiveness (professors available for office hours, staff is helpful and responsive, office was always very responsive)
+- Integration and transition programs (freshman integration programs, seamless transition support)
+- Personal connections with faculty (professors made sure to extend office hours, one professor had class to her house for dinner)
+- Academic support (professors are knowledgeable and willing to take extra time, advisors are very nice and helpful)
+- Social environment (friendly people around, easy to make friends, everyone makes many friends there)
+- Commitment to student success (they want you to succeed, professors are so understanding, staff here are supportive and helpful)
 
 </ul>
 
@@ -419,15 +385,9 @@ alumni or upperclassmen")
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further enhance the sense of belonging and support within the university, it could be
-beneficial to continue promoting diversity and inclusivity initiatives, ensuring that all
-students feel represented and heard.
-- Expanding mentorship programs and peer support networks can provide additional guidance
-and connection for students.
-- Additionally, maintaining and improving communication channels between students and
-faculty can foster a more collaborative and engaging learning environment.
-- Encouraging student feedback and actively incorporating it into university policies and
-practices can also contribute to a more responsive and student-centered campus culture.
+- To further enhance the student experience, the university could consider expanding mentorship programs to facilitate even more personal and professional development opportunities. 
+- Additionally, ensuring that all students, regardless of their involvement in Greek life or other organizations, feel equally included and supported could reinforce the sense of community. 
+- Regular feedback sessions with students could help identify areas for improvement and maintain the positive aspects that currently work well.
 
 
     </ul> 

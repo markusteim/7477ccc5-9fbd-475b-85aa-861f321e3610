@@ -1,6 +1,6 @@
-```sql summaries
- select * from hotels.summaries 
- ```
+# *Confidential and Proprietary Information of SentiScope Ltd., reg. number 14688394. Unauthorized use or disclosure is prohibited.*
+
+
 
 # Summary 
 
@@ -15,7 +15,7 @@ Overall of those who left a review in this category **<Value data={polarity_prop
 
 
 
-The reviews present a mixed bag of sentiments regarding comfort and cleanliness at the university. While there are numerous positive remarks about spacious and clean dorms, well-kept facilities, and mild weather, there are also significant complaints about cramped rooms, pest issues, and unpredictable weather patterns. The positive experiences seem to slightly outweigh the negative ones, but the concerns raised are not trivial and point to areas needing improvement.
+In the snippets provided, the sentiment regarding comfort and cleanliness at the university is a mixed bag, with a notable number of both positive and negative experiences. Positive remarks often highlight spacious and well-maintained housing options, while negative comments frequently point out issues with weather unpredictability, inadequate facilities, and cleanliness concerns.
 
 
 ```sql polarity_proportions
@@ -120,40 +120,41 @@ ORDER BY
 
 ## Positive:
 
-- Spacious Accommodations: Students appreciate the larger-than-average room sizes, with ample built-in storage and comfortable living spaces.
-- Clean Facilities: Many reviews highlight the cleanliness of dorms, bathrooms, and public areas, noting daily cleaning routines.
-- Climate Control: The ability to control room temperature with AC/heating units is praised, as well as the mildness of the DC weather compared to other regions.
-- Well-Maintained Gyms: The new Cassell gym and other athletic facilities receive commendations for being in great condition and well-kept.
-- Pleasant Environment: The campus is described as clean and well-maintained, contributing to a comfortable and enjoyable atmosphere for students.
+- **Housing Quality:** Students appreciate the spaciousness and cleanliness of the dorms, with private bathrooms and in-room amenities like washers, dryers, and kitchen facilities being particularly praised.
+- **Temperature Control:** The availability of good air conditioning and heating in the dorms is a highlight, ensuring comfort across seasons.
+- **Clean Environment:** Cleanliness in certain housing facilities and the reliability of services like the Vex shuttle are noted as positives.
+- **Facility Maintenance:** Some facilities are described as well-maintained, with modern computers and well-equipped rooms.
+- **Housing Options:** There is a variety of housing options available, including off-campus accommodations that are spacious and well-regarded.
 
 
 ## Negative:
 
-- Cramped Quarters: Complaints about overcrowded rooms, especially when three people are squeezed into spaces meant for two, are common.
-- Pest Problems: Several reviews mention issues with cockroaches, mice, and rats in dorms, which significantly detract from the living experience.
-- Weather Woes: The unpredictability of DC weather, including humidity, rain, and temperature fluctuations, is a source of discomfort for some.
-- Inadequate Facilities: Students note that some facilities, like the gym, are too small for the student body, and there are reports of malfunctioning appliances.
-- Sanitation Concerns: Cleanliness is inconsistent, with some areas being well-maintained while others suffer from neglect, leading to unsanitary conditions.
+- **Facility Size:** Students find some facilities, like the gym and study rooms, to be too small, crowded, and sometimes in disrepair.
+- **Cleanliness Issues:** There are frequent complaints about the cleanliness of certain dorms, with reports of mold, filth, and unpleasant odors.
+- **Weather Challenges:** The unpredictable and sometimes extreme weather in D.C. is a common grievance, affecting comfort and convenience.
+- **Housing Disparities:** Freshman housing receives criticism for being old, cramped, and sometimes lacking in cleanliness and amenities.
+- **Temperature Extremes:** Complaints about the weather include it being too hot, humid, or cold, which impacts the overall comfort of students.
+
 
 
 <br>
 
 ## Most Positive Examples:
-- "dorms are very clean"
-- "rooms are pretty spacious"
-- "campus is clean"
-- "dormitories are comfortable to live in"
-- "public bathrooms and lounges are cleaned everyday which is nice"
+- "housing is great"
+- "spacious rooms"
+- "private bath"
+- "much cleaner"
+- "dorms are spacious"
 
 
  
 
 ## Most Negative Examples:
-- "dorm living conditions are dismal"
-- "apartment is slightly known for its cockroach problem"
-- "rooms are crowded"
-- "it can be sunny and 80 degrees one day and rainy and 60 degrees the next"
-- "some of the dorms have mold"
+- "athletic facilities available to students for everyday use aren't large enough"
+- "most of them are disgusting and in disrepair"
+- "Thurston is disgusting most of the time"
+- "gym is awful"
+- "rooms are tiny"
 
 <br>
 
@@ -320,16 +321,7 @@ ORDER BY
                        <b>Summary:</b>
         <br>
         
-    The student reviews indicate a range of issues related to comfort and cleanliness at the
-university. Concerns about the weather, including cold, heat, humidity, and rain, are
-frequently mentioned, affecting both the comfort of the students and the condition of the
-facilities. The dormitories are a particular point of contention, with numerous comments
-about their size, cleanliness, and general state of disrepair. Problems with pests such as
-mice, rats, and cockroaches are noted, as well as issues with mold. The common areas,
-including bathrooms and showers, are reported to be unclean and not maintained well.
-Additionally, the university's facilities, such as the gym and library, are described as too small
-and often overcrowded. The fluctuating weather also seems to exacerbate the discomfort
-experienced by students.
+The student reviews indicate a range of concerns primarily focused on the quality and condition of the dormitories and the impact of weather on student comfort. The dorms are described as varying widely in quality, with some being modern and others in disrepair. Issues such as overcrowding, cleanliness, and maintenance problems like mold and pests are mentioned. The weather also seems to affect student comfort, with complaints about the heat, humidity, and cold, as well as the inconvenience of rain and unpredictable weather patterns. The reviews suggest that the university's housing and facilities may not be meeting the expectations of the students in terms of comfort and cleanliness.
 
         <br>
         <br>
@@ -337,19 +329,13 @@ experienced by students.
     <b>List of issues from customer reviews:</b>
     <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Inadequate spacing and overcrowding (e.g., "spacing is hard to deal with," "everyone's
-packed together").
-- Uncomfortable weather conditions (e.g., "cold in the winter," "hot and humid in the
-summer").
-- Poor dormitory conditions (e.g., "dorms are not good," "dorm living conditions are dismal").
-- Cleanliness issues (e.g., "bathrooms are usually pretty gross," "cleanliness is the biggest
-problem").
-- Pest infestations (e.g., "prominent mice/rat problem," "apartment is slightly known for its
-cockroach problem").
-- Maintenance problems (e.g., "old appliances," "showers have terrible water pressure").
-- Insufficient facilities (e.g., "gym is pretty small for university size," "library isn't that large").
-- Weather-related discomfort (e.g., "au is like a huge wind tunnel," "it rains every
-Wednesday").
+- Inconsistent quality of dormitories (housing varies depending on dorm placement, dorms can be disappointing, dorm options range from modern and updated to horrid).
+- Overcrowding and space issues (bit cramped sometimes, they stuff as many students as they can into one room, student housing is a little cramped on space).
+- Maintenance and cleanliness concerns (could be cleaner, room was not clean and it was falling apart, mold, cockroaches, rooms are dusty and moldy, filled with mold, just smell horrible, gross dorms).
+- Specific dormitory complaints (dorms are nice except for Thurston, Thurston is disgusting most of the time, every other dorm I've lived in was old and disgusting, Mitchell Hall which has communal bathrooms).
+- Athletic and study facilities not meeting needs (locker rooms are too small, athletic facilities available to students for everyday use aren't large enough, study areas could be improved).
+- Weather-related discomfort (extremely hot and humid in the summer, cold and dry in the winter, weather is bipolar, walking in rain or snow is invisible, weather in D.C. is pretty terrible).
+- General dissatisfaction with freshman housing (freshman housing options were not great, most of the housing for freshmen is in Thurston Hall, which is disgusting, freshman dorms aren't something to rant about).
 
 
     </ul>
@@ -361,17 +347,12 @@ Wednesday").
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To address these issues, the university could implement a more rigorous and
-    frequent cleaning schedule, especially for common areas and bathrooms.
--    Pest control measures should be intensified to tackle the infestation problems.
--    The dormitories may require renovations to improve living conditions, including better
-    space management and maintenance of appliances.
--    The university could also consider expanding or optimizing the use of existing
-    facilities to alleviate overcrowding.
--    Weatherproofing measures, such as better insulation and heating systems, could
-    improve comfort during extreme weather conditions.
--    Additionally, providing more accurate and timely weather information could help
-    students prepare for the day&#39;s conditions.
+- Conduct a thorough review and renovation of dormitories, prioritizing those with the most negative feedback.
+- Explore options to alleviate overcrowding, such as building new housing or reconfiguring existing spaces.
+- Implement a regular maintenance and cleaning schedule to address issues of mold, pests, and general cleanliness.
+- Consider upgrading athletic and study facilities to accommodate the student population adequately.
+- Provide more covered walkways or shuttle services to help students navigate inclement weather.
+- Improve communication about housing options and processes to manage expectations and reduce uncertainty for incoming students.
 
 </ul>
     
@@ -382,16 +363,7 @@ Wednesday").
         <b>Summary:</b>
         <br>
         
-The student reviews present a mixed picture of the comfort and cleanliness at the university. While
-there are mentions of issues such as pests and cramped conditions, there are also numerous positive
-comments about the state of the facilities. The dorms are generally described as clean, well-kept,
-and often spacious, with individual AC/heating units being a notable feature. The campus itself is
-appreciated for its cleanliness and the condition of its athletic facilities. Off-campus housing options,
-particularly the Berkshire apartments, are frequently mentioned as popular and convenient. The
-weather is noted for its variability, with all four seasons experienced, but it does not seem to
-significantly impact the students' campus experience. Overall, while there are areas for
-improvement, many aspects of the university's facilities and living conditions are meeting the
-students' needs.
+The university's housing facilities receive positive feedback from students, highlighting the comfort and cleanliness of the dormitories and on-campus living options. Students appreciate the availability of private rooms, private bathrooms, and in-room amenities such as microwaves, fridges, and freezers. The progression of housing quality with each academic year is noted, with upperclassmen enjoying more spacious and well-equipped accommodations. The presence of kitchens, laundry facilities, and study areas within the dorms contributes to a convenient living experience. Additionally, the university's location in D.C. is mentioned favorably for its mild winters and moderate weather, which seems to enhance the overall campus experience.
 
         
 <br>
@@ -402,20 +374,17 @@ students' needs.
 
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- Individual AC/heating units in dorm rooms (All the dorm rooms have individual AC/heating units
-though)
-- Cleanliness of campus and dorms (Campus is clean, dorms are clean and sufficient)
-- Athletic facilities are well-kept (Athletic facilities themselves are very nice and well-kept)
-- Daily cleaning of bathrooms (Bathrooms are cleaned daily so they're usually fine)
-- Spacious dorm rooms (Dorm rooms are large, rooms are pretty spacious)
-- Availability of off-campus housing options (Most popular off campus housing option is the Berkshire
-apartments)
-- Well-maintained residence halls (Residence halls are clean)
-- Ample storage space in living areas (There is ample storage space)
-- Clean public areas (Public bathrooms and lounges are cleaned everyday which is nice)
-- Variety of room options (Options to live in a single, double or triple rooms)
-- Weather is manageable and does not disrupt campus life (Overall, the weather is more than
-manageable)
+- Private rooms ("having a private room is the best")
+- Private bathrooms in all dorms ("all dorms have private bathrooms")
+- Variety of housing options ("plenty of room", "a lot of different housing options")
+- In-room amenities (e.g., "your own microwave/fridge/freezer in every room")
+- Quality of facilities ("facilities alike are top tier", "facilities are pretty good")
+- Cleanliness and maintenance ("dorms are very well maintained", "libraries and study rooms are always kept clean")
+- Weather and climate appreciation ("weather in d.c. changes frequently", "it rarely gets extremely cold")
+- Spacious accommodations ("west hall dorms are spacious", "rooms themselves are large")
+- Availability of kitchens and laundry facilities ("dinning hall plus kitchen and laundry on every floor", "each room has its own washer and dryer")
+- Mild and enjoyable seasons ("four seasons", "spring and fall are very mild and enjoyable")
+
 
 </ul>
 
@@ -425,15 +394,11 @@ manageable)
 <br>
 <ul style="list-style-type: decimal; margin-left: 20px;">
 
-- To further improve the student experience, the university could address the issues raised
-about pests and maintenance problems. Implementing more rigorous pest control measures
-and regular maintenance checks could help alleviate concerns about cleanliness and
-livability.
-- Additionally, considering renovations or updates to the older dorms could improve
-perceptions of comfort.
-- Expanding on the positive aspects, such as the individual climate control in rooms and the
-cleanliness of public spaces, would also enhance the overall student satisfaction with the
-university's facilities.
+- Continue maintaining and upgrading older dorm facilities to match the standards of newer ones.
+- Ensure consistent quality of amenities across all housing options.
+- Explore additional on-campus housing opportunities to guarantee housing for all four years, if feasible.
+- Maintain the cleanliness and functionality of shared spaces like kitchens, laundry rooms, and study areas.
+- Keep up the good work with the weather preparedness, ensuring sidewalks and paths are safe during adverse weather conditions.
 
 </ul> 
     </Tab>
